@@ -50,3 +50,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+// === Cost Calculator ===
+function calculatePrice() {
+  var service = document.getElementById('calc-service');
+  var qty = document.getElementById('calc-qty');
+  var result = document.getElementById('calc-result');
+  var price = document.getElementById('calc-price');
+  if (service && qty && result && price) {
+    var total = parseInt(service.value) * parseInt(qty.value);
+    if (total > 0) {
+      price.textContent = 'ab ' + total + '€';
+      result.style.display = 'block';
+    }
+  }
+}

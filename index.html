@@ -99,6 +99,7 @@
         <a href="pages/preise.html">Preise</a>
         <a href="#stadtteile">Stadtteile</a>
         <a href="#bewertungen">Bewertungen</a>
+        <a href="#rechner">Kostenrechner</a>
         <a href="pages/kontakt.html">Kontakt</a>
       </nav>
       <div class="header-cta">
@@ -264,6 +265,23 @@
     </div>
   </section>
 
+  <!-- GALLERY -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <h2 class="text-center">Unsere Arbeiten</h2>
+      <p class="section-subtitle text-center">Einblicke in unsere tägliche Arbeit — Küchenmontage, Geräteanschluss und mehr</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;">
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 1</div>
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 2</div>
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 3</div>
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 4</div>
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 5</div>
+        <div style="aspect-ratio:4/3;background:var(--gray-light);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--gray);border:2px dashed #e0e0e0;">Foto 6</div>
+      </div>
+      <p style="text-align:center;margin-top:20px;"><a href="https://handwerk.check24.de/craftsmen/cs/desktop/searches/se_a3V79/product-details/sp_ojyGK" class="btn btn-outline" target="_blank" rel="noopener">Alle Fotos auf CHECK24 ansehen</a></p>
+    </div>
+  </section>
+
   <!-- PRICE TABLE -->
   <section class="section" id="preise">
     <div class="container">
@@ -398,6 +416,41 @@
         <a href="pages/stadtteile/neugraben.html" class="district-link">Neugraben</a>
         <a href="pages/stadtteile/horn.html" class="district-link">Horn</a>
         <a href="pages/stadtteile/wilhelmsburg.html" class="district-link">Wilhelmsburg</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="section" id="rechner">
+    <div class="container">
+      <h2 class="text-center">Kostenrechner</h2>
+      <p class="section-subtitle text-center">Berechnen Sie Ihre Kosten in wenigen Sekunden</p>
+      <div class="calculator" style="max-width:600px;margin:0 auto;background:#fff;border-radius:12px;padding:40px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+        <div style="margin-bottom:20px;">
+          <label style="font-weight:600;display:block;margin-bottom:8px;">Welche Leistung benötigen Sie?</label>
+          <select id="calc-service" style="width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;">
+            <option value="0">— Bitte wählen —</option>
+            <option value="60">Waschmaschine anschließen</option>
+            <option value="89">Herd / Kochfeld anschließen</option>
+            <option value="139">Spülmaschine anschließen</option>
+            <option value="89">Wasserhahn austauschen</option>
+            <option value="149">Spüle austauschen</option>
+            <option value="299">Küchenmontage (einfach)</option>
+            <option value="499">Küchenmontage (komplex)</option>
+            <option value="199">Küchenabbau & Entsorgung</option>
+          </select>
+        </div>
+        <div style="margin-bottom:20px;">
+          <label style="font-weight:600;display:block;margin-bottom:8px;">Anzahl der Geräte / Leistungen</label>
+          <input type="number" id="calc-qty" value="1" min="1" max="10" style="width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;">
+        </div>
+        <div id="calc-result" style="text-align:center;padding:24px;background:#f1faee;border-radius:8px;display:none;">
+          <div style="font-size:0.9rem;color:#6c757d;">Geschätzte Kosten</div>
+          <div id="calc-price" style="font-size:2.5rem;font-weight:800;color:#e63946;margin:8px 0;">0€</div>
+          <div style="font-size:0.85rem;color:#6c757d;">inkl. Anfahrt innerhalb Hamburgs</div>
+        </div>
+        <button onclick="calculatePrice()" style="width:100%;margin-top:16px;padding:14px;background:#e63946;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;">Kosten berechnen</button>
+        <p style="text-align:center;margin-top:12px;font-size:0.85rem;color:#6c757d;">* Unverbindliche Schätzung. Exakter Preis nach Besichtigung.</p>
       </div>
     </div>
   </section>

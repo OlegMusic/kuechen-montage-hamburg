@@ -15,6 +15,13 @@
   <!-- Pages -->
   <url><loc>https://www.kuechen-montage-hamburg.de/pages/preise.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.kuechen-montage-hamburg.de/pages/kontakt.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.kuechen-montage-hamburg.de/pages/ueber-uns.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Ratgeber / Blog -->
+  <url><loc>https://www.kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.kuechen-montage-hamburg.de/pages/ratgeber/kuechenspuele-austauschen-anleitung.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.kuechen-montage-hamburg.de/pages/ratgeber/kuechenmontage-kosten.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.kuechen-montage-hamburg.de/pages/ratgeber/abfluss-verstopft-hausmittel.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 
   <!-- Stadtteile -->
   <url><loc>https://www.kuechen-montage-hamburg.de/pages/stadtteile/wandsbek.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
