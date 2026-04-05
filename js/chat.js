@@ -1,46 +1,15 @@
 // === Smart Chat Widget ===
 (function() {
   // Knowledge base
-  var KB = [
-    // Küchenmontage nach Form
-    { keys: ['küchenmontage','küche aufbauen','küche montieren','küchenaufbau','kücheneinbau','küche einbauen','montage küche','pro meter','laufender meter'], answer: 'Küchenmontage Preise (netto, pro laufenden Meter):\n\n• Gerade Küche (I-Form): 180€/m\n• L-Form Küche: 220€/m\n• U-Form Küche: 240€/m\n\nWichtig: Der Montagepreis beinhaltet nur den Aufbau der Küchenmöbel. Geräteanschlüsse (Herd, Wasser) werden separat berechnet.' },
-    { keys: ['l-form','l form','l-küche','eckküche','l förmig'], answer: 'L-Form Küchenmontage: 220€ netto pro laufenden Meter. Der Preis beinhaltet den Aufbau der Möbel. Geräteanschlüsse (Herd, Wasser) werden separat berechnet.' },
-    { keys: ['u-form','u form','u-küche','u förmig'], answer: 'U-Form Küchenmontage: 240€ netto pro laufenden Meter. Der Preis beinhaltet den Aufbau der Möbel. Geräteanschlüsse (Herd, Wasser) werden separat berechnet.' },
-    { keys: ['gerade','i-form','küchenzeile','einzeilig'], answer: 'Gerade Küche (I-Form): 180€ netto pro laufenden Meter. Der Preis beinhaltet den Aufbau der Möbel. Geräteanschlüsse werden separat berechnet.' },
-    // Geräte inklusive?
-    { keys: ['inklusive','enthalten','dabei','geräte im preis','anschluss inklusive','mit anschluss'], answer: 'Nein, der Küchenmontagepreis beinhaltet nur den Möbelaufbau. Geräteanschlüsse werden separat berechnet:\n\n• Herd/Kochfeld anschließen: 80€ netto\n• Wasseranschluss (Spüle/Spülmaschine): 100€ netto\n• Wasserhahn austauschen: 120€ netto\n• Wasserhahn in der Wand: 150€ netto' },
-    // Einzelne Anschlüsse
-    { keys: ['herd','kochfeld','induktion','ceranfeld','herd anschließen','backofen','platte','plitte'], answer: 'Herd / Kochfeld anschließen: 80€ netto. Elektroherd, Induktion, Ceranfeld — alles VDE-konform.' },
-    { keys: ['wasser','wasseranschluss','spüle anschließen','spülmaschine anschließen'], answer: 'Wasseranschluss (Spüle, Spülmaschine): 100€ netto. Inkl. Zu- und Abwasser.' },
-    { keys: ['spülmaschine','geschirrspüler','spülmaschine anschließen','geschirrspüler anschließen','geschirrspüler einbauen'], answer: 'Spülmaschine / Geschirrspüler anschließen: Wasseranschluss kostet 100€ netto (Zu- und Abwasser).' },
-    { keys: ['waschmaschine','waschmaschinen','waschmaschine anschließen','waschmaschine anschluss'], answer: 'Waschmaschine anschließen: ab 60€ (inkl. Anfahrt in Hamburg). Aufstellen, Anschluss an Wasser & Strom, Dichtigkeitsprüfung.' },
-    // Wasserhahn
-    { keys: ['wasserhahn wand','unterputz','in der wand'], answer: 'Wasserhahn in der Wand (Unterputz) austauschen: 150€ netto.' },
-    { keys: ['wasserhahn','armatur','mischbatterie','wasserhahn austauschen','tropft','kran'], answer: 'Wasserhahn austauschen: 120€ netto. Alte Armatur raus, neue montieren, Dichtigkeit prüfen.\nWasserhahn in der Wand (Unterputz): 150€ netto.' },
-    // Elektrik extra
-    { keys: ['steckdose','elektrik','splitter','verteiler','sicherung','strom'], answer: 'Elektroarbeiten wie Steckdosen-Austausch, Splitter/Verteiler für die Elektrik werden separat berechnet. Bitte kontaktieren Sie uns per WhatsApp für ein individuelles Angebot.' },
-    // Spüle
-    { keys: ['spüle','küchenspüle','spüle austauschen','spüle einbauen'], answer: 'Küchenspüle austauschen: Wasseranschluss 100€ netto + ggf. Wasserhahn 120€ netto. Genauen Preis machen wir nach Besichtigung oder Foto per WhatsApp.' },
-    // IKEA
-    { keys: ['ikea','metod','knoxhult','ikea küche'], answer: 'IKEA Küchenmontage:\n• I-Form: 180€/m netto\n• L-Form: 220€/m netto\n• U-Form: 240€/m netto\n\nWir montieren alle IKEA-Systeme: METOD, KNOXHULT, ENHET. Geräteanschlüsse separat.' },
-    // Küchenabbau
-    { keys: ['küchenabbau','küche abbauen','alte küche','entsorgung','demontage'], answer: 'Küchenabbau & Entsorgung: ab 199€. Fachgerechte Demontage, Geräte abklemmen, Entsorgung auf Wunsch.' },
-    // Video
-    { keys: ['video','beratung','online'], answer: 'Video-Beratung: nur 20€. Zeigen Sie uns per Video Ihre Küche — wir geben eine Einschätzung und Kostenvoranschlag. 15–30 Min.' },
-    // Preisliste komplett
-    { keys: ['preis','kosten','was kostet','wie teuer','preise','preisliste','alle preise'], answer: 'Unsere Preise (netto):\n\nKüchenmontage:\n• I-Form: 180€/m\n• L-Form: 220€/m\n• U-Form: 240€/m\n\nGeräteanschlüsse:\n• Herd/Kochfeld: 80€\n• Wasseranschluss: 100€\n• Wasserhahn tauschen: 120€\n• Wasserhahn Wand: 150€\n\nWeitere Services:\n• Waschmaschine: ab 60€\n• Küchenabbau: ab 199€\n• Video-Beratung: 20€\n\nAnfahrt in Hamburg inklusive.' },
-    // Netto/Brutto
-    { keys: ['netto','brutto','mehrwertsteuer','mwst','steuer'], answer: 'Alle genannten Preise sind Nettopreise (zzgl. 19% MwSt.). Auf der Rechnung wird die MwSt. separat ausgewiesen.' },
-    // Allgemein
-    { keys: ['anfahrt','fahrtkosten','bezirk','stadtteil'], answer: 'Die Anfahrt innerhalb ganz Hamburg ist im Preis enthalten — keine zusätzlichen Fahrtkosten!' },
-    { keys: ['garantie','gewährleistung','reklamation'], answer: '5 Jahre Garantie auf alle Montage- und Anschlussarbeiten. Wenn etwas nicht stimmt — wir kommen kostenlos zurück.' },
-    { keys: ['termin','wann','heute','morgen','schnell','same day','sofort','dringend'], answer: 'Wir bieten Same-Day-Service! In der Regel sind wir innerhalb von 2–4 Stunden bei Ihnen. Schreiben Sie uns per WhatsApp für einen schnellen Termin.' },
-    { keys: ['samstag','wochenende','sonntag','öffnungszeiten','arbeitszeiten'], answer: 'Mo–Fr: 08:00–20:00 Uhr\nSa: 09:00–16:00 Uhr\nFür dringende Fälle auch außerhalb der Zeiten erreichbar.' },
-    { keys: ['erfahrung','seit wann','wie lange'], answer: 'Über 18 Jahre Erfahrung in Hamburg. Mehr als 2.500 zufriedene Kunden. 5.0 Sterne bei Google, 4.7 bei CHECK24.' },
-    { keys: ['kontakt','whatsapp','telefon','erreichen','schreiben'], answer: 'Am schnellsten erreichen Sie uns per WhatsApp: 0152 185 478 75\nOder per E-Mail: info@kuechen-montage-hamburg.de' },
-    { keys: ['bezahlung','zahlung','bar','überweisung','rechnung','ec','karte'], answer: 'Bezahlung nach getaner Arbeit — bar oder per Überweisung. Sie erhalten eine ordentliche Rechnung mit ausgewiesener MwSt.' },
-    { keys: ['hallo','hi','moin','guten tag','hey'], answer: 'Moin! 👋 Wie kann ich Ihnen helfen? Fragen Sie mich z.B.:\n• Was kostet eine Küchenmontage?\n• Ist der Herdanschluss im Preis dabei?\n• Wie schnell können Sie kommen?' }
-  ];
+  var KB = [];
+  // Load knowledge base from external JSON
+  var xhr = new XMLHttpRequest();
+  var kbPath = (document.querySelector('script[src*="chat.js"]') || {}).src || '';
+  kbPath = kbPath.replace('chat.js', 'chat-kb.json');
+  if (!kbPath) kbPath = 'js/chat-kb.json';
+  xhr.open('GET', kbPath, true);
+  xhr.onload = function() { if (xhr.status === 200) KB = JSON.parse(xhr.responseText); };
+  xhr.send();
 
   function findAnswer(input) {
     var text = input.toLowerCase().trim();
