@@ -101,12 +101,13 @@ h3 {
   color: #fff; font-size: 1.3rem; font-weight: 800;
   box-shadow: 0 4px 12px rgba(230, 57, 70, 0.3);
 }
-.nav { display: flex; align-items: center; gap: 32px; }
+.nav { display: flex; align-items: center; gap: 24px; margin-top: 4px; }
 .nav a {
   font-weight: 500; font-size: 0.93rem; color: var(--secondary);
   transition: var(--transition);
   position: relative;
   padding: 4px 0;
+  white-space: nowrap;
 }
 .nav a::after {
   content: '';
