@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /admin/
 
+Sitemap: https://kuechen-montage-hamburg.de/sitemap.xml
 Sitemap: https://www.kuechen-montage-hamburg.de/sitemap.xml
