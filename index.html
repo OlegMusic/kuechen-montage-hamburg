@@ -124,12 +124,10 @@
         <a href="pages/preise.html">Preise</a>
         <a href="#stadtteile">Stadtteile</a>
         <a href="#bewertungen">Bewertungen</a>
-        <a href="#rechner">Kostenrechner</a>
+        <a href="pages/galerie.html">Galerie</a>
         <a href="pages/kontakt.html">Kontakt</a>
       </nav>
-      <div class="header-cta">
-        <a href="https://wa.me/4915218547875" class="btn btn-whatsapp btn-sm">&#128172; WhatsApp</a>
-      </div>
+      <div class="header-cta"></div>
     </div>
   </header>
 
@@ -138,11 +136,11 @@
     <div class="container">
       <div class="hero-inner">
         <div>
-          <span class="hero-badge">&#9889; Same-Day-Service verfügbar</span>
           <h1>Küchenmontage &amp; Küchenaufbau in Hamburg — Ihr Küchenmonteur</h1>
           <p>IKEA Montage, Kücheneinbau, Geschirrspüler &amp; Spülmaschine anschließen, Waschmaschine, Herd anschließen. Wasserhahn &amp; Spüle austauschen. Festpreise ab 60€. Keine versteckten Kosten.</p>
-          <div class="hero-buttons">
+          <div class="hero-buttons" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
             <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp schreiben</a>
+            <img src="foto/6371-TUeV-NORD-CERT-neu.jpg" alt="TÜV NORD Zertifizierung" style="height:50px;border-radius:8px;background:#fff;padding:3px;box-shadow:0 2px 10px rgba(0,0,0,0.2);">
           </div>
           <div class="hero-stats">
             <div class="hero-stat">
@@ -158,9 +156,161 @@
               <div class="hero-stat-label">Google Bewertung</div>
             </div>
           </div>
+          <!-- Animated Worker running on path -->
+          <div id="hero-worker" style="display:none;position:relative;width:100%;height:120px;margin-top:10px;overflow:hidden;">
+            <!-- Path / ground -->
+            <div style="position:absolute;bottom:8px;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.3) 80%,transparent);border-radius:2px;"></div>
+            <!-- Dotted path -->
+            <div style="position:absolute;bottom:12px;left:5%;right:5%;border-bottom:2px dashed rgba(255,255,255,0.15);"></div>
+            <!-- Running worker -->
+            <div id="running-worker" style="position:absolute;bottom:10px;left:0;">
+              <svg width="60" height="100" viewBox="0 0 60 100" style="overflow:visible;">
+                <!-- Shadow -->
+                <ellipse cx="30" cy="97" rx="14" ry="3" fill="rgba(0,0,0,0.2)">
+                  <animate attributeName="rx" values="14;10;14" dur="0.4s" repeatCount="indefinite"/>
+                </ellipse>
+                <!-- Body bounce -->
+                <g>
+                  <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="0.4s" repeatCount="indefinite"/>
+                  <!-- Hard hat -->
+                  <path d="M18 12 Q30 0 42 12 L44 16 Q30 14 16 16 Z" fill="#f4a300"/>
+                  <rect x="16" y="14" width="28" height="4" rx="2" fill="#e8950a"/>
+                  <!-- Head -->
+                  <ellipse cx="30" cy="24" rx="10" ry="11" fill="#f0b890"/>
+                  <!-- Hair -->
+                  <path d="M20 18 Q25 13 30 15 Q35 13 40 18" fill="#5a3825" stroke="none"/>
+                  <!-- Ear -->
+                  <ellipse cx="20" cy="24" rx="2.5" ry="3" fill="#e8a878"/>
+                  <!-- Eye -->
+                  <ellipse cx="26" cy="22" rx="1.8" ry="2" fill="#fff"/>
+                  <circle cx="26.5" cy="22" r="1" fill="#333"/>
+                  <ellipse cx="34" cy="22" rx="1.8" ry="2" fill="#fff"/>
+                  <circle cx="34.5" cy="22" r="1" fill="#333"/>
+                  <!-- Eyebrow -->
+                  <line x1="23" y1="18" x2="29" y2="19" stroke="#5a3825" stroke-width="1.2"/>
+                  <line x1="31" y1="19" x2="37" y2="18" stroke="#5a3825" stroke-width="1.2"/>
+                  <!-- Nose -->
+                  <path d="M29 25 Q30 27 31 25" stroke="#d4956b" stroke-width="1" fill="none"/>
+                  <!-- Smile -->
+                  <path d="M25 29 Q30 33 35 29" stroke="#c1624d" stroke-width="1.5" fill="none"/>
+                  <!-- Neck -->
+                  <rect x="27" y="34" width="6" height="4" fill="#f0b890"/>
+                  <!-- Torso / work shirt -->
+                  <path d="M18 38 L42 38 L44 68 L16 68 Z" fill="#1d3557" rx="3"/>
+                  <!-- Collar -->
+                  <path d="M24 38 L30 44 L36 38" fill="#14253d" stroke="none"/>
+                  <!-- Pocket -->
+                  <rect x="32" y="50" width="7" height="6" rx="1" fill="#14253d" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+                  <!-- Logo on chest -->
+                  <text x="22" y="48" font-size="4" fill="rgba(255,255,255,0.4)" font-weight="bold">PRU</text>
+                  <!-- Belt -->
+                  <rect x="16" y="64" width="28" height="4" rx="1" fill="#6b3a1f"/>
+                  <rect x="28" y="63" width="4" height="6" rx="1" fill="#c0c0c0"/>
+                  <!-- Tool pouch on belt -->
+                  <rect x="37" y="63" width="6" height="8" rx="1" fill="#8b5e3c"/>
+                  <!-- Right arm with wrench (front arm) -->
+                  <g>
+                    <animateTransform attributeName="transform" type="rotate" values="30,42,42;-20,42,42;30,42,42" dur="0.4s" repeatCount="indefinite"/>
+                    <!-- Upper arm -->
+                    <line x1="42" y1="42" x2="54" y2="50" stroke="#1d3557" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Forearm -->
+                    <line x1="54" y1="50" x2="58" y2="38" stroke="#f0b890" stroke-width="4" stroke-linecap="round"/>
+                    <!-- Wrench -->
+                    <g transform="translate(58,34) rotate(-30)">
+                      <rect x="-2" y="-12" width="4" height="16" rx="1.5" fill="#8a8a8a"/>
+                      <path d="M-4 -14 L4 -14 L3 -10 L-3 -10 Z" fill="#999"/>
+                      <path d="M-4 -16 Q0 -20 4 -16" fill="#999"/>
+                    </g>
+                  </g>
+                  <!-- Left arm (back arm) -->
+                  <g>
+                    <animateTransform attributeName="transform" type="rotate" values="-20,18,42;30,18,42;-20,18,42" dur="0.4s" repeatCount="indefinite"/>
+                    <line x1="18" y1="42" x2="6" y2="50" stroke="#1d3557" stroke-width="6" stroke-linecap="round"/>
+                    <line x1="6" y1="50" x2="4" y2="40" stroke="#f0b890" stroke-width="4" stroke-linecap="round"/>
+                  </g>
+                  <!-- Left leg -->
+                  <g>
+                    <animateTransform attributeName="transform" type="rotate" values="-25,24,68;25,24,68;-25,24,68" dur="0.4s" repeatCount="indefinite"/>
+                    <!-- Thigh -->
+                    <line x1="24" y1="68" x2="20" y2="82" stroke="#2c4a7c" stroke-width="7" stroke-linecap="round"/>
+                    <!-- Shin -->
+                    <line x1="20" y1="82" x2="16" y2="93" stroke="#2c4a7c" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Boot -->
+                    <path d="M12 90 L20 90 L22 95 L10 95 Z" fill="#333" rx="1"/>
+                  </g>
+                  <!-- Right leg -->
+                  <g>
+                    <animateTransform attributeName="transform" type="rotate" values="25,36,68;-25,36,68;25,36,68" dur="0.4s" repeatCount="indefinite"/>
+                    <line x1="36" y1="68" x2="40" y2="82" stroke="#2c4a7c" stroke-width="7" stroke-linecap="round"/>
+                    <line x1="40" y1="82" x2="44" y2="93" stroke="#2c4a7c" stroke-width="6" stroke-linecap="round"/>
+                    <path d="M40 90 L48 90 L50 95 L38 95 Z" fill="#333" rx="1"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <!-- Trail text that follows -->
+            <div id="worker-trail" style="position:absolute;bottom:20px;left:0;opacity:0;white-space:nowrap;pointer-events:none;">
+              <span style="font-size:1.1rem;font-weight:700;color:#25d366;text-shadow:0 0 10px rgba(37,211,102,0.5);letter-spacing:1px;">
+                &#x1F3C3; Sie sind fast am Ziel! &#127942;
+              </span>
+            </div>
+            <!-- Celebration sparkles -->
+            <div id="worker-celebration" style="position:absolute;right:20px;top:0;bottom:0;display:none;align-items:center;justify-content:center;">
+              <svg width="60" height="60" viewBox="0 0 60 60">
+                <g id="sparkles">
+                  <line x1="30" y1="5" x2="30" y2="15" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="50" y1="15" x2="42" y2="22" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.2s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="55" y1="30" x2="45" y2="30" stroke="#25d366" stroke-width="2" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="10" y1="15" x2="18" y2="22" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.3s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="5" y1="30" x2="15" y2="30" stroke="#25d366" stroke-width="2" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.5s" repeatCount="indefinite"/>
+                  </line>
+                  <circle cx="30" cy="30" r="3" fill="#ffd700">
+                    <animate attributeName="r" values="2;5;2" dur="1s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+                  </circle>
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="hero-image">
+        <div class="hero-image" style="display:flex;flex-direction:column;align-items:center;gap:16px;">
+          <span class="hero-badge">&#9889; Same-Day-Service verfügbar</span>
+          <div style="display:flex;align-items:stretch;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:16px;border:1px solid rgba(255,255,255,0.15);overflow:hidden;">
+            <a href="https://wa.me/4915218547875" target="_blank" rel="noopener" style="flex-shrink:0;display:block;line-height:0;">
+              <img src="img/whatsapp-qr.png" alt="WhatsApp QR-Code" style="width:130px;height:130px;display:block;border-radius:16px 0 0 16px;background:#fff;padding:6px;">
+            </a>
+            <div style="color:#fff;text-align:left;display:flex;flex-direction:column;justify-content:center;padding:0 20px;">
+              <div style="font-size:0.85rem;opacity:0.8;">WhatsApp:</div>
+              <a href="https://wa.me/4915218547875" style="font-size:1.4rem;font-weight:700;color:#25d366;text-decoration:none;">0152 185 478 75</a>
+              <div style="font-size:0.8rem;opacity:0.7;margin-top:4px;">QR scannen Text or Call</div>
+            </div>
+          </div>
           <img src="img/profile/profile.jpg" alt="Oleg — Ihr Küchenmonteur in Hamburg mit 18 Jahren Erfahrung" style="width:100%;max-width:350px;border-radius:var(--radius);box-shadow:var(--shadow-lg);">
+          <button id="hero-chat-btn" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:12px 24px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s ease;">
+            <span style="font-size:1.3rem;">&#129302;</span> KI-Assistent starten
+          </button>
+          <!-- Inline Chat Area -->
+          <div id="hero-chat-area" style="display:none;width:100%;max-width:380px;overflow:hidden;border-radius:20px;background:rgba(255,255,255,0.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.15);">
+            <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;">
+              <span style="color:#fff;font-weight:700;font-size:0.95rem;">&#129302; Küchen-Assistent</span>
+              <button id="hero-chat-close" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:1.4rem;cursor:pointer;padding:0 4px;">&times;</button>
+            </div>
+            <div id="hero-chat-messages" style="overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;height:220px;"></div>
+            <div style="display:flex;padding:10px;gap:6px;border-top:1px solid rgba(255,255,255,0.1);">
+              <input type="text" id="hero-chat-input" placeholder="Ihre Frage..." autocomplete="off" style="flex:1;padding:10px 14px;border:none;border-radius:50px;font-size:0.9rem;outline:none;background:rgba(255,255,255,0.15);color:#fff;font-family:inherit;" />
+              <button id="hero-chat-mic" title="Spracheingabe" style="background:rgba(255,255,255,0.15);color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">&#127908;</button>
+              <button id="hero-chat-send" style="background:#25d366;color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">&#10148;</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -176,9 +326,60 @@
         <div class="trust-item"><span class="trust-icon">&#128274;</span> 5 Jahre Garantie</div>
         <div class="trust-item"><span class="trust-icon">&#11088;</span> 4.9 Sterne bei Google</div>
         <div class="trust-item"><span class="trust-icon">&#129302;</span> KI-Assistent 24/7</div>
+        <div class="trust-item"><img src="foto/6371-TUeV-NORD-CERT-neu.jpg" alt="TÜV NORD Zertifizierung" style="height:24px;vertical-align:middle;margin-right:4px;border-radius:3px;"> TÜV zertifiziert</div>
       </div>
     </div>
   </div>
+
+  <!-- TÜV NORD BANNER -->
+  <div style="background:linear-gradient(135deg,#1a73e8,#0d47a1);padding:16px 0;text-align:center;">
+    <div class="container" style="display:flex;align-items:center;justify-content:center;gap:16px;">
+      <img src="foto/6371-TUeV-NORD-CERT-neu.jpg" alt="TÜV NORD Zertifizierung" style="height:80px;border-radius:8px;background:#fff;padding:6px;">
+      <span style="font-size:1rem;font-weight:600;color:#fff;">TÜV NORD zertifizierter Fachbetrieb</span>
+    </div>
+  </div>
+
+  <!-- GALLERY -->
+  <section class="section" id="galerie">
+    <div class="container">
+      <h2 class="text-center">Unsere Arbeiten</h2>
+      <p class="section-subtitle text-center">Einblicke in unsere tägliche Arbeit — Küchenmontage, Geräteanschluss und mehr</p>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto;">
+        <img src="foto/19b63898-b5c5-4335-a2eb-406beabb7dbd-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Moderne U-Form Küche in Dunkelgrün — fertig montiert in Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+        <img src="foto/3426ab48-9da3-471d-9468-182cde68cca6-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Zufriedener Kunde mit Küchenmonteur — weiße Küche mit Kochinsel" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+        <img src="foto/8d1ff7b4-3173-4ba3-b947-f8129f0cfb0a-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Hochwertige Küche mit Holzoptik und Kochinsel — fertig montiert" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+        <img src="foto/bb88caa6-f344-4858-afce-ff8c927cfa6e-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Oleg in fertiger grauer IKEA-Küche — Küchenmontage Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+        <img src="foto/2968c91b-eddc-413f-af14-3bdab0dc5f5c-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Arbeitsplatte zuschneiden mit Festool — Küchenmontage in Arbeit" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+        <img src="foto/8868c796-c0e3-4f8b-9b56-e4a1902ae146-rm-limit-w-600-h-600-q-80-sm-true.jpeg" alt="Küchenmontage-Team bei der Arbeit — Selfie auf der Baustelle" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+      </div>
+      <p style="text-align:center;margin-top:28px;">
+        <a href="pages/galerie.html" class="btn btn-outline">Alle Fotos ansehen</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- INLINE CTA WITH PHONE -->
+  <section class="gallery-cta">
+    <div class="container">
+      <div class="gallery-cta-inner">
+        <div class="gallery-cta-left">
+          <img src="img/profile/profile.jpg" alt="Oleg — Ihr Küchenmonteur in Hamburg" class="gallery-cta-photo">
+          <div>
+            <div class="gallery-cta-name">Alex</div>
+            <div class="gallery-cta-role">Ihr Küchenmonteur in Hamburg</div>
+          </div>
+        </div>
+        <div class="gallery-cta-center">
+          <div class="gallery-cta-phone-label">Jetzt direkt anrufen oder schreiben</div>
+          <a href="tel:+4915218547875" class="gallery-cta-phone">0152 185 478 75</a>
+        </div>
+        <div class="gallery-cta-right">
+          <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." class="btn btn-whatsapp">&#128172; WhatsApp</a>
+          <a href="tel:+4915218547875" class="btn btn-primary">&#128222; Anrufen</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- SERVICES -->
   <section class="section" id="leistungen">
@@ -188,142 +389,74 @@
       <div class="services-grid">
 
         <div class="service-card">
-          <div class="service-card-icon">&#129529;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🫧</div>
           <h3><a href="pages/services/waschmaschine-anschliessen-hamburg.html">Waschmaschine anschließen</a></h3>
           <p>Aufstellen, Anschluss an Wasser &amp; Strom, Dichtigkeitsprüfung. Inkl. Anfahrt in Hamburg.</p>
           <div class="service-price">ab 60€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#127859;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🔌</div>
           <h3><a href="pages/services/herd-anschliessen-hamburg.html">Herd anschließen</a></h3>
           <p>Elektroherd, Gasherd, Induktionskochfeld. Fachgerechter Anschluss nach VDE-Norm.</p>
           <div class="service-price">ab 89€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#129473;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🍽️</div>
           <h3><a href="pages/services/spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></h3>
           <p>Einbau, Wasseranschluss, Abwasser, Strom. Einbaugeräte &amp; freistehende Modelle.</p>
           <div class="service-price">ab 139€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#128167;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🚿</div>
           <h3><a href="pages/services/wasserhahn-austauschen-hamburg.html">Wasserhahn austauschen</a></h3>
           <p>Küche &amp; Bad. Alte Armatur demontieren, neue fachgerecht montieren, Dichtigkeit prüfen.</p>
           <div class="service-price">ab 89€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#128703;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🪣</div>
           <h3><a href="pages/services/spuele-austauschen-hamburg.html">Spüle austauschen</a></h3>
           <p>Küchenspüle demontieren und neue Spüle einbauen inkl. Siphon und Armatur.</p>
           <div class="service-price">ab 149€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#127968;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🏗️</div>
           <h3><a href="pages/services/kuechenmontage-hamburg.html">Küchenmontage</a></h3>
           <p>Kompletter Auf- und Einbau Ihrer Küche. IKEA, Nobilia, Nolte und alle anderen Marken.</p>
           <div class="service-price">ab 299€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#128295;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">🔧</div>
           <h3><a href="pages/services/kuechen-abbau-hamburg.html">Küchenabbau</a></h3>
           <p>Fachgerechter Abbau und Entsorgung Ihrer alten Küche inkl. Geräte-Abklemmen.</p>
           <div class="service-price">ab 199€ <span>Festpreis</span></div>
         </div>
 
         <div class="service-card">
-          <div class="service-card-icon">&#127916;</div>
+          <div class="service-card-icon" style="font-size:2.8rem;">📹</div>
           <h3><a href="pages/services/video-beratung.html">Video-Beratung</a></h3>
           <p>Online-Beratung per Video. Wir schauen uns Ihr Problem an und geben eine Einschätzung.</p>
           <div class="service-price">20€ <span>pro Beratung</span></div>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div class="service-card">
+          <div class="service-card-icon" style="font-size:2.8rem;">📐</div>
+          <h3>Aufmaß, Planung &amp; Bestellung</h3>
+          <p>Komplett-Service: Professionelles Aufmaß vor Ort, individuelle Küchenplanung mit 3D-Visualisierung und Bestellung Ihrer Traumküche zum besten Preis. IKEA, Nobilia, Nolte, Häcker — alle Marken.</p>
+          <div class="service-price">auf Anfrage</div>
+        </div>
 
-  <!-- ADVANTAGES -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="text-center">Warum Kunden uns wählen</h2>
-      <p class="section-subtitle text-center">Seit 18 Jahren der zuverlässige Küchenservice in Hamburg</p>
-      <div class="advantages-grid">
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128176;</div>
-          <h3>Festpreise</h3>
-          <p>Keine versteckten Kosten. Sie wissen vorher, was es kostet. Der Preis auf der Website ist der Preis, den Sie zahlen.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#9889;</div>
-          <h3>Same-Day-Service</h3>
-          <p>Heute anrufen — heute erledigt. Wir sind in 2-4 Stunden bei Ihnen in Hamburg.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128170;</div>
-          <h3>18 Jahre Erfahrung</h3>
-          <p>Über 2.500 zufriedene Kunden in Hamburg. Wir kennen jede Küche und jedes Problem.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128274;</div>
-          <h3>5 Jahre Garantie</h3>
-          <p>Auf alle Montage- und Anschlussarbeiten. Wenn etwas nicht stimmt — wir kommen kostenlos zurück.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128100;</div>
-          <h3>Direkt vom Meister</h3>
-          <p>Kein Call-Center, kein Bot. Sie sprechen direkt mit dem Handwerker, der auch zu Ihnen kommt.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128230;</div>
-          <h3>Alles aus einer Hand</h3>
-          <p>Küchenmontage, Elektro, Sanitär — ein Ansprechpartner für alles. Kein Hin und Her.</p>
-        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section class="section" id="galerie">
-    <div class="container">
-      <h2 class="text-center">Unsere Arbeiten</h2>
-      <p class="section-subtitle text-center">Einblicke in unsere tägliche Arbeit — Küchenmontage, Geräteanschluss und mehr</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;">
-        <img src="img/gallery/photo-1.jpg" alt="Küchenmontage Hamburg — Lieferung" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-2.jpg" alt="Küchenmontage in Arbeit — Oberschränke" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-3.jpg" alt="Arbeitsplatte zuschneiden mit Festool" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-4.jpg" alt="Fertige Küche — zufriedener Monteur" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-5.jpg" alt="Moderne Küche mit Beleuchtung — fertig montiert" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-6.jpg" alt="Hochwertige Küche mit Kochinsel — Holzoptik" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-7.jpg" alt="IKEA Küchenmontage Hamburg — TÜV zertifiziert" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-8.jpg" alt="U-Form Küche — dunkelgrün — fertig montiert" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-9.jpg" alt="Küchenlieferung — Pakete prüfen" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-10.jpg" alt="Arbeitsplatte sägen — Küchenmontage" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-11.jpg" alt="Zufriedener Kunde — fertige weiße Küche mit Insel" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-12.jpg" alt="L-Form Küche Montage — Unterschränke mit Beleuchtung" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-13.jpg" alt="Rote Designer-Küche mit Kochinsel — Montage" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-14.jpg" alt="Küchenmontage Team bei der Arbeit" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-
-        <img src="img/gallery/photo-16.jpg" alt="Monteur bei der Küchenmontage — Selfie" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-17.jpg" alt="Oleg im Büro — Küchen-Montage Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-18.jpg" alt="Auf der Baustelle — Küchenmontage" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-19.jpg" alt="IKEA Küche fertig — L-Form grau mit Holz" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-20.jpg" alt="Freude nach Küchenmontage — Sprung!" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-21.jpg" alt="U-Form Küche mit Kochinsel — Montage abgeschlossen" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-22.jpg" alt="Küchenmontage — Schutzfolie entfernen" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-23.jpg" alt="Dunstabzugshaube montieren — Deckenanschluss" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-        <img src="img/gallery/photo-24.jpg" alt="Oleg im Büro — Küchenplanung und Beratung" style="aspect-ratio:4/3;object-fit:cover;border-radius:12px;width:100%;" loading="lazy">
-      </div>
-      <p style="text-align:center;margin-top:20px;"><a href="https://handwerk.check24.de/craftsmen/cs/desktop/searches/se_a3V79/product-details/sp_ojyGK" class="btn btn-outline" target="_blank" rel="noopener">Alle Fotos auf CHECK24 ansehen</a></p>
     </div>
   </section>
 
   <!-- PRICE TABLE -->
-  <section class="section" id="preise">
+  <section class="section section-alt" id="preise">
     <div class="container">
       <h2 class="text-center">Unsere Preise</h2>
       <p class="section-subtitle text-center">Transparente Festpreise — inklusive Anfahrt innerhalb Hamburgs</p>
@@ -379,6 +512,49 @@
         </tbody>
       </table>
       <p style="text-align:center; margin-top:20px; color:var(--gray); font-size:0.9rem;">Alle Preise inkl. MwSt. und Anfahrt innerhalb Hamburgs. Materialkosten ggf. extra.</p>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center">Warum Kunden uns wählen</h2>
+      <p class="section-subtitle text-center">Seit 18 Jahren der zuverlässige Küchenservice in Hamburg</p>
+      <div class="advantages-grid">
+        <div class="advantage-card">
+          <div class="advantage-icon">&#128176;</div>
+          <h3>Festpreise</h3>
+          <p>Keine versteckten Kosten. Sie wissen vorher, was es kostet. Der Preis auf der Website ist der Preis, den Sie zahlen.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">&#9889;</div>
+          <h3>Same-Day-Service</h3>
+          <p>Heute anrufen — heute erledigt. Wir sind in 2-4 Stunden bei Ihnen in Hamburg.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">&#128170;</div>
+          <h3>18 Jahre Erfahrung</h3>
+          <p>Über 2.500 zufriedene Kunden in Hamburg. Wir kennen jede Küche und jedes Problem.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">&#128274;</div>
+          <h3>5 Jahre Garantie</h3>
+          <p>Auf alle Montage- und Anschlussarbeiten. Wenn etwas nicht stimmt — wir kommen kostenlos zurück.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">&#128100;</div>
+          <h3>Direkt vom Meister</h3>
+          <p>Kein Call-Center, kein Bot. Sie sprechen direkt mit dem Handwerker, der auch zu Ihnen kommt.</p>
+        </div>
+        <div class="advantage-card">
+          <div class="advantage-icon">&#128230;</div>
+          <h3>Alles aus einer Hand</h3>
+          <p>Küchenmontage, Elektro, Sanitär — ein Ansprechpartner für alles. Kein Hin und Her.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin:40px auto 0;max-width:400px;">
+        <img src="foto/вв.png" alt="GARANT Autorisierter Fachhandelspartner — Zertifikat für PRUlog-Küchen, Inh. Oleg Prusincov" style="width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+      </div>
     </div>
   </section>
 
@@ -609,5 +785,263 @@
 
   <script src="js/main.js"></script>
   <script src="js/chat.js"></script>
+  <script>
+  (function() {
+    var btn = document.getElementById('hero-chat-btn');
+    var area = document.getElementById('hero-chat-area');
+    var closeBtn = document.getElementById('hero-chat-close');
+    var input = document.getElementById('hero-chat-input');
+    var sendBtn = document.getElementById('hero-chat-send');
+    var micBtn = document.getElementById('hero-chat-mic');
+    var msgs = document.getElementById('hero-chat-messages');
+    var isOpen = false;
+
+    // Conversation state
+    var waitingForPhone = false;
+    var conversationLog = [];
+
+    // Load KB
+    var KB = [];
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'js/chat-kb.json', true);
+    xhr.onload = function() { if (xhr.status === 200) KB = JSON.parse(xhr.responseText); };
+    xhr.send();
+
+    function findAnswer(text) {
+      text = text.toLowerCase().trim();
+      if (!text) return null;
+      var best = null, bestScore = 0;
+      for (var i = 0; i < KB.length; i++) {
+        for (var j = 0; j < KB[i].keys.length; j++) {
+          if (text.indexOf(KB[i].keys[j]) !== -1 && KB[i].keys[j].length > bestScore) {
+            bestScore = KB[i].keys[j].length;
+            best = KB[i];
+          }
+        }
+      }
+      return best ? best.answer : null;
+    }
+
+    function addMsg(text, type) {
+      var d = document.createElement('div');
+      d.style.cssText = 'max-width:85%;padding:10px 14px;border-radius:12px;font-size:0.88rem;line-height:1.5;white-space:pre-wrap;word-wrap:break-word;';
+      if (type === 'bot') {
+        d.style.background = 'rgba(255,255,255,0.15)';
+        d.style.color = '#fff';
+        d.style.alignSelf = 'flex-start';
+      } else {
+        d.style.background = '#25d366';
+        d.style.color = '#fff';
+        d.style.alignSelf = 'flex-end';
+      }
+      d.textContent = text;
+      msgs.appendChild(d);
+      msgs.scrollTop = msgs.scrollHeight;
+      conversationLog.push({ role: type, text: text });
+    }
+
+    function addFollowUpButtons() {
+      var wrap = document.createElement('div');
+      wrap.style.cssText = 'max-width:85%;align-self:flex-start;padding:8px 0;display:flex;flex-direction:column;gap:6px;';
+
+      var label = document.createElement('div');
+      label.style.cssText = 'color:rgba(255,255,255,0.8);font-size:0.84rem;margin-bottom:2px;';
+      label.textContent = 'Möchten Sie mit dem Meister verbunden werden oder ihm eine Nachricht hinterlassen?';
+      wrap.appendChild(label);
+
+      var btnRow = document.createElement('div');
+      btnRow.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;';
+
+      var callBtn = document.createElement('button');
+      callBtn.textContent = '\uD83D\uDCDE Mit Meister verbinden';
+      callBtn.style.cssText = 'background:#25d366;color:#fff;border:none;border-radius:50px;padding:8px 16px;font-size:0.83rem;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity 0.2s;';
+      callBtn.addEventListener('click', function() {
+        window.open('https://wa.me/4915218547875', '_blank');
+      });
+
+      var msgBtn = document.createElement('button');
+      msgBtn.textContent = '\u2709\uFE0F Nachricht hinterlassen';
+      msgBtn.style.cssText = 'background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;font-size:0.83rem;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity 0.2s;';
+      msgBtn.addEventListener('click', function() {
+        wrap.remove();
+        addMsg('Bitte hinterlassen Sie Ihre Telefonnummer oder WhatsApp-Nummer, damit der Meister Sie zurückrufen kann:', 'bot');
+        waitingForPhone = true;
+        input.focus();
+      });
+
+      btnRow.appendChild(callBtn);
+      btnRow.appendChild(msgBtn);
+      wrap.appendChild(btnRow);
+      msgs.appendChild(wrap);
+      msgs.scrollTop = msgs.scrollHeight;
+    }
+
+    function buildConversationSummary() {
+      var summary = '';
+      for (var i = 0; i < conversationLog.length; i++) {
+        var entry = conversationLog[i];
+        if (entry.role === 'user') {
+          summary += 'Kunde: ' + entry.text + '\n';
+        } else {
+          summary += 'Bot: ' + entry.text + '\n';
+        }
+      }
+      return summary;
+    }
+
+    function handlePhoneCapture(phoneNumber) {
+      waitingForPhone = false;
+      addMsg('Vielen Dank! Ihre Nummer ' + phoneNumber + ' wurde gespeichert. Der Meister meldet sich schnellstmöglich bei Ihnen. \uD83D\uDC4D', 'bot');
+      var summary = buildConversationSummary();
+      var waText = 'Neue Anfrage vom KI-Assistenten:\n\nKontakt: ' + phoneNumber + '\n\nGesprächsverlauf:\n' + summary;
+      setTimeout(function() {
+        window.open('https://wa.me/4915218547875?text=' + encodeURIComponent(waText), '_blank');
+      }, 1000);
+    }
+
+    function openChat() {
+      isOpen = true;
+      area.style.display = 'block';
+      area.style.maxHeight = '0';
+      area.style.opacity = '0';
+      requestAnimationFrame(function() {
+        area.style.transition = 'max-height 0.5s ease, opacity 0.4s ease';
+        area.style.maxHeight = '450px';
+        area.style.opacity = '1';
+      });
+      btn.style.display = 'none';
+      if (msgs.children.length === 0) {
+        addMsg('Moin! \uD83D\uDC4B Ich bin der Küchen-Assistent. Fragen Sie mich nach Preisen, Leistungen oder Terminen!', 'bot');
+      }
+      setTimeout(function() { input.focus(); }, 400);
+    }
+
+    function closeChat() {
+      area.style.maxHeight = '0';
+      area.style.opacity = '0';
+      setTimeout(function() {
+        area.style.display = 'none';
+        btn.style.display = 'inline-flex';
+        isOpen = false;
+      }, 500);
+    }
+
+    function handleSend() {
+      var text = input.value.trim();
+      if (!text) return;
+      addMsg(text, 'user');
+      input.value = '';
+
+      // If waiting for phone number, capture it
+      if (waitingForPhone) {
+        setTimeout(function() { handlePhoneCapture(text); }, 400);
+        return;
+      }
+
+      setTimeout(function() {
+        var answer = findAnswer(text);
+        if (answer) {
+          addMsg(answer, 'bot');
+        } else {
+          addMsg('Gute Frage! Schreiben Sie uns direkt per WhatsApp — wir antworten schnell!', 'bot');
+        }
+        // Show follow-up buttons after every bot answer
+        setTimeout(function() { addFollowUpButtons(); }, 600);
+      }, 500 + Math.random() * 300);
+    }
+
+    // Microphone / Speech-to-Text
+    var isRecording = false;
+    micBtn.addEventListener('click', function() {
+      var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+      if (!SpeechRecognition) {
+        alert('Spracheingabe wird von Ihrem Browser leider nicht unterstützt. Bitte verwenden Sie Chrome oder Edge.');
+        return;
+      }
+      if (isRecording) return;
+      isRecording = true;
+      micBtn.style.background = '#e63946';
+      micBtn.style.animation = 'pulse 1s infinite';
+      var recognition = new SpeechRecognition();
+      recognition.lang = 'de-DE';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+      recognition.addEventListener('result', function(event) {
+        var transcript = event.results[0][0].transcript;
+        input.value = transcript;
+        input.focus();
+      });
+      recognition.addEventListener('end', function() {
+        isRecording = false;
+        micBtn.style.background = 'rgba(255,255,255,0.15)';
+        micBtn.style.animation = '';
+      });
+      recognition.addEventListener('error', function() {
+        isRecording = false;
+        micBtn.style.background = 'rgba(255,255,255,0.15)';
+        micBtn.style.animation = '';
+      });
+      recognition.start();
+    });
+
+    var worker = document.getElementById('hero-worker');
+    var runningWorker = document.getElementById('running-worker');
+
+    var trail = document.getElementById('worker-trail');
+    var celebration = document.getElementById('worker-celebration');
+
+    function animateWorkerRun() {
+      worker.style.display = 'block';
+      worker.style.opacity = '0';
+      worker.style.transition = 'opacity 0.3s ease';
+      trail.style.opacity = '0';
+      trail.style.left = '0';
+      celebration.style.display = 'none';
+      requestAnimationFrame(function() { worker.style.opacity = '1'; });
+      // Animate running from left to right
+      runningWorker.style.transition = 'none';
+      runningWorker.style.left = '0%';
+      requestAnimationFrame(function() {
+        runningWorker.style.transition = 'left 2.5s ease-in-out';
+        runningWorker.style.left = 'calc(100% - 70px)';
+        // Trail text follows behind
+        setTimeout(function() {
+          trail.style.transition = 'opacity 0.5s ease, left 2s ease-in-out';
+          trail.style.opacity = '1';
+          trail.style.left = '5%';
+        }, 800);
+        // Celebration when arrives
+        setTimeout(function() {
+          celebration.style.display = 'flex';
+          // Bounce the worker
+          runningWorker.style.transition = 'transform 0.3s ease';
+          runningWorker.style.transform = 'scale(1.15)';
+          setTimeout(function() {
+            runningWorker.style.transform = 'scale(1)';
+          }, 300);
+        }, 2500);
+      });
+    }
+
+    function hideWorker() {
+      worker.style.opacity = '0';
+      trail.style.opacity = '0';
+      celebration.style.display = 'none';
+      setTimeout(function() { worker.style.display = 'none'; }, 300);
+    }
+
+    btn.addEventListener('click', function() {
+      animateWorkerRun();
+      openChat();
+    });
+    closeBtn.addEventListener('click', function() {
+      hideWorker();
+      closeChat();
+    });
+    sendBtn.addEventListener('click', handleSend);
+    input.addEventListener('keydown', function(e) { if (e.key === 'Enter') handleSend(); });
+    input.setAttribute('placeholder', 'Ihre Frage...');
+  })();
+  </script>
 </body>
 </html>

@@ -37,116 +37,42 @@
         <a href="../index.html#bewertungen">Bewertungen</a>
         <a href="kontakt.html">Kontakt</a>
       </nav>
-      <div class="header-cta">
-        <a href="https://wa.me/4915218547875" class="header-phone">
-          WhatsApp: 0152 185 478 75
-          <span>Mo-Sa 08:00-20:00</span>
-        </a>
-      </div>
+      <div class="header-cta"></div>
     </div>
   </header>
 
-  <!-- BREADCRUMB -->
-  <div class="section" style="padding: 20px 0 0;">
+  <!-- CONTACT HERO + FORM -->
+  <section style="padding:80px 0 20px;">
     <div class="container">
-      <nav aria-label="Breadcrumb" style="font-size: 0.9rem; color: var(--gray);">
-        <a href="../index.html">Startseite</a> &rsaquo;
-        <strong>Kontakt</strong>
-      </nav>
-    </div>
-  </div>
+      <h1 class="text-center" style="margin-bottom:4px;font-size:1.6rem;">Kontakt — Jetzt Termin vereinbaren</h1>
+      <p class="section-subtitle text-center" style="margin-bottom:16px;font-size:0.9rem;">Rufen Sie uns an, schreiben Sie per WhatsApp oder nutzen Sie unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen.</p>
 
-  <!-- CONTACT HERO -->
-  <section class="section">
-    <div class="container">
-      <h1 class="text-center">Kontakt — Jetzt Termin vereinbaren</h1>
-      <p class="section-subtitle text-center">Rufen Sie uns an, schreiben Sie per WhatsApp oder nutzen Sie unser Kontaktformular. Wir melden uns schnellstmöglich bei Ihnen.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT OPTIONS -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="advantages-grid">
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128222;</div>
-          <h3>Telefon</h3>
-          <p><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></p>
-          <p>Am schnellsten erreichen Sie uns telefonisch. Wir beraten Sie gerne und vereinbaren direkt einen Termin.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128172;</div>
-          <h3>WhatsApp</h3>
-          <p><a href="https://wa.me/4915218547875" style="font-size: 1.1rem; font-weight: 700; color: #25D366;">Jetzt schreiben</a></p>
-          <p>Schreiben Sie uns per WhatsApp — auch Fotos und Videos vom Problem sind willkommen. Wir antworten in der Regel innerhalb von 30 Minuten.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128231;</div>
-          <h3>E-Mail</h3>
-          <p><a href="mailto:info@kuechen-montage-hamburg.de" style="font-weight: 700; color: var(--primary);">info@kuechen-montage-hamburg.de</a></p>
-          <p>Schreiben Sie uns eine E-Mail mit Ihrer Anfrage. Wir antworten in der Regel innerhalb von 2 Stunden während der Geschäftszeiten.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- WORKING HOURS -->
-  <section class="section">
-    <div class="container">
-      <h2 class="text-center">Unsere Öffnungszeiten</h2>
-      <p class="section-subtitle text-center">Wir sind für Sie da — auch samstags</p>
-      <table class="price-table" style="max-width: 500px; margin: 0 auto;">
-        <tbody>
-          <tr>
-            <td><strong>Montag — Freitag</strong></td>
-            <td class="price-cell">08:00 — 20:00 Uhr</td>
-          </tr>
-          <tr>
-            <td><strong>Samstag</strong></td>
-            <td class="price-cell">09:00 — 16:00 Uhr</td>
-          </tr>
-          <tr>
-            <td><strong>Sonntag &amp; Feiertage</strong></td>
-            <td class="price-cell">Geschlossen</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="text-align: center; margin-top: 16px; color: var(--gray); font-size: 0.9rem;">Für dringende Notfälle sind wir auch außerhalb der Geschäftszeiten erreichbar.</p>
-    </div>
-  </section>
-
-  <!-- CONTACT FORM -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="text-center">Kontaktformular</h2>
-      <p class="section-subtitle text-center">Beschreiben Sie Ihr Anliegen und wir melden uns bei Ihnen</p>
-
-      <form action="#" method="post" style="max-width: 600px; margin: 0 auto;">
-        <div style="margin-bottom: 20px;">
-          <label for="name" style="display: block; margin-bottom: 6px; font-weight: 600;">Name *</label>
-          <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name" style="width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
+      <form id="contact-form" onsubmit="return sendToWhatsApp()" style="max-width: 600px; margin: 0 auto;">
+        <div style="margin-bottom: 12px;">
+          <label for="name" style="display: block; margin-bottom: 4px; font-weight: 600;">Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Ihr vollständiger Name" style="width: 100%; padding: 10px 14px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
         </div>
 
-        <div style="margin-bottom: 20px;">
-          <label for="email" style="display: block; margin-bottom: 6px; font-weight: 600;">E-Mail *</label>
-          <input type="email" id="email" name="email" required placeholder="ihre@email.de" style="width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
+        <div style="margin-bottom: 12px;">
+          <label for="email" style="display: block; margin-bottom: 4px; font-weight: 600;">E-Mail *</label>
+          <input type="email" id="email" name="email" required placeholder="ihre@email.de" style="width: 100%; padding: 10px 14px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
         </div>
 
-        <div style="margin-bottom: 20px;">
-          <label for="phone" style="display: block; margin-bottom: 6px; font-weight: 600;">Telefon</label>
-          <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" style="width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
+        <div style="margin-bottom: 12px;">
+          <label for="phone" style="display: block; margin-bottom: 4px; font-weight: 600;">Telefon</label>
+          <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" style="width: 100%; padding: 10px 14px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box;">
         </div>
 
-        <div style="margin-bottom: 20px;">
-          <label for="message" style="display: block; margin-bottom: 6px; font-weight: 600;">Nachricht *</label>
-          <textarea id="message" name="message" required rows="6" placeholder="Beschreiben Sie Ihr Anliegen: Welche Leistung benötigen Sie? Wann soll es erledigt werden? Gibt es Besonderheiten?" style="width: 100%; padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box; resize: vertical;"></textarea>
+        <div style="margin-bottom: 12px;">
+          <label for="message" style="display: block; margin-bottom: 4px; font-weight: 600;">Nachricht *</label>
+          <textarea id="message" name="message" required rows="3" placeholder="Welche Leistung benötigen Sie? Wann soll es erledigt werden?" style="width: 100%; padding: 10px 14px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; box-sizing: border-box; resize: vertical;"></textarea>
         </div>
 
-        <div style="margin-bottom: 20px; font-size: 0.85rem; color: var(--gray);">
-          Mit dem Absenden stimmen Sie unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu. Ihre Daten werden nur zur Bearbeitung Ihrer Anfrage verwendet.
+        <div style="margin-bottom: 10px; font-size: 0.8rem; color: var(--gray);">
+          Mit dem Absenden stimmen Sie unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.
         </div>
 
-        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; text-align: center;">Nachricht senden</button>
+        <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; text-align: center;">&#128172; Per WhatsApp senden</button>
       </form>
     </div>
   </section>
@@ -246,5 +172,23 @@
   </div>
 
   <script src="../js/main.js"></script>
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var phone = document.getElementById('phone').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      var text = 'Neue Anfrage von der Website:\n\n';
+      text += 'Name: ' + name + '\n';
+      text += 'E-Mail: ' + email + '\n';
+      if (phone) text += 'Telefon: ' + phone + '\n';
+      text += '\nNachricht:\n' + message;
+
+      var url = 'https://wa.me/4915218547875?text=' + encodeURIComponent(text);
+      window.open(url, '_blank');
+      return false;
+    }
+  </script>
 </body>
 </html>

@@ -28,11 +28,12 @@
   }
 
   function createChat() {
-    // Chat toggle button
+    // Chat toggle button (hidden — use hero inline chat instead)
     var toggle = document.createElement('div');
     toggle.id = 'chat-toggle';
     toggle.innerHTML = '💬';
     toggle.title = 'Chat — Fragen Sie uns!';
+    toggle.style.display = 'none';
     document.body.appendChild(toggle);
 
     // Chat window
