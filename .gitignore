@@ -1,0 +1,5 @@
+backend/data/signups.json
+backend/data/votes.json
+backend/data/stories.json
+backend/data/outreach-kontakte.csv
+.DS_Store
