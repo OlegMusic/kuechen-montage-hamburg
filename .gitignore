@@ -3,3 +3,6 @@ backend/data/votes.json
 backend/data/stories.json
 backend/data/outreach-kontakte.csv
 .DS_Store
+.env
+mail-tool/
+__pycache__/
