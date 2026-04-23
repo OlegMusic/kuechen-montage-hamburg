@@ -42,3 +42,9 @@ logs/
 .vscode/
 .idea/
 Thumbs.db
+
+# --- Go build artifacts ---
+backend/indexnow-submit
+backend/indexnow-submit.exe
+backend/cmd/indexnow-submit/indexnow-submit
+backend/cmd/indexnow-submit/indexnow-submit.exe
