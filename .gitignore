@@ -4,5 +4,41 @@ backend/data/stories.json
 backend/data/outreach-kontakte.csv
 .DS_Store
 .env
+.env.*
+!.env.example
 mail-tool/
 __pycache__/
+
+# --- Google Cloud / Search Console service-account keys ---
+# Никогда не коммитить JSON-ключи сервисных аккаунтов.
+# Google сканирует публичные репозитории и автоматически отзовёт скомпрометированный ключ.
+*-service-account.json
+*-service-account-*.json
+*service_account*.json
+service-account*.json
+google-credentials*.json
+gcp-key*.json
+gcp-credentials*.json
+*alert-flames-*.json
+credentials/
+secrets/
+keys/
+.gcp/
+.google/
+
+# --- Search Console / Analytics локальные данные и отчёты ---
+gsc-data/
+gsc-reports/
+search-console-export/
+analytics-export/
+*.gsc.json
+*.gsc.csv
+
+# --- Локальные логи ---
+*.log
+logs/
+
+# --- IDE/OS ---
+.vscode/
+.idea/
+Thumbs.db
