@@ -1,0 +1,262 @@
+[
+  {
+    "slug": "waschmaschine-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Waschmaschine anschließen Hamburg",
+    "faq_count": 8,
+    "faq_first": "Was kostet es, eine Waschmaschine in Hamburg anschließen zu lassen?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "geschirrspueler-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Geschirrspüler anschließen Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet der Geschirrspüler-Anschluss in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "spueltischarmatur-einbau-hamburg",
+    "type": "commercial",
+    "target": "Spültischarmatur Einbau Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet der Einbau einer Spültischarmatur?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "trockner-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Trockner anschließen Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet es, einen Trockner in Hamburg anschließen zu lassen?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "elektroherd-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Elektroherd anschließen Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet ein Elektroherd-Anschluss?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "induktionskochfeld-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Induktionskochfeld anschließen Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet der Anschluss?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "ceranfeld-anschliessen-hamburg",
+    "type": "commercial",
+    "target": "Ceranfeld anschließen Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet ein Ceranfeld-Anschluss in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "kochfeld-installieren-hamburg",
+    "type": "commercial",
+    "target": "Kochfeld installieren Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet die Kochfeld-Installation in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "armatur-austauschen-hamburg",
+    "type": "commercial",
+    "target": "Armatur austauschen Hamburg",
+    "faq_count": 8,
+    "faq_first": "Was kostet es, eine Armatur in Hamburg austauschen zu lassen?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "kuechenspuele-montage-hamburg",
+    "type": "commercial",
+    "target": "Küchenspüle Montage Hamburg",
+    "faq_count": 8,
+    "faq_first": "Was kostet die Küchenspüle-Montage in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "waschbecken-installieren-hamburg",
+    "type": "commercial",
+    "target": "Waschbecken installieren Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet die Waschbecken-Installation in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "starkstromdose-installieren-hamburg",
+    "type": "commercial",
+    "target": "Starkstromdose installieren Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet es, eine Starkstromdose zu installieren?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "y-stueck-wasserzulauf-installieren-hamburg",
+    "type": "commercial",
+    "target": "Y-Stück Wasserzulauf Hamburg",
+    "faq_count": 6,
+    "faq_first": "Was kostet ein Y-Stück in Hamburg?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "power-splitter-installieren-hamburg",
+    "type": "commercial",
+    "target": "Power-Splitter Hamburg",
+    "faq_count": 6,
+    "faq_first": "Wofür brauche ich einen Power Splitter?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/spuele-austauschen",
+    "type": "ratgeber",
+    "target": "Spüle austauschen",
+    "faq_count": 5,
+    "faq_first": "Wie lange dauert der Austausch?",
+    "has_howto": true,
+    "howto_steps": 7,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/waschmaschine-anschliessen",
+    "type": "ratgeber",
+    "target": "Waschmaschine anschließen",
+    "faq_count": 5,
+    "faq_first": "Kann ich die Waschmaschine selbst anschließen?",
+    "has_howto": true,
+    "howto_steps": 7,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/spuelmaschine-anschliessen",
+    "type": "ratgeber",
+    "target": "Spülmaschine anschließen",
+    "faq_count": 5,
+    "faq_first": "Kann ich selbst anschließen?",
+    "has_howto": true,
+    "howto_steps": 7,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/armatur-wechseln",
+    "type": "ratgeber",
+    "target": "Armatur wechseln",
+    "faq_count": 5,
+    "faq_first": "Hochdruck oder Niederdruck — wie erkenne ich was?",
+    "has_howto": true,
+    "howto_steps": 6,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/eckventil-austauschen",
+    "type": "ratgeber",
+    "target": "Eckventil austauschen",
+    "faq_count": 5,
+    "faq_first": "Hanf oder Teflonband — was nehmen?",
+    "has_howto": true,
+    "howto_steps": 8,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/siphon-montieren",
+    "type": "ratgeber",
+    "target": "Siphon montieren",
+    "faq_count": 5,
+    "faq_first": "Welcher Siphon für die Küche?",
+    "has_howto": true,
+    "howto_steps": 5,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/arbeitsplatte-zuschneiden",
+    "type": "ratgeber",
+    "target": "Arbeitsplatte zuschneiden",
+    "faq_count": 5,
+    "faq_first": "Welche Säge für Arbeitsplatte?",
+    "has_howto": true,
+    "howto_steps": 7,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/arbeitsplatte-oelen",
+    "type": "ratgeber",
+    "target": "Arbeitsplatte ölen",
+    "faq_count": 5,
+    "faq_first": "Wie oft Arbeitsplatte ölen?",
+    "has_howto": true,
+    "howto_steps": 8,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/arbeitsplatte-abdichten",
+    "type": "ratgeber",
+    "target": "Arbeitsplatte abdichten",
+    "faq_count": 5,
+    "faq_first": "Welches Silikon für die Küche?",
+    "has_howto": true,
+    "howto_steps": 7,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/kuechenplanung-tipps",
+    "type": "ratgeber",
+    "target": "Küchenplanung Tipps",
+    "faq_count": 5,
+    "faq_first": "Wie lange dauert die Küchenplanung?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/kuechenspuelen-arten-material",
+    "type": "ratgeber",
+    "target": "Küchenspülen Material",
+    "faq_count": 5,
+    "faq_first": "Welche Spüle ist am langlebigsten?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  },
+  {
+    "slug": "montage-und-installation/wasser-sparen-kueche",
+    "type": "ratgeber",
+    "target": "Wasser sparen Küche",
+    "faq_count": 5,
+    "faq_first": "Wie viel kann ich durchschnittlich im Jahr sparen?",
+    "has_howto": false,
+    "howto_steps": 0,
+    "howto_step_images": 0
+  }
+]
