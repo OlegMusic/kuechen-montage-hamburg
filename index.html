@@ -31,7 +31,8 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://kuechen-montage-hamburg.de/#business",
     "name": "Küchen-Montage Hamburg",
     "description": "Professionelle Küchenmontage, Geräteanschluss und Sanitärservice in Hamburg. Waschmaschine, Herd, Spülmaschine anschließen. Wasserhahn und Spüle austauschen.",
     "url": "https://kuechen-montage-hamburg.de",
@@ -39,8 +40,6 @@
     "email": "info@kuechen-montage-hamburg.de",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Bossardstr. 12",
-      "postalCode": "22309",
       "addressLocality": "Hamburg",
       "addressRegion": "HH",
       "addressCountry": "DE"
@@ -50,12 +49,28 @@
       "latitude": 53.5511,
       "longitude": 9.9937
     },
-    "areaServed": "Hamburg",
+    "areaServed": [
+      { "@type": "City", "name": "Hamburg" },
+      { "@type": "AdministrativeArea", "name": "Hamburg-Mitte" },
+      { "@type": "AdministrativeArea", "name": "Altona" },
+      { "@type": "AdministrativeArea", "name": "Eimsbüttel" },
+      { "@type": "AdministrativeArea", "name": "Hamburg-Nord" },
+      { "@type": "AdministrativeArea", "name": "Wandsbek" },
+      { "@type": "AdministrativeArea", "name": "Bergedorf" },
+      { "@type": "AdministrativeArea", "name": "Harburg" }
+    ],
     "priceRange": "€€",
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
     ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
     "sameAs": [
       "https://wa.me/4915218547875"
     ]
@@ -144,10 +159,7 @@
       "priceCurrency": "EUR"
     },
     "featureList": ["KI-Chatbot", "Automatische Preisauskunft", "24/7 verfügbar", "Sofortige Antworten"],
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Küchen-Montage Hamburg"
-    }
+    "provider": { "@id": "https://kuechen-montage-hamburg.de/#business" }
   }
   </script>
 
@@ -922,6 +934,7 @@
           </div>
         </div>
       </div>
+      <div class="footer-trust" style="padding:16px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;line-height:1.6;opacity:.75;"><strong>Eingetragen in der Handwerkskammer Hamburg</strong> &middot; Meisterbetrieb &middot; 18 Jahre Erfahrung &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a></div>
       <div class="footer-bottom">
         <div>&copy; 2026 Küchen-Montage Hamburg. Alle Rechte vorbehalten.</div>
         <div class="footer-legal">
