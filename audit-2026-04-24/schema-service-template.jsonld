@@ -1,0 +1,83 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://kuechen-montage-hamburg.de/{SERVICE_SLUG}/#service",
+  "name": "{SERVICE_NAME_DE} Hamburg",
+  "alternateName": [
+    "{SERVICE_NAME_DE} in Hamburg",
+    "{SERVICE_SYNONYM_1}",
+    "{SERVICE_SYNONYM_2}"
+  ],
+  "serviceType": "{SERVICE_TYPE_DE}",
+  "category": "HomeAndConstructionBusiness",
+  "description": "{SERVICE_DESCRIPTION_150_CHARS}",
+  "url": "https://kuechen-montage-hamburg.de/{SERVICE_SLUG}/",
+  "image": "https://kuechen-montage-hamburg.de/foto/{SERVICE_HERO_IMG}",
+  "provider": {
+    "@type": "HomeAndConstructionBusiness",
+    "@id": "https://kuechen-montage-hamburg.de/#business",
+    "name": "Küchen-Montage Hamburg",
+    "telephone": "+4915218547875",
+    "email": "info@kuechen-montage-hamburg.de",
+    "url": "https://kuechen-montage-hamburg.de/",
+    "image": "https://kuechen-montage-hamburg.de/img/profile/profile.jpg",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hamburg",
+      "addressRegion": "HH",
+      "addressCountry": "DE"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "23",
+      "reviewCount": "23"
+    }
+  },
+  "areaServed": [
+    { "@type": "AdministrativeArea", "name": "Hamburg-Mitte" },
+    { "@type": "AdministrativeArea", "name": "Altona" },
+    { "@type": "AdministrativeArea", "name": "Eimsbüttel" },
+    { "@type": "AdministrativeArea", "name": "Hamburg-Nord" },
+    { "@type": "AdministrativeArea", "name": "Wandsbek" },
+    { "@type": "AdministrativeArea", "name": "Bergedorf" },
+    { "@type": "AdministrativeArea", "name": "Harburg" },
+    { "@type": "City", "name": "Norderstedt" },
+    { "@type": "City", "name": "Pinneberg" },
+    { "@type": "City", "name": "Ahrensburg" },
+    { "@type": "City", "name": "Reinbek" },
+    { "@type": "City", "name": "Wedel" },
+    { "@type": "City", "name": "Schenefeld" },
+    { "@type": "City", "name": "Quickborn" },
+    { "@type": "City", "name": "Buxtehude" },
+    { "@type": "City", "name": "Geesthacht" }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceUrl": "https://wa.me/4915218547875",
+    "servicePhone": "+4915218547875",
+    "availableLanguage": ["de", "en", "ru"]
+  },
+  "hoursAvailable": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
+  ],
+  "offers": {
+    "@type": "Offer",
+    "url": "https://kuechen-montage-hamburg.de/{SERVICE_SLUG}/",
+    "price": "{AB_PRICE}",
+    "priceCurrency": "EUR",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "{AB_PRICE}",
+      "priceCurrency": "EUR",
+      "description": "Ab-Preis, Festpreis inkl. Anfahrt in Hamburg"
+    },
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-01-01",
+    "businessFunction": "https://purl.org/goodrelations/v1#Sell"
+  },
+  "termsOfService": "https://kuechen-montage-hamburg.de/pages/datenschutz.html"
+}

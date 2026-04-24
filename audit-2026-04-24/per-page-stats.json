@@ -1,0 +1,713 @@
+{
+  "20357.html": {
+    "words": 11,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "21073.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "22765.html": {
+    "words": 11,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "altona.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "aufmass-kueche-hamburg.html": {
+    "words": 7,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "bergedorf.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "harburg.html": {
+    "words": 383,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "herd-altona.html": {
+    "words": 759,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "herd-anschliessen-bergedorf.html": {
+    "words": 513,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "herd-anschliessen-hamburg-mitte.html": {
+    "words": 551,
+    "landmarks": [
+      "hafencity",
+      "reeperbahn",
+      "hauptbahnhof",
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "herd-anschliessen-hamburg.html": {
+    "words": 5,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "index.html": {
+    "words": 1374,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "kuechenmontage-hamburg-mitte.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "kuechenmontage-hamburg.html": {
+    "words": 5,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "quick-registration-link.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "spuelmaschine-anschliessen-altona.html": {
+    "words": 504,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "spuelmaschine-anschliessen-hamburg.html": {
+    "words": 5,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "spuelmaschine-anschliessen-wandsbek.html": {
+    "words": 869,
+    "landmarks": [
+      "ikea",
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "spuelmaschine-eimsbuettel.html": {
+    "words": 607,
+    "landmarks": [
+      "ikea",
+      "alster",
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "wandsbek.html": {
+    "words": 6,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "waschmaschine-anschliessen-barmbek.html": {
+    "words": 471,
+    "landmarks": [
+      "alster"
+    ],
+    "has_schema": true
+  },
+  "waschmaschine-anschliessen-wandsbek.html": {
+    "words": 549,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "waschmaschine-hamburg-nord.html": {
+    "words": 760,
+    "landmarks": [
+      "alster"
+    ],
+    "has_schema": true
+  },
+  "waschmaschine-wandsbek.html": {
+    "words": 4,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "wasserhahn-eimsbuettel.html": {
+    "words": 657,
+    "landmarks": [
+      "ikea",
+      "alster"
+    ],
+    "has_schema": true
+  },
+  "wasserhahn-harburg.html": {
+    "words": 802,
+    "landmarks": [
+      "ikea",
+      "elbe"
+    ],
+    "has_schema": true
+  },
+  "armatur-austauschen-hamburg\\index.html": {
+    "words": 773,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "ceranfeld-anschliessen-hamburg\\index.html": {
+    "words": 567,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "elektroherd-anschliessen-hamburg\\index.html": {
+    "words": 507,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "geschirrspueler-anschliessen-hamburg\\index.html": {
+    "words": 487,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "induktionskochfeld-anschliessen-hamburg\\index.html": {
+    "words": 541,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "kochfeld-installieren-hamburg\\index.html": {
+    "words": 508,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "kuechenspuele-montage-hamburg\\index.html": {
+    "words": 1058,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "montage-und-installation\\index.html": {
+    "words": 393,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\arbeitsplatte-abdichten\\index.html": {
+    "words": 690,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\arbeitsplatte-oelen\\index.html": {
+    "words": 735,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\arbeitsplatte-zuschneiden\\index.html": {
+    "words": 821,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "montage-und-installation\\armatur-wechseln\\index.html": {
+    "words": 640,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\eckventil-austauschen\\index.html": {
+    "words": 590,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\kuechenplanung-tipps\\index.html": {
+    "words": 811,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "montage-und-installation\\kuechenspuelen-arten-material\\index.html": {
+    "words": 898,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "montage-und-installation\\siphon-montieren\\index.html": {
+    "words": 567,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\spuele-austauschen\\index.html": {
+    "words": 770,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\spuelmaschine-anschliessen\\index.html": {
+    "words": 622,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\waschmaschine-anschliessen\\index.html": {
+    "words": 672,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "montage-und-installation\\wasser-sparen-kueche\\index.html": {
+    "words": 772,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\datenschutz.html": {
+    "words": 1835,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "pages\\galerie.html": {
+    "words": 112,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": false
+  },
+  "pages\\impressum.html": {
+    "words": 473,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "pages\\kontakt.html": {
+    "words": 188,
+    "landmarks": [],
+    "has_schema": false
+  },
+  "pages\\preise.html": {
+    "words": 385,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": false
+  },
+  "pages\\ueber-uns.html": {
+    "words": 756,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": false
+  },
+  "pages\\blog\\blauarbeit-erfahrungen.html": {
+    "words": 1054,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\blog\\check24-profis-erfahrungen-nachteile.html": {
+    "words": 1903,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\blog\\index.html": {
+    "words": 1304,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": false
+  },
+  "pages\\blog\\kleinanzeigen-handwerker-risiken.html": {
+    "words": 1158,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\blog\\kueche-kaufen-und-aufbauen-lassen.html": {
+    "words": 1291,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\blog\\kueche-selbst-aufbauen-oder-lassen.html": {
+    "words": 1010,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\blog\\myhammer-erfahrungen.html": {
+    "words": 1108,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\blog\\wasserhahn-mieter-oder-vermieter.html": {
+    "words": 1259,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\abfluss-verstopft-hausmittel.html": {
+    "words": 1143,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\eckventile-austauschen-anleitung.html": {
+    "words": 1273,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\kuechenmontage-kosten.html": {
+    "words": 917,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\kuechenspuele-austauschen-anleitung.html": {
+    "words": 1019,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\spuelmaschine-anschliessen-anleitung.html": {
+    "words": 1295,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\ratgeber\\waschmaschine-anschliessen-anleitung.html": {
+    "words": 1019,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\aufmass-kueche-hamburg.html": {
+    "words": 878,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\backofen-anschliessen-hamburg.html": {
+    "words": 952,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\elektriker-herd-anschliessen-hamburg.html": {
+    "words": 877,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\herd-anschliessen-hamburg.html": {
+    "words": 959,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\ikea-kuechenmontage-hamburg.html": {
+    "words": 1201,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\kuechen-abbau-hamburg.html": {
+    "words": 571,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\kuechenmontage-hamburg.html": {
+    "words": 988,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\kuechenmontage-service-hamburg.html": {
+    "words": 849,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\spuele-austauschen-hamburg.html": {
+    "words": 737,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\spuelmaschine-anschliessen-hamburg.html": {
+    "words": 1039,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\services\\video-beratung.html": {
+    "words": 628,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\waschmaschine-anschliessen-hamburg.html": {
+    "words": 935,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\wasseranschluss-kueche-hamburg.html": {
+    "words": 950,
+    "landmarks": [],
+    "has_schema": true
+  },
+  "pages\\services\\wasserhahn-austauschen-hamburg.html": {
+    "words": 753,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\altona.html": {
+    "words": 428,
+    "landmarks": [
+      "ikea",
+      "rathaus"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\barmbek.html": {
+    "words": 439,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\bergedorf.html": {
+    "words": 440,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\billstedt.html": {
+    "words": 465,
+    "landmarks": [
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\blankenese.html": {
+    "words": 457,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\bramfeld.html": {
+    "words": 438,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\eimsbuettel.html": {
+    "words": 437,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\eppendorf.html": {
+    "words": 447,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\farmsen.html": {
+    "words": 469,
+    "landmarks": [
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\hamburg-mitte.html": {
+    "words": 445,
+    "landmarks": [
+      "ikea",
+      "speicherstadt",
+      "hauptbahnhof",
+      "mönckebergstraße",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\harburg.html": {
+    "words": 434,
+    "landmarks": [
+      "ikea",
+      "elbe"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\horn.html": {
+    "words": 495,
+    "landmarks": [
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\jenfeld.html": {
+    "words": 483,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\neugraben.html": {
+    "words": 486,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\ottensen.html": {
+    "words": 450,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\rahlstedt.html": {
+    "words": 435,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\st-pauli.html": {
+    "words": 460,
+    "landmarks": [
+      "ikea",
+      "reeperbahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\stellingen.html": {
+    "words": 456,
+    "landmarks": [
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\uhlenhorst.html": {
+    "words": 442,
+    "landmarks": [
+      "u-bahn"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\wandsbek.html": {
+    "words": 448,
+    "landmarks": [
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\wilhelmsburg.html": {
+    "words": 503,
+    "landmarks": [
+      "s-bahn",
+      "ikea"
+    ],
+    "has_schema": true
+  },
+  "pages\\stadtteile\\winterhude.html": {
+    "words": 435,
+    "landmarks": [
+      "stadtpark",
+      "ikea",
+      "alster"
+    ],
+    "has_schema": true
+  },
+  "power-splitter-installieren-hamburg\\index.html": {
+    "words": 566,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "spueltischarmatur-einbau-hamburg\\index.html": {
+    "words": 522,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "starkstromdose-installieren-hamburg\\index.html": {
+    "words": 577,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "trockner-anschliessen-hamburg\\index.html": {
+    "words": 547,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "waschbecken-installieren-hamburg\\index.html": {
+    "words": 515,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "waschmaschine-anschliessen-hamburg\\index.html": {
+    "words": 699,
+    "landmarks": [
+      "ikea",
+      "hafencity"
+    ],
+    "has_schema": true
+  },
+  "y-stueck-wasserzulauf-installieren-hamburg\\index.html": {
+    "words": 582,
+    "landmarks": [
+      "hafencity"
+    ],
+    "has_schema": true
+  }
+}

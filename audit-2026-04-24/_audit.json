@@ -1,0 +1,3687 @@
+{
+  "total_html": 109,
+  "parse_errors": [],
+  "type_distribution": {
+    "LocalBusiness": 63,
+    "BreadcrumbList": 83,
+    "Question": 55,
+    "Service": 39,
+    "FAQPage": 55,
+    "WebApplication": 1,
+    "WebSite": 1,
+    "CollectionPage": 1,
+    "HowTo": 15,
+    "Article": 25
+  },
+  "type_to_pages": {
+    "LocalBusiness": [
+      "armatur-austauschen-hamburg/index.html",
+      "ceranfeld-anschliessen-hamburg/index.html",
+      "elektroherd-anschliessen-hamburg/index.html",
+      "geschirrspueler-anschliessen-hamburg/index.html",
+      "harburg.html",
+      "herd-altona.html",
+      "herd-anschliessen-bergedorf.html",
+      "herd-anschliessen-hamburg-mitte.html",
+      "index.html",
+      "induktionskochfeld-anschliessen-hamburg/index.html",
+      "kochfeld-installieren-hamburg/index.html",
+      "kuechenspuele-montage-hamburg/index.html",
+      "pages/services/aufmass-kueche-hamburg.html",
+      "pages/services/backofen-anschliessen-hamburg.html",
+      "pages/services/elektriker-herd-anschliessen-hamburg.html"
+    ],
+    "BreadcrumbList": [
+      "armatur-austauschen-hamburg/index.html",
+      "ceranfeld-anschliessen-hamburg/index.html",
+      "elektroherd-anschliessen-hamburg/index.html",
+      "geschirrspueler-anschliessen-hamburg/index.html",
+      "harburg.html",
+      "herd-altona.html",
+      "herd-anschliessen-bergedorf.html",
+      "herd-anschliessen-hamburg-mitte.html",
+      "induktionskochfeld-anschliessen-hamburg/index.html",
+      "kochfeld-installieren-hamburg/index.html",
+      "kuechenspuele-montage-hamburg/index.html",
+      "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "montage-und-installation/armatur-wechseln/index.html"
+    ],
+    "Question": [
+      "armatur-austauschen-hamburg/index.html",
+      "ceranfeld-anschliessen-hamburg/index.html",
+      "elektroherd-anschliessen-hamburg/index.html",
+      "geschirrspueler-anschliessen-hamburg/index.html",
+      "herd-altona.html",
+      "herd-anschliessen-bergedorf.html",
+      "herd-anschliessen-hamburg-mitte.html",
+      "index.html",
+      "induktionskochfeld-anschliessen-hamburg/index.html",
+      "kochfeld-installieren-hamburg/index.html",
+      "kuechenspuele-montage-hamburg/index.html",
+      "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "montage-und-installation/armatur-wechseln/index.html"
+    ],
+    "Service": [
+      "armatur-austauschen-hamburg/index.html",
+      "ceranfeld-anschliessen-hamburg/index.html",
+      "elektroherd-anschliessen-hamburg/index.html",
+      "geschirrspueler-anschliessen-hamburg/index.html",
+      "herd-altona.html",
+      "herd-anschliessen-bergedorf.html",
+      "herd-anschliessen-hamburg-mitte.html",
+      "induktionskochfeld-anschliessen-hamburg/index.html",
+      "kochfeld-installieren-hamburg/index.html",
+      "kuechenspuele-montage-hamburg/index.html",
+      "pages/services/aufmass-kueche-hamburg.html",
+      "pages/services/backofen-anschliessen-hamburg.html",
+      "pages/services/elektriker-herd-anschliessen-hamburg.html",
+      "pages/services/herd-anschliessen-hamburg.html",
+      "pages/services/ikea-kuechenmontage-hamburg.html"
+    ],
+    "FAQPage": [
+      "armatur-austauschen-hamburg/index.html",
+      "ceranfeld-anschliessen-hamburg/index.html",
+      "elektroherd-anschliessen-hamburg/index.html",
+      "geschirrspueler-anschliessen-hamburg/index.html",
+      "herd-altona.html",
+      "herd-anschliessen-bergedorf.html",
+      "herd-anschliessen-hamburg-mitte.html",
+      "index.html",
+      "induktionskochfeld-anschliessen-hamburg/index.html",
+      "kochfeld-installieren-hamburg/index.html",
+      "kuechenspuele-montage-hamburg/index.html",
+      "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "montage-und-installation/armatur-wechseln/index.html"
+    ],
+    "WebApplication": [
+      "index.html"
+    ],
+    "WebSite": [
+      "index.html"
+    ],
+    "CollectionPage": [
+      "montage-und-installation/index.html"
+    ],
+    "HowTo": [
+      "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "montage-und-installation/armatur-wechseln/index.html",
+      "montage-und-installation/eckventil-austauschen/index.html",
+      "montage-und-installation/siphon-montieren/index.html",
+      "montage-und-installation/spuele-austauschen/index.html",
+      "montage-und-installation/spuelmaschine-anschliessen/index.html",
+      "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+      "pages/ratgeber/abfluss-verstopft-hausmittel.html",
+      "pages/ratgeber/eckventile-austauschen-anleitung.html",
+      "pages/ratgeber/kuechenspuele-austauschen-anleitung.html",
+      "pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+      "pages/ratgeber/waschmaschine-anschliessen-anleitung.html"
+    ],
+    "Article": [
+      "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "montage-und-installation/armatur-wechseln/index.html",
+      "montage-und-installation/eckventil-austauschen/index.html",
+      "montage-und-installation/kuechenplanung-tipps/index.html",
+      "montage-und-installation/kuechenspuelen-arten-material/index.html",
+      "montage-und-installation/siphon-montieren/index.html",
+      "montage-und-installation/spuele-austauschen/index.html",
+      "montage-und-installation/spuelmaschine-anschliessen/index.html",
+      "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "montage-und-installation/wasser-sparen-kueche/index.html",
+      "pages/blog/blauarbeit-erfahrungen.html",
+      "pages/blog/check24-profis-erfahrungen-nachteile.html",
+      "pages/blog/kleinanzeigen-handwerker-risiken.html"
+    ]
+  },
+  "localbusiness": [
+    {
+      "page": "harburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg — Service in Harburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": true,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/harburg.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "herd-altona.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "herd-anschliessen-bergedorf.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "herd-anschliessen-hamburg-mitte.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": "Bossardstr. 12",
+      "postalCode": "22309",
+      "country": "DE",
+      "geo": true,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "spuelmaschine-anschliessen-altona.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "spuelmaschine-anschliessen-wandsbek.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "spuelmaschine-eimsbuettel.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "waschmaschine-anschliessen-barmbek.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "waschmaschine-anschliessen-wandsbek.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "waschmaschine-hamburg-nord.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "wasserhahn-eimsbuettel.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "wasserhahn-harburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "armatur-austauschen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "ceranfeld-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "elektroherd-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "geschirrspueler-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "induktionskochfeld-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "kochfeld-installieren-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "kuechenspuele-montage-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/armatur-wechseln/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/armatur-wechseln/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/eckventil-austauschen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/eckventil-austauschen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/kuechenplanung-tipps/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/kuechenplanung-tipps/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/kuechenspuelen-arten-material/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/kuechenspuelen-arten-material/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/siphon-montieren/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/siphon-montieren/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/spuele-austauschen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/spuele-austauschen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/spuelmaschine-anschliessen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/spuelmaschine-anschliessen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/wasser-sparen-kueche/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "montage-und-installation/wasser-sparen-kueche/index.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/blauarbeit-erfahrungen.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/blauarbeit-erfahrungen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/check24-profis-erfahrungen-nachteile.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/check24-profis-erfahrungen-nachteile.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kleinanzeigen-handwerker-risiken.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kleinanzeigen-handwerker-risiken.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kueche-selbst-aufbauen-oder-lassen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/kueche-selbst-aufbauen-oder-lassen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/myhammer-erfahrungen.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/myhammer-erfahrungen.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/wasserhahn-mieter-oder-vermieter.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/blog/wasserhahn-mieter-oder-vermieter.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/abfluss-verstopft-hausmittel.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/abfluss-verstopft-hausmittel.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/eckventile-austauschen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/eckventile-austauschen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/kuechenmontage-kosten.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/kuechenmontage-kosten.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/kuechenspuele-austauschen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/kuechenspuele-austauschen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+      "type": "Organization",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": null,
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/aufmass-kueche-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/backofen-anschliessen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/elektriker-herd-anschliessen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/herd-anschliessen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/ikea-kuechenmontage-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/kuechen-abbau-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/kuechenmontage-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/kuechenmontage-service-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/spuele-austauschen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/spuelmaschine-anschliessen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/video-beratung.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/waschmaschine-anschliessen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/wasseranschluss-kueche-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": null,
+      "streetAddress": null,
+      "postalCode": null,
+      "country": null,
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/services/wasserhahn-austauschen-hamburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": null,
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/altona.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/barmbek.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/bergedorf.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/billstedt.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Billstedt",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/billstedt.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/blankenese.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/bramfeld.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/eimsbuettel.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/eppendorf.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/farmsen.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Farmsen-Berne",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/farmsen.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/hamburg-mitte.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Hamburg-Mitte",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/hamburg-mitte.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/harburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/horn.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Horn",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/horn.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/jenfeld.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Jenfeld",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/jenfeld.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/neugraben.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Neugraben-Fischbek",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/neugraben.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/ottensen.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Ottensen",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/ottensen.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/rahlstedt.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/st-pauli.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – St. Pauli",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/st-pauli.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/stellingen.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Stellingen",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/stellingen.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/uhlenhorst.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Uhlenhorst",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/uhlenhorst.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/wandsbek.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/wilhelmsburg.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg – Wilhelmsburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/wilhelmsburg.html",
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "pages/stadtteile/winterhude.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": true,
+      "openingHours": true,
+      "hasMap": false,
+      "url": null,
+      "image": false,
+      "aggregateRating": null
+    },
+    {
+      "page": "power-splitter-installieren-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "spueltischarmatur-einbau-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "starkstromdose-installieren-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "trockner-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "waschbecken-installieren-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "waschmaschine-anschliessen-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    },
+    {
+      "page": "y-stueck-wasserzulauf-installieren-hamburg/index.html",
+      "type": "LocalBusiness",
+      "name": "Küchen-Montage Hamburg",
+      "telephone": "+4915218547875",
+      "priceRange": "€€",
+      "locality": "Hamburg",
+      "streetAddress": null,
+      "postalCode": null,
+      "country": "DE",
+      "geo": false,
+      "areaServed": false,
+      "openingHours": false,
+      "hasMap": false,
+      "url": "https://kuechen-montage-hamburg.de/",
+      "image": true,
+      "aggregateRating": null
+    }
+  ],
+  "service_commercial": [
+    {
+      "slug": "waschmaschine-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Waschmaschine anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "spueltischarmatur-einbau-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Spültischarmatur Einbau Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "kuechenspuele-montage-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Küchenspüle Montage Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            },
+            {
+              "@type": "City",
+              "name": "Glinde"
+            },
+            {
+              "@type": "City",
+              "name": "Halstenbek"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "geschirrspueler-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Geschirrspüler anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "trockner-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Trockner &amp; Toplader anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "elektroherd-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Elektroherd anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "ceranfeld-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Ceranfeld anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "induktionskochfeld-anschliessen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Induktionskochfeld anschließen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "kochfeld-installieren-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Kochfeld installieren Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "starkstromdose-installieren-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Starkstromdose installieren Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "power-splitter-installieren-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Power Splitter installieren Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "armatur-austauschen-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Armatur austauschen Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "waschbecken-installieren-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Waschbecken installieren Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    },
+    {
+      "slug": "y-stueck-wasserzulauf-installieren-hamburg",
+      "status": "OK",
+      "has_provider_lb": true,
+      "types_on_page": [
+        "LocalBusiness",
+        "BreadcrumbList",
+        "Question",
+        "Service",
+        "FAQPage"
+      ],
+      "services": [
+        {
+          "name": "Y-Stück Wasserzulauf Hamburg",
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Hamburg"
+            },
+            {
+              "@type": "City",
+              "name": "Norderstedt"
+            },
+            {
+              "@type": "City",
+              "name": "Pinneberg"
+            },
+            {
+              "@type": "City",
+              "name": "Ahrensburg"
+            },
+            {
+              "@type": "City",
+              "name": "Reinbek"
+            },
+            {
+              "@type": "City",
+              "name": "Wedel"
+            },
+            {
+              "@type": "City",
+              "name": "Schenefeld"
+            },
+            {
+              "@type": "City",
+              "name": "Quickborn"
+            },
+            {
+              "@type": "City",
+              "name": "Buxtehude"
+            },
+            {
+              "@type": "City",
+              "name": "Stade"
+            },
+            {
+              "@type": "City",
+              "name": "Geesthacht"
+            },
+            {
+              "@type": "City",
+              "name": "Henstedt-Ulzburg"
+            }
+          ],
+          "provider_type": "LocalBusiness",
+          "offers": true
+        }
+      ]
+    }
+  ],
+  "faq_home": {
+    "found": true,
+    "questions": 9,
+    "sample": [
+      "Was kostet es, eine Waschmaschine in Hamburg anschließen zu lassen?",
+      "Wie schnell können Sie kommen?",
+      "Was kostet eine Küchenmontage in Hamburg?",
+      "Gibt es eine Garantie auf Ihre Arbeit?",
+      "Kann ich auch am Wochenende einen Termin bekommen?"
+    ],
+    "structure_ok": true
+  },
+  "howto": [
+    {
+      "slug": "arbeitsplatte-abdichten",
+      "rel": "montage-und-installation/arbeitsplatte-abdichten/index.html",
+      "has_howto": true,
+      "steps": 7,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Arbeitsplatte abdichten",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "12"
+      }
+    },
+    {
+      "slug": "arbeitsplatte-oelen",
+      "rel": "montage-und-installation/arbeitsplatte-oelen/index.html",
+      "has_howto": true,
+      "steps": 8,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Arbeitsplatte ölen",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "15"
+      }
+    },
+    {
+      "slug": "arbeitsplatte-zuschneiden",
+      "rel": "montage-und-installation/arbeitsplatte-zuschneiden/index.html",
+      "has_howto": true,
+      "steps": 7,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Arbeitsplatte zuschneiden",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "50"
+      }
+    },
+    {
+      "slug": "armatur-wechseln",
+      "rel": "montage-und-installation/armatur-wechseln/index.html",
+      "has_howto": true,
+      "steps": 6,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Armatur wechseln",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "40"
+      }
+    },
+    {
+      "slug": "eckventil-austauschen",
+      "rel": "montage-und-installation/eckventil-austauschen/index.html",
+      "has_howto": true,
+      "steps": 8,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Eckventil austauschen",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "10"
+      }
+    },
+    {
+      "slug": "kuechenplanung-tipps",
+      "rel": "montage-und-installation/kuechenplanung-tipps/index.html",
+      "has_howto": false,
+      "steps": 0,
+      "has_totalTime": false,
+      "has_supply": false,
+      "has_tool": false,
+      "has_image": false
+    },
+    {
+      "slug": "kuechenspuelen-arten-material",
+      "rel": "montage-und-installation/kuechenspuelen-arten-material/index.html",
+      "has_howto": false,
+      "steps": 0,
+      "has_totalTime": false,
+      "has_supply": false,
+      "has_tool": false,
+      "has_image": false
+    },
+    {
+      "slug": "siphon-montieren",
+      "rel": "montage-und-installation/siphon-montieren/index.html",
+      "has_howto": true,
+      "steps": 5,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Siphon montieren",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "15"
+      }
+    },
+    {
+      "slug": "spuele-austauschen",
+      "rel": "montage-und-installation/spuele-austauschen/index.html",
+      "has_howto": true,
+      "steps": 7,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Spüle austauschen",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "30"
+      }
+    },
+    {
+      "slug": "spuelmaschine-anschliessen",
+      "rel": "montage-und-installation/spuelmaschine-anschliessen/index.html",
+      "has_howto": true,
+      "steps": 7,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Spülmaschine anschließen",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "15"
+      }
+    },
+    {
+      "slug": "waschmaschine-anschliessen",
+      "rel": "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "has_howto": true,
+      "steps": 7,
+      "has_totalTime": true,
+      "has_supply": true,
+      "has_tool": true,
+      "has_image": false,
+      "name": "Waschmaschine anschließen",
+      "estimatedCost": {
+        "@type": "MonetaryAmount",
+        "currency": "EUR",
+        "value": "0"
+      }
+    },
+    {
+      "slug": "wasser-sparen-kueche",
+      "rel": "montage-und-installation/wasser-sparen-kueche/index.html",
+      "has_howto": false,
+      "steps": 0,
+      "has_totalTime": false,
+      "has_supply": false,
+      "has_tool": false,
+      "has_image": false
+    }
+  ],
+  "aggregaterating": [
+    {
+      "page": "herd-altona.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "herd-anschliessen-bergedorf.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "herd-anschliessen-hamburg-mitte.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "spuelmaschine-anschliessen-altona.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "spuelmaschine-eimsbuettel.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "waschmaschine-anschliessen-barmbek.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "waschmaschine-anschliessen-wandsbek.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "wasserhahn-eimsbuettel.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "armatur-austauschen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "ceranfeld-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "elektroherd-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "geschirrspueler-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "induktionskochfeld-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "kochfeld-installieren-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "kuechenspuele-montage-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "pages/services/elektriker-herd-anschliessen-hamburg.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "pages/services/kuechenmontage-hamburg.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "pages/services/kuechenmontage-service-hamburg.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "pages/services/spuelmaschine-anschliessen-hamburg.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "pages/services/waschmaschine-anschliessen-hamburg.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "power-splitter-installieren-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "spueltischarmatur-einbau-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "starkstromdose-installieren-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "trockner-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "waschbecken-installieren-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "waschmaschine-anschliessen-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    },
+    {
+      "page": "y-stueck-wasserzulauf-installieren-hamburg/index.html",
+      "ratingValue": "4.9",
+      "reviewCount": "19",
+      "ratingCount": null,
+      "bestRating": "5"
+    }
+  ],
+  "key_pages": [
+    {
+      "rel": "index.html",
+      "word_count": 1213,
+      "h1_count": 1,
+      "h1s": [
+        "Küchenmontage Küchenaufbau in Hamburg — Ihr Küchenexperte"
+      ],
+      "h1_has_hamburg": true,
+      "internal_links": 66,
+      "external_links": 12,
+      "trust": {
+        "18_jahre": true,
+        "meisterbetrieb": false,
+        "handwerkskammer": false,
+        "festpreis": true,
+        "garantie": true,
+        "whatsapp": true,
+        "telefon": false,
+        "impressum_link": true,
+        "datenschutz_link": true
+      },
+      "img_total": 28,
+      "img_with_alt": 28,
+      "img_hamburg_alt": 8,
+      "has_hero": true
+    },
+    {
+      "rel": "waschmaschine-anschliessen-hamburg/index.html",
+      "word_count": 654,
+      "h1_count": 1,
+      "h1s": [
+        "Waschmaschine anschließen in Hamburg — ab 60€ Festpreis"
+      ],
+      "h1_has_hamburg": true,
+      "internal_links": 22,
+      "external_links": 7,
+      "trust": {
+        "18_jahre": true,
+        "meisterbetrieb": false,
+        "handwerkskammer": false,
+        "festpreis": true,
+        "garantie": true,
+        "whatsapp": true,
+        "telefon": false,
+        "impressum_link": false,
+        "datenschutz_link": false
+      },
+      "img_total": 0,
+      "img_with_alt": 0,
+      "img_hamburg_alt": 0,
+      "has_hero": false
+    },
+    {
+      "rel": "kuechenspuele-montage-hamburg/index.html",
+      "word_count": 988,
+      "h1_count": 1,
+      "h1s": [
+        "Küchenspüle Montage Hamburg — ab 149€ Festpreis"
+      ],
+      "h1_has_hamburg": true,
+      "internal_links": 25,
+      "external_links": 7,
+      "trust": {
+        "18_jahre": true,
+        "meisterbetrieb": false,
+        "handwerkskammer": false,
+        "festpreis": true,
+        "garantie": true,
+        "whatsapp": true,
+        "telefon": false,
+        "impressum_link": false,
+        "datenschutz_link": false
+      },
+      "img_total": 0,
+      "img_with_alt": 0,
+      "img_hamburg_alt": 0,
+      "has_hero": false
+    },
+    {
+      "rel": "montage-und-installation/waschmaschine-anschliessen/index.html",
+      "word_count": 619,
+      "h1_count": 1,
+      "h1s": [
+        "Waschmaschine anschließen — Anleitung in 7 Schritten"
+      ],
+      "h1_has_hamburg": false,
+      "internal_links": 22,
+      "external_links": 5,
+      "trust": {
+        "18_jahre": true,
+        "meisterbetrieb": false,
+        "handwerkskammer": false,
+        "festpreis": true,
+        "garantie": true,
+        "whatsapp": true,
+        "telefon": false,
+        "impressum_link": false,
+        "datenschutz_link": false
+      },
+      "img_total": 1,
+      "img_with_alt": 1,
+      "img_hamburg_alt": 1,
+      "has_hero": true
+    },
+    {
+      "rel": "pages/services/ikea-kuechenmontage-hamburg.html",
+      "word_count": 1144,
+      "h1_count": 1,
+      "h1s": [
+        "IKEA Küchenmontage Hamburg — ab 170€ Festpreis"
+      ],
+      "h1_has_hamburg": true,
+      "internal_links": 38,
+      "external_links": 7,
+      "trust": {
+        "18_jahre": true,
+        "meisterbetrieb": false,
+        "handwerkskammer": false,
+        "festpreis": true,
+        "garantie": true,
+        "whatsapp": true,
+        "telefon": false,
+        "impressum_link": true,
+        "datenschutz_link": true
+      },
+      "img_total": 0,
+      "img_with_alt": 0,
+      "img_hamburg_alt": 0,
+      "has_hero": false
+    }
+  ]
+}

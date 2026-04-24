@@ -1,0 +1,365 @@
+{
+  "titles": {
+    "altona.html": "Küchenmontage Altona Hamburg | Küchenmontage & Geräteanschluss",
+    "barmbek.html": "Küchenmontage Barmbek Hamburg | Küchenmontage & Geräteanschluss",
+    "bergedorf.html": "Küchenmontage Bergedorf Hamburg | Küchenmontage & Geräteanschluss",
+    "billstedt.html": "Küchenmontage Billstedt Hamburg | Geräteanschluss ab 60€",
+    "blankenese.html": "Küchenmontage Blankenese Hamburg | Küchenmontage & Geräteanschluss",
+    "bramfeld.html": "Küchenmontage Bramfeld Hamburg | Küchenmontage & Geräteanschluss",
+    "eimsbuettel.html": "Küchenmontage Eimsbüttel Hamburg | Küchenmontage & Geräteanschluss",
+    "eppendorf.html": "Küchenmontage Eppendorf Hamburg | Küchenmontage & Geräteanschluss",
+    "farmsen.html": "Küchenmontage Farmsen Hamburg | Geräteanschluss ab 60€",
+    "hamburg-mitte.html": "Küchenmontage Hamburg-Mitte | Geräteanschluss ab 60€",
+    "harburg.html": "Küchenmontage Harburg Hamburg | Küchenmontage & Geräteanschluss",
+    "horn.html": "Küchenmontage Horn Hamburg | Geräteanschluss ab 60€",
+    "jenfeld.html": "Küchenmontage Jenfeld Hamburg | Geräteanschluss ab 60€",
+    "neugraben.html": "Küchenmontage Neugraben Hamburg | Geräteanschluss ab 60€",
+    "ottensen.html": "Küchenmontage Ottensen Hamburg | Geräteanschluss ab 60€",
+    "rahlstedt.html": "Küchenmontage Rahlstedt Hamburg | Küchenmontage & Geräteanschluss",
+    "st-pauli.html": "Küchenmontage St. Pauli Hamburg | Geräteanschluss ab 60€",
+    "stellingen.html": "Küchenmontage Stellingen Hamburg | Geräteanschluss ab 60€",
+    "uhlenhorst.html": "Küchenmontage Uhlenhorst Hamburg | Geräteanschluss ab 60€",
+    "wandsbek.html": "Küchenmontage Wandsbek Hamburg | Küchenmontage & Geräteanschluss",
+    "wilhelmsburg.html": "Küchenmontage Wilhelmsburg Hamburg | Geräteanschluss ab 60€",
+    "winterhude.html": "Küchenmontage Winterhude Hamburg | Küchenmontage & Geräteanschluss"
+  },
+  "descriptions": {
+    "altona.html": "Küchenmontage und Geräteanschluss in Hamburg-Altona. Fachservice nahe Große Bergstraße und Altonaer Rathaus. Tel: WhatsApp: 0152 185 478 75",
+    "barmbek.html": "Küchenmontage und Geräteanschluss in Hamburg-Barmbek. Service nahe Hamburger Straße und Museum der Arbeit. Tel: WhatsApp: 0152 185 478 75",
+    "bergedorf.html": "Küchenmontage und Geräteanschluss in Hamburg-Bergedorf. Professioneller Service am Sachsentor und Bergedorfer Schloss. Tel: WhatsApp: 0152 185 478 75",
+    "billstedt.html": "Küchenmontage & Geräteanschluss in Hamburg-Billstedt. Festpreise ab 60€, Same-Day-Service. Rund um die Billstedter Hauptstraße und das Billstedt Center.",
+    "blankenese.html": "Küchenmontage und Geräteanschluss in Hamburg-Blankenese. Premium-Service an der Blankeneser Bahnhofstraße und im Treppenviertel. Tel: WhatsApp: 0152 185 478 75",
+    "bramfeld.html": "Küchenmontage und Geräteanschluss in Hamburg-Bramfeld. Service an der Bramfelder Chaussee und Hertastraße. Tel: WhatsApp: 0152 185 478 75",
+    "eimsbuettel.html": "Küchenmontage und Geräteanschluss in Hamburg-Eimsbüttel. Erfahrener Service rund um Osterstraße und Eimsbütteler Chaussee. Tel: WhatsApp: 0152 185 478 75",
+    "eppendorf.html": "Küchenmontage und Geräteanschluss in Hamburg-Eppendorf. Experten für Altbauküchen am Eppendorfer Baum und nahe dem UKE. Tel: WhatsApp: 0152 185 478 75",
+    "farmsen.html": "Küchenmontage & Geräteanschluss in Hamburg-Farmsen-Berne. Festpreise ab 60€, Same-Day-Service. Rund um den Berner Heerweg und Farmsen — jetzt Termin vereinbaren!",
+    "hamburg-mitte.html": "Küchenmontage & Geräteanschluss in Hamburg-Mitte. Festpreise ab 60€, Same-Day-Service. Von der Mönckebergstraße bis zum Hauptbahnhof — jetzt Termin buchen!",
+    "harburg.html": "Küchenmontage und Geräteanschluss in Hamburg-Harburg. Schneller Service an der Harburger Rathausstraße und beim Phoenix-Center. Tel: WhatsApp: 0152 185 478 75",
+    "horn.html": "Küchenmontage & Geräteanschluss in Hamburg-Horn. Festpreise ab 60€, Same-Day-Service. Rund um die Horner Rennbahn und den Horner Weg — jetzt Termin vereinbaren!",
+    "jenfeld.html": "Küchenmontage & Geräteanschluss in Hamburg-Jenfeld. Festpreise ab 60€, Same-Day-Service. Rund um die Jenfelder Allee und den Öjendorfer Park — jetzt Termin buchen!",
+    "neugraben.html": "Küchenmontage & Geräteanschluss in Hamburg-Neugraben-Fischbek. Festpreise ab 60€, Same-Day-Service. Vom Neugrabener Markt bis zur Fischbeker Heide — jetzt anrufen!",
+    "ottensen.html": "Küchenmontage & Geräteanschluss in Hamburg-Ottensen. Festpreise ab 60€, Same-Day-Service. Wir montieren Ihre Küche rund um die Ottenser Hauptstraße.",
+    "rahlstedt.html": "Küchenmontage und Geräteanschluss in Hamburg-Rahlstedt. Zuverlässiger Service an der Rahlstedter Bahnhofstraße und Umgebung. Tel: WhatsApp: 0152 185 478 75",
+    "st-pauli.html": "Küchenmontage & Geräteanschluss in Hamburg-St. Pauli. Festpreise ab 60€, Same-Day-Service. Von der Reeperbahn bis zum Millerntor.",
+    "stellingen.html": "Küchenmontage & Geräteanschluss in Hamburg-Stellingen. Festpreise ab 60€, Same-Day-Service. Rund um Hagenbecks Tierpark und die Kieler Straße.",
+    "uhlenhorst.html": "Küchenmontage & Geräteanschluss in Hamburg-Uhlenhorst. Festpreise ab 60€, Same-Day-Service. Vom Mundsburger Damm bis zum Uhlenhorster Fährhaus — jetzt anrufen!",
+    "wandsbek.html": "Professionelle Küchenmontage und Geräteanschluss in Hamburg-Wandsbek. Schneller Service rund um Wandsbeker Marktstraße und Quarree.",
+    "wilhelmsburg.html": "Küchenmontage & Geräteanschluss in Hamburg-Wilhelmsburg. Festpreise ab 60€, Same-Day-Service. Von der Veringstraße bis zur IBA Hamburg — jetzt Termin buchen!",
+    "winterhude.html": "Küchenmontage und Geräteanschluss in Hamburg-Winterhude. Professioneller Service am Mühlenkamp und Stadtpark. Tel: WhatsApp: 0152 185 478 75"
+  },
+  "h1s": {
+    "altona.html": "Küchenmontage & Geräteanschluss in Altona",
+    "barmbek.html": "Küchenmontage & Geräteanschluss in Barmbek",
+    "bergedorf.html": "Küchenmontage & Geräteanschluss in Bergedorf",
+    "billstedt.html": "Küchenmontage &amp; Geräteanschluss in Billstedt",
+    "blankenese.html": "Küchenmontage & Geräteanschluss in Blankenese",
+    "bramfeld.html": "Küchenmontage & Geräteanschluss in Bramfeld",
+    "eimsbuettel.html": "Küchenmontage & Geräteanschluss in Eimsbüttel",
+    "eppendorf.html": "Küchenmontage & Geräteanschluss in Eppendorf",
+    "farmsen.html": "Küchenmontage &amp; Geräteanschluss in Farmsen",
+    "hamburg-mitte.html": "Küchenmontage &amp; Geräteanschluss in Hamburg-Mitte",
+    "harburg.html": "Küchenmontage & Geräteanschluss in Harburg",
+    "horn.html": "Küchenmontage &amp; Geräteanschluss in Horn",
+    "jenfeld.html": "Küchenmontage &amp; Geräteanschluss in Jenfeld",
+    "neugraben.html": "Küchenmontage &amp; Geräteanschluss in Neugraben",
+    "ottensen.html": "Küchenmontage &amp; Geräteanschluss in Ottensen",
+    "rahlstedt.html": "Küchenmontage & Geräteanschluss in Rahlstedt",
+    "st-pauli.html": "Küchenmontage &amp; Geräteanschluss in St. Pauli",
+    "stellingen.html": "Küchenmontage &amp; Geräteanschluss in Stellingen",
+    "uhlenhorst.html": "Küchenmontage &amp; Geräteanschluss in Uhlenhorst",
+    "wandsbek.html": "Küchenmontage & Geräteanschluss in Wandsbek",
+    "wilhelmsburg.html": "Küchenmontage &amp; Geräteanschluss in Wilhelmsburg",
+    "winterhude.html": "Küchenmontage & Geräteanschluss in Winterhude"
+  },
+  "landmarks": {
+    "altona.html": [
+      "Bergstraße",
+      "IKEA",
+      "Rathaus"
+    ],
+    "barmbek.html": [
+      "IKEA"
+    ],
+    "bergedorf.html": [
+      "Chrysanderstraße",
+      "Einkaufsstraße",
+      "IKEA"
+    ],
+    "billstedt.html": [
+      "Archenholzstraße",
+      "Hauptstraße",
+      "Landstraße",
+      "Merkenstraße",
+      "U-Bahn"
+    ],
+    "blankenese.html": [
+      "Bahnhofstraße",
+      "Hessepark",
+      "IKEA"
+    ],
+    "bramfeld.html": [
+      "Fabriciusstraße",
+      "Hertastraße",
+      "IKEA"
+    ],
+    "eimsbuettel.html": [
+      "IKEA",
+      "Methfesselstraße",
+      "Osterstraße",
+      "Unnapark"
+    ],
+    "eppendorf.html": [
+      "Einkaufsstraße",
+      "IKEA",
+      "Kellinghusenstraße",
+      "Landstraße",
+      "Tarpenbekstraße"
+    ],
+    "farmsen.html": [
+      "Heerweg",
+      "Trabrennbahn",
+      "U-Bahn",
+      "Wochenmarkt"
+    ],
+    "hamburg-mitte.html": [
+      "HafenCity",
+      "Hauptbahnhof",
+      "IKEA",
+      "Mönckebergstraße",
+      "Speicherstadt",
+      "Steinstraße"
+    ],
+    "harburg.html": [
+      "Elbe",
+      "IKEA",
+      "Rathausstraße"
+    ],
+    "horn.html": [
+      "Landstraße",
+      "Rennbahn",
+      "Rennbahnstraße",
+      "U-Bahn",
+      "Weddestraße"
+    ],
+    "jenfeld.html": [
+      "IKEA",
+      "Rodigallee"
+    ],
+    "neugraben.html": [
+      "Bahnhofstraße",
+      "IKEA"
+    ],
+    "ottensen.html": [
+      "Arnoldstraße",
+      "Elbchaussee",
+      "Eulenstraße",
+      "Hauptstraße",
+      "IKEA",
+      "Mercado",
+      "Rainstraße",
+      "Spritzenplatz",
+      "Stresemannstraße"
+    ],
+    "rahlstedt.html": [
+      "Bahnhofstraße",
+      "IKEA"
+    ],
+    "st-pauli.html": [
+      "Autobahn",
+      "Feldstraße",
+      "Hafenstraße",
+      "IKEA",
+      "Millerntor",
+      "Reeperbahn",
+      "Talstraße",
+      "Wohlwillstraße"
+    ],
+    "stellingen.html": [
+      "Autobahn",
+      "Basselweg",
+      "Molkenbuhrstraße",
+      "Tierpark",
+      "U-Bahn"
+    ],
+    "uhlenhorst.html": [
+      "Averhoffstraße",
+      "Hofweg",
+      "Schottmüllerstraße",
+      "U-Bahn",
+      "Zimmerstraße"
+    ],
+    "wandsbek.html": [
+      "Eichtalpark",
+      "IKEA",
+      "Lesserstraße",
+      "Marktplatz",
+      "Marktstraße"
+    ],
+    "wilhelmsburg.html": [
+      "Fährstraße",
+      "IKEA",
+      "Inselpark",
+      "S-Bahn",
+      "Veringstraße"
+    ],
+    "winterhude.html": [
+      "Alster",
+      "IKEA",
+      "Sierichstraße",
+      "Stadtpark"
+    ]
+  },
+  "top_pairs": [
+    [
+      0.052,
+      "horn.html",
+      "ottensen.html"
+    ],
+    [
+      0.05,
+      "billstedt.html",
+      "farmsen.html"
+    ],
+    [
+      0.049,
+      "altona.html",
+      "bergedorf.html"
+    ],
+    [
+      0.049,
+      "jenfeld.html",
+      "stellingen.html"
+    ],
+    [
+      0.047,
+      "altona.html",
+      "eimsbuettel.html"
+    ],
+    [
+      0.046,
+      "horn.html",
+      "jenfeld.html"
+    ],
+    [
+      0.046,
+      "bramfeld.html",
+      "winterhude.html"
+    ],
+    [
+      0.045,
+      "altona.html",
+      "harburg.html"
+    ],
+    [
+      0.045,
+      "neugraben.html",
+      "uhlenhorst.html"
+    ],
+    [
+      0.045,
+      "eimsbuettel.html",
+      "harburg.html"
+    ],
+    [
+      0.045,
+      "altona.html",
+      "wandsbek.html"
+    ],
+    [
+      0.044,
+      "rahlstedt.html",
+      "wandsbek.html"
+    ],
+    [
+      0.044,
+      "horn.html",
+      "stellingen.html"
+    ],
+    [
+      0.044,
+      "ottensen.html",
+      "stellingen.html"
+    ],
+    [
+      0.043,
+      "bramfeld.html",
+      "eimsbuettel.html"
+    ],
+    [
+      0.043,
+      "blankenese.html",
+      "eppendorf.html"
+    ],
+    [
+      0.043,
+      "farmsen.html",
+      "ottensen.html"
+    ],
+    [
+      0.043,
+      "eppendorf.html",
+      "winterhude.html"
+    ],
+    [
+      0.043,
+      "wandsbek.html",
+      "winterhude.html"
+    ],
+    [
+      0.043,
+      "altona.html",
+      "winterhude.html"
+    ],
+    [
+      0.043,
+      "bergedorf.html",
+      "wandsbek.html"
+    ],
+    [
+      0.042,
+      "blankenese.html",
+      "winterhude.html"
+    ],
+    [
+      0.042,
+      "harburg.html",
+      "winterhude.html"
+    ],
+    [
+      0.042,
+      "jenfeld.html",
+      "ottensen.html"
+    ],
+    [
+      0.042,
+      "eimsbuettel.html",
+      "winterhude.html"
+    ],
+    [
+      0.042,
+      "barmbek.html",
+      "winterhude.html"
+    ],
+    [
+      0.042,
+      "st-pauli.html",
+      "wilhelmsburg.html"
+    ],
+    [
+      0.042,
+      "hamburg-mitte.html",
+      "ottensen.html"
+    ],
+    [
+      0.042,
+      "bergedorf.html",
+      "rahlstedt.html"
+    ],
+    [
+      0.042,
+      "bergedorf.html",
+      "eimsbuettel.html"
+    ]
+  ],
+  "avg_similarity": 0.019176298883006586
+}
