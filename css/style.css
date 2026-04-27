@@ -23,7 +23,7 @@ img { max-width: 100%; height: auto; display: block; }
   --accent: #457b9d;
   --light: #f1faee;
   --dark: #0d1b2a;
-  --gray: #6c757d;
+  --gray: #495057;
   --gray-light: #f8f9fa;
   --gray-medium: #e9ecef;
   --shadow: 0 4px 20px rgba(0,0,0,0.06);
@@ -448,7 +448,7 @@ h3 {
 }
 .price-table tbody tr:last-child td { border-bottom: none; }
 .price-table .price-cell {
-  font-weight: 700; color: var(--primary); font-size: 1.1rem; white-space: nowrap;
+  font-weight: 700; color: var(--primary-dark); font-size: 1.1rem; white-space: nowrap;
 }
 .price-table td a {
   color: var(--secondary);
@@ -597,11 +597,12 @@ h3 {
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 48px; margin-bottom: 48px;
 }
-.footer h4 {
+.footer h3 {
   color: #fff; margin-bottom: 20px; font-size: 1.05rem;
+  font-weight: 600;
   position: relative; padding-bottom: 12px;
 }
-.footer h4::after {
+.footer h3::after {
   content: '';
   position: absolute; bottom: 0; left: 0;
   width: 32px; height: 3px;

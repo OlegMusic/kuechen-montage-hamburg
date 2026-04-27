@@ -1,15 +1,24 @@
 // === Smart Chat Widget ===
 (function() {
-  // Knowledge base
+  // Knowledge base — lazy-loaded on first chat-open to avoid blocking initial page load
   var KB = [];
-  // Load knowledge base from external JSON
-  var xhr = new XMLHttpRequest();
-  var kbPath = (document.querySelector('script[src*="chat.js"]') || {}).src || '';
-  kbPath = kbPath.replace('chat.js', 'chat-kb.json');
-  if (!kbPath) kbPath = 'js/chat-kb.json';
-  xhr.open('GET', kbPath, true);
-  xhr.onload = function() { if (xhr.status === 200) KB = JSON.parse(xhr.responseText); };
-  xhr.send();
+  var kbLoaded = false;
+  var kbLoading = false;
+  function loadKB() {
+    if (kbLoaded || kbLoading) return;
+    kbLoading = true;
+    var xhr = new XMLHttpRequest();
+    var kbPath = (document.querySelector('script[src*="chat.js"]') || {}).src || '';
+    kbPath = kbPath.replace('chat.js', 'chat-kb.json');
+    if (!kbPath) kbPath = 'js/chat-kb.json';
+    xhr.open('GET', kbPath, true);
+    xhr.onload = function() {
+      if (xhr.status === 200) { try { KB = JSON.parse(xhr.responseText); } catch(e){} }
+      kbLoaded = true; kbLoading = false;
+    };
+    xhr.onerror = function() { kbLoading = false; };
+    xhr.send();
+  }
 
   function findAnswer(input) {
     var text = input.toLowerCase().trim();
@@ -141,11 +150,20 @@
       isOpen = !isOpen;
       chat.classList.toggle('open', isOpen);
       toggle.style.display = isOpen ? 'none' : 'flex';
-      if (isOpen && messages.children.length === 0) {
-        addMsg('Moin! 👋 Ich bin der Küchen-Assistent. Fragen Sie mich nach Preisen, Leistungen oder Terminen!', 'chat-bot');
+      if (isOpen) {
+        loadKB();
+        if (messages.children.length === 0) {
+          addMsg('Moin! 👋 Ich bin der Küchen-Assistent. Fragen Sie mich nach Preisen, Leistungen oder Terminen!', 'chat-bot');
+        }
+        input.focus();
       }
-      if (isOpen) input.focus();
     });
+
+    // Also start KB loading when user focuses on hero chat input (if any)
+    var heroInputs = document.querySelectorAll('input[placeholder*="Frage"], #hero-chat-input');
+    for (var i = 0; i < heroInputs.length; i++) {
+      heroInputs[i].addEventListener('focus', loadKB, { once: true });
+    }
 
     document.getElementById('chat-close').addEventListener('click', function() {
       isOpen = false;
