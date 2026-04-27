@@ -133,18 +133,18 @@ Betreff: Küchenmontage-Partner für Ihre Hausverwaltung — Hamburg-weit
 
 Sehr geehrtes Team [Firmenname],
 
-wir sind Küchen-Montage Hamburg — ein eingetragener Meisterbetrieb mit 18 Jahren
+wir sind Küchen-Montage Hamburg — ein Fachbetrieb mit 18 Jahren
 Erfahrung in Küchenmontage, Sanitär- und Elektroinstallation in ganz Hamburg.
 
 Bei Mieterwechseln, Renovierungen oder nach Lieferungen von IKEA/Nobilia/Nolte
 übernehmen wir die komplette Montage zum Festpreis — inklusive Aquastop-Prüfung,
-VDE-konformem Starkstromanschluss und 5 Jahren Garantie.
+fachgerechtem Starkstromanschluss und 5 Jahren Garantie.
 
 Was wir anbieten:
 - Same-Day-Service in ganz Hamburg (inkl. Randlagen wie Volksdorf, Sasel, Lurup)
 - Festpreise ab 60 Euro (Waschmaschine) bis 350 Euro (Küchenmontage komplett)
 - Direkter WhatsApp-Kontakt für schnelle Termine
-- Aquastop, FI-Schutz, VDE-0100-Protokoll — alles inklusive
+- Aquastop, FI-Schutz, Anschlussprotokoll — alles inklusive
 
 Eine Auswahl unserer Leistungen:
 https://kuechen-montage-hamburg.de
@@ -169,7 +169,7 @@ Sehr geehrtes Team [Studio-Name],
 viele Ihrer Hamburger Kunden fragen nach Küchenmontage — wir wären gerne Ihr
 vertrauenswürdiger Partner.
 
-18 Jahre Erfahrung, eingetragen in der Handwerkskammer Hamburg, Festpreise ab
+18 Jahre Erfahrung in Küchenmontage in Hamburg, Festpreise ab
 350 Euro für eine komplette Küchenmontage inkl. Arbeitsplatten-Zuschnitt und
 Geräteanschluss.
 
