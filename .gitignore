@@ -48,3 +48,6 @@ backend/indexnow-submit
 backend/indexnow-submit.exe
 backend/cmd/indexnow-submit/indexnow-submit
 backend/cmd/indexnow-submit/indexnow-submit.exe
+
+# local lint tool, not for deploy
+_lint_check.py
