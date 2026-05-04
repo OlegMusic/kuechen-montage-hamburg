@@ -336,7 +336,7 @@
               <div style="font-size:0.8rem;opacity:0.7;margin-top:4px;">Bitte per WhatsApp anrufen</div>
             </div>
           </div>
-          <img width="550" height="550" src="img/profile/profile.webp" alt="Oleg — Ihr Küchenexperte in Hamburg mit 18 Jahren Erfahrung" style="width:100%;max-width:350px;border-radius:var(--radius);box-shadow:var(--shadow-lg);">
+          <img width="550" height="550" src="img/profile/profile.webp" alt="Oleg — Ihr Küchenexperte in Hamburg mit 18 Jahren Erfahrung" fetchpriority="high" style="width:100%;max-width:350px;border-radius:var(--radius);box-shadow:var(--shadow-lg);">
           <button id="hero-chat-btn" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:12px 24px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s ease;">
             <span style="font-size:1.3rem;">&#129302;</span> KI-Assistent starten
           </button>
@@ -1012,8 +1012,8 @@
     <a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a>
   </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/chat.js"></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/chat.js" defer></script>
   <script>
   (function() {
     var btn = document.getElementById('hero-chat-btn');

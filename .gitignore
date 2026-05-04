@@ -41,6 +41,7 @@ logs/
 # --- IDE/OS ---
 .vscode/
 .idea/
+.claude/
 Thumbs.db
 
 # --- Go build artifacts ---
