@@ -9,6 +9,8 @@
   <meta name="robots" content="index, follow">
   <meta name="author" content="Küchen-Montage Hamburg">
   <link rel="canonical" href="https://kuechen-montage-hamburg.de/">
+  <link rel="dns-prefetch" href="https://wa.me">
+  <link rel="preconnect" href="https://wa.me" crossorigin>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Küchenmontage Hamburg | Ab 60€ | Same-Day-Service">
@@ -1127,12 +1129,17 @@
     var waitingForPhone = false;
     var conversationLog = [];
 
-    // Load KB
+    // Lazy-load KB on first chat open (off critical path)
     var KB = [];
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'js/chat-kb.json', true);
-    xhr.onload = function() { if (xhr.status === 200) KB = JSON.parse(xhr.responseText); };
-    xhr.send();
+    var kbLoading = false;
+    function loadKB() {
+      if (kbLoading || KB.length) return;
+      kbLoading = true;
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'js/chat-kb.json', true);
+      xhr.onload = function() { if (xhr.status === 200) KB = JSON.parse(xhr.responseText); };
+      xhr.send();
+    }
 
     function findAnswer(text) {
       text = text.toLowerCase().trim();
@@ -1358,6 +1365,7 @@
     }
 
     btn.addEventListener('click', function() {
+      loadKB();
       animateWorkerRun();
       openChat();
     });
