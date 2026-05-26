@@ -158,13 +158,15 @@ h3 {
 }
 .btn:hover::before { opacity: 1; }
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-  color: #fff;
-  box-shadow: 0 4px 16px rgba(230, 57, 70, 0.25);
+  background: linear-gradient(135deg, #F4C770 0%, #C9A24A 100%);
+  color: #1a1305;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(201, 162, 74, 0.35);
 }
 .btn-primary:hover {
+  background: linear-gradient(135deg, #F8D285 0%, #D4AE56 100%);
   transform: translateY(-3px);
-  box-shadow: 0 8px 28px rgba(230, 57, 70, 0.35);
+  box-shadow: 0 8px 28px rgba(201, 162, 74, 0.5);
 }
 .btn-secondary {
   background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
