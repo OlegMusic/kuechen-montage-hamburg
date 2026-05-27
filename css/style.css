@@ -242,17 +242,20 @@ h3 {
 }
 .hero p {
   font-size: 1.15rem; color: rgba(255,255,255,0.75);
-  margin-bottom: 36px; max-width: 500px; line-height: 1.8;
+  margin-bottom: 32px; max-width: 500px; line-height: 1.8;
   animation: fadeInUp 0.6s ease 0.2s forwards;
   opacity: 0;
 }
 .hero-buttons {
-  display: flex; gap: 14px; flex-wrap: wrap;
+  display: flex; gap: 16px; flex-wrap: wrap; align-items: center;
   animation: fadeInUp 0.6s ease 0.3s forwards;
   opacity: 0;
 }
+.hero-buttons > img {
+  align-self: center;
+}
 .hero-stats {
-  display: flex; gap: 48px; margin-top: 48px;
+  display: flex; gap: 40px; margin-top: 32px;
   animation: fadeInUp 0.6s ease 0.4s forwards;
   opacity: 0;
 }
@@ -272,9 +275,9 @@ h3 {
 .hero-reviews {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px 10px;
   align-items: center;
-  margin-top: 28px;
+  margin-top: 24px;
 }
 .hero-review-pill {
   display: inline-flex;
@@ -329,7 +332,8 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 8px 14px;
+  padding: 6px 4px;
+  margin-left: 2px;
   color: rgba(255,255,255,0.65);
   font-size: 0.82rem;
   text-decoration: underline;
@@ -359,10 +363,11 @@ h3 {
 }
 @media (max-width: 768px) {
   .hero { padding: 32px 0 60px; }
-  .hero-inner { grid-template-columns: 1fr; text-align: center; }
-  .hero p { margin: 0 auto 30px; }
+  .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+  .hero p { margin: 0 auto 32px; }
   .hero-buttons { justify-content: center; }
-  .hero-stats { justify-content: center; gap: 32px; }
+  .hero-stats { justify-content: center; gap: 32px; margin-top: 24px; }
+  .hero-reviews { justify-content: center; margin-top: 16px; }
   .hero-image {
     display: flex !important;
     flex-direction: column !important;
@@ -966,7 +971,7 @@ a.service-card:hover h3 { color: var(--primary, #2563eb); }
 }
 
 @media (max-width: 480px) {
-  .hero-stats { flex-direction: column; gap: 20px; }
+  .hero-stats { flex-direction: column; gap: 16px; margin-top: 24px; }
   .hero-stat-num { font-size: 1.8rem; }
   .services-grid { grid-template-columns: 1fr; }
   .advantages-grid { grid-template-columns: 1fr; }
