@@ -199,7 +199,7 @@ h3 {
 
 /* === HERO === */
 .hero {
-  padding: 48px 0 80px;
+  padding: 96px 0 80px;
   background: linear-gradient(135deg, var(--secondary) 0%, #122740 50%, var(--dark) 100%);
   color: #fff; position: relative; overflow: hidden;
 }
@@ -362,7 +362,7 @@ h3 {
   font-size: 1.2rem; color: rgba(255,255,255,0.2);
 }
 @media (max-width: 768px) {
-  .hero { padding: 32px 0 60px; }
+  .hero { padding: 88px 0 60px; }
   .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
   .hero p { margin: 0 auto 32px; }
   .hero-buttons { justify-content: center; }
