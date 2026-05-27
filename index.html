@@ -158,6 +158,7 @@
   </script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/leistung-redesign.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -168,19 +169,395 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/img/favicon/site.webmanifest">
   <meta name="theme-color" content="#0a4d8c">
+
+  <style id="home-redesign-styles">
+    :root{
+      --ink:#0A1525;--ink-2:#13243B;
+      --paper:#FAF7F2;--paper-2:#F1ECE3;--paper-3:#EAE3D2;
+      --line:#E6DFD2;--line-2:#D7CFBD;
+      --mute:#6A7382;--mute-2:#8C95A3;
+      --brand:#E23B33;--brand-2:#B7261F;--brand-soft:#FDECEA;
+      --wa:#25D366;--wa-2:#128C7E;--wa-soft:#E4F9EC;
+      --gold:#F4C770;--gold-2:#C9A24A;
+      --blue:#2A6FDB;
+    }
+    body.home2{
+      font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55;margin:0;
+      -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+    }
+    body.home2 ::selection{background:var(--brand);color:#fff}
+    body.home2 a{color:inherit;text-decoration:none}
+    body.home2 img{display:block;max-width:100%}
+    body.home2 h1,body.home2 h2,body.home2 h3,body.home2 h4,body.home2 h5{font-family:inherit;font-weight:700;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+    body.home2 p{margin:0;text-wrap:pretty}
+    body.home2 .serif{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-style:italic;letter-spacing:0}
+    body.home2 .wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+    body.home2 .wrap-tight{max-width:1100px;margin:0 auto;padding:0 32px}
+
+    /* HEADER */
+    body.home2 header.site{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:saturate(140%) blur(10px);-webkit-backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+    body.home2 .navbar{display:flex;align-items:center;justify-content:space-between;height:64px}
+    body.home2 .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--ink)}
+    body.home2 .brand .logo-mark{width:34px;height:34px;border-radius:8px;background:var(--brand);display:grid;place-items:center;color:#fff;font-weight:800;box-shadow:inset 0 -3px 0 rgba(0,0,0,.18),0 2px 10px -2px rgba(226,59,51,.45)}
+    body.home2 .brand .name{font-size:15px;white-space:nowrap;line-height:1.1}
+    body.home2 .brand .name small{display:block;font-size:10.5px;color:var(--mute);font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
+    body.home2 nav.primary{display:flex;align-items:center;gap:22px;flex-wrap:nowrap}
+    body.home2 nav.primary a{font-size:13.5px;color:var(--ink-2);white-space:nowrap;font-weight:500}
+    body.home2 nav.primary a.active{color:var(--brand)}
+    body.home2 nav.primary a:hover{color:var(--brand)}
+    body.home2 .menu-toggle{display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink)}
+    @media (max-width:980px){body.home2 nav.primary a{display:none}body.home2 .menu-toggle{display:inline-block}}
+
+    /* HERO */
+    body.home2 .hero{position:relative;overflow:hidden;color:#EEF2F8;background:radial-gradient(1200px 700px at 90% 10%, rgba(244,199,112,.10), transparent 60%),radial-gradient(1100px 600px at -10% 80%, rgba(226,59,51,.12), transparent 60%),linear-gradient(180deg,#0A1525 0%,#0B1A2E 60%, #0A1525 100%);padding:48px 0 0;border:none}
+    body.home2 .hero::before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);background-size:72px 72px;mask-image:radial-gradient(900px 700px at 30% 30%, #000 30%, transparent 80%);-webkit-mask-image:radial-gradient(900px 700px at 30% 30%, #000 30%, transparent 80%)}
+    body.home2 .hero .bg-numeral{position:absolute;right:-3vw;top:24px;font-family:Georgia,serif;font-style:italic;font-size:min(540px, 48vw);line-height:.78;letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px rgba(244,199,112,.22);pointer-events:none;user-select:none;z-index:0}
+    body.home2 .hero-inner{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0, 1.15fr) minmax(0, .85fr);gap:48px;align-items:start;padding-top:16px;padding-bottom:72px}
+    @media (max-width:1080px){body.home2 .hero-inner{grid-template-columns:1fr;gap:40px}body.home2 .hero .bg-numeral{opacity:.35}}
+
+    body.home2 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:#F4C770;padding:6px 12px;border:1px solid rgba(244,199,112,.32);border-radius:999px;background:rgba(244,199,112,.06)}
+    body.home2 .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(244,199,112,.18)}
+
+    body.home2 h1.hero-h{font-size:clamp(36px, 5vw, 64px);line-height:1.02;letter-spacing:-.03em;font-weight:700;margin:18px 0 6px;color:#fff}
+    body.home2 h1.hero-h .top{display:block;color:#D7E0EE;font-weight:500;font-size:clamp(18px,1.8vw,24px);letter-spacing:-.01em;line-height:1.15;margin-bottom:12px}
+    body.home2 h1.hero-h .top em{font-family:Georgia,serif;font-style:italic;color:#F4C770;font-weight:400;font-size:1.08em}
+    body.home2 h1.hero-h .word{display:inline-block;position:relative;color:#fff}
+    body.home2 h1.hero-h .word::after{content:"";position:absolute;left:-4px;right:-4px;bottom:.06em;height:.18em;background:linear-gradient(90deg, rgba(226,59,51,.85), rgba(226,59,51,.25));border-radius:4px;z-index:-1;transform:skewX(-8deg)}
+    body.home2 h1.hero-h .accent-gold{font-family:Georgia,serif;font-style:italic;color:#F4C770;font-weight:400}
+    body.home2 h1.hero-h .ast{font-family:Georgia,serif;font-style:italic;color:#F4C770;font-weight:400;font-size:.55em;vertical-align:.36em;margin-left:.08em}
+
+    body.home2 .lede{font-size:16.5px;line-height:1.55;color:#B7C4D7;max-width:56ch;margin:16px 0 24px}
+    body.home2 .lede b{color:#fff;font-weight:600}
+
+    body.home2 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:20px 0 20px}
+    body.home2 .ibtn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-size:15px;font-weight:600;border:1px solid transparent;cursor:pointer;transition:transform .15s, background .2s, border-color .2s;text-decoration:none;font-family:inherit}
+    body.home2 .ibtn:hover{transform:translateY(-1px)}
+    body.home2 .ibtn-wa{background:var(--wa);color:#082B1B;box-shadow:0 14px 30px -14px rgba(37,211,102,.5), inset 0 -2px 0 rgba(0,0,0,.08)}
+    body.home2 .ibtn-wa:hover{background:#1FBF5D}
+    body.home2 .ibtn-wa-alt{background:var(--gold);color:#1a1305;box-shadow:0 14px 30px -14px rgba(244,199,112,.5)}
+    body.home2 .ibtn-wa-alt:hover{background:#EAB95B}
+    body.home2 .ibtn-ghost-dark{background:transparent;color:#fff;border-color:rgba(255,255,255,.22)}
+    body.home2 .ibtn-ghost-dark:hover{border-color:#fff}
+    body.home2 .ibtn-outline{background:transparent;color:var(--brand);border-color:var(--brand)}
+    body.home2 .ibtn-outline:hover{background:var(--brand);color:#fff}
+    body.home2 .ibtn-dark{background:var(--ink);color:#fff}
+    body.home2 .ibtn-dark:hover{background:var(--brand)}
+
+    body.home2 .badges-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0 18px}
+    body.home2 .badge-img{height:50px;width:auto;border-radius:8px;background:#fff;padding:3px;box-shadow:0 6px 18px -8px rgba(0,0,0,.45);display:block}
+
+    body.home2 .stats{display:flex;flex-wrap:wrap;gap:32px 48px;align-items:flex-end;margin:8px 0 24px;position:relative}
+    body.home2 .stats::before{content:"";position:absolute;left:0;top:-16px;width:36px;height:1px;background:rgba(244,199,112,.5)}
+    body.home2 .stat .n{font-family:Georgia,serif;font-style:italic;color:#F4C770;font-weight:400;font-size:58px;line-height:.9;letter-spacing:-.02em;display:flex;align-items:baseline;gap:2px}
+    body.home2 .stat .n sup{font-size:.42em;color:#F4C770;font-style:italic;vertical-align:.62em}
+    body.home2 .stat .l{font-size:12px;color:#A8B5C7;margin-top:6px;letter-spacing:.04em;text-transform:uppercase}
+
+    body.home2 .reviews{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    body.home2 .rev{display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);padding:9px 13px;border-radius:14px;font-size:13px;color:#D7E0EE;backdrop-filter:blur(6px)}
+    body.home2 .rev .ico{width:30px;height:30px;border-radius:7px;display:grid;place-items:center;flex:none;font-weight:700;font-size:13px;color:#fff}
+    body.home2 .rev .ico.g{background:#fff;color:#333}
+    body.home2 .rev .ico.g svg{width:18px;height:18px}
+    body.home2 .rev .ico.c{background:#FFE15B;color:#000}
+    body.home2 .rev b{font-weight:700;color:#fff}
+    body.home2 .rev .star{color:#F4C770;margin-left:2px}
+    body.home2 .rev small{display:block;font-size:11px;color:#9EB0C5}
+    body.home2 .rev-link{font-size:13px;color:#A8B5C7;display:inline-flex;align-items:center;gap:6px;margin-top:12px;text-decoration:underline;text-underline-offset:4px;text-decoration-color:rgba(255,255,255,.25)}
+    body.home2 .rev-link:hover{color:#fff}
+
+    /* HERO collage */
+    body.home2 .collage{position:relative;min-height:520px}
+    body.home2 .portrait{position:relative;width:100%;max-width:400px;margin-left:auto;aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:#1c2c4a;box-shadow:0 60px 80px -50px rgba(0,0,0,.8), 0 0 0 1px rgba(255,255,255,.06);transform:rotate(1.5deg);transition:transform .3s ease}
+    body.home2 .portrait:hover{transform:rotate(0deg)}
+    body.home2 .portrait .photo{position:absolute;inset:0}
+    body.home2 .portrait .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    body.home2 .portrait .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg, rgba(8,18,30,0) 50%, rgba(8,18,30,.55) 100%);pointer-events:none}
+    body.home2 .portrait .meta{position:absolute;left:18px;right:18px;bottom:18px;display:flex;align-items:end;justify-content:space-between;gap:14px;color:#fff;z-index:2}
+    body.home2 .portrait .meta .who{font-size:19px;font-weight:700;letter-spacing:-.015em;line-height:1.1}
+    body.home2 .portrait .meta .who small{display:block;font-weight:400;font-size:12px;color:#C9D4E2;letter-spacing:.04em;text-transform:uppercase;margin-top:4px}
+    body.home2 .portrait .meta .pin{background:#fff;color:var(--ink);font-size:11.5px;font-weight:600;padding:5px 10px;border-radius:999px;display:inline-flex;align-items:center;gap:6px}
+    body.home2 .portrait .meta .pin svg{color:var(--brand)}
+
+    body.home2 .qr-card{position:absolute;left:-12px;top:18px;background:#FAF7F2;color:var(--ink);border-radius:18px;padding:13px;display:flex;gap:13px;align-items:center;box-shadow:0 40px 60px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.04);transform:rotate(-3deg);z-index:3;max-width:290px;text-decoration:none}
+    body.home2 .qr-card .qr{width:78px;height:78px;border-radius:10px;background:#fff;display:grid;place-items:center;flex:none;overflow:hidden;padding:4px}
+    body.home2 .qr-card .qr img{width:100%;height:100%;object-fit:contain}
+    body.home2 .qr-card .tel{font-size:17px;font-weight:700;letter-spacing:-.01em;color:#1F8A5B;line-height:1.1}
+    body.home2 .qr-card .lbl{font-size:11.5px;color:var(--mute);margin-top:5px;display:inline-flex;align-items:center;gap:6px}
+    body.home2 .qr-card .lbl svg{color:var(--wa-2);width:13px;height:13px}
+
+    body.home2 .ki{position:absolute;right:-8px;bottom:-18px;background:linear-gradient(180deg, #1B2C49, #11203B);color:#fff;border:1px solid rgba(244,199,112,.4);padding:11px 17px;border-radius:999px;display:inline-flex;align-items:center;gap:10px;font-size:13.5px;box-shadow:0 24px 50px -24px rgba(244,199,112,.45);z-index:4;cursor:pointer;font-family:inherit;font-weight:600}
+    body.home2 .ki .bot{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,#F4C770,#E2A040);display:grid;place-items:center;color:#1a1305}
+    body.home2 .ki .live{width:7px;height:7px;border-radius:50%;background:#3DDC97;box-shadow:0 0 0 4px rgba(61,220,151,.2);margin-right:4px}
+
+    body.home2 .sticker{position:absolute;left:0;top:230px;transform:rotate(-12deg);background:var(--brand);color:#fff;padding:10px 14px;border-radius:14px;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 16px 30px -16px rgba(226,59,51,.7);z-index:3}
+
+    /* Hero inline chat */
+    body.home2 #hero-chat-area{display:none;width:100%;max-width:380px;margin-top:14px;overflow:hidden;border-radius:20px;background:rgba(255,255,255,.06);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.15)}
+    body.home2 #hero-chat-area .chat-head{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;align-items:center}
+    body.home2 #hero-chat-area .chat-head span{color:#fff;font-weight:700;font-size:.95rem}
+    body.home2 #hero-chat-close{background:none;border:none;color:rgba(255,255,255,.7);font-size:1.4rem;cursor:pointer;padding:0 4px}
+    body.home2 #hero-chat-messages{overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;height:220px}
+    body.home2 .chat-input-row{display:flex;padding:10px;gap:6px;border-top:1px solid rgba(255,255,255,.1)}
+    body.home2 #hero-chat-input{flex:1;padding:10px 14px;border:none;border-radius:50px;font-size:.9rem;outline:none;background:rgba(255,255,255,.15);color:#fff;font-family:inherit}
+    body.home2 #hero-chat-mic,body.home2 #hero-chat-send{border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-family:inherit}
+    body.home2 #hero-chat-mic{background:rgba(255,255,255,.15);color:#fff}
+    body.home2 #hero-chat-send{background:#25d366;color:#fff}
+
+    /* Services marquee */
+    body.home2 .marquee{border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);padding:16px 0;color:#A8B5C7;overflow:hidden;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%, transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%, transparent);position:relative;z-index:2}
+    body.home2 .marquee-track{display:flex;gap:44px;width:max-content;animation:marquee-scroll 42s linear infinite;font-size:17px;font-weight:600;letter-spacing:-.01em}
+    body.home2 .marquee-track span.dot{color:var(--brand)}
+    body.home2 .marquee-track em{font-family:Georgia,serif;font-style:italic;font-weight:400;color:#F4C770}
+    @keyframes marquee-scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+    /* TRUST BAND */
+    body.home2 .trust-band{background:#fff;border-bottom:1px solid var(--line);padding:18px 0}
+    body.home2 .trust-row{display:flex;flex-wrap:wrap;gap:10px 14px;justify-content:center;align-items:center}
+    body.home2 .trust-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;background:var(--paper-2);font-size:13.5px;font-weight:500;color:var(--ink-2)}
+    body.home2 .trust-pill svg{flex:none}
+    body.home2 .trust-pill.tuv{background:linear-gradient(90deg,#0C3D8A,#1C57B8);color:#fff;padding-left:8px}
+    body.home2 .trust-pill.tuv .seal{width:30px;height:30px;border-radius:50%;background:#fff;color:#0C3D8A;display:grid;place-items:center;font-weight:800;font-size:8.5px;line-height:1;text-align:center;letter-spacing:.02em}
+
+    /* SECTIONS */
+    body.home2 section.s{padding:64px 0;border-top:1px solid var(--line)}
+    body.home2 section.s.compact{padding:48px 0}
+    body.home2 section.s.alt{background:var(--paper-2);border-color:var(--paper-3)}
+    body.home2 section.s.dark{background:var(--ink);color:#E5ECF6;border:none}
+    body.home2 .sec-head{margin-bottom:32px}
+    body.home2 .sec-head.center{text-align:center;max-width:680px;margin-left:auto;margin-right:auto}
+    body.home2 .sec-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--brand);font-weight:600;margin-bottom:12px}
+    body.home2 .sec-eyebrow::before{content:"";width:24px;height:1px;background:currentColor}
+    body.home2 .sec-head.center .sec-eyebrow::after{content:"";width:24px;height:1px;background:currentColor}
+    body.home2 h2.h{font-size:clamp(28px, 3.2vw, 40px);line-height:1.1;letter-spacing:-.025em;color:var(--ink)}
+    body.home2 h2.h .serif{color:var(--mute)}
+    body.home2 .sec-sub{color:var(--mute);font-size:15.5px;margin-top:10px;max-width:60ch}
+    body.home2 .sec-head.center .sec-sub{margin-left:auto;margin-right:auto}
+
+    /* GALLERY */
+    body.home2 .gallery{display:grid;grid-template-columns:repeat(6, 1fr);grid-template-rows:160px 160px;gap:10px}
+    body.home2 .gallery a{border-radius:14px;overflow:hidden;background:#1c2c4a;position:relative;transition:transform .2s}
+    body.home2 .gallery a:hover{transform:scale(1.01)}
+    body.home2 .gallery a::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.5))}
+    body.home2 .gallery img{width:100%;height:100%;object-fit:cover;display:block}
+    body.home2 .gallery .cap{position:absolute;left:12px;bottom:10px;color:#fff;font-size:12px;letter-spacing:.02em;z-index:2;font-weight:600}
+    body.home2 .gallery a:nth-child(1){grid-column:span 2;grid-row:span 2}
+    body.home2 .gallery a:nth-child(2){grid-column:span 2}
+    body.home2 .gallery a:nth-child(3){grid-column:span 2}
+    body.home2 .gallery a:nth-child(4){grid-column:span 1}
+    body.home2 .gallery a:nth-child(5){grid-column:span 1}
+    body.home2 .gallery a:nth-child(6){grid-column:span 2}
+    @media (max-width:880px){body.home2 .gallery{grid-template-columns:repeat(2,1fr);grid-template-rows:none}body.home2 .gallery a{grid-column:span 1 !important;grid-row:span 1 !important;height:160px}body.home2 .gallery a:nth-child(1){grid-column:span 2 !important;height:200px}}
+    body.home2 .gallery-foot{display:flex;justify-content:center;margin-top:20px}
+
+    /* CONTACT STRIP */
+    body.home2 .contact-strip{background:linear-gradient(90deg,#0A1525 0%, #13243B 100%);color:#fff;padding:22px 0;position:relative;overflow:hidden;border:none}
+    body.home2 .contact-strip::before{content:"";position:absolute;right:-100px;top:-50px;width:300px;height:300px;background:radial-gradient(closest-side, rgba(244,199,112,.18), transparent 70%)}
+    body.home2 .contact-row{display:flex;align-items:center;gap:32px;flex-wrap:wrap;position:relative;z-index:1}
+    body.home2 .contact-row .who{display:flex;gap:14px;align-items:center}
+    body.home2 .contact-row .who .av{width:54px;height:54px;border-radius:50%;overflow:hidden;border:2px solid rgba(244,199,112,.4);flex:none;background:#1c2c4a}
+    body.home2 .contact-row .who .av img{width:100%;height:100%;object-fit:cover;display:block}
+    body.home2 .contact-row .who h3{font-size:17px;letter-spacing:-.01em;font-weight:700}
+    body.home2 .contact-row .who p{font-size:13px;color:#A8B5C7}
+    body.home2 .contact-row .tel-block{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    body.home2 .contact-row .tel-block .label{font-size:12.5px;color:#A8B5C7;text-align:right;line-height:1.3}
+    body.home2 .contact-row .tel-block .tel{font-size:24px;font-weight:700;letter-spacing:-.01em;color:#fff;text-decoration:none}
+    body.home2 .contact-row .tel-block .actions{display:flex;gap:10px}
+    @media (max-width:780px){body.home2 .contact-row .tel-block{margin-left:0;width:100%;justify-content:flex-start}}
+
+    /* SERVICES */
+    body.home2 .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+    @media (max-width:1080px){body.home2 .services-grid{grid-template-columns:repeat(3,1fr)}}
+    @media (max-width:780px){body.home2 .services-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:480px){body.home2 .services-grid{grid-template-columns:1fr}}
+    body.home2 .svc{
+      background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;
+      display:flex;flex-direction:column;gap:8px;min-height:220px;
+      transition:transform .15s, border-color .2s, box-shadow .2s;position:relative;overflow:hidden;
+      color:inherit;text-decoration:none;
+    }
+    body.home2 a.svc{cursor:pointer}
+    body.home2 .svc:hover{transform:translateY(-2px);border-color:var(--line-2);box-shadow:0 14px 30px -22px rgba(12,27,42,.3)}
+    body.home2 .svc .ic{width:64px;height:64px;border-radius:14px;background:var(--paper-2);display:grid;place-items:center;color:var(--brand);margin-bottom:6px;overflow:hidden}
+    body.home2 .svc .ic img{width:54px;height:54px;object-fit:contain;display:block}
+    body.home2 .svc h3{font-size:16px;font-weight:700;letter-spacing:-.015em;line-height:1.2;color:var(--ink)}
+    body.home2 .svc p{font-size:13.5px;color:var(--mute);line-height:1.5;flex:1}
+    body.home2 .svc .price{display:inline-flex;align-items:baseline;gap:6px;margin-top:auto}
+    body.home2 .svc .price .pn{font-size:22px;font-weight:700;color:var(--brand);letter-spacing:-.02em}
+    body.home2 .svc .price .pl{font-size:11.5px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+    body.home2 .svc.special{background:linear-gradient(180deg,#FFF8E8 0%, #F8EBC8 100%);border-color:#EAD49B}
+    body.home2 .svc.special .ic{background:#fff;color:#8B6B1F}
+
+    /* DIRECT BOOK */
+    body.home2 .booklinks{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;margin-top:24px}
+    body.home2 .booklinks h3{font-size:18px;text-align:center;margin-bottom:6px;color:var(--ink)}
+    body.home2 .booklinks .sub{text-align:center;font-size:13.5px;color:var(--mute);margin-bottom:18px}
+    body.home2 .booklinks-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+    @media (max-width:880px){body.home2 .booklinks-grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:480px){body.home2 .booklinks-grid{grid-template-columns:1fr}}
+    body.home2 .blink{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 14px;background:#F5F2FF;border:1px solid #E4DEF7;border-radius:10px;font-size:12.5px;color:var(--ink-2);line-height:1.3;transition:background .15s, border-color .15s;text-decoration:none}
+    body.home2 .blink:hover{background:#EEE9FF;border-color:#C9BFF0}
+    body.home2 .blink b{color:var(--blue);font-weight:700;font-size:13px}
+    body.home2 .booklinks-foot{text-align:center;font-size:13px;color:var(--mute);margin-top:18px}
+    body.home2 .booklinks-foot a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
+
+    /* PRICE TABLE */
+    body.home2 .ptable-wrap{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 30px -22px rgba(12,27,42,.2)}
+    body.home2 .ptable{width:100%;border-collapse:collapse;font-size:14.5px}
+    body.home2 .ptable thead{background:var(--ink);color:#fff}
+    body.home2 .ptable th{text-align:left;padding:14px 24px;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+    body.home2 .ptable th:nth-child(2),body.home2 .ptable td:nth-child(2){text-align:right}
+    body.home2 .ptable th:nth-child(3),body.home2 .ptable td:nth-child(3){text-align:right;width:140px}
+    body.home2 .ptable td{padding:14px 24px;border-top:1px solid var(--line);color:var(--ink-2)}
+    body.home2 .ptable tbody tr:hover{background:var(--paper)}
+    body.home2 .ptable td a{color:var(--ink-2);text-decoration:none;border-bottom:1px dotted var(--line-2)}
+    body.home2 .ptable td a:hover{color:var(--brand);border-bottom-color:var(--brand)}
+    body.home2 .ptable .pp{color:var(--brand);font-weight:700;font-size:16px;letter-spacing:-.01em}
+    body.home2 .ptable .pd{color:var(--mute);font-size:13.5px}
+    body.home2 .ptable-foot{text-align:center;color:var(--mute);font-size:13px;margin-top:14px}
+
+    /* WHY US */
+    body.home2 .why-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center}
+    @media (max-width:980px){body.home2 .why-grid{grid-template-columns:1fr}}
+    body.home2 .why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    @media (max-width:540px){body.home2 .why-list{grid-template-columns:1fr}}
+    body.home2 .why{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 18px 18px 60px;position:relative;min-height:120px}
+    body.home2 .why .ic{position:absolute;left:14px;top:16px;width:36px;height:36px;border-radius:10px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+    body.home2 .why.gold .ic{background:#FFF1D6;color:#B58320}
+    body.home2 .why.blue .ic{background:#E7EFFC;color:var(--blue)}
+    body.home2 .why.green .ic{background:var(--wa-soft);color:var(--wa-2)}
+    body.home2 .why h3{font-size:15px;font-weight:700;letter-spacing:-.01em;margin-bottom:4px;color:var(--ink)}
+    body.home2 .why p{font-size:13px;color:var(--mute);line-height:1.5}
+
+    body.home2 .cert-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 14px 30px -22px rgba(12,27,42,.25)}
+    body.home2 .cert-card .frame{background:linear-gradient(135deg,#F3EEDF,#E6DEC4);border-radius:12px;padding:18px;display:grid;place-items:center;aspect-ratio:3/4;max-height:360px;overflow:hidden}
+    body.home2 .cert-card .frame img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;box-shadow:0 14px 24px -14px rgba(0,0,0,.4)}
+    body.home2 .cert-card .lab{display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:13px}
+    body.home2 .cert-card .lab b{font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+    body.home2 .cert-card .lab small{color:var(--mute);font-size:11.5px}
+    body.home2 .cert-card .lab .tuv-mini{width:34px;height:auto;border-radius:6px;background:#fff;padding:2px}
+
+    /* REVIEWS */
+    body.home2 .review-meta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:center;margin-bottom:24px}
+    body.home2 .rating-big{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 18px}
+    body.home2 .rating-big .stars-l{color:var(--gold-2);font-size:18px;letter-spacing:2px;line-height:1}
+    body.home2 .rating-big .num{font-size:24px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+    body.home2 .rating-big small{display:block;font-size:11.5px;color:var(--mute)}
+    body.home2 .vbadge-row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+    body.home2 .vbadge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:10px;font-size:12.5px;color:var(--ink-2)}
+    body.home2 .vbadge img{height:34px;width:auto;border-radius:6px;background:#fff;padding:2px;flex:none}
+    body.home2 .vbadge b{font-weight:700;display:block;color:var(--ink)}
+    body.home2 .vbadge small{color:var(--mute);display:block;font-size:11px}
+
+    body.home2 .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    @media (max-width:980px){body.home2 .testimonials{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){body.home2 .testimonials{grid-template-columns:1fr}}
+    body.home2 .tm{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
+    body.home2 .tm::before{content:"\201C";position:absolute;right:18px;top:6px;font-family:Georgia,serif;font-size:64px;color:var(--paper-3);line-height:1}
+    body.home2 .tm .stars{color:var(--gold-2);letter-spacing:2px;font-size:14px}
+    body.home2 .tm blockquote{margin:0;font-size:14.5px;line-height:1.55;color:var(--ink-2)}
+    body.home2 .tm .who{display:flex;justify-content:space-between;align-items:center;padding-top:12px;border-top:1px solid var(--line);font-size:13px;gap:8px}
+    body.home2 .tm .who b{font-weight:700;color:var(--ink)}
+    body.home2 .tm .who small{color:var(--mute);font-size:11.5px;display:flex;align-items:center;gap:6px}
+    body.home2 .tm .who small::before{content:"";width:10px;height:10px;border-radius:2px;background:#FFE15B;display:inline-block;flex:none}
+    body.home2 .review-ctas{display:flex;justify-content:center;gap:10px;margin-top:16px;margin-bottom:8px;flex-wrap:wrap}
+    body.home2 .gbtn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:11px 18px;border-radius:10px;font-size:13.5px;font-weight:600;text-decoration:none;color:var(--ink)}
+    body.home2 .gbtn:hover{border-color:var(--ink)}
+    body.home2 .gbtn.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+    /* DISTRICTS + CALC */
+    body.home2 .split{display:grid;grid-template-columns:1.2fr 1fr;gap:32px}
+    @media (max-width:980px){body.home2 .split{grid-template-columns:1fr}}
+    body.home2 .pill-cloud{display:flex;flex-wrap:wrap;gap:8px}
+    body.home2 .pill-cloud a{display:inline-flex;padding:8px 14px;background:#fff;border:1px solid var(--line);border-radius:999px;font-size:13.5px;color:var(--blue);transition:background .15s, border-color .15s, color .15s;text-decoration:none}
+    body.home2 .pill-cloud a:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+
+    body.home2 .calc{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 14px 30px -22px rgba(12,27,42,.2)}
+    body.home2 .calc h3{font-size:20px;letter-spacing:-.015em;margin-bottom:4px}
+    body.home2 .calc .csub{font-size:13.5px;color:var(--mute);margin-bottom:18px}
+    body.home2 .field{display:block;margin-bottom:12px}
+    body.home2 .field label{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:6px;font-weight:600}
+    body.home2 .field select,body.home2 .field input{width:100%;padding:11px 14px;border:1px solid var(--line);border-radius:10px;font-size:14.5px;font-family:inherit;background:var(--paper);color:var(--ink)}
+    body.home2 .field select:focus,body.home2 .field input:focus{outline:none;border-color:var(--brand);background:#fff}
+    body.home2 .calc .btn-calc{width:100%;background:var(--brand);color:#fff;border:none;padding:13px 18px;border-radius:10px;font-size:14.5px;font-weight:700;cursor:pointer;font-family:inherit;letter-spacing:-.005em;transition:background .15s}
+    body.home2 .calc .btn-calc:hover{background:var(--brand-2)}
+    body.home2 .calc-foot{font-size:12px;color:var(--mute);margin-top:10px;text-align:center}
+    body.home2 .calc-result{margin-top:14px;padding:14px;background:var(--paper);border:1px dashed var(--line-2);border-radius:10px;font-size:14.5px;display:none}
+    body.home2 .calc-result.on{display:block}
+    body.home2 .calc-result b{color:var(--brand);font-weight:700;font-size:18px}
+
+    /* FAQ */
+    body.home2 .faq{display:flex;flex-direction:column;gap:8px;max-width:840px;margin:0 auto}
+    body.home2 details.q{background:#fff;border:1px solid var(--line);border-radius:12px;transition:box-shadow .2s, border-color .2s}
+    body.home2 details.q[open]{box-shadow:0 14px 30px -22px rgba(12,27,42,.25);border-color:var(--line-2)}
+    body.home2 details.q > summary{list-style:none;cursor:pointer;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:15.5px;font-weight:600;letter-spacing:-.005em;color:var(--ink)}
+    body.home2 details.q > summary::-webkit-details-marker{display:none}
+    body.home2 details.q .plus{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;flex:none;color:var(--brand);transition:transform .2s, background .2s;background:var(--paper)}
+    body.home2 details.q[open] .plus{transform:rotate(45deg);background:var(--brand);color:#fff;border-color:var(--brand)}
+    body.home2 details.q .a{padding:0 22px 18px;color:var(--mute);font-size:14.5px;line-height:1.6;max-width:72ch}
+
+    /* MANIFEST */
+    body.home2 .manifest-section{background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;padding:64px 0;border:none}
+    body.home2 .manifest-section .container{max-width:920px;margin:0 auto;padding:0 24px}
+    body.home2 .manifest-section .eyebrow-gold{text-align:center;text-transform:uppercase;letter-spacing:2px;font-size:.85rem;color:#fbbf24;margin:0 0 12px;font-weight:700}
+    body.home2 .manifest-section h2{text-align:center;color:#fff;margin:0 0 16px;font-size:2rem}
+    body.home2 .manifest-section .lead{text-align:center;color:rgba(255,255,255,.8);max-width:680px;margin:0 auto 40px;font-size:1.05rem;line-height:1.6}
+    body.home2 .manifest-list{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:40px}
+    body.home2 .manifest-item{display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,.05);border-left:4px solid #fbbf24;border-radius:8px}
+    body.home2 .manifest-item .num{flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:.95rem}
+    body.home2 .manifest-item h3{color:#fff;margin:0 0 4px;font-size:1.1rem;font-weight:700}
+    body.home2 .manifest-item p{color:rgba(255,255,255,.75);margin:0;font-size:.95rem;line-height:1.6}
+    body.home2 .manifest-cta{text-align:center}
+    body.home2 .manifest-cta p{color:rgba(255,255,255,.85);margin:0 0 20px;font-size:1rem}
+    body.home2 .manifest-buttons{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+    /* RATGEBER HUB */
+    body.home2 .ratgeber-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:1100px;margin:0 auto}
+    body.home2 .ratgeber-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;text-decoration:none;color:inherit;display:block;transition:transform .15s, box-shadow .15s}
+    body.home2 .ratgeber-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px -22px rgba(12,27,42,.3)}
+    body.home2 .ratgeber-card .tag{font-size:.72rem;font-weight:800;color:#2563eb;letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+    body.home2 .ratgeber-card strong{font-size:1rem;color:#111827;display:block;line-height:1.3}
+
+    /* FOOTER CTA + FOOTER */
+    body.home2 .final{background:linear-gradient(135deg,#0A1525 0%, #13243B 100%);color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:center;position:relative;overflow:hidden;box-shadow:0 40px 60px -40px rgba(12,27,42,.4);margin:24px 0}
+    body.home2 .final::before{content:"";position:absolute;right:-8%;top:-30%;width:480px;height:480px;border-radius:50%;background:radial-gradient(closest-side, rgba(244,199,112,.16), transparent 70%)}
+    @media (max-width:880px){body.home2 .final{grid-template-columns:1fr;padding:32px}}
+    body.home2 .final h2{font-size:clamp(24px, 3vw, 36px);letter-spacing:-.025em;line-height:1.1;font-weight:700;color:#fff}
+    body.home2 .final h2 .serif{color:#F4C770}
+    body.home2 .final p{color:#A8B5C7;margin-top:12px;font-size:15px;max-width:50ch}
+    body.home2 .final .qr-final{display:flex;flex-direction:column;align-items:flex-start;gap:14px;position:relative;z-index:1}
+    body.home2 .final .qr-final img{width:160px;height:160px;border-radius:12px;background:#fff;padding:8px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+
+    body.home2 footer.site{padding:48px 0 32px;background:#0A1623;color:#A8B5C7;font-size:13.5px;border:none}
+    body.home2 footer.site .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:28px}
+    @media (max-width:880px){body.home2 footer.site .cols{grid-template-columns:1fr 1fr}}
+    body.home2 footer.site h4{color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:12px}
+    body.home2 footer.site ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px}
+    body.home2 footer.site a{color:#A8B5C7;text-decoration:none}
+    body.home2 footer.site a:hover{color:#fff}
+    body.home2 footer.site .legal{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding-top:18px;flex-wrap:wrap;gap:12px;font-size:12.5px}
+    body.home2 footer.site .brand{color:#fff}
+    body.home2 footer.site .brand .name{color:#fff}
+
+    /* Floating action — overrides legacy .floating-cta from style.css when present */
+    body.home2 .float-actions{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+    body.home2 .float-actions a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 16px 30px -14px rgba(0,0,0,.4);transition:transform .15s}
+    body.home2 .float-actions a:hover{transform:translateY(-2px)}
+    body.home2 .float-actions .call{background:#2A7BD9}
+    body.home2 .float-actions .chat{background:var(--wa)}
+  </style>
 </head>
-<body>
+<body class="home2">
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">K</div>
-        Küchen-Montage Hamburg
+  <header class="site">
+    <div class="wrap navbar">
+      <a class="brand" href="/">
+        <span class="logo-mark">K</span>
+        <span class="name">Küchen-Montage Hamburg<small>Festpreis · seit 2008</small></span>
       </a>
       <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
-        <a href="/">Startseite</a>
+      <nav class="primary">
+        <a href="/" class="active">Startseite</a>
         <a href="#leistungen">Leistungen</a>
         <a href="pages/preise.html">Preise</a>
         <a href="#stadtteile">Stadtteile</a>
@@ -189,902 +566,814 @@
         <a href="pages/blog/index.html">Blog</a>
         <a href="pages/kontakt.html">Kontakt</a>
       </nav>
-      </div>
+    </div>
   </header>
 
   <main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div>
-          <h1>Küchenmontage &amp; Küchenaufbau in Hamburg — Ihr Küchenexperte</h1>
-          <p>IKEA Montage, Kücheneinbau, Geschirrspüler &amp; Spülmaschine anschließen, Waschmaschine, Herd anschließen. Wasserhahn &amp; Spüle austauschen. Aufmaß, Küchenplanung, Beratung &amp; Küchenkauf. Festpreise ab 60€. Keine versteckten Kosten.</p>
-          <div class="hero-buttons" style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
-            <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." class="btn btn-whatsapp btn-lg" aria-label="WhatsApp-Nachricht senden — Hero">&#128172; WhatsApp schreiben</a>
-            <img width="400" height="248" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD Zertifizierung" style="width:auto;height:50px;border-radius:8px;background:#fff;padding:3px;box-shadow:0 2px 10px rgba(0,0,0,0.2);">
-            <img width="447" height="600" src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner" title="GARANT Autorisierter Fachhandelspartner" style="width:auto;height:50px;border-radius:8px;background:#fff;padding:3px;box-shadow:0 2px 10px rgba(0,0,0,0.2);">
-          </div>
-          <div class="hero-stats">
-            <div class="hero-stat">
-              <div class="hero-stat-num">18+</div>
-              <div class="hero-stat-label">Jahre Erfahrung</div>
-            </div>
-            <div class="hero-stat">
-              <div class="hero-stat-num">2.500+</div>
-              <div class="hero-stat-label">Zufriedene Kunden</div>
-            </div>
-          </div>
 
-          <!-- Live review badges (Google + CHECK24) under hero stats -->
-          <div class="hero-reviews" aria-label="Bewertungen">
-            <a id="google-review-pill" class="hero-review-pill" href="https://search.google.com/local/reviews?placeid=ChIJjScstGyJsUcRNCX4r6ygI6c" target="_blank" rel="nofollow noopener" aria-label="Google-Bewertungen für PRULOG ansehen">
-              <span class="rev-icon rev-icon-google" aria-hidden="true">
-                <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#4285f4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#34a853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="#fbbc05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#ea4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/></svg>
-              </span>
-              <span class="rev-content">
-                <span id="google-rating" class="rev-rating">5,0 <span class="rev-star">★</span></span>
-                <span id="google-label" class="rev-label">Google-Bewertungen ansehen</span>
-              </span>
-            </a>
-            <a class="hero-review-pill" href="#bewertungen" target="_blank" rel="nofollow noopener" aria-label="CHECK24 Profis Bewertungen — 8,8 von 10 — Großartig">
-              <span class="rev-icon rev-icon-check24" aria-hidden="true">24</span>
-              <span class="rev-content">
-                <span class="rev-rating">8,8 <span class="rev-star">★</span></span>
-                <span class="rev-label">Großartig · CHECK24 Profi · 20 Bewertungen</span>
-              </span>
-            </a>
-            <a class="hero-review-write" href="https://search.google.com/local/writereview?placeid=ChIJjScstGyJsUcRNCX4r6ygI6c" target="_blank" rel="nofollow noopener" aria-label="Eigene Bewertung auf Google schreiben">
-              ✎ Bewertung schreiben
-            </a>
+  <!-- HERO -->
+  <section class="hero" id="hero" aria-labelledby="h1">
+    <div class="bg-numeral" aria-hidden="true">18</div>
+    <div class="wrap hero-inner">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>Über 2.500 Küchen in Hamburg montiert</span>
+        <h1 class="hero-h" id="h1">
+          <span class="top">Küchenmontage &amp; Küchenaufbau in <em>Hamburg</em></span>
+          <span class="word">Ihr Küchen<span class="accent-gold">experte</span></span><span class="ast">✦</span>
+        </h1>
+        <p class="lede">
+          <b>IKEA Montage, Kücheneinbau, Geschirrspüler &amp; Spülmaschine anschließen, Waschmaschine, Herd anschließen.</b>
+          Wasserhahn &amp; Spüle austauschen. Aufmaß, Küchenplanung, Beratung &amp; Küchenkauf.
+          <b>Festpreise ab 60€. Keine versteckten Kosten.</b>
+        </p>
+        <div class="cta-row">
+          <a class="ibtn ibtn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." rel="nofollow" aria-label="WhatsApp-Nachricht senden — Hero">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+            WhatsApp schreiben
+          </a>
+        </div>
+        <div class="badges-row">
+          <img class="badge-img" width="400" height="248" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD Zertifizierung">
+          <img class="badge-img" width="447" height="600" src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner" title="GARANT Autorisierter Fachhandelspartner">
+        </div>
+        <div class="stats" role="list">
+          <div class="stat" role="listitem"><div class="n">18<sup>+</sup></div><div class="l">Jahre Erfahrung</div></div>
+          <div class="stat" role="listitem"><div class="n">2.500<sup>+</sup></div><div class="l">Zufriedene Kunden</div></div>
+          <div class="stat" role="listitem"><div class="n">60<sup style="font-size:.5em">€</sup></div><div class="l">Festpreis ab</div></div>
+        </div>
+
+        <!-- Live review badges (Google + CHECK24) -->
+        <div class="reviews" aria-label="Bewertungen">
+          <a class="rev" id="google-review-pill" href="https://search.google.com/local/reviews?placeid=ChIJjScstGyJsUcRNCX4r6ygI6c" target="_blank" rel="nofollow noopener" aria-label="Google-Bewertungen für PRULOG ansehen">
+            <span class="ico g" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path fill="#4285f4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#34a853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/><path fill="#fbbc05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#ea4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/></svg>
+            </span>
+            <div>
+              <b id="google-rating">5,0 <span class="star">★</span></b>
+              <small id="google-label">Google-Bewertungen ansehen</small>
+            </div>
+          </a>
+          <a class="rev" href="#bewertungen" rel="nofollow noopener" aria-label="CHECK24 Profis Bewertungen — 8,8 von 10 — Großartig">
+            <span class="ico c" aria-hidden="true">24</span>
+            <div>
+              <b>8,8 <span class="star">★</span></b>
+              <small>Großartig · CHECK24 · 20 Bewertungen</small>
+            </div>
+          </a>
+        </div>
+        <a class="rev-link" href="https://search.google.com/local/writereview?placeid=ChIJjScstGyJsUcRNCX4r6ygI6c" target="_blank" rel="nofollow noopener" aria-label="Eigene Bewertung auf Google schreiben">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 20h9M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+          Bewertung schreiben
+        </a>
+
+        <!-- Inline KI Chat area (hidden by default, opened via #hero-chat-btn) -->
+        <div id="hero-chat-area">
+          <div class="chat-head">
+            <span>&#129302; Küchen-Assistent</span>
+            <button id="hero-chat-close" aria-label="Schließen">&times;</button>
           </div>
-          <!-- Animated Worker running on path -->
-          <div id="hero-worker" style="display:none;position:relative;width:100%;height:120px;margin-top:10px;overflow:hidden;">
-            <!-- Path / ground -->
-            <div style="position:absolute;bottom:8px;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3) 20%,rgba(255,255,255,0.3) 80%,transparent);border-radius:2px;"></div>
-            <!-- Dotted path -->
-            <div style="position:absolute;bottom:12px;left:5%;right:5%;border-bottom:2px dashed rgba(255,255,255,0.15);"></div>
-            <!-- Running worker -->
-            <div id="running-worker" style="position:absolute;bottom:10px;left:0;">
-              <svg width="60" height="100" viewBox="0 0 60 100" style="overflow:visible;">
-                <!-- Shadow -->
-                <ellipse cx="30" cy="97" rx="14" ry="3" fill="rgba(0,0,0,0.2)">
-                  <animate attributeName="rx" values="14;10;14" dur="0.4s" repeatCount="indefinite"/>
-                </ellipse>
-                <!-- Body bounce -->
-                <g>
-                  <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="0.4s" repeatCount="indefinite"/>
-                  <!-- Hard hat -->
-                  <path d="M18 12 Q30 0 42 12 L44 16 Q30 14 16 16 Z" fill="#f4a300"/>
-                  <rect x="16" y="14" width="28" height="4" rx="2" fill="#e8950a"/>
-                  <!-- Head -->
-                  <ellipse cx="30" cy="24" rx="10" ry="11" fill="#f0b890"/>
-                  <!-- Hair -->
-                  <path d="M20 18 Q25 13 30 15 Q35 13 40 18" fill="#5a3825" stroke="none"/>
-                  <!-- Ear -->
-                  <ellipse cx="20" cy="24" rx="2.5" ry="3" fill="#e8a878"/>
-                  <!-- Eye -->
-                  <ellipse cx="26" cy="22" rx="1.8" ry="2" fill="#fff"/>
-                  <circle cx="26.5" cy="22" r="1" fill="#333"/>
-                  <ellipse cx="34" cy="22" rx="1.8" ry="2" fill="#fff"/>
-                  <circle cx="34.5" cy="22" r="1" fill="#333"/>
-                  <!-- Eyebrow -->
-                  <line x1="23" y1="18" x2="29" y2="19" stroke="#5a3825" stroke-width="1.2"/>
-                  <line x1="31" y1="19" x2="37" y2="18" stroke="#5a3825" stroke-width="1.2"/>
-                  <!-- Nose -->
-                  <path d="M29 25 Q30 27 31 25" stroke="#d4956b" stroke-width="1" fill="none"/>
-                  <!-- Smile -->
-                  <path d="M25 29 Q30 33 35 29" stroke="#c1624d" stroke-width="1.5" fill="none"/>
-                  <!-- Neck -->
-                  <rect x="27" y="34" width="6" height="4" fill="#f0b890"/>
-                  <!-- Torso / work shirt -->
-                  <path d="M18 38 L42 38 L44 68 L16 68 Z" fill="#1d3557" rx="3"/>
-                  <!-- Collar -->
-                  <path d="M24 38 L30 44 L36 38" fill="#14253d" stroke="none"/>
-                  <!-- Pocket -->
-                  <rect x="32" y="50" width="7" height="6" rx="1" fill="#14253d" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
-                  <!-- Logo on chest -->
-                  <text x="22" y="48" font-size="4" fill="rgba(255,255,255,0.4)" font-weight="bold">PRU</text>
-                  <!-- Belt -->
-                  <rect x="16" y="64" width="28" height="4" rx="1" fill="#6b3a1f"/>
-                  <rect x="28" y="63" width="4" height="6" rx="1" fill="#c0c0c0"/>
-                  <!-- Tool pouch on belt -->
-                  <rect x="37" y="63" width="6" height="8" rx="1" fill="#8b5e3c"/>
-                  <!-- Right arm with wrench (front arm) -->
-                  <g>
-                    <animateTransform attributeName="transform" type="rotate" values="30,42,42;-20,42,42;30,42,42" dur="0.4s" repeatCount="indefinite"/>
-                    <!-- Upper arm -->
-                    <line x1="42" y1="42" x2="54" y2="50" stroke="#1d3557" stroke-width="6" stroke-linecap="round"/>
-                    <!-- Forearm -->
-                    <line x1="54" y1="50" x2="58" y2="38" stroke="#f0b890" stroke-width="4" stroke-linecap="round"/>
-                    <!-- Wrench -->
-                    <g transform="translate(58,34) rotate(-30)">
-                      <rect x="-2" y="-12" width="4" height="16" rx="1.5" fill="#8a8a8a"/>
-                      <path d="M-4 -14 L4 -14 L3 -10 L-3 -10 Z" fill="#999"/>
-                      <path d="M-4 -16 Q0 -20 4 -16" fill="#999"/>
-                    </g>
-                  </g>
-                  <!-- Left arm (back arm) -->
-                  <g>
-                    <animateTransform attributeName="transform" type="rotate" values="-20,18,42;30,18,42;-20,18,42" dur="0.4s" repeatCount="indefinite"/>
-                    <line x1="18" y1="42" x2="6" y2="50" stroke="#1d3557" stroke-width="6" stroke-linecap="round"/>
-                    <line x1="6" y1="50" x2="4" y2="40" stroke="#f0b890" stroke-width="4" stroke-linecap="round"/>
-                  </g>
-                  <!-- Left leg -->
-                  <g>
-                    <animateTransform attributeName="transform" type="rotate" values="-25,24,68;25,24,68;-25,24,68" dur="0.4s" repeatCount="indefinite"/>
-                    <!-- Thigh -->
-                    <line x1="24" y1="68" x2="20" y2="82" stroke="#2c4a7c" stroke-width="7" stroke-linecap="round"/>
-                    <!-- Shin -->
-                    <line x1="20" y1="82" x2="16" y2="93" stroke="#2c4a7c" stroke-width="6" stroke-linecap="round"/>
-                    <!-- Boot -->
-                    <path d="M12 90 L20 90 L22 95 L10 95 Z" fill="#333" rx="1"/>
-                  </g>
-                  <!-- Right leg -->
-                  <g>
-                    <animateTransform attributeName="transform" type="rotate" values="25,36,68;-25,36,68;25,36,68" dur="0.4s" repeatCount="indefinite"/>
-                    <line x1="36" y1="68" x2="40" y2="82" stroke="#2c4a7c" stroke-width="7" stroke-linecap="round"/>
-                    <line x1="40" y1="82" x2="44" y2="93" stroke="#2c4a7c" stroke-width="6" stroke-linecap="round"/>
-                    <path d="M40 90 L48 90 L50 95 L38 95 Z" fill="#333" rx="1"/>
-                  </g>
-                </g>
-              </svg>
-            </div>
-            <!-- Trail text that follows -->
-            <div id="worker-trail" style="position:absolute;bottom:20px;left:0;opacity:0;white-space:nowrap;pointer-events:none;">
-              <span style="font-size:1.1rem;font-weight:700;color:#25d366;text-shadow:0 0 10px rgba(37,211,102,0.5);letter-spacing:1px;">
-                &#x1F3C3; Sie sind fast am Ziel! &#127942;
-              </span>
-            </div>
-            <!-- Celebration sparkles -->
-            <div id="worker-celebration" style="position:absolute;right:20px;top:0;bottom:0;display:none;align-items:center;justify-content:center;">
-              <svg width="60" height="60" viewBox="0 0 60 60">
-                <g id="sparkles">
-                  <line x1="30" y1="5" x2="30" y2="15" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
-                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
-                  </line>
-                  <line x1="50" y1="15" x2="42" y2="22" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
-                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.2s" repeatCount="indefinite"/>
-                  </line>
-                  <line x1="55" y1="30" x2="45" y2="30" stroke="#25d366" stroke-width="2" stroke-linecap="round">
-                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
-                  </line>
-                  <line x1="10" y1="15" x2="18" y2="22" stroke="#ffd700" stroke-width="2" stroke-linecap="round">
-                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.3s" repeatCount="indefinite"/>
-                  </line>
-                  <line x1="5" y1="30" x2="15" y2="30" stroke="#25d366" stroke-width="2" stroke-linecap="round">
-                    <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.5s" repeatCount="indefinite"/>
-                  </line>
-                  <circle cx="30" cy="30" r="3" fill="#ffd700">
-                    <animate attributeName="r" values="2;5;2" dur="1s" repeatCount="indefinite"/>
-                    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
-                  </circle>
-                </g>
-              </svg>
-            </div>
+          <div id="hero-chat-messages"></div>
+          <div class="chat-input-row">
+            <input type="text" id="hero-chat-input" placeholder="Ihre Frage..." autocomplete="off" />
+            <button id="hero-chat-mic" title="Spracheingabe">&#127908;</button>
+            <button id="hero-chat-send" aria-label="Senden">&#10148;</button>
           </div>
         </div>
-        <div class="hero-image" style="display:flex;flex-direction:column;align-items:center;gap:28px;">
-          <span class="hero-badge">&#9889; Same-Day-Service verfügbar</span>
-          <div style="display:flex;align-items:stretch;background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-radius:16px;border:1px solid rgba(255,255,255,0.15);overflow:hidden;">
-            <a href="https://wa.me/4915218547875" target="_blank" rel="noopener" style="flex-shrink:0;display:block;line-height:0;">
-              <img width="370" height="370" src="img/whatsapp-qr.png" alt="WhatsApp QR-Code" style="width:130px;height:130px;display:block;border-radius:16px 0 0 16px;background:#fff;padding:6px;">
-            </a>
-            <div style="color:#fff;text-align:left;display:flex;flex-direction:column;justify-content:center;padding:0 20px;">
-              <div style="font-size:0.85rem;opacity:0.8;">WhatsApp:</div>
-              <a href="https://wa.me/4915218547875" style="font-size:1.4rem;font-weight:700;color:#25d366;text-decoration:none;">0152 185 478 75</a>
-              <div style="font-size:0.8rem;opacity:0.7;margin-top:4px;">Bitte per WhatsApp anrufen</div>
+      </div>
+
+      <div class="collage">
+        <figure class="portrait">
+          <div class="photo" role="img" aria-label="Ihr Küchenexperte in Hamburg mit 18 Jahren Erfahrung">
+            <img src="img/profile/profile.webp" alt="Ihr Küchenexperte in Hamburg mit 18 Jahren Erfahrung" width="550" height="550" fetchpriority="high">
+          </div>
+          <figcaption class="meta">
+            <div class="who">Ihr Küchenexperte<small>Meisterbetrieb · 18 J. Erfahrung</small></div>
+            <span class="pin">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Hamburg
+            </span>
+          </figcaption>
+        </figure>
+
+        <a class="qr-card" href="https://wa.me/4915218547875" target="_blank" rel="noopener" aria-label="WhatsApp QR-Code — direkt zu WhatsApp">
+          <div class="qr"><img width="370" height="370" src="img/whatsapp-qr.png" alt="WhatsApp QR-Code"></div>
+          <div>
+            <div class="tel">0152 185 478 75</div>
+            <div class="lbl">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+              Bitte per WhatsApp anrufen
             </div>
           </div>
-          <img width="550" height="550" src="img/profile/profile.webp" alt="Ihr Küchenexperte in Hamburg mit 18 Jahren Erfahrung" fetchpriority="high" style="width:100%;max-width:350px;border-radius:var(--radius);box-shadow:var(--shadow-lg);">
-          <button id="hero-chat-btn" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.12);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,0.2);color:#fff;padding:12px 24px;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;transition:all 0.3s ease;">
-            <span style="font-size:1.3rem;">&#129302;</span> KI-Assistent starten
-          </button>
-          <!-- Inline Chat Area -->
-          <div id="hero-chat-area" style="display:none;width:100%;max-width:380px;overflow:hidden;border-radius:20px;background:rgba(255,255,255,0.08);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.15);">
-            <div style="padding:12px 16px;border-bottom:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;">
-              <span style="color:#fff;font-weight:700;font-size:0.95rem;">&#129302; Küchen-Assistent</span>
-              <button id="hero-chat-close" style="background:none;border:none;color:rgba(255,255,255,0.7);font-size:1.4rem;cursor:pointer;padding:0 4px;">&times;</button>
-            </div>
-            <div id="hero-chat-messages" style="overflow-y:auto;padding:12px;display:flex;flex-direction:column;gap:8px;height:220px;"></div>
-            <div style="display:flex;padding:10px;gap:6px;border-top:1px solid rgba(255,255,255,0.1);">
-              <input type="text" id="hero-chat-input" placeholder="Ihre Frage..." autocomplete="off" style="flex:1;padding:10px 14px;border:none;border-radius:50px;font-size:0.9rem;outline:none;background:rgba(255,255,255,0.15);color:#fff;font-family:inherit;" />
-              <button id="hero-chat-mic" title="Spracheingabe" style="background:rgba(255,255,255,0.15);color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;">&#127908;</button>
-              <button id="hero-chat-send" style="background:#25d366;color:#fff;border:none;border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center;">&#10148;</button>
-            </div>
-          </div>
-        </div>
+        </a>
+
+        <div class="sticker">✦ Festpreis ab 60€</div>
+
+        <button class="ki" id="hero-chat-btn" type="button">
+          <span class="live" aria-hidden="true"></span>
+          <span class="bot" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="3"/><circle cx="8" cy="13" r="1.5" fill="currentColor"/><circle cx="16" cy="13" r="1.5" fill="currentColor"/><path d="M12 3v4M9 21h6"/></svg>
+          </span>
+          KI-Assistent starten
+        </button>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>IKEA Montage</span><span class="dot">✦</span>
+        <span>Küchen<em>einbau</em></span><span class="dot">✦</span>
+        <span>Spülmaschine anschließen</span><span class="dot">✦</span>
+        <span>Waschmaschine</span><span class="dot">✦</span>
+        <span>Herd <em>anschließen</em></span><span class="dot">✦</span>
+        <span>Wasserhahn</span><span class="dot">✦</span>
+        <span>Spüle <em>austauschen</em></span><span class="dot">✦</span>
+        <span>Aufmaß</span><span class="dot">✦</span>
+        <span>Küchen<em>planung</em></span><span class="dot">✦</span>
+        <span>Beratung</span><span class="dot">✦</span>
+        <span>Küchenkauf</span><span class="dot">✦</span>
+        <span>IKEA Montage</span><span class="dot">✦</span>
+        <span>Küchen<em>einbau</em></span><span class="dot">✦</span>
+        <span>Spülmaschine anschließen</span><span class="dot">✦</span>
+        <span>Waschmaschine</span><span class="dot">✦</span>
+        <span>Herd <em>anschließen</em></span><span class="dot">✦</span>
+        <span>Wasserhahn</span><span class="dot">✦</span>
+        <span>Spüle <em>austauschen</em></span><span class="dot">✦</span>
+        <span>Aufmaß</span><span class="dot">✦</span>
+        <span>Küchen<em>planung</em></span><span class="dot">✦</span>
+        <span>Beratung</span><span class="dot">✦</span>
+        <span>Küchenkauf</span><span class="dot">✦</span>
       </div>
     </div>
   </section>
 
-  <!-- TRUST BAR -->
-  <div class="trust-bar">
-    <div class="container">
-      <div class="trust-bar-inner">
-        <div class="trust-item"><span class="trust-icon">&#9989;</span> Festpreise — keine versteckten Kosten</div>
-        <div class="trust-item"><span class="trust-icon">&#128197;</span> Same-Day-Service</div>
-        <div class="trust-item"><span class="trust-icon">&#128170;</span> 18 Jahre Erfahrung</div>
-        <div class="trust-item"><span class="trust-icon">&#128274;</span> 5 Jahre Garantie</div>
-        <div class="trust-item"><span class="trust-icon">&#129302;</span> KI-Assistent 24/7</div>
-        <div class="trust-item"><img width="400" height="248" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD Zertifizierung" style="width:auto;height:24px;vertical-align:middle;margin-right:4px;border-radius:3px;"> TÜV zertifiziert</div>
-      </div>
+  <!-- TRUST BAND -->
+  <section class="trust-band" style="padding:18px 0;border:none">
+    <div class="wrap trust-row">
+      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1F8A5B" stroke-width="2.2" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Festpreise — keine versteckten Kosten</span>
+      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2A6FDB" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Same-Day-Service</span>
+      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B58320" stroke-width="2" aria-hidden="true"><path d="M12 2l3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z"/></svg>18 Jahre Erfahrung</span>
+      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B7261F" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg>5 Jahre Garantie</span>
+      <span class="trust-pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#7A4FCB" stroke-width="2" aria-hidden="true"><rect x="3" y="7" width="18" height="12" rx="3"/><circle cx="8" cy="13" r="1.5" fill="#7A4FCB"/><circle cx="16" cy="13" r="1.5" fill="#7A4FCB"/><path d="M12 3v4"/></svg>KI-Assistent 24/7</span>
+      <span class="trust-pill tuv">
+        <span class="seal">TÜV<br>NORD</span>
+        TÜV NORD zertifizierter Fachbetrieb
+      </span>
     </div>
-  </div>
-
-  <!-- TÜV NORD BANNER -->
-  <div style="background:linear-gradient(135deg,#1a73e8,#0d47a1);padding:16px 0;text-align:center;">
-    <div class="container" style="display:flex;align-items:center;justify-content:center;gap:16px;">
-      <img width="400" height="248" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD Zertifizierung" style="width:auto;height:80px;border-radius:8px;background:#fff;padding:6px;">
-      <span style="font-size:1rem;font-weight:600;color:#fff;">TÜV NORD zertifizierter Fachbetrieb</span>
-    </div>
-  </div>
+  </section>
 
   <!-- GALLERY -->
-  <section class="section" id="galerie">
-    <div class="container">
-      <h2 class="text-center">Unsere Arbeiten</h2>
-      <p class="section-subtitle text-center">Einblicke in unsere tägliche Arbeit — Küchenmontage, Geräteanschluss und mehr</p>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:960px;margin:0 auto;">
-        <img width="600" height="450" src="foto/19b63898-b5c5-4335-a2eb-406beabb7dbd-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Moderne U-Form Küche in Dunkelgrün — fertig montiert in Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename, not a secret -->
-        <img width="600" height="389" src="foto/3426ab48-9da3-471d-9468-182cde68cca6-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Zufriedener Kunde mit Küchenmonteur — weiße Küche mit Kochinsel" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename -->
-        <img width="600" height="436" src="foto/8d1ff7b4-3173-4ba3-b947-f8129f0cfb0a-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Hochwertige Küche mit Holzoptik und Kochinsel — fertig montiert" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename -->
-        <img width="462" height="600" src="foto/bb88caa6-f344-4858-afce-ff8c927cfa6e-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Küchenmonteur in fertiger grauer IKEA-Küche — Küchenmontage Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename -->
-        <img width="600" height="450" src="foto/2968c91b-eddc-413f-af14-3bdab0dc5f5c-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Arbeitsplatte zuschneiden mit Festool — Küchenmontage in Arbeit" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename -->
-        <img width="444" height="600" src="foto/8868c796-c0e3-4f8b-9b56-e4a1902ae146-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Küchenmontage-Team bei der Arbeit — Selfie auf der Baustelle" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy"><!-- example: legacy CMS image filename -->
-        <img width="800" height="600" src="foto/IMG_0706_opt.webp" alt="Büro und Ausstellungsküche — Küchen-Montage Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
-        <img width="800" height="600" src="foto/IMG_0708_opt.webp" alt="Showroom mit moderner grauer Küche — Küchenplanung Hamburg" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
-        <img width="800" height="600" src="foto/IMG_0804_opt.webp" alt="CARAT Küchenplanung am Ultrawide-Monitor — professionelle 3D-Planung" style="aspect-ratio:4/3;object-fit:cover;border-radius:16px;width:100%;box-shadow:0 4px 16px rgba(0,0,0,0.06);cursor:pointer;" loading="lazy">
+  <section class="s compact" id="galerie" aria-labelledby="gal-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Unsere Arbeiten</div>
+        <h2 class="h" id="gal-h">Einblicke in <span class="serif">unsere tägliche Arbeit</span></h2>
+        <p class="sec-sub">Küchenmontage, Geräteanschluss und mehr — Originalbilder aus Hamburger Wohnungen.</p>
       </div>
-      <p style="text-align:center;margin-top:28px;">
-        <a href="pages/galerie.html" class="btn btn-outline">Alle Fotos ansehen</a>
-      </p>
+
+      <div class="gallery">
+        <a href="pages/galerie.html" aria-label="Moderne U-Form Küche in Dunkelgrün">
+          <img width="600" height="450" loading="lazy" src="foto/19b63898-b5c5-4335-a2eb-406beabb7dbd-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Moderne U-Form Küche in Dunkelgrün — fertig montiert in Hamburg">
+          <span class="cap">U-Form · Dunkelgrün</span>
+        </a>
+        <a href="pages/galerie.html" aria-label="Weiße Küche mit Kochinsel">
+          <img width="600" height="389" loading="lazy" src="foto/3426ab48-9da3-471d-9468-182cde68cca6-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Zufriedener Kunde mit Küchenmonteur — weiße Küche mit Kochinsel">
+          <span class="cap">Weiß · Kochinsel</span>
+        </a>
+        <a href="pages/galerie.html" aria-label="Hochwertige Küche mit Holzoptik">
+          <img width="600" height="436" loading="lazy" src="foto/8d1ff7b4-3173-4ba3-b947-f8129f0cfb0a-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Hochwertige Küche mit Holzoptik und Kochinsel — fertig montiert">
+          <span class="cap">Holzoptik · Insel</span>
+        </a>
+        <a href="pages/galerie.html" aria-label="Graue IKEA-Küche">
+          <img width="462" height="600" loading="lazy" src="foto/bb88caa6-f344-4858-afce-ff8c927cfa6e-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Küchenmonteur in fertiger grauer IKEA-Küche — Küchenmontage Hamburg">
+          <span class="cap">IKEA · Grau</span>
+        </a>
+        <a href="pages/galerie.html" aria-label="Arbeitsplatte zuschneiden">
+          <img width="600" height="450" loading="lazy" src="foto/2968c91b-eddc-413f-af14-3bdab0dc5f5c-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Arbeitsplatte zuschneiden mit Festool — Küchenmontage in Arbeit">
+          <span class="cap">Arbeitsplatte</span>
+        </a>
+        <a href="pages/galerie.html" aria-label="CARAT Küchenplanung">
+          <img width="800" height="600" loading="lazy" src="foto/IMG_0804_opt.webp" alt="CARAT Küchenplanung am Ultrawide-Monitor — professionelle 3D-Planung">
+          <span class="cap">3D Planung · CARAT</span>
+        </a>
+      </div>
+      <div class="gallery-foot">
+        <a class="ibtn ibtn-outline" href="pages/galerie.html">Alle Fotos ansehen
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- INLINE CTA WITH PHONE -->
-  <section class="gallery-cta">
-    <div class="container">
-      <div class="gallery-cta-inner">
-        <div class="gallery-cta-left">
-          <img width="550" height="550" src="img/profile/profile.webp" alt="Ihr Küchenexperte in Hamburg" class="gallery-cta-photo">
-          <div>
-            <div class="gallery-cta-name">Ihr Küchenexperte</div>
-            <div class="gallery-cta-role">in Hamburg — 18 Jahre Erfahrung</div>
-          </div>
+  <!-- CONTACT STRIP -->
+  <section class="contact-strip">
+    <div class="wrap contact-row">
+      <div class="who">
+        <div class="av"><img src="img/profile/profile.webp" alt="Ihr Küchenexperte in Hamburg"></div>
+        <div>
+          <h3>Ihr Küchenexperte</h3>
+          <p>in Hamburg <span class="serif" style="color:#F4C770">—</span> 18 Jahre Erfahrung</p>
         </div>
-        <div class="gallery-cta-center">
-          <div class="gallery-cta-phone-label">Bitte per WhatsApp anrufen oder schreiben</div>
-          <a href="https://wa.me/4915218547875" class="gallery-cta-phone" aria-label="WhatsApp anrufen — Galerie">0152 185 478 75</a>
-        </div>
-        <div class="gallery-cta-right">
-          <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." class="btn btn-whatsapp" aria-label="WhatsApp-Nachricht senden — Galerie">&#128172; WhatsApp</a>
-          <a href="https://wa.me/4915218547875" class="btn btn-primary" aria-label="WhatsApp-Anruf starten — Galerie">&#128222; WhatsApp Anruf</a>
+      </div>
+      <div class="tel-block">
+        <div class="label">Bitte per WhatsApp<br>anrufen oder schreiben</div>
+        <a class="tel" href="https://wa.me/4915218547875" aria-label="WhatsApp anrufen — Galerie">0152 185 478 75</a>
+        <div class="actions">
+          <a class="ibtn ibtn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20Hilfe%20mit..." rel="nofollow" style="padding:12px 18px" aria-label="WhatsApp-Nachricht senden — Galerie">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+            WhatsApp
+          </a>
+          <a class="ibtn ibtn-wa-alt" href="https://wa.me/4915218547875" rel="nofollow" style="padding:12px 18px" aria-label="WhatsApp-Anruf starten — Galerie">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+            WhatsApp Anruf
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section" id="leistungen">
-    <div class="container">
-      <h2 class="text-center">Unsere Leistungen</h2>
-      <p class="section-subtitle text-center">Professioneller Küchen- und Sanitärservice in Hamburg — alles aus einer Hand</p>
+  <section class="s alt compact" id="leistungen" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Unsere Leistungen</div>
+        <h2 class="h" id="svc-h">Professioneller Küchen- &amp; Sanitärservice <span class="serif">— alles aus einer Hand</span></h2>
+      </div>
+
       <div class="services-grid">
 
-        <a class="service-card" href="/waschmaschine-anschliessen-hamburg/" aria-label="Waschmaschine anschließen — Festpreis ab 60€">
-          <div class="service-card-icon"><img src="img/icons/waschmaschine.webp" alt="Waschmaschine anschließen" width="120" height="120"></div>
+        <a class="svc" href="/waschmaschine-anschliessen-hamburg/" aria-label="Waschmaschine anschließen — Festpreis ab 60€">
+          <div class="ic"><img src="img/icons/waschmaschine.webp" alt="Waschmaschine anschließen" width="120" height="120" loading="lazy"></div>
           <h3>Waschmaschine anschließen</h3>
           <p>Aufstellen, Anschluss an Wasser &amp; Strom, Dichtigkeitsprüfung. Inkl. Anfahrt in Hamburg.</p>
-          <div class="service-price">ab 60€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 60€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/herd-anschliessen-hamburg.html" aria-label="Herd anschließen — Festpreis ab 89€">
-          <div class="service-card-icon"><img src="img/icons/herd.webp" alt="Herd anschließen" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/herd-anschliessen-hamburg.html" aria-label="Herd anschließen — Festpreis ab 89€">
+          <div class="ic"><img src="img/icons/herd.webp" alt="Herd anschließen" width="120" height="120" loading="lazy"></div>
           <h3>Herd anschließen</h3>
           <p>Elektroherd, Gasherd, Induktionskochfeld. Fachgerechter Anschluss an Starkstrom 400V.</p>
-          <div class="service-price">ab 89€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 89€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/backofen-anschliessen-hamburg.html" aria-label="Backofen anschließen — Festpreis ab 89€">
-          <div class="service-card-icon"><img src="img/icons/herd.webp" alt="Backofen anschließen" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/backofen-anschliessen-hamburg.html" aria-label="Backofen anschließen — Festpreis ab 89€">
+          <div class="ic"><img src="img/icons/herd.webp" alt="Backofen anschließen" width="120" height="120" loading="lazy"></div>
           <h3>Backofen anschließen</h3>
           <p>Einbau-Backofen, Pyrolyse, Dampfgarer. 230V oder Starkstrom — fachgerecht mit Funktionstest.</p>
-          <div class="service-price">ab 89€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 89€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/spuelmaschine-anschliessen-hamburg.html" aria-label="Spülmaschine anschließen — Festpreis ab 139€">
-          <div class="service-card-icon"><img src="img/icons/spuelmaschine.webp" alt="Spülmaschine anschließen" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/spuelmaschine-anschliessen-hamburg.html" aria-label="Spülmaschine anschließen — Festpreis ab 139€">
+          <div class="ic"><img src="img/icons/spuelmaschine.webp" alt="Spülmaschine anschließen" width="120" height="120" loading="lazy"></div>
           <h3>Spülmaschine anschließen</h3>
           <p>Einbau, Wasseranschluss, Abwasser, Strom. Einbaugeräte &amp; freistehende Modelle.</p>
-          <div class="service-price">ab 139€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 139€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/wasserhahn-austauschen-hamburg.html" aria-label="Wasserhahn austauschen — Festpreis ab 89€">
-          <div class="service-card-icon"><img src="img/icons/wasserhahn.webp" alt="Wasserhahn austauschen" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/wasserhahn-austauschen-hamburg.html" aria-label="Wasserhahn austauschen — Festpreis ab 89€">
+          <div class="ic"><img src="img/icons/wasserhahn.webp" alt="Wasserhahn austauschen" width="120" height="120" loading="lazy"></div>
           <h3>Wasserhahn austauschen</h3>
           <p>Küche &amp; Bad. Alte Armatur demontieren, neue fachgerecht montieren, Dichtigkeit prüfen.</p>
-          <div class="service-price">ab 89€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 89€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/spuele-austauschen-hamburg.html" aria-label="Spüle austauschen — Festpreis ab 149€">
-          <div class="service-card-icon"><img src="img/icons/spuele.webp" alt="Spüle austauschen" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/spuele-austauschen-hamburg.html" aria-label="Spüle austauschen — Festpreis ab 149€">
+          <div class="ic"><img src="img/icons/spuele.webp" alt="Spüle austauschen" width="120" height="120" loading="lazy"></div>
           <h3>Spüle austauschen</h3>
           <p>Küchenspüle demontieren und neue Spüle einbauen inkl. Siphon und Armatur.</p>
-          <div class="service-price">ab 149€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 149€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/wasseranschluss-kueche-hamburg.html" aria-label="Wasseranschluss Küche — Festpreis ab 149€">
-          <div class="service-card-icon"><img src="img/icons/wasserhahn.webp" alt="Wasseranschluss Küche Hamburg" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/wasseranschluss-kueche-hamburg.html" aria-label="Wasseranschluss Küche — Festpreis ab 149€">
+          <div class="ic"><img src="img/icons/wasserhahn.webp" alt="Wasseranschluss Küche Hamburg" width="120" height="120" loading="lazy"></div>
           <h3>Wasseranschluss Küche</h3>
           <p>Wasserleitung verlegen, Abfluss legen, Siphon &amp; Eckventile. Auch Spülmaschinen-Anschluss nachrüsten.</p>
-          <div class="service-price">ab 149€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 149€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/kuechenmontage-hamburg.html" aria-label="Küchenmontage — Festpreis ab 299€">
-          <div class="service-card-icon"><img src="img/icons/kuechenmontage.webp" alt="Küchenmontage" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/kuechenmontage-hamburg.html" aria-label="Küchenmontage — Festpreis ab 299€">
+          <div class="ic"><img src="img/icons/kuechenmontage.webp" alt="Küchenmontage" width="120" height="120" loading="lazy"></div>
           <h3>Küchenmontage</h3>
           <p>Kompletter Auf- und Einbau Ihrer Küche. IKEA, Nobilia, Nolte und alle anderen Marken.</p>
-          <div class="service-price">ab 299€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 299€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/kuechen-abbau-hamburg.html" aria-label="Küchenabbau — Festpreis ab 199€">
-          <div class="service-card-icon"><img src="img/icons/kuechenabbau.webp" alt="Küchenabbau" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/kuechen-abbau-hamburg.html" aria-label="Küchenabbau — Festpreis ab 199€">
+          <div class="ic"><img src="img/icons/kuechenabbau.webp" alt="Küchenabbau" width="120" height="120" loading="lazy"></div>
           <h3>Küchenabbau</h3>
           <p>Fachgerechter Abbau und Entsorgung Ihrer alten Küche inkl. Geräte-Abklemmen.</p>
-          <div class="service-price">ab 199€ <span>Festpreis</span></div>
+          <div class="price"><span class="pn">ab 199€</span><span class="pl">Festpreis</span></div>
         </a>
 
-        <a class="service-card" href="/pages/services/video-beratung.html" aria-label="Video-Beratung — 20€ pro Beratung">
-          <div class="service-card-icon"><img src="img/icons/videoberatung.webp" alt="Video-Beratung" width="120" height="120"></div>
+        <a class="svc" href="/pages/services/video-beratung.html" aria-label="Video-Beratung — 20€ pro Beratung">
+          <div class="ic"><img src="img/icons/videoberatung.webp" alt="Video-Beratung" width="120" height="120" loading="lazy"></div>
           <h3>Video-Beratung</h3>
           <p>Online-Beratung per Video. Wir schauen uns Ihr Problem an und geben eine Einschätzung.</p>
-          <div class="service-price">20€ <span>pro Beratung</span></div>
+          <div class="price"><span class="pn">20€</span><span class="pl">pro Beratung</span></div>
         </a>
 
-        <div class="service-card">
-          <div class="service-card-icon"><img src="img/icons/aufmass.webp" alt="Aufmaß, Planung &amp; Bestellung" width="120" height="120"></div>
+        <div class="svc special">
+          <div class="ic"><img src="img/icons/aufmass.webp" alt="Aufmaß, Planung &amp; Bestellung" width="120" height="120" loading="lazy"></div>
           <h3>Aufmaß, Planung &amp; Bestellung</h3>
           <p>Komplett-Service: Professionelles Aufmaß vor Ort, individuelle Küchenplanung mit 3D-Visualisierung und Bestellung Ihrer Traumküche zum besten Preis. IKEA, Nobilia, Nolte, Häcker — alle Marken.</p>
-          <div class="service-price">auf Anfrage</div>
+          <div class="price"><span class="pn">auf Anfrage</span></div>
         </div>
 
       </div>
 
-      <!-- DEEP-LINK GRID: exact-keyword anchors to specialized landing pages -->
-      <div style="margin-top:48px;padding:32px 24px;background:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;">
-        <h3 style="text-align:center;font-size:22px;margin:0 0 8px;color:#0f172a;">Festpreis-Services in Hamburg — direkt buchen</h3>
-        <p style="text-align:center;font-size:14px;color:#64748b;margin:0 0 24px;">Zum Festpreis innerhalb Hamburgs — klicken Sie auf die passende Leistung für Details</p>
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px 16px;">
-          <a href="/waschmaschine-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;transition:all .2s;display:flex;justify-content:space-between;align-items:center;"><span>Waschmaschine anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 60€</span></a>
-          <a href="/geschirrspueler-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Geschirrspüler anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 139€</span></a>
-          <a href="/trockner-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Trockner anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 60€</span></a>
-          <a href="/elektroherd-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Elektroherd anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/induktionskochfeld-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Induktionskochfeld anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/ceranfeld-anschliessen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Ceranfeld anschließen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/kochfeld-installieren-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Kochfeld installieren Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/armatur-austauschen-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Armatur austauschen Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/kuechenspuele-montage-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Küchenspüle Montage Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 149€</span></a>
-          <a href="/spueltischarmatur-einbau-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Spültischarmatur Einbau Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 89€</span></a>
-          <a href="/waschbecken-installieren-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Waschbecken installieren Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 149€</span></a>
-          <a href="/starkstromdose-installieren-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Starkstromdose installieren Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 120€</span></a>
-          <a href="/y-stueck-wasserzulauf-installieren-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Y-Stück Wasserzulauf Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 45€</span></a>
-          <a href="/power-splitter-installieren-hamburg/" style="padding:10px 14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;text-decoration:none;color:#0f172a;font-size:14px;display:flex;justify-content:space-between;align-items:center;"><span>Power-Splitter installieren Hamburg</span><span style="color:#2563eb;font-weight:600;">ab 65€</span></a>
+      <!-- Direct booking links -->
+      <div class="booklinks">
+        <h3>Festpreis-Services in Hamburg <span style="color:var(--mute);font-weight:400">— direkt buchen</span></h3>
+        <p class="sub">Zum Festpreis innerhalb Hamburgs — klicken Sie auf die passende Leistung für Details.</p>
+        <div class="booklinks-grid">
+          <a class="blink" href="/waschmaschine-anschliessen-hamburg/"><span>Waschmaschine anschließen Hamburg</span><b>ab 60€</b></a>
+          <a class="blink" href="/geschirrspueler-anschliessen-hamburg/"><span>Geschirrspüler anschließen Hamburg</span><b>ab 139€</b></a>
+          <a class="blink" href="/trockner-anschliessen-hamburg/"><span>Trockner anschließen Hamburg</span><b>ab 60€</b></a>
+          <a class="blink" href="/elektroherd-anschliessen-hamburg/"><span>Elektroherd anschließen Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/induktionskochfeld-anschliessen-hamburg/"><span>Induktionskochfeld anschließen Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/ceranfeld-anschliessen-hamburg/"><span>Ceranfeld anschließen Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/kochfeld-installieren-hamburg/"><span>Kochfeld installieren Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/armatur-austauschen-hamburg/"><span>Armatur austauschen Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/kuechenspuele-montage-hamburg/"><span>Küchenspüle Montage Hamburg</span><b>ab 149€</b></a>
+          <a class="blink" href="/spueltischarmatur-einbau-hamburg/"><span>Spültischarmatur Einbau Hamburg</span><b>ab 89€</b></a>
+          <a class="blink" href="/waschbecken-installieren-hamburg/"><span>Waschbecken installieren Hamburg</span><b>ab 149€</b></a>
+          <a class="blink" href="/starkstromdose-installieren-hamburg/"><span>Starkstromdose installieren Hamburg</span><b>ab 120€</b></a>
+          <a class="blink" href="/y-stueck-wasserzulauf-installieren-hamburg/"><span>Y-Stück Wasserzulauf Hamburg</span><b>ab 45€</b></a>
+          <a class="blink" href="/power-splitter-installieren-hamburg/"><span>Power-Splitter installieren Hamburg</span><b>ab 65€</b></a>
         </div>
-        <p style="text-align:center;margin:24px 0 0;font-size:14px;color:#64748b;">Auch als Ratgeber: <a href="/montage-und-installation/" style="color:#0f172a;font-weight:600;">12 Schritt-für-Schritt Anleitungen</a> zum Selbermachen</p>
+        <p class="booklinks-foot">Auch als Ratgeber: <a href="/montage-und-installation/">12 Schritt-für-Schritt Anleitungen</a> zum Selbermachen.</p>
       </div>
-
     </div>
   </section>
 
   <!-- PRICE TABLE -->
-  <!-- data-nosnippet: блокирует Google от извлечения сниппета из таблицы цен,
-       чтобы в SERP отображалось <meta description>, а не "Unsere Preise; 30-60 Min;..." -->
-  <section class="section section-alt" id="preise" data-nosnippet>
-    <div class="container">
-      <h2 class="text-center">Unsere Preise</h2>
-      <p class="section-subtitle text-center">Transparente Festpreise — inklusive Anfahrt innerhalb Hamburgs</p>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Leistung</th>
-            <th>Festpreis</th>
-            <th>Dauer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></td>
-            <td class="price-cell">ab 60€</td>
-            <td>30-60 Min.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/herd-anschliessen-hamburg.html">Herd / Kochfeld anschließen</a></td>
-            <td class="price-cell">ab 89€</td>
-            <td>30-60 Min.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/backofen-anschliessen-hamburg.html">Backofen anschließen</a></td>
-            <td class="price-cell">ab 89€</td>
-            <td>30-45 Min.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></td>
-            <td class="price-cell">ab 139€</td>
-            <td>45-90 Min.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/wasserhahn-austauschen-hamburg.html">Wasserhahn austauschen</a></td>
-            <td class="price-cell">ab 89€</td>
-            <td>30-60 Min.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/spuele-austauschen-hamburg.html">Spüle austauschen</a></td>
-            <td class="price-cell">ab 149€</td>
-            <td>1-2 Std.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss / Wasserleitung verlegen</a></td>
-            <td class="price-cell">ab 149€</td>
-            <td>1-4 Std.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/kuechenmontage-hamburg.html">Küchenmontage komplett</a></td>
-            <td class="price-cell">ab 299€</td>
-            <td>4-8 Std.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/kuechen-abbau-hamburg.html">Küchenabbau &amp; Entsorgung</a></td>
-            <td class="price-cell">ab 199€</td>
-            <td>2-4 Std.</td>
-          </tr>
-          <tr>
-            <td><a href="pages/services/video-beratung.html">Video-Beratung</a></td>
-            <td class="price-cell">20€</td>
-            <td>15-30 Min.</td>
-          </tr>
-        </tbody>
-      </table>
-      <p style="text-align:center; margin-top:20px; color:var(--gray); font-size:0.9rem;">Alle Preise inkl. MwSt. und Anfahrt innerhalb Hamburgs. Materialkosten ggf. extra.</p>
+  <!-- data-nosnippet: блокирует Google от извлечения сниппета из таблицы цен -->
+  <section class="s compact" id="preise" data-nosnippet aria-labelledby="prices-h">
+    <div class="wrap-tight">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Unsere Preise</div>
+        <h2 class="h" id="prices-h">Transparente Festpreise <span class="serif">— inklusive Anfahrt innerhalb Hamburgs</span></h2>
+      </div>
+      <div class="ptable-wrap">
+        <table class="ptable">
+          <thead><tr><th>Leistung</th><th>Festpreis</th><th>Dauer</th></tr></thead>
+          <tbody>
+            <tr><td><a href="waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></td><td class="pp">ab 60€</td><td class="pd">30–60 Min.</td></tr>
+            <tr><td><a href="pages/services/herd-anschliessen-hamburg.html">Herd / Kochfeld anschließen</a></td><td class="pp">ab 89€</td><td class="pd">30–60 Min.</td></tr>
+            <tr><td><a href="pages/services/backofen-anschliessen-hamburg.html">Backofen anschließen</a></td><td class="pp">ab 89€</td><td class="pd">30–45 Min.</td></tr>
+            <tr><td><a href="pages/services/spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></td><td class="pp">ab 139€</td><td class="pd">45–90 Min.</td></tr>
+            <tr><td><a href="pages/services/wasserhahn-austauschen-hamburg.html">Wasserhahn austauschen</a></td><td class="pp">ab 89€</td><td class="pd">30–60 Min.</td></tr>
+            <tr><td><a href="pages/services/spuele-austauschen-hamburg.html">Spüle austauschen</a></td><td class="pp">ab 149€</td><td class="pd">1–2 Std.</td></tr>
+            <tr><td><a href="pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss / Wasserleitung verlegen</a></td><td class="pp">ab 149€</td><td class="pd">1–4 Std.</td></tr>
+            <tr><td><a href="pages/services/kuechenmontage-hamburg.html">Küchenmontage komplett</a></td><td class="pp">ab 299€</td><td class="pd">4–8 Std.</td></tr>
+            <tr><td><a href="pages/services/kuechen-abbau-hamburg.html">Küchenabbau &amp; Entsorgung</a></td><td class="pp">ab 199€</td><td class="pd">2–4 Std.</td></tr>
+            <tr><td><a href="pages/services/video-beratung.html">Video-Beratung</a></td><td class="pp">20€</td><td class="pd">15–30 Min.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ptable-foot">Alle Preise inkl. MwSt. und Anfahrt innerhalb Hamburgs. Materialkosten ggf. extra.</p>
     </div>
   </section>
 
-  <!-- ADVANTAGES -->
-  <section class="section">
-    <div class="container">
-      <h2 class="text-center">Warum Kunden uns wählen</h2>
-      <p class="section-subtitle text-center">Seit 18 Jahren der zuverlässige Küchenservice in Hamburg</p>
-      <div class="advantages-grid">
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128176;</div>
-          <h3>Festpreise</h3>
-          <p>Keine versteckten Kosten. Sie wissen vorher, was es kostet. Der Preis auf der Website ist der Preis, den Sie zahlen.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#9889;</div>
-          <h3>Same-Day-Service</h3>
-          <p>Heute anrufen — heute erledigt. Wir sind in 2-4 Stunden bei Ihnen in Hamburg.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128170;</div>
-          <h3>18 Jahre Erfahrung</h3>
-          <p>Über 2.500 zufriedene Kunden in Hamburg. Wir kennen jede Küche und jedes Problem.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128274;</div>
-          <h3>5 Jahre Garantie</h3>
-          <p>Auf alle Montage- und Anschlussarbeiten. Wenn etwas nicht stimmt — wir kommen kostenlos zurück.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128100;</div>
-          <h3>Direkt vom Meister</h3>
-          <p>Kein Call-Center, kein Bot. Sie sprechen direkt mit dem Handwerker, der auch zu Ihnen kommt.</p>
-        </div>
-        <div class="advantage-card">
-          <div class="advantage-icon">&#128230;</div>
-          <h3>Alles aus einer Hand</h3>
-          <p>Küchenmontage, Elektro, Sanitär — ein Ansprechpartner für alles. Kein Hin und Her.</p>
-        </div>
+  <!-- WHY US -->
+  <section class="s alt compact" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Warum Kunden uns wählen</div>
+        <h2 class="h" id="why-h">Seit 18 Jahren der <span class="serif">zuverlässige Küchenservice</span> in Hamburg</h2>
       </div>
-      <div style="text-align:center;margin:40px auto 0;max-width:400px;">
-        <img width="447" height="600" src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — Zertifikat für PRUlog-Küchen, Inh. Oleg Prusincov, seit 2018" style="width:100%;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,0.1);">
+      <div class="why-grid">
+        <div class="why-list">
+          <div class="why gold">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v20M8 6h6a3 3 0 0 1 0 6H8a3 3 0 0 0 0 6h8"/></svg></div>
+            <h3>Festpreise</h3>
+            <p>Keine versteckten Kosten. Sie wissen vorher, was es kostet. Der Preis auf der Website ist der Preis, den Sie zahlen.</p>
+          </div>
+          <div class="why">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+            <h3>Same-Day-Service</h3>
+            <p>Heute anrufen — heute erledigt. Wir sind in 2–4 Stunden bei Ihnen in Hamburg.</p>
+          </div>
+          <div class="why gold">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9a6 6 0 1 1 12 0c0 3-2 5-3 6l-1 6h-4l-1-6c-1-1-3-3-3-6z"/></svg></div>
+            <h3>18 Jahre Erfahrung</h3>
+            <p>Über 2.500 zufriedene Kunden in Hamburg. Wir kennen jede Küche und jedes Problem.</p>
+          </div>
+          <div class="why">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="10" width="16" height="12" rx="2"/><path d="M8 10V7a4 4 0 1 1 8 0v3"/></svg></div>
+            <h3>5 Jahre Garantie</h3>
+            <p>Auf alle Montage- und Anschlussarbeiten. Wenn etwas nicht stimmt — wir kommen kostenlos zurück.</p>
+          </div>
+          <div class="why blue">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></div>
+            <h3>Direkt vom Meister</h3>
+            <p>Kein Call-Center, kein Bot. Sie sprechen direkt mit dem Handwerker, der auch zu Ihnen kommt.</p>
+          </div>
+          <div class="why green">
+            <div class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73L13 2.27a2 2 0 0 0-2 0L4 6.27A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4.04a2 2 0 0 0 2 0l7-4.04A2 2 0 0 0 21 16z"/><path d="M3.27 7l8.73 5 8.73-5M12 22V12"/></svg></div>
+            <h3>Alles aus einer Hand</h3>
+            <p>Küchenmontage, Elektro, Sanitär — ein Ansprechpartner für alles. Kein Hin und Her.</p>
+          </div>
+        </div>
+
+        <aside class="cert-card" aria-label="Zertifikat — autorisierter Fachhandelspartner">
+          <div class="frame">
+            <img src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — Zertifikat für PRUlog-Küchen, Inh. Oleg Prusincov, seit 2018" width="447" height="600" loading="lazy">
+          </div>
+          <div class="lab">
+            <div>
+              <b>GARANT-Fachhandelspartner</b>
+              <small>autorisiert seit 2018 (Rheda-Wiedenbrück)</small>
+            </div>
+            <img class="tuv-mini" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" loading="lazy">
+          </div>
+        </aside>
       </div>
     </div>
   </section>
 
   <!-- REVIEWS -->
-  <section class="section section-alt" id="bewertungen">
-    <div class="container">
-      <h2 class="text-center">Das sagen unsere Kunden</h2>
-      <p class="section-subtitle text-center">★ 8,8 — <strong>Großartig</strong> · <strong>20 echte Bewertungen</strong> verifiziert via CHECK24 Profi</p>
-      <div style="display:flex;align-items:stretch;justify-content:center;gap:24px;margin:18px auto 8px;flex-wrap:wrap;font-size:14px;line-height:1.4;max-width:760px;">
-        <div style="display:flex;align-items:center;gap:12px;flex:1 1 320px;min-width:280px;">
-          <img src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" loading="lazy" width="56" height="56" style="border-radius:8px;flex-shrink:0;">
-          <span><strong>TÜV NORD geprüft</strong><br><span style="font-size:13px;opacity:.8;">Zertifiziert für Elektro- &amp; Wasseranschlüsse</span></span>
+  <section class="s compact" id="bewertungen" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Kundenstimmen</div>
+        <h2 class="h" id="rev-h">Das sagen <span class="serif">unsere Kunden</span></h2>
+        <p class="sec-sub">★ 8,8 — <strong>Großartig</strong> · <strong>20 echte Bewertungen</strong> verifiziert via CHECK24 Profi.</p>
+      </div>
+
+      <div class="review-meta">
+        <div class="rating-big">
+          <div class="stars-l">★★★★★</div>
+          <div>
+            <div class="num">4,7 / 5</div>
+            <small>20 echte Bewertungen — verifiziert via CHECK24 Profis</small>
+          </div>
         </div>
-        <div style="display:flex;align-items:center;gap:12px;flex:1 1 320px;min-width:280px;">
-          <img src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — PRUlog seit 2018" loading="lazy" width="42" height="56" style="border-radius:6px;flex-shrink:0;background:#fff;padding:2px;">
-          <span><strong>GARANT-Fachhandelspartner</strong><br><span style="font-size:13px;opacity:.8;">Autorisiert seit 2018 (Rheda-Wiedenbrück)</span></span>
+        <div class="vbadge-row">
+          <span class="vbadge">
+            <img src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" loading="lazy">
+            <span><b>TÜV NORD geprüft</b><small>Zertifiziert für Elektro- &amp; Wasseranschlüsse</small></span>
+          </span>
+          <span class="vbadge">
+            <img src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — PRUlog seit 2018" loading="lazy">
+            <span><b>GARANT-Fachhandelspartner</b><small>Autorisiert seit 2018 (Rheda-Wiedenbrück)</small></span>
+          </span>
         </div>
       </div>
-      <div style="text-align:center;margin:8px 0 32px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-        <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;background:#fff;border:1px solid #dadce0;color:#3c4043;font-weight:500;text-decoration:none;font-size:14px;box-shadow:0 1px 2px rgba(60,64,67,.1);">
-          <svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+
+      <div class="review-ctas">
+        <a class="gbtn" href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M22.5 12.27c0-.79-.07-1.55-.2-2.27H12v4.3h5.9c-.25 1.37-1.03 2.53-2.2 3.31v2.75h3.55c2.08-1.92 3.25-4.74 3.25-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.65l-3.55-2.75c-.98.66-2.24 1.05-3.73 1.05-2.87 0-5.3-1.94-6.17-4.55H2.16v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.83 14.1A6.6 6.6 0 0 1 5.46 12c0-.73.13-1.44.36-2.1V7.06H2.16A11 11 0 0 0 1 12c0 1.78.43 3.47 1.16 4.94l3.67-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.07.56 4.22 1.65l3.15-3.15C17.45 2.1 14.97 1 12 1A11 11 0 0 0 2.16 7.06l3.67 2.84C6.7 7.32 9.13 5.38 12 5.38z"/></svg>
           Auf Google bewerten
         </a>
-        <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;background:transparent;border:1px solid currentColor;color:inherit;font-weight:500;text-decoration:none;font-size:14px;">
-          Google-Profil ansehen &rarr;
-        </a>
+        <a class="gbtn dark" href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Google-Profil ansehen →</a>
       </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Ich bin sehr zufrieden. Super schnelle Antwort, Freitag Anfrage erstellt und Samstag Angebot erhalten. Nach einem kurzen Videocall hat er fehlendes Material besorgt und war eine Stunde später vor Ort. Nach 1 Std. war der Schaden zu voller Zufriedenheit behoben. Gerne immer wieder."</p>
-          <div class="review-author">Sonja H.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Juli 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Die Terminvereinbarung erfolgte sehr schnell und die Installation wurde perfekt erledigt. Sehr freundlich und professionell. Absolut empfehlenswert!"</p>
-          <div class="review-author">German C.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — März 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Hatte sofort Zeit für den Auftrag und der Preis war auch angemessen. Sehr freundlich und sorgfältige Arbeit. Kann ich auf jeden Fall weiterempfehlen."</p>
-          <div class="review-author">Erik S.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Mai 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Unkompliziert, schnell und sehr professionell; alles super!"</p>
-          <div class="review-author">Viivi Aurora S.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Dezember 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Kurzfristiger Termin war möglich. Sehr engagiert und top Qualität!"</p>
-          <div class="review-author">Akshat G.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Mai 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Super professionell und so ein tolles Ergebnis! Wir sind sehr zufrieden :)"</p>
-          <div class="review-author">Josefine W.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Juli 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Flexibel, freundlich und sorgfältig! Kann ich nur weiterempfehlen!"</p>
-          <div class="review-author">Johanna L.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Mai 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Schnell und sichtlich erfahren beim Aufbau unseres IKEA-Küchenelements."</p>
-          <div class="review-author">Christoph</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Juli 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Super schnell reagiert. Erst wurde versucht, mit dem alten Material zu arbeiten, erst dann Neues gekauft und verbaut. Kann Oleg uneingeschränkt weiterempfehlen!"</p>
-          <div class="review-author">Petra H.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Februar 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Gute und ehrliche Beratung, Danke dafür."</p>
-          <div class="review-author">Daniela N.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — September 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"War richtig gut und unkompliziert. Kontaktiert, kurz erklärt, Preis und Termin vereinbart. Am nächsten Morgen war alles installiert und Rechnung per PDF bekommen. Top!"</p>
-          <div class="review-author">Nassar</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Februar 2024</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Es gab sehr schnell einen Termin und alles wurde wie gewünscht repariert."</p>
-          <div class="review-author">Maria G.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — März 2024</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Schnell, freundlich und reibungslos."</p>
-          <div class="review-author">Lennart H.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Februar 2024</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Schnell und fair. Sehr zufrieden."</p>
-          <div class="review-author">Elizabeth N.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Juli 2023</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Ich war sehr zufrieden, kann nur weiterempfehlen."</p>
-          <div class="review-author">Friedrich</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Oktober 2023</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Kann nur empfehlen, Top-Qualität!"</p>
-          <div class="review-author">Anonyme Bewertung</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Oktober 2023</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Super Ergebnis und dabei schnell und freundlich."</p>
-          <div class="review-author">Anonyme Bewertung</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Oktober 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Freundlich und kompetent."</p>
-          <div class="review-author">Myrza</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Mai 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Gut, schnell und günstig."</p>
-          <div class="review-author">Varjacic M.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — Mai 2025</div>
-        </div>
-        <div class="review-card">
-          <div class="review-stars">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
-          <p class="review-text">"Gut."</p>
-          <div class="review-author">Matthias H.</div>
-          <div class="review-date">CHECK24 Profi verifiziert — August 2023</div>
-        </div>
+
+      <div class="testimonials">
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Ich bin sehr zufrieden. Super schnelle Antwort, Freitag Anfrage erstellt und Samstag Angebot erhalten. Nach einem kurzen Videocall hat er fehlendes Material besorgt und war eine Stunde später vor Ort. Nach 1 Std. war der Schaden zu voller Zufriedenheit behoben. Gerne immer wieder."</blockquote>
+          <div class="who"><b>Sonja H.</b><small>CHECK24 Profi verifiziert — Juli 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Die Terminvereinbarung erfolgte sehr schnell und die Installation wurde perfekt erledigt. Sehr freundlich und professionell. Absolut empfehlenswert!"</blockquote>
+          <div class="who"><b>German C.</b><small>CHECK24 Profi verifiziert — März 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Hatte sofort Zeit für den Auftrag und der Preis war auch angemessen. Sehr freundlich und sorgfältige Arbeit. Kann ich auf jeden Fall weiterempfehlen."</blockquote>
+          <div class="who"><b>Erik S.</b><small>CHECK24 Profi verifiziert — Mai 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Unkompliziert, schnell und sehr professionell; alles super!"</blockquote>
+          <div class="who"><b>Viivi Aurora S.</b><small>CHECK24 Profi verifiziert — Dezember 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Kurzfristiger Termin war möglich. Sehr engagiert und top Qualität!"</blockquote>
+          <div class="who"><b>Akshat G.</b><small>CHECK24 Profi verifiziert — Mai 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Super professionell und so ein tolles Ergebnis! Wir sind sehr zufrieden :)"</blockquote>
+          <div class="who"><b>Josefine W.</b><small>CHECK24 Profi verifiziert — Juli 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Flexibel, freundlich und sorgfältig! Kann ich nur weiterempfehlen!"</blockquote>
+          <div class="who"><b>Johanna L.</b><small>CHECK24 Profi verifiziert — Mai 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Schnell und sichtlich erfahren beim Aufbau unseres IKEA-Küchenelements."</blockquote>
+          <div class="who"><b>Christoph</b><small>CHECK24 Profi verifiziert — Juli 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Super schnell reagiert. Erst wurde versucht, mit dem alten Material zu arbeiten, erst dann Neues gekauft und verbaut. Kann Oleg uneingeschränkt weiterempfehlen!"</blockquote>
+          <div class="who"><b>Petra H.</b><small>CHECK24 Profi verifiziert — Februar 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Gute und ehrliche Beratung, Danke dafür."</blockquote>
+          <div class="who"><b>Daniela N.</b><small>CHECK24 Profi verifiziert — September 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„War richtig gut und unkompliziert. Kontaktiert, kurz erklärt, Preis und Termin vereinbart. Am nächsten Morgen war alles installiert und Rechnung per PDF bekommen. Top!"</blockquote>
+          <div class="who"><b>Nassar</b><small>CHECK24 Profi verifiziert — Februar 2024</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Es gab sehr schnell einen Termin und alles wurde wie gewünscht repariert."</blockquote>
+          <div class="who"><b>Maria G.</b><small>CHECK24 Profi verifiziert — März 2024</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Schnell, freundlich und reibungslos."</blockquote>
+          <div class="who"><b>Lennart H.</b><small>CHECK24 Profi verifiziert — Februar 2024</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Schnell und fair. Sehr zufrieden."</blockquote>
+          <div class="who"><b>Elizabeth N.</b><small>CHECK24 Profi verifiziert — Juli 2023</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Ich war sehr zufrieden, kann nur weiterempfehlen."</blockquote>
+          <div class="who"><b>Friedrich</b><small>CHECK24 Profi verifiziert — Oktober 2023</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Kann nur empfehlen, Top-Qualität!"</blockquote>
+          <div class="who"><b>Anonyme Bewertung</b><small>CHECK24 Profi verifiziert — Oktober 2023</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Super Ergebnis und dabei schnell und freundlich."</blockquote>
+          <div class="who"><b>Anonyme Bewertung</b><small>CHECK24 Profi verifiziert — Oktober 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Freundlich und kompetent."</blockquote>
+          <div class="who"><b>Myrza</b><small>CHECK24 Profi verifiziert — Mai 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Gut, schnell und günstig."</blockquote>
+          <div class="who"><b>Varjacic M.</b><small>CHECK24 Profi verifiziert — Mai 2025</small></div>
+        </article>
+        <article class="tm">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Gut."</blockquote>
+          <div class="who"><b>Matthias H.</b><small>CHECK24 Profi verifiziert — August 2023</small></div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- DISTRICTS -->
-  <section class="section" id="stadtteile">
-    <div class="container">
-      <h2 class="text-center">Wir kommen zu Ihnen in ganz Hamburg</h2>
-      <p class="section-subtitle text-center">Anfahrtspauschale ca. 20€ innerhalb Hamburgs</p>
-      <div class="districts-grid">
-        <a href="altona.html" class="district-link">Altona</a>
-        <a href="bergedorf.html" class="district-link">Bergedorf</a>
-        <a href="eimsbuettel.html" class="district-link">Eimsbüttel</a>
-        <a href="harburg.html" class="district-link">Harburg</a>
-        <a href="kuechenmontage-hamburg-mitte.html" class="district-link">Hamburg-Mitte</a>
-        <a href="wandsbek.html" class="district-link">Wandsbek</a>
-        <a href="pages/stadtteile/altona-altstadt.html" class="district-link">Altona-Altstadt</a>
-        <a href="pages/stadtteile/barmbek.html" class="district-link">Barmbek</a>
-        <a href="pages/stadtteile/billstedt.html" class="district-link">Billstedt</a>
-        <a href="pages/stadtteile/blankenese.html" class="district-link">Blankenese</a>
-        <a href="pages/stadtteile/bramfeld.html" class="district-link">Bramfeld</a>
-        <a href="pages/stadtteile/eppendorf.html" class="district-link">Eppendorf</a>
-        <a href="pages/stadtteile/farmsen.html" class="district-link">Farmsen</a>
-        <a href="pages/stadtteile/hamm.html" class="district-link">Hamm</a>
-        <a href="pages/stadtteile/horn.html" class="district-link">Horn</a>
-        <a href="pages/stadtteile/jenfeld.html" class="district-link">Jenfeld</a>
-        <a href="pages/stadtteile/lokstedt.html" class="district-link">Lokstedt</a>
-        <a href="pages/stadtteile/lurup.html" class="district-link">Lurup</a>
-        <a href="pages/stadtteile/marienthal.html" class="district-link">Marienthal</a>
-        <a href="pages/stadtteile/neugraben.html" class="district-link">Neugraben</a>
-        <a href="pages/stadtteile/niendorf.html" class="district-link">Niendorf</a>
-        <a href="pages/stadtteile/osdorf.html" class="district-link">Osdorf</a>
-        <a href="pages/stadtteile/ottensen.html" class="district-link">Ottensen</a>
-        <a href="pages/stadtteile/rahlstedt.html" class="district-link">Rahlstedt</a>
-        <a href="pages/stadtteile/rotherbaum.html" class="district-link">Rotherbaum</a>
-        <a href="pages/stadtteile/sasel.html" class="district-link">Sasel</a>
-        <a href="pages/stadtteile/st-pauli.html" class="district-link">St. Pauli</a>
-        <a href="pages/stadtteile/stellingen.html" class="district-link">Stellingen</a>
-        <a href="pages/stadtteile/uhlenhorst.html" class="district-link">Uhlenhorst</a>
-        <a href="pages/stadtteile/volksdorf.html" class="district-link">Volksdorf</a>
-        <a href="pages/stadtteile/wilhelmsburg.html" class="district-link">Wilhelmsburg</a>
-        <a href="pages/stadtteile/winterhude.html" class="district-link">Winterhude</a>
-      </div>
-    </div>
-  </section>
+  <!-- DISTRICTS + CALCULATOR -->
+  <section class="s alt compact" id="stadtteile" aria-labelledby="area-h">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="sec-head" style="margin-bottom:18px">
+            <div class="sec-eyebrow">Einsatzgebiet</div>
+            <h2 class="h" id="area-h">Wir kommen zu Ihnen in <span class="serif">ganz Hamburg</span></h2>
+            <p class="sec-sub">Anfahrtspauschale ca. 20€ innerhalb Hamburgs.</p>
+          </div>
+          <div class="pill-cloud">
+            <a href="altona.html">Altona</a>
+            <a href="bergedorf.html">Bergedorf</a>
+            <a href="eimsbuettel.html">Eimsbüttel</a>
+            <a href="harburg.html">Harburg</a>
+            <a href="kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a>
+            <a href="wandsbek.html">Wandsbek</a>
+            <a href="pages/stadtteile/altona-altstadt.html">Altona-Altstadt</a>
+            <a href="pages/stadtteile/barmbek.html">Barmbek</a>
+            <a href="pages/stadtteile/billstedt.html">Billstedt</a>
+            <a href="pages/stadtteile/blankenese.html">Blankenese</a>
+            <a href="pages/stadtteile/bramfeld.html">Bramfeld</a>
+            <a href="pages/stadtteile/eppendorf.html">Eppendorf</a>
+            <a href="pages/stadtteile/farmsen.html">Farmsen</a>
+            <a href="pages/stadtteile/hamm.html">Hamm</a>
+            <a href="pages/stadtteile/horn.html">Horn</a>
+            <a href="pages/stadtteile/jenfeld.html">Jenfeld</a>
+            <a href="pages/stadtteile/lokstedt.html">Lokstedt</a>
+            <a href="pages/stadtteile/lurup.html">Lurup</a>
+            <a href="pages/stadtteile/marienthal.html">Marienthal</a>
+            <a href="pages/stadtteile/neugraben.html">Neugraben</a>
+            <a href="pages/stadtteile/niendorf.html">Niendorf</a>
+            <a href="pages/stadtteile/osdorf.html">Osdorf</a>
+            <a href="pages/stadtteile/ottensen.html">Ottensen</a>
+            <a href="pages/stadtteile/rahlstedt.html">Rahlstedt</a>
+            <a href="pages/stadtteile/rotherbaum.html">Rotherbaum</a>
+            <a href="pages/stadtteile/sasel.html">Sasel</a>
+            <a href="pages/stadtteile/st-pauli.html">St. Pauli</a>
+            <a href="pages/stadtteile/stellingen.html">Stellingen</a>
+            <a href="pages/stadtteile/uhlenhorst.html">Uhlenhorst</a>
+            <a href="pages/stadtteile/volksdorf.html">Volksdorf</a>
+            <a href="pages/stadtteile/wilhelmsburg.html">Wilhelmsburg</a>
+            <a href="pages/stadtteile/winterhude.html">Winterhude</a>
+          </div>
+        </div>
 
-  <!-- CALCULATOR -->
-  <section class="section" id="rechner">
-    <div class="container">
-      <h2 class="text-center">Kostenrechner</h2>
-      <p class="section-subtitle text-center">Berechnen Sie Ihre Kosten in wenigen Sekunden</p>
-      <div class="calculator" style="max-width:600px;margin:0 auto;background:#fff;border-radius:12px;padding:40px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
-        <div style="margin-bottom:20px;">
-          <label for="calc-service" style="font-weight:600;display:block;margin-bottom:8px;">Welche Leistung benötigen Sie?</label>
-          <select id="calc-service" style="width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;">
-            <option value="0">— Bitte wählen —</option>
-            <option value="60">Waschmaschine anschließen</option>
-            <option value="89">Herd / Kochfeld anschließen</option>
-            <option value="139">Spülmaschine anschließen</option>
-            <option value="89">Wasserhahn austauschen</option>
-            <option value="149">Spüle austauschen</option>
-            <option value="299">Küchenmontage (einfach)</option>
-            <option value="499">Küchenmontage (komplex)</option>
-            <option value="199">Küchenabbau & Entsorgung</option>
-          </select>
-        </div>
-        <div style="margin-bottom:20px;">
-          <label for="calc-qty" style="font-weight:600;display:block;margin-bottom:8px;">Anzahl der Geräte / Leistungen</label>
-          <input type="number" id="calc-qty" value="1" min="1" max="10" style="width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:1rem;">
-        </div>
-        <div id="calc-result" style="text-align:center;padding:24px;background:#f1faee;border-radius:8px;display:none;">
-          <div style="font-size:0.9rem;color:#6c757d;">Geschätzte Kosten</div>
-          <div id="calc-price" style="font-size:2.5rem;font-weight:800;color:#e63946;margin:8px 0;">0€</div>
-          <div style="font-size:0.85rem;color:#6c757d;">inkl. Anfahrt innerhalb Hamburgs</div>
-        </div>
-        <button id="calc-btn" style="width:100%;margin-top:16px;padding:14px;background:#c1121f;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:600;cursor:pointer;">Kosten berechnen</button>
-        <p style="text-align:center;margin-top:12px;font-size:0.85rem;color:#6c757d;">* Unverbindliche Schätzung. Exakter Preis nach Besichtigung.</p>
+        <aside id="rechner">
+          <div class="sec-head" style="margin-bottom:18px">
+            <div class="sec-eyebrow">Kostenrechner</div>
+            <h2 class="h">Kosten in <span class="serif">wenigen Sekunden</span></h2>
+            <p class="sec-sub">Berechnen Sie Ihre Kosten für Geräteanschluss und Montage.</p>
+          </div>
+          <form class="calc" id="calc-form" onsubmit="return calcCost(event)">
+            <div class="field">
+              <label for="calc-service">Welche Leistung benötigen Sie?</label>
+              <select id="calc-service" required>
+                <option value="">— Bitte wählen —</option>
+                <option value="60">Waschmaschine anschließen — ab 60€</option>
+                <option value="89">Herd / Kochfeld anschließen — ab 89€</option>
+                <option value="89">Backofen anschließen — ab 89€</option>
+                <option value="139">Spülmaschine anschließen — ab 139€</option>
+                <option value="89">Wasserhahn austauschen — ab 89€</option>
+                <option value="149">Spüle austauschen — ab 149€</option>
+                <option value="149">Wasseranschluss verlegen — ab 149€</option>
+                <option value="299">Küchenmontage (einfach) — ab 299€</option>
+                <option value="499">Küchenmontage (komplex) — ab 499€</option>
+                <option value="199">Küchenabbau &amp; Entsorgung — ab 199€</option>
+                <option value="20">Video-Beratung — 20€</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="calc-qty">Anzahl der Geräte / Leistungen</label>
+              <input id="calc-qty" type="number" min="1" max="20" value="1" />
+            </div>
+            <button class="btn-calc" type="submit" id="calc-btn">Kosten berechnen</button>
+            <div class="calc-result" id="calc-result"></div>
+            <p class="calc-foot">* Unverbindliche Schätzung. Exakter Preis nach Besichtigung.</p>
+          </form>
+        </aside>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="section section-alt" id="faq">
-    <div class="container">
-      <h2 class="text-center">Häufige Fragen</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-question">Was kostet es, eine Waschmaschine in Hamburg anschließen zu lassen?</div>
-          <div class="faq-answer">Bei uns kostet der Anschluss einer Waschmaschine ab 60€ inklusive Anfahrt innerhalb Hamburgs. Der Festpreis beinhaltet Aufstellen, Anschließen an Wasser und Strom sowie eine Dichtigkeitsprüfung. Materialkosten (Schläuche, Ventile) werden separat berechnet, falls nötig.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Wie schnell können Sie kommen?</div>
-          <div class="faq-answer">Wir bieten Same-Day-Service in Hamburg an. In der Regel sind wir innerhalb von 2-4 Stunden nach Auftragseingang bei Ihnen vor Ort. Rufen Sie uns einfach an oder schreiben Sie per WhatsApp.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Was kostet eine komplette Küchenmontage?</div>
-          <div class="faq-answer">Eine komplette Küchenmontage beginnt ab 299€. Der genaue Preis hängt von der Größe der Küche, Anzahl der Geräte und Komplexität ab. Wir montieren alle Marken: IKEA, Nobilia, Nolte, Häcker und mehr. Gerne erstellen wir Ihnen ein kostenloses Angebot.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Gibt es eine Garantie auf Ihre Arbeit?</div>
-          <div class="faq-answer">Ja, wir geben 5 Jahre Garantie auf alle unsere Montage- und Anschlussarbeiten. Sollte innerhalb dieser Zeit ein Problem auftreten, kommen wir kostenlos zurück und beheben es.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Kann ich auch am Wochenende einen Termin bekommen?</div>
-          <div class="faq-answer">Ja, wir arbeiten auch samstags von 09:00 bis 16:00 Uhr. Für dringende Fälle sind wir auch außerhalb der regulären Zeiten erreichbar. Kontaktieren Sie uns einfach.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Montieren Sie auch IKEA-Küchen?</div>
-          <div class="faq-answer">Ja, wir montieren Küchen aller Marken, einschließlich IKEA, Nobilia, Nolte, Häcker, ROLLER und andere. IKEA-Küchenmontage ist eine unserer häufigsten Aufträge — wir kennen jedes Modell.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Was ist in der Anfahrt enthalten?</div>
-          <div class="faq-answer">Die Anfahrtspauschale beträgt ca. 20€ innerhalb des Hamburger Stadtgebiets.</div>
-        </div>
+  <section class="s compact" id="faq" aria-labelledby="faq-h">
+    <div class="wrap-tight">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Häufige Fragen</div>
+        <h2 class="h" id="faq-h">Antworten <span class="serif">vor dem Termin</span></h2>
+      </div>
+      <div class="faq">
+        <details class="q"><summary>Was kostet es, eine Waschmaschine in Hamburg anschließen zu lassen?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Bei uns kostet der Anschluss einer Waschmaschine ab 60€ inklusive Anfahrt innerhalb Hamburgs. Der Festpreis beinhaltet Aufstellen, Anschließen an Wasser und Strom sowie eine Dichtigkeitsprüfung. Materialkosten (Schläuche, Ventile) werden separat berechnet, falls nötig.</div></details>
+        <details class="q"><summary>Wie schnell können Sie kommen?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Wir bieten Same-Day-Service in Hamburg an. In der Regel sind wir innerhalb von 2-4 Stunden nach Auftragseingang bei Ihnen vor Ort. Rufen Sie uns einfach an oder schreiben Sie per WhatsApp.</div></details>
+        <details class="q"><summary>Was kostet eine komplette Küchenmontage?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Eine komplette Küchenmontage beginnt ab 299€. Der genaue Preis hängt von der Größe der Küche, Anzahl der Geräte und Komplexität ab. Wir montieren alle Marken: IKEA, Nobilia, Nolte, Häcker und mehr. Gerne erstellen wir Ihnen ein kostenloses Angebot.</div></details>
+        <details class="q"><summary>Gibt es eine Garantie auf Ihre Arbeit?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Ja, wir geben 5 Jahre Garantie auf alle unsere Montage- und Anschlussarbeiten. Sollte innerhalb dieser Zeit ein Problem auftreten, kommen wir kostenlos zurück und beheben es.</div></details>
+        <details class="q"><summary>Kann ich auch am Wochenende einen Termin bekommen?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Ja, wir arbeiten auch samstags von 09:00 bis 16:00 Uhr. Für dringende Fälle sind wir auch außerhalb der regulären Zeiten erreichbar. Kontaktieren Sie uns einfach.</div></details>
+        <details class="q"><summary>Montieren Sie auch IKEA-Küchen?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Ja, wir montieren Küchen aller Marken, einschließlich IKEA, Nobilia, Nolte, Häcker, ROLLER und andere. IKEA-Küchenmontage ist eine unserer häufigsten Aufträge — wir kennen jedes Modell.</div></details>
+        <details class="q"><summary>Was ist in der Anfahrt enthalten?<span class="plus" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary><div class="a">Die Anfahrtspauschale beträgt ca. 20€ innerhalb des Hamburger Stadtgebiets.</div></details>
       </div>
     </div>
   </section>
 
   <!-- RATGEBER HUB LINKS -->
-  <section class="section section-alt" style="padding:48px 0;">
-    <div class="container">
-      <h2 style="text-align:center;margin-bottom:8px;">Ratgeber &amp; Anleitungen</h2>
-      <p style="text-align:center;color:#666;max-width:680px;margin:0 auto 32px;">DIY-Anleitungen aus 18 Jahren Praxis — erklärt für Einsteiger. Mit Werkzeugliste und klaren Hinweisen, wann ein Profi sicherer ist.</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:1100px;margin:0 auto;">
-        <a href="pages/ratgeber/waschmaschine-anschliessen-anleitung.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;transition:0.2s;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Sanitär · 7 Schritte</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Waschmaschine anschließen</strong>
+  <section class="s alt compact" aria-labelledby="ratgeber-h">
+    <div class="wrap">
+      <div class="sec-head center">
+        <div class="sec-eyebrow">Ratgeber &amp; Anleitungen</div>
+        <h2 class="h" id="ratgeber-h">DIY-Anleitungen aus <span class="serif">18 Jahren Praxis</span></h2>
+        <p class="sec-sub">Erklärt für Einsteiger. Mit Werkzeugliste und klaren Hinweisen, wann ein Profi sicherer ist.</p>
+      </div>
+      <div class="ratgeber-grid">
+        <a class="ratgeber-card" href="pages/ratgeber/waschmaschine-anschliessen-anleitung.html">
+          <div class="tag">Sanitär · 7 Schritte</div>
+          <strong>Waschmaschine anschließen</strong>
         </a>
-        <a href="pages/ratgeber/spuelmaschine-anschliessen-anleitung.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Sanitär · 7 Schritte</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Spülmaschine anschließen</strong>
+        <a class="ratgeber-card" href="pages/ratgeber/spuelmaschine-anschliessen-anleitung.html">
+          <div class="tag">Sanitär · 7 Schritte</div>
+          <strong>Spülmaschine anschließen</strong>
         </a>
-        <a href="pages/ratgeber/eckventile-austauschen-anleitung.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Sanitär · 8 Schritte</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Eckventil austauschen</strong>
+        <a class="ratgeber-card" href="pages/ratgeber/eckventile-austauschen-anleitung.html">
+          <div class="tag">Sanitär · 8 Schritte</div>
+          <strong>Eckventil austauschen</strong>
         </a>
-        <a href="pages/ratgeber/kuechenspuele-austauschen-anleitung.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Küche · DIY</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Küchenspüle austauschen</strong>
+        <a class="ratgeber-card" href="pages/ratgeber/kuechenspuele-austauschen-anleitung.html">
+          <div class="tag">Küche · DIY</div>
+          <strong>Küchenspüle austauschen</strong>
         </a>
-        <a href="pages/ratgeber/abfluss-verstopft-hausmittel.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Sofort-Hilfe</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Abfluss verstopft — 7 Hausmittel</strong>
+        <a class="ratgeber-card" href="pages/ratgeber/abfluss-verstopft-hausmittel.html">
+          <div class="tag">Sofort-Hilfe</div>
+          <strong>Abfluss verstopft — 7 Hausmittel</strong>
         </a>
-        <a href="pages/ratgeber/kuechenmontage-kosten.html" style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:20px;text-decoration:none;color:inherit;display:block;">
-          <div style="font-size:0.72rem;font-weight:700;color:#2563eb;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:6px;">Kosten · Preise</div>
-          <strong style="font-size:1rem;color:#111827;display:block;line-height:1.3;">Küchenmontage Kosten 2026</strong>
+        <a class="ratgeber-card" href="pages/ratgeber/kuechenmontage-kosten.html">
+          <div class="tag">Kosten · Preise</div>
+          <strong>Küchenmontage Kosten 2026</strong>
         </a>
       </div>
-      <div style="text-align:center;margin-top:24px;">
-        <a href="pages/ratgeber/" style="color:#2563eb;font-weight:600;text-decoration:none;">Alle Ratgeber ansehen →</a>
+      <div style="text-align:center;margin-top:24px">
+        <a href="pages/ratgeber/" style="color:var(--brand);font-weight:700;text-decoration:underline;text-underline-offset:3px">Alle Ratgeber ansehen →</a>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
   <!-- MANIFEST — brand-position block, target of #manifest CTA from blog posts -->
-  <section class="section" id="manifest" style="background:linear-gradient(135deg,#0f172a 0%,#1e293b 100%);color:#fff;padding:64px 0;">
-    <div class="container" style="max-width:920px;">
-      <p style="text-align:center;text-transform:uppercase;letter-spacing:2px;font-size:0.85rem;color:#fbbf24;margin:0 0 12px;font-weight:700;">Mein Manifest</p>
-      <h2 style="text-align:center;color:#fff;margin:0 0 16px;font-size:2rem;">Wofür ich seit 18 Jahren stehe</h2>
-      <p style="text-align:center;color:rgba(255,255,255,0.8);max-width:680px;margin:0 auto 40px;font-size:1.05rem;line-height:1.6;">Ich bin Oleg P. — Küchenmonteur in Hamburg, kein Plattform-Lead, kein Callcenter. Wenn Sie hier anrufen, sprechen Sie direkt mit der Person, die zu Ihnen kommt. Das sind die fünf Prinzipien, nach denen ich arbeite:</p>
-
-      <div style="display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:40px;">
-        <div style="display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,0.05);border-left:4px solid #fbbf24;border-radius:8px;">
-          <span aria-hidden="true" style="flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.95rem;">1</span>
-          <div>
-            <h3 style="color:#fff;margin:0 0 4px;font-size:1.1rem;">Festpreise statt versteckter Lead-Gebühren</h3>
-            <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.95rem;line-height:1.6;">Was Sie auf der Preisliste sehen, zahlen Sie. Keine Plattform-Provision, die ich auf Ihre Rechnung umlege — bei Check24 oder MyHammer zahlen Handwerker pro Anfrage 5–25 € Lead-Gebühr, und das landet immer beim Endkunden.</p>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,0.05);border-left:4px solid #fbbf24;border-radius:8px;">
-          <span aria-hidden="true" style="flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.95rem;">2</span>
-          <div>
-            <h3 style="color:#fff;margin:0 0 4px;font-size:1.1rem;">Direktkontakt — kein Vermittler dazwischen</h3>
-            <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.95rem;line-height:1.6;">Sie schreiben mir auf WhatsApp, ich antworte selbst — meist innerhalb einer Stunde. Keine Disposition, kein Subunternehmer, keine Übergabekette, in der Details verloren gehen.</p>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,0.05);border-left:4px solid #fbbf24;border-radius:8px;">
-          <span aria-hidden="true" style="flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.95rem;">3</span>
-          <div>
-            <h3 style="color:#fff;margin:0 0 4px;font-size:1.1rem;">Ihre Daten bleiben hier — kein Weiterverkauf</h3>
-            <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.95rem;line-height:1.6;">Ihre Anfrage geht nicht an drei „Profis", die sich gegenseitig unterbieten. Ich bekomme sie, ich bearbeite sie. Keine Lead-Versteigerung, kein Anrufmarathon von fünf Anbietern.</p>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,0.05);border-left:4px solid #fbbf24;border-radius:8px;">
-          <span aria-hidden="true" style="flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.95rem;">4</span>
-          <div>
-            <h3 style="color:#fff;margin:0 0 4px;font-size:1.1rem;">5 Jahre Garantie auf meine Arbeit</h3>
-            <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.95rem;line-height:1.6;">Wenn nach drei Jahren der Siphon undicht wird oder die Arbeitsplattenabdichtung versagt — ich komme zurück und mache es nach. Schriftlich, nicht „nach Kulanz" einer Plattform-Hotline.</p>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:16px;padding:20px 24px;background:rgba(255,255,255,0.05);border-left:4px solid #fbbf24;border-radius:8px;">
-          <span aria-hidden="true" style="flex-shrink:0;width:28px;height:28px;background:#fbbf24;color:#0f172a;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:0.95rem;">5</span>
-          <div>
-            <h3 style="color:#fff;margin:0 0 4px;font-size:1.1rem;">Persönliche Verantwortung — kein anonymer Plattform-Account</h3>
-            <p style="color:rgba(255,255,255,0.75);margin:0;font-size:0.95rem;line-height:1.6;">Mein Name steht im Impressum, meine Nummer geht direkt an mein Handy, meine Adresse können Sie nachschlagen. Wenn etwas schiefgeht, wissen Sie, wer dafür geradesteht — und nicht ein Service-Ticket im Backoffice einer App.</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="text-align:center;">
-        <p style="color:rgba(255,255,255,0.85);margin:0 0 20px;font-size:1rem;">Wenn Sie das genauso sehen — schreiben Sie mir direkt.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;">
-          <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20unterst%C3%BCtze%20Ihr%20Manifest%20und%20m%C3%B6chte%20einen%20Termin%20vereinbaren." class="btn btn-whatsapp btn-lg" style="text-decoration:none;">&#128172; Direkt schreiben</a>
-          <a href="pages/blog/check24-profis-erfahrungen-nachteile.html" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;text-decoration:none;">Mehr Hintergrund lesen</a>
-          <!-- TODO: ссылка на BBITE-платформу — добавить когда сайт bbite.de live:
-               <a href="https://bbite.de/" class="btn btn-primary btn-lg" target="_blank" rel="noopener" style="text-decoration:none;">Plattform entdecken →</a>
-          -->
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
+  <section class="manifest-section" id="manifest">
     <div class="container">
-      <h2>Jetzt Termin vereinbaren!</h2>
-      <p>Schreiben Sie uns direkt per WhatsApp — wir antworten schnell!</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/4915218547875" class="btn btn-whatsapp btn-lg">&#128172; WhatsApp schreiben</a>
-        <a href="pages/kontakt.html" class="btn btn-outline btn-lg" style="border-color:#fff;color:#fff;">Kontaktformular</a>
+      <p class="eyebrow-gold">Mein Manifest</p>
+      <h2>Wofür ich seit 18 Jahren stehe</h2>
+      <p class="lead">Ich bin Oleg P. — Küchenmonteur in Hamburg, kein Plattform-Lead, kein Callcenter. Wenn Sie hier anrufen, sprechen Sie direkt mit der Person, die zu Ihnen kommt. Das sind die fünf Prinzipien, nach denen ich arbeite:</p>
+
+      <div class="manifest-list">
+        <div class="manifest-item">
+          <span class="num" aria-hidden="true">1</span>
+          <div>
+            <h3>Festpreise statt versteckter Lead-Gebühren</h3>
+            <p>Was Sie auf der Preisliste sehen, zahlen Sie. Keine Plattform-Provision, die ich auf Ihre Rechnung umlege — bei Check24 oder MyHammer zahlen Handwerker pro Anfrage 5–25 € Lead-Gebühr, und das landet immer beim Endkunden.</p>
+          </div>
+        </div>
+        <div class="manifest-item">
+          <span class="num" aria-hidden="true">2</span>
+          <div>
+            <h3>Direktkontakt — kein Vermittler dazwischen</h3>
+            <p>Sie schreiben mir auf WhatsApp, ich antworte selbst — meist innerhalb einer Stunde. Keine Disposition, kein Subunternehmer, keine Übergabekette, in der Details verloren gehen.</p>
+          </div>
+        </div>
+        <div class="manifest-item">
+          <span class="num" aria-hidden="true">3</span>
+          <div>
+            <h3>Ihre Daten bleiben hier — kein Weiterverkauf</h3>
+            <p>Ihre Anfrage geht nicht an drei „Profis", die sich gegenseitig unterbieten. Ich bekomme sie, ich bearbeite sie. Keine Lead-Versteigerung, kein Anrufmarathon von fünf Anbietern.</p>
+          </div>
+        </div>
+        <div class="manifest-item">
+          <span class="num" aria-hidden="true">4</span>
+          <div>
+            <h3>5 Jahre Garantie auf meine Arbeit</h3>
+            <p>Wenn nach drei Jahren der Siphon undicht wird oder die Arbeitsplattenabdichtung versagt — ich komme zurück und mache es nach. Schriftlich, nicht „nach Kulanz" einer Plattform-Hotline.</p>
+          </div>
+        </div>
+        <div class="manifest-item">
+          <span class="num" aria-hidden="true">5</span>
+          <div>
+            <h3>Persönliche Verantwortung — kein anonymer Plattform-Account</h3>
+            <p>Mein Name steht im Impressum, meine Nummer geht direkt an mein Handy, meine Adresse können Sie nachschlagen. Wenn etwas schiefgeht, wissen Sie, wer dafür geradesteht — und nicht ein Service-Ticket im Backoffice einer App.</p>
+          </div>
+        </div>
       </div>
-      <div style="margin-top:30px;">
-        <p style="margin-bottom:12px;color:rgba(255,255,255,0.85);font-size:0.95rem;">Scannen Sie den QR-Code — direkt zu WhatsApp:</p>
-        <a href="https://wa.me/4915218547875" target="_blank" rel="noopener">
-          <img width="370" height="370" src="img/whatsapp-qr.png" alt="WhatsApp QR-Code — Küchen-Montage Hamburg kontaktieren" style="width:180px;height:180px;border-radius:12px;background:#fff;padding:8px;box-shadow:0 4px 20px rgba(0,0,0,0.2);">
-        </a>
+
+      <div class="manifest-cta">
+        <p>Wenn Sie das genauso sehen — schreiben Sie mir direkt.</p>
+        <div class="manifest-buttons">
+          <a class="ibtn ibtn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20unterst%C3%BCtze%20Ihr%20Manifest%20und%20m%C3%B6chte%20einen%20Termin%20vereinbaren." style="font-size:15px">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+            Direkt schreiben
+          </a>
+          <a class="ibtn ibtn-ghost-dark" href="pages/blog/check24-profis-erfahrungen-nachteile.html">Mehr Hintergrund lesen</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
-  
+  <!-- FINAL CTA -->
+  <section class="s compact" id="kontakt" style="border:none">
+    <div class="wrap">
+      <div class="final">
+        <div>
+          <div class="sec-eyebrow" style="color:#F4C770">Termin in Hamburg</div>
+          <h2>Schreiben Sie uns <span class="serif">— wir antworten in 30 Minuten.</span></h2>
+          <p>Sagen Sie uns kurz, wo Sie wohnen und welches Gerät Sie haben. Wir nennen Ihnen sofort einen Festpreis und freie Zeitfenster — oft schon für heute.</p>
+          <div style="margin-top:20px;display:flex;flex-wrap:wrap;gap:12px">
+            <a class="ibtn ibtn-wa" href="https://wa.me/4915218547875" style="font-size:16px;padding:16px 24px" rel="nofollow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+              WhatsApp: 0152 185 478 75
+            </a>
+            <a class="ibtn ibtn-ghost-dark" href="pages/kontakt.html">Kontaktformular</a>
+          </div>
+        </div>
+        <div class="qr-final">
+          <p style="color:rgba(255,255,255,.85);margin:0;font-size:.95rem">Scannen Sie den QR-Code — direkt zu WhatsApp:</p>
+          <a href="https://wa.me/4915218547875" target="_blank" rel="noopener">
+            <img width="370" height="370" src="img/whatsapp-qr.png" alt="WhatsApp QR-Code — Küchen-Montage Hamburg kontaktieren">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
+  <!-- FOOTER -->
+  <footer class="site">
+    <div class="wrap">
+      <div class="cols">
         <div>
-          <h3>Küchen-Montage Hamburg</h3>
-          <p class="footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
+          <a class="brand" href="/">
+            <span class="logo-mark">K</span>
+            <span class="name">Küchen-Montage Hamburg<small>Festpreis · seit 2008</small></span>
+          </a>
+          <p style="max-width:36ch;margin-top:14px">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
         </div>
         <div>
-          <h3>Leistungen</h3>
+          <h4>Leistungen</h4>
           <ul>
             <li><a href="waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
             <li><a href="pages/services/herd-anschliessen-hamburg.html">Herd anschließen</a></li>
@@ -1097,7 +1386,7 @@
           </ul>
         </div>
         <div>
-          <h3>Stadtteile</h3>
+          <h4>Stadtteile</h4>
           <ul>
             <li><a href="altona.html">Altona</a></li>
             <li><a href="bergedorf.html">Bergedorf</a></li>
@@ -1105,39 +1394,55 @@
             <li><a href="harburg.html">Harburg</a></li>
             <li><a href="kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a></li>
             <li><a href="wandsbek.html">Wandsbek</a></li>
-            <li><a href="pages/stadtteile/" style="font-weight:600;">Alle Stadtteile →</a></li>
+            <li><a href="pages/stadtteile/" style="font-weight:700">Alle Stadtteile →</a></li>
           </ul>
         </div>
         <div>
-          <h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128172; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
-          <div class="footer-contact-item">&#128205; <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a></div>
-          <div class="footer-contact-item">&#11088; <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Auf Google bewerten</a></div>
-          <div style="margin-top:16px;">
-            <a href="https://wa.me/4915218547875" style="margin-right:12px;">WhatsApp</a>
-          </div>
+          <h4>Kontakt</h4>
+          <ul>
+            <li>WhatsApp: <a href="https://wa.me/4915218547875">0152 185 478 75</a></li>
+            <li><a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></li>
+            <li><a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a></li>
+            <li>Mo–Fr 8–20 Uhr · Sa 9–16 Uhr</li>
+            <li><a href="pages/impressum.html">Impressum</a> · <a href="pages/datenschutz.html">Datenschutz</a></li>
+          </ul>
         </div>
       </div>
-      <div class="footer-trust" style="padding:16px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;line-height:1.6;opacity:.75;">18 Jahre Erfahrung &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a></div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Küchen-Montage Hamburg. Alle Rechte vorbehalten.</div>
-        <div class="footer-legal">
-          <a href="pages/impressum.html">Impressum</a>
-          <a href="pages/datenschutz.html">Datenschutz</a>
-        </div>
+      <div class="legal">
+        <span>© 2026 Küchen-Montage Hamburg. Alle Rechte vorbehalten.</span>
+        <span>18 Jahre Erfahrung · TÜV NORD zertifiziert · 5 Jahre Garantie</span>
       </div>
     </div>
   </footer>
 
   <!-- FLOATING CTA -->
-  <div class="floating-cta">
-    <a href="https://wa.me/4915218547875?text=Bitte%20anrufen%20Sie%20mich" class="floating-btn floating-btn-phone" aria-label="Per WhatsApp anrufen" style="background:#2563eb;display:grid;place-items:center;color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg></a>
-    <a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a>
+  <div class="float-actions">
+    <a class="call" href="https://wa.me/4915218547875?text=Bitte%20anrufen%20Sie%20mich" aria-label="Per WhatsApp anrufen">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+    </a>
+    <a class="chat" href="https://wa.me/4915218547875" rel="nofollow" aria-label="WhatsApp">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+    </a>
   </div>
 
   <script src="js/main.js" defer></script>
   <script src="js/chat.js" defer></script>
+  <script>
+  // Kostenrechner
+  function calcCost(e){
+    e.preventDefault();
+    var sel = document.getElementById('calc-service');
+    var qty = parseInt(document.getElementById('calc-qty').value || '1', 10);
+    var base = parseInt(sel.value || '0', 10);
+    var res = document.getElementById('calc-result');
+    if(!base){ res.classList.remove('on'); return false; }
+    var total = base + (qty - 1) * Math.round(base * 0.5);
+    var label = sel.options[sel.selectedIndex].text.split(' — ')[0];
+    res.innerHTML = '<div>Geschätzte Kosten für <b style="color:var(--ink);font-size:14.5px">'+label+'</b> &times; '+qty+':</div><div style="margin-top:6px">ab <b>'+total+'€</b> Festpreis (inkl. Anfahrt in Hamburg)</div>';
+    res.classList.add('on');
+    return false;
+  }
+  </script>
   <script>
   (function() {
     var btn = document.getElementById('hero-chat-btn');
@@ -1147,6 +1452,7 @@
     var sendBtn = document.getElementById('hero-chat-send');
     var micBtn = document.getElementById('hero-chat-mic');
     var msgs = document.getElementById('hero-chat-messages');
+    if (!btn || !area) return;
     var isOpen = false;
 
     // Conversation state
@@ -1211,14 +1517,14 @@
       btnRow.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;';
 
       var callBtn = document.createElement('button');
-      callBtn.textContent = '\uD83D\uDCDE Mit Meister verbinden';
+      callBtn.textContent = '📞 Mit Meister verbinden';
       callBtn.style.cssText = 'background:#25d366;color:#fff;border:none;border-radius:50px;padding:8px 16px;font-size:0.83rem;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity 0.2s;';
       callBtn.addEventListener('click', function() {
         window.open('https://wa.me/4915218547875', '_blank');
       });
 
       var msgBtn = document.createElement('button');
-      msgBtn.textContent = '\u2709\uFE0F Nachricht hinterlassen';
+      msgBtn.textContent = '✉️ Nachricht hinterlassen';
       msgBtn.style.cssText = 'background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;font-size:0.83rem;font-weight:600;cursor:pointer;font-family:inherit;transition:opacity 0.2s;';
       msgBtn.addEventListener('click', function() {
         wrap.remove();
@@ -1249,7 +1555,7 @@
 
     function handlePhoneCapture(phoneNumber) {
       waitingForPhone = false;
-      addMsg('Vielen Dank! Ihre Nummer ' + phoneNumber + ' wurde gespeichert. Der Meister meldet sich schnellstmöglich bei Ihnen. \uD83D\uDC4D', 'bot');
+      addMsg('Vielen Dank! Ihre Nummer ' + phoneNumber + ' wurde gespeichert. Der Meister meldet sich schnellstmöglich bei Ihnen. 👍', 'bot');
       var summary = buildConversationSummary();
       var waText = 'Neue Anfrage vom KI-Assistenten:\n\nKontakt: ' + phoneNumber + '\n\nGesprächsverlauf:\n' + summary;
       setTimeout(function() {
@@ -1269,7 +1575,7 @@
       });
       btn.style.display = 'none';
       if (msgs.children.length === 0) {
-        addMsg('Moin! \uD83D\uDC4B Ich bin der Küchen-Assistent. Fragen Sie mich nach Preisen, Leistungen oder Terminen!', 'bot');
+        addMsg('Moin! 👋 Ich bin der Küchen-Assistent. Fragen Sie mich nach Preisen, Leistungen oder Terminen!', 'bot');
       }
       setTimeout(function() { input.focus(); }, 400);
     }
@@ -1342,59 +1648,11 @@
       recognition.start();
     });
 
-    var worker = document.getElementById('hero-worker');
-    var runningWorker = document.getElementById('running-worker');
-
-    var trail = document.getElementById('worker-trail');
-    var celebration = document.getElementById('worker-celebration');
-
-    function animateWorkerRun() {
-      worker.style.display = 'block';
-      worker.style.opacity = '0';
-      worker.style.transition = 'opacity 0.3s ease';
-      trail.style.opacity = '0';
-      trail.style.left = '0';
-      celebration.style.display = 'none';
-      requestAnimationFrame(function() { worker.style.opacity = '1'; });
-      // Animate running from left to right
-      runningWorker.style.transition = 'none';
-      runningWorker.style.left = '0%';
-      requestAnimationFrame(function() {
-        runningWorker.style.transition = 'left 2.5s ease-in-out';
-        runningWorker.style.left = 'calc(100% - 70px)';
-        // Trail text follows behind
-        setTimeout(function() {
-          trail.style.transition = 'opacity 0.5s ease, left 2s ease-in-out';
-          trail.style.opacity = '1';
-          trail.style.left = '5%';
-        }, 800);
-        // Celebration when arrives
-        setTimeout(function() {
-          celebration.style.display = 'flex';
-          // Bounce the worker
-          runningWorker.style.transition = 'transform 0.3s ease';
-          runningWorker.style.transform = 'scale(1.15)';
-          setTimeout(function() {
-            runningWorker.style.transform = 'scale(1)';
-          }, 300);
-        }, 2500);
-      });
-    }
-
-    function hideWorker() {
-      worker.style.opacity = '0';
-      trail.style.opacity = '0';
-      celebration.style.display = 'none';
-      setTimeout(function() { worker.style.display = 'none'; }, 300);
-    }
-
     btn.addEventListener('click', function() {
       loadKB();
-      animateWorkerRun();
       openChat();
     });
     closeBtn.addEventListener('click', function() {
-      hideWorker();
       closeChat();
     });
     sendBtn.addEventListener('click', handleSend);
