@@ -456,6 +456,87 @@
     <!-- MAIN CONTENT -->
     <main class="blog-main">
 
+      <!-- COMMUNITY-KOMMENTARE: Erfahrungen mit Handwerkerportalen -->
+      <section id="erfahrungen" style="margin:0 0 40px;padding:24px;background:#fff;border:1px solid #e6dfd2;border-radius:16px;box-shadow:0 1px 0 rgba(12,27,42,.04),0 10px 30px -16px rgba(12,27,42,.12);">
+        <h2 style="margin:0 0 6px;font-size:1.4rem;">Ihre Erfahrung mit Handwerkerportalen</h2>
+        <p style="margin:0 0 18px;color:#6a7382;font-size:14px;">Teilen Sie Ihre Erfahrung mit MyHammer, CHECK24 Profis, Blauarbeit & Co. — anonym, nur Nickname und Kommentar. <a href="/pages/datenschutz.html#kommentare" style="color:#e23b33;">Datenschutz</a></p>
+
+        <form id="cmt-form" style="display:grid;gap:10px;margin-bottom:22px;">
+          <div style="display:flex;gap:10px;flex-wrap:wrap;">
+            <input id="cmt-nick" type="text" maxlength="40" required placeholder="Ihr Nickname" style="flex:1 1 180px;padding:11px 14px;border:1px solid #e6dfd2;border-radius:10px;font-size:14px;">
+            <select id="cmt-platform" style="flex:1 1 180px;padding:11px 14px;border:1px solid #e6dfd2;border-radius:10px;font-size:14px;background:#fff;">
+              <option value="">Plattform (optional)</option>
+              <option>MyHammer</option>
+              <option>CHECK24 Profis</option>
+              <option>Blauarbeit</option>
+              <option>Kleinanzeigen</option>
+              <option>Sonstige</option>
+            </select>
+          </div>
+          <textarea id="cmt-text" rows="3" maxlength="2000" required placeholder="Ihr Kommentar zur Qualität / zu den Kosten / zum Service…" style="padding:11px 14px;border:1px solid #e6dfd2;border-radius:10px;font-size:14px;resize:vertical;font-family:inherit;"></textarea>
+          <!-- Honeypot: für Menschen unsichtbar, Bots füllen es aus -->
+          <input id="cmt-website" type="text" name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" aria-hidden="true">
+          <div style="display:flex;gap:12px;align-items:center;">
+            <button type="submit" style="background:linear-gradient(135deg,#F4C770,#C9A24A);color:#1a1305;font-weight:700;border:0;padding:11px 22px;border-radius:999px;cursor:pointer;font-size:14px;">Kommentar absenden</button>
+            <span id="cmt-status" style="font-size:13px;color:#6a7382;"></span>
+          </div>
+        </form>
+
+        <div id="cmt-list" style="display:flex;flex-direction:column;gap:14px;"></div>
+      </section>
+
+      <script>
+      (function(){
+        // ⚠️ Nach dem Worker-Deploy hier die echte URL eintragen (siehe comments-worker/README.md):
+        var COMMENTS_API = 'https://kuechen-comments.CHANGE-ME.workers.dev';
+        var listEl = document.getElementById('cmt-list');
+        var form = document.getElementById('cmt-form');
+        var statusEl = document.getElementById('cmt-status');
+        var page = 'blog-portale';
+
+        function esc(s){var d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML;}
+        function when(s){ if(!s) return ''; try{return new Date(s.replace(' ','T')+'Z').toLocaleDateString('de-DE',{day:'2-digit',month:'short',year:'numeric'});}catch(e){return s;} }
+
+        function render(items){
+          if(!items || !items.length){ listEl.innerHTML = '<p style="color:#9aa3b0;font-size:14px;">Noch keine Kommentare — schreiben Sie den ersten.</p>'; return; }
+          listEl.innerHTML = items.map(function(c){
+            var plat = c.platform ? '<span style="background:#f1ece3;color:#6a7382;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;">'+esc(c.platform)+'</span>' : '';
+            return '<div style="border:1px solid #eee;border-radius:12px;padding:14px 16px;">'
+              + '<div style="font-size:13px;color:#6a7382;margin-bottom:4px;"><b style="color:#0c1b2a;">'+esc(c.nick)+'</b>'+plat+' · '+when(c.created_at)+'</div>'
+              + '<div style="font-size:14.5px;line-height:1.55;color:#162739;white-space:pre-wrap;">'+esc(c.text)+'</div></div>';
+          }).join('');
+        }
+
+        function load(){
+          fetch(COMMENTS_API+'/comments?page='+encodeURIComponent(page))
+            .then(function(r){return r.json();})
+            .then(function(d){ render(d.comments); })
+            .catch(function(){ listEl.innerHTML='<p style="color:#9aa3b0;font-size:13px;">Kommentare konnten nicht geladen werden.</p>'; });
+        }
+
+        form.addEventListener('submit', function(e){
+          e.preventDefault();
+          statusEl.textContent = 'Wird gesendet…';
+          var payload = {
+            nick: document.getElementById('cmt-nick').value,
+            text: document.getElementById('cmt-text').value,
+            platform: document.getElementById('cmt-platform').value,
+            website: document.getElementById('cmt-website').value,
+            page: page
+          };
+          fetch(COMMENTS_API+'/comments', {
+            method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)
+          }).then(function(r){return r.json().then(function(d){return {ok:r.ok,d:d};});})
+          .then(function(res){
+            if(res.ok && res.d.ok){ statusEl.textContent='Danke! Ihr Kommentar wurde veröffentlicht.'; form.reset(); load(); }
+            else { statusEl.textContent = (res.d && res.d.error) ? res.d.error : 'Fehler beim Senden.'; }
+          }).catch(function(){ statusEl.textContent='Netzwerkfehler. Bitte später erneut versuchen.'; });
+        });
+
+        load();
+      })();
+      </script>
+
       <h2 id="einleitung">Warum ich diesen Blog geschrieben habe</h2>
 
       <p><strong>Als selbstständiger Küchenmonteur in Hamburg mit 18 Jahren Erfahrung</strong> habe ich fast alle großen Handwerkerportale in Deutschland ausprobiert — CHECK24 Profis, MyHammer, Blauarbeit, Kleinanzeigen. Mein Fazit nach Jahren und Tausenden Euro an Gebühren: <strong>Die meisten Portale verdienen mehr an mir als ich an ihnen.</strong></p>

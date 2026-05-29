@@ -1,0 +1,16 @@
+name = "kuechen-comments"
+main = "worker.js"
+compatibility_date = "2026-01-01"
+
+# Allowed browser origin for CORS (your live site)
+[vars]
+ORIGIN = "https://kuechen-montage-hamburg.de"
+
+# D1 database binding — fill database_id after `wrangler d1 create kuechen-comments`
+[[d1_databases]]
+binding = "DB"
+database_name = "kuechen-comments"
+database_id = "PASTE_DATABASE_ID_HERE"
+
+# ADMIN_KEY is NOT stored here — set it as a secret:
+#   wrangler secret put ADMIN_KEY
