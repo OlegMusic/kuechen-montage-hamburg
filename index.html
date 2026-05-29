@@ -451,6 +451,9 @@
     body.home2 .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
     @media (max-width:980px){body.home2 .testimonials{grid-template-columns:repeat(2,1fr)}}
     @media (max-width:600px){body.home2 .testimonials{grid-template-columns:1fr}}
+    body.home2 .testimonials.collapsed .tm:nth-child(n+7){display:none}
+    body.home2 .tm-toggle{background:linear-gradient(135deg,#F4C770,#C9A24A);color:#1a1305;font-weight:700;border:0;padding:12px 26px;border-radius:999px;cursor:pointer;font-size:14px;font-family:inherit;transition:transform .15s,box-shadow .2s;box-shadow:0 4px 16px rgba(201,162,74,.35)}
+    body.home2 .tm-toggle:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,162,74,.5)}
     body.home2 .tm{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;display:flex;flex-direction:column;gap:12px;position:relative}
     body.home2 .tm::before{content:"\201C";position:absolute;right:18px;top:6px;font-family:Georgia,serif;font-size:64px;color:var(--paper-3);line-height:1}
     body.home2 .tm .stars{color:var(--gold-2);letter-spacing:2px;font-size:14px}
@@ -1029,7 +1032,7 @@
         <a class="gbtn dark" href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Google-Profil ansehen →</a>
       </div>
 
-      <div class="testimonials">
+      <div class="testimonials collapsed" id="testimonials">
         <article class="tm">
           <div class="stars">★★★★★</div>
           <blockquote>„Ich bin sehr zufrieden. Super schnelle Antwort, Freitag Anfrage erstellt und Samstag Angebot erhalten. Nach einem kurzen Videocall hat er fehlendes Material besorgt und war eine Stunde später vor Ort. Nach 1 Std. war der Schaden zu voller Zufriedenheit behoben. Gerne immer wieder."</blockquote>
@@ -1131,8 +1134,22 @@
           <div class="who"><b>Matthias H.</b><small>CHECK24 Profis verifiziert — August 2023</small></div>
         </article>
       </div>
+      <div style="text-align:center;margin-top:24px;">
+        <button type="button" id="tm-toggle" class="tm-toggle">Alle 20 Bewertungen ansehen</button>
+      </div>
     </div>
   </section>
+  <script>
+  (function(){
+    var grid=document.getElementById('testimonials');
+    var btn=document.getElementById('tm-toggle');
+    if(!grid||!btn) return;
+    btn.addEventListener('click',function(){
+      var open=grid.classList.toggle('collapsed')===false;
+      btn.textContent=open?'Weniger anzeigen':'Alle 20 Bewertungen ansehen';
+    });
+  })();
+  </script>
 
   <!-- DISTRICTS + CALCULATOR -->
   <section class="s alt compact" id="stadtteile" aria-labelledby="area-h">
@@ -1676,7 +1693,7 @@
         if (!d || typeof d.rating !== 'number') return;
         var rating = d.rating.toFixed(1).replace('.', ',');
         var count = d.userRatingCount || 0;
-        rEl.innerHTML = rating + ' <span class="rev-star">★</span>';
+        rEl.innerHTML = rating + ' <span class="star">★</span>';
         lEl.textContent = 'Google · ' + count + ' Bewertungen';
       })
       .catch(function(){ /* keep static fallback */ });
