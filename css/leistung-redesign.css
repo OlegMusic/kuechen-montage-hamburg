@@ -152,14 +152,15 @@
 
   /* Hero right column: price card above photo */
   .hero-right{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
-  .hero-right .hero-media{width:100%}
+  .hero-right .hero-media{width:100%;margin:0}
+  .hero-right .price-stamp{transform:translateY(-20px)}
   .hero-gallery-link{
-    display:inline-flex;align-items:center;gap:10px;
-    font-size:14px;font-weight:500;color:#C9D4E2;text-decoration:none;
-    padding:4px 0;transition:color .15s ease,gap .15s ease;
+    display:inline-flex;align-items:center;gap:10px;align-self:center;
+    font-size:15px;font-weight:600;color:var(--brand);text-decoration:none;
+    padding:6px 0;transition:color .15s ease,gap .15s ease;
   }
-  .hero-gallery-link svg{flex:none;color:#F4C770}
-  .hero-gallery-link:hover{color:#fff;gap:12px}
+  .hero-gallery-link svg{flex:none;color:var(--brand)}
+  .hero-gallery-link:hover{color:var(--brand-2);gap:12px}
   .gallery-all{display:flex;justify-content:center;margin-top:40px}
   .btn-gallery{background:transparent;color:var(--ink);border-color:rgba(12,27,42,.22)}
   .btn-gallery svg{color:var(--brand)}
@@ -192,6 +193,7 @@
   .hero-media .tag b{font-size:20px;font-weight:700;letter-spacing:-.02em}
   .hero-media .tag .st{color:#E2A52C}
   .hero-media .tag em{font-style:normal;color:var(--mute);font-size:12px}
+  .hero-media .tag .profi{font-size:10px;font-weight:700;letter-spacing:.08em;color:var(--brand);vertical-align:middle;margin-left:4px}
 
   /* Section base */
   section{padding:88px 0;border-top:1px solid var(--line)}
