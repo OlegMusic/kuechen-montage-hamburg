@@ -6,7 +6,7 @@
   <title>IKEA Küchenmontage Hamburg | Ab 170€ Festpreis | METOD-Experte</title>
   <meta name="description" content="IKEA Küchenmontage in Hamburg &amp; Umgebung ab 170€ Festpreis. METOD-System, Gerätemontage, Arbeitsplatte. Wir sind Ihr IKEA-Küchenmonteur — Same-Day-Service.">
   <meta name="keywords" content="IKEA Küchenmontage Hamburg, IKEA Küche aufbauen lassen Hamburg, IKEA Küchenmonteur Hamburg, METOD Montage Hamburg, IKEA Küche montieren Hamburg, IKEA Küche Kosten, IKEA Küche Service Hamburg">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Küchen-Montage Hamburg">
   <link rel="canonical" href="https://kuechen-montage-hamburg.de/pages/services/ikea-kuechenmontage-hamburg.html">
 
@@ -16,6 +16,9 @@
   <meta property="og:url" content="https://kuechen-montage-hamburg.de/pages/services/ikea-kuechenmontage-hamburg.html">
   <meta property="og:locale" content="de_DE">
   <meta property="og:image" content="https://kuechen-montage-hamburg.de/img/profile/profile.webp">
+  <meta property="og:site_name" content="Küchen-Montage Hamburg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0C1B2A">
 
   <script type="application/ld+json">
   {
@@ -90,7 +93,8 @@
       "priceCurrency": "EUR",
       "description": "Ab-Preis Festpreis — Kompakt-Küche bis 5 Korpusse, inkl. Anfahrt in Hamburg"
     }
-  }
+  },
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "20", "bestRating": "5", "worstRating": "1"}
 }
   </script>
 
@@ -115,7 +119,7 @@
       {
         "@type": "Question",
         "name": "Was kostet eine IKEA Küchenmontage in Hamburg?",
-        "acceptedAnswer": { "@type": "Answer", "text": "IKEA Küchenmontage kostet bei uns ab 170€ Festpreis für eine Kompakt-Küche (bis 5 Korpusse, z.B. eine kleine KNOXHULT oder ein Teil einer METOD-Zeile). Eine Standard-Küche mit 6-12 Korpussen ab 299€, eine große METOD-Küche mit 15+ Korpussen oder Kochinsel ab 599€. Anfahrt in Hamburg inklusive. Gerätemontage und Anschluss auf Wunsch zusätzlich." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Wir rechnen nach IKEA-System: Eine METOD-Küche kostet ab 190€ pro laufendem Meter Küchenzeile (Korpusse, Fronten, Aufhängung, Sockel & Blenden). Eine ENHET-Küche montieren wir als Festpreis ab 170€. Anfahrt in Hamburg inklusive. Gerätemontage +89-149€ je Gerät, Arbeitsplatten-Zuschnitt +49€ je Ausschnitt, optionaler Abbau der alten Küche ab 170€." }
       },
       {
         "@type": "Question",
@@ -166,272 +170,627 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="/css/leistung-redesign.css">
+
+  <style>
+    /* IKEA-Küchen Galerie — echte Referenzfotos */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns:repeat(4, 1fr);
+      gap:16px;
+    }
+    .gallery-grid figure{
+      margin:0;
+      position:relative;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:#f1f3f6;
+      aspect-ratio:4 / 3;
+    }
+    .gallery-grid img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      transition:transform .35s ease;
+    }
+    .gallery-grid figure:hover img{transform:scale(1.05)}
+    .gallery-grid figcaption{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      padding:18px 14px 12px;
+      font-size:12.5px;
+      font-weight:500;
+      color:#fff;
+      line-height:1.35;
+      background:linear-gradient(180deg, rgba(8,18,30,0) 0%, rgba(8,18,30,.78) 100%);
+    }
+    @media (max-width:980px){ .gallery-grid{grid-template-columns:repeat(2, 1fr)} }
+    @media (max-width:520px){ .gallery-grid{grid-template-columns:1fr} }
+  </style>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="48x48" href="/img/favicon/favicon-48x48.png">
   <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/img/favicon/site.webmanifest">
-  <meta name="theme-color" content="#0a4d8c">
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="../../index.html" class="logo"><div class="logo-icon">K</div>Küchen-Montage Hamburg</a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
-        <a href="../../index.html">Startseite</a>
-        <a href="../../index.html#leistungen">Leistungen</a>
-        <a href="../preise.html">Preise</a>
-        <a href="../../index.html#stadtteile">Stadtteile</a>
-        <a href="../../index.html#bewertungen">Bewertungen</a>
-        <a href="../blog/index.html">Blog</a>
-        <a href="../kontakt.html">Kontakt</a>
-      </nav>
-      </div>
-  </header>
-
-  <main>
-  <section class="service-hero">
-    <div class="container">
-      <div style="position:relative;margin:-16px -16px 24px;border-radius:12px 12px 0 0;overflow:hidden;max-height:400px;">
-        <img src="/foto/ikea-kuechenmontage-hamburg-profi.webp" alt="IKEA Küchenmontage in Hamburg — professioneller Aufbau METOD, SEKTION" title="IKEA Küchenmontage in Hamburg — professioneller Aufbau METOD, SEKTION" loading="eager" style="width:100%;height:100%;object-fit:cover;display:block;" width="1200" height="400">
-      </div>
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="../../index.html" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="../../index.html#leistungen" style="color:rgba(255,255,255,0.7)">Leistungen</a> &rsaquo;
-        <a href="kuechenmontage-hamburg.html" style="color:rgba(255,255,255,0.7)">Küchenmontage</a> &rsaquo;
-        <span>IKEA</span>
-      </nav>
-      <h1>IKEA Küchenmontage Hamburg — ab 170€ Festpreis</h1>
-      <p class="service-hero-sub">Ihr IKEA-Küchenmonteur für Hamburg und Umgebung. Über 500 montierte METOD-Küchen, 18 Jahre Erfahrung, transparente Festpreise ab 170€. Wir packen aus, montieren, schließen alle Geräte an und nehmen den Müll mit. Same-Day-Service.</p>
-      <div class="service-hero-meta">
-        <div class="service-hero-price">&#128176; <strong>Ab 170€</strong> Festpreis</div>
-        <div class="service-hero-duration">&#9202; <strong>1-2 Tage</strong> Montagezeit</div>
-        <div class="service-hero-guarantee">&#128274; <strong>5 Jahre</strong> Garantie</div>
-      </div>
-      <div class="hero-buttons">
-        <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meine%20IKEA-K%C3%BCche%20in%20Hamburg%20montieren%20lassen." class="btn btn-whatsapp btn-lg">&#128172; Jetzt anfragen</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="service-content">
-    <div class="container">
-
-      <h2>Festpreise — IKEA Küchenmontage in Hamburg</h2>
-      <p>Transparente Staffelung nach Küchengröße. Alle Preise sind Festpreise — was wir sagen, steht auf der Rechnung.</p>
-
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin-bottom:24px;">
-        <div class="service-card">
-          <h3>Kompakt</h3>
-          <p><strong>ab 170€</strong> Festpreis<br>
-          Bis 5 METOD-Korpusse, z.B. KNOXHULT Kleinkücheoder Mini-Pantry. Arbeitsplatte inklusive.</p>
-        </div>
-        <div class="service-card">
-          <h3>Standard</h3>
-          <p><strong>ab 299€</strong> Festpreis<br>
-          6-12 Korpusse, L- oder gerade Form, bis ca. 4 m Arbeitsplatte. Typisch für 2-3-Zimmer-Wohnung.</p>
-        </div>
-        <div class="service-card">
-          <h3>Groß (U-Form / Insel)</h3>
-          <p><strong>ab 599€</strong> Festpreis<br>
-          15+ Korpusse, U-Form oder mit Kochinsel, 2 Arbeitsplatten, komplexe Geräteanschlüsse.</p>
-        </div>
-        <div class="service-card">
-          <h3>+ Gerätemontage</h3>
-          <p><strong>+89-149€</strong> je Gerät<br>
-          Backofen, Induktionskochfeld, Spülmaschine, Kühl-Gefrierkombi, Dunstabzug — fachgerecht.</p>
-        </div>
-        <div class="service-card">
-          <h3>+ Arbeitsplatten-Zuschnitt</h3>
-          <p><strong>+49€ je Ausschnitt</strong><br>
-          Kochfeld-, Spülen-Ausschnitt, passgenau mit Oberfräse + Kanten-Abdichtung.</p>
-        </div>
-        <div class="service-card">
-          <h3>+ Aufmaß vorab</h3>
-          <p><strong>80€</strong> Festpreis<br>
-          Wird bei anschließender Montage mit uns verrechnet.</p>
-        </div>
-      </div>
-
-      <h2>Wir sind IKEA-Experten — seit 2008</h2>
-      <p>In den letzten 18 Jahren haben wir in Hamburg mehr als <strong>500 IKEA-Küchen</strong> montiert. Das heißt: wir kennen jeden Korpus-Typ, jede Aufhängeschiene, jede Schubladenbox und jedes Scharnier aus dem METOD-System auswendig. Wir wissen, wo die Schraubenlöcher sind, bevor die Verpackung aufgemacht wird.</p>
-
-      <p>Konkret beherrschen wir:</p>
-      <ul>
-        <li><strong>METOD-Korpusse</strong> — Unterschrank 80cm, Hochschrank 100/120/140cm, Oberschrank, Eck- und Beistellkorpus. Auch die älteren FAKTUM-Überreste von vor 2014.</li>
-        <li><strong>Fronten</strong> — VOXTORP, BODBYN, KUNGSBACKA, STENSUND, AXSTAD, VEDHAMN, HAVSTORP, LERHYTTAN, TINGSRYD, VÄSTERVIKEN, HÄGGEBY und alle neueren Serien.</li>
-        <li><strong>Scharniere UTRUSTA</strong> — soft-close, stand, Klappbeschläge für Oberschränke, Bodenverbinder.</li>
-        <li><strong>Auszüge MAXIMERA</strong> — Korbauszüge, Vollauszüge mit Dämpfer, Innenschubladen.</li>
-        <li><strong>Arbeitsplatten</strong> — KARLBY (Dickschicht Laminat), SÄLJAN (Schichtstoff), HAMMARP (Massivholz Eiche/Birke), ÄMMERÖ (Kalkstein-Optik), EKBACKEN, KASKER (Quarz), BARKABODA (Nussbaum).</li>
-        <li><strong>IKEA-Geräte</strong> — WHIRLPOOL-gefertigte Eigenmarken: Backofen MATÄLSKARE/FORMULÄR/TRIVSAM, Kochfeld VÄLBILDAD/TREVLIG, Geschirrspüler MEDELSTOR/DISKAD, Kühl-Gefrier LAGAN/TILLREDA, Dunstabzug BALANSERAD/UNDERVERK.</li>
-      </ul>
-
-      <h2>So läuft die IKEA Küchenmontage ab</h2>
-
-      <h3>Schritt 1: Aufmaß (optional, 80€ Festpreis)</h3>
-      <p>Vor Ihrer IKEA-Bestellung kommen wir zu Ihnen nach Hause, messen Wände, Decke, Boden, Fenster-, Türstöcke, Heizkörper, Wasseranschlüsse und Stromdosen — und erstellen eine präzise Skizze mit allen Abständen. Diese nehmen Sie mit zu IKEA, wo Sie dann die Planung mit dem Berater machen. Kein "ach, da passt der 60er-Korpus doch nicht rein"-Problem am Liefertag.</p>
-
-      <h3>Schritt 2: Sie bestellen bei IKEA und wählen Heimlieferung</h3>
-      <p>Lieferung kostet je nach Gewicht ca. 59-99€ (abhängig von PLZ und Umfang). Lieferzeit 1-2 Wochen. Direkt nach der Bestellung buchen Sie uns für den Liefertag oder den Tag danach.</p>
-
-      <h3>Schritt 3: Montagetag — wir sind pünktlich da</h3>
-      <p>Wir kommen morgens um 8:00, mit eigenem Werkzeug: Festool-Plunge-Säge, Oberfräse, Absaugung, Akkuschrauber, Lasermessgerät, Wasserwaage, Zollstock. Sie müssen nichts bereitstellen.</p>
-
-      <h3>Schritt 4: Auspacken und Prüfen</h3>
-      <p>Wir packen alle Kartons aus, prüfen Teile gegen die IKEA-Lieferliste und melden fehlende oder beschädigte Teile (wir können diese direkt bei IKEA reklamieren, das spart Ihnen den Gang ins Einrichtungshaus).</p>
-
-      <h3>Schritt 5: Korpus-Montage</h3>
-      <p>Wir montieren alle METOD-Korpusse nach der IKEA-Anleitung — aber deutlich schneller, weil wir die Abläufe 500-fach im Schlaf beherrschen. Etwa 10-15 Minuten pro Korpus.</p>
-
-      <h3>Schritt 6: Aufhängen und Ausrichten</h3>
-      <p>Oberschränke werden an die Aufhängeschiene gehängt (vorher Dübel in passenden Abständen gesetzt — wichtig, die IKEA-Schiene muss zu Ihrer Wand passen: Betondübel für Betonwand, Hohlraumdübel für Ständerwand, Spezialdübel für Porenbeton). Unterschränke werden auf Wasserwaage ausgerichtet, seitlich verschraubt.</p>
-
-      <h3>Schritt 7: Arbeitsplatte zuschneiden und montieren</h3>
-      <p>Arbeitsplatte wird vor Ort mit Festool-Plunge-Säge zugeschnitten — Ecken, Ausschnitt für Kochfeld, Spüle und Armatur. Kanten werden mit Silikon abgedichtet gegen Wasser. Bei Eck-Küchen wird die Naht mit Nutfräsung und Verbinder präzise verbunden.</p>
-
-      <h3>Schritt 8: Geräteeinbau und Anschluss</h3>
-      <p>Backofen in Hochschrank, Kochfeld auf Arbeitsplatte, Spülmaschine unter Arbeitsplatte, Spüle in Ausschnitt, Armatur dran — alles mit Anschluss an Wasser, Strom, ggf. Starkstrom (bei Herd/Induktion) und fachgerechter Prüfung.</p>
-
-      <h3>Schritt 9: Fronten und Griffe</h3>
-      <p>Türen und Schubladenfronten werden eingehängt und mit den UTRUSTA-Scharnieren fein justiert (Spaltmaße, Höhe, Seite — 3-Achsen-Justage). Griffe oder Knöpfe werden nach Ihrer Wunsch-Höhe gebohrt und montiert.</p>
-
-      <h3>Schritt 10: Abschluss-Check und Müllabfuhr</h3>
-      <p>Wir testen alle Geräte im Probelauf (Wasser an/aus, Herd heizt, Spülmaschine pumpt), justieren bei Bedarf nach, wischen durch, und packen Karton + Styropor (auf Wunsch, 30€ Pauschale zum Wertstoffhof).</p>
-
-      <h2>Typische Fragen beim IKEA-Küchenkauf</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-question">Was kostet eine IKEA Küchenmontage in Hamburg?</div>
-          <div class="faq-answer">Ab 170€ Festpreis für Kompakt-Küchen (bis 5 Korpusse). Standard 6-12 Korpusse ab 299€. Groß mit Insel ab 599€. Gerätemontage separat ab 89€/Gerät. Arbeitsplatten-Zuschnitt +49€ je Ausschnitt. Anfahrt Hamburg inklusive.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Wie lange dauert die Montage?</div>
-          <div class="faq-answer">Kleine Küche 1 Tag, Standard 1-1,5 Tage, große U-Form oder mit Insel 2 Tage. Arbeitsbeginn meist 8:00, Abschluss 16:00-18:00.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Kennt Ihr Team das IKEA METOD-System wirklich?</div>
-          <div class="faq-answer">Seit 2008, über 500 montierte METOD-Küchen. Wir kennen jedes Scharnier (UTRUSTA), jeden Auszug (MAXIMERA), jede Frontserie (VOXTORP, BODBYN, KUNGSBACKA etc.), jede Arbeitsplatte (KARLBY, HAMMARP, SÄLJAN).</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">IKEA hat geliefert — kommen Sie direkt?</div>
-          <div class="faq-answer">Ja. Buchung am Liefertag oder Tag danach. Wir packen aus, prüfen Vollständigkeit, reklamieren ggf. fehlende Teile direkt bei IKEA, und montieren die komplette Küche.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Montieren Sie auch die IKEA-Geräte?</div>
-          <div class="faq-answer">Ja, alle IKEA-Geräte (Backofen MATÄLSKARE/FORMULÄR, Kochfeld VÄLBILDAD, Geschirrspüler MEDELSTOR, Kühl-Gefrier LAGAN etc.) werden eingebaut und fachgerecht angeschlossen. 89-149€ je Gerät.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Schneiden Sie die Arbeitsplatte?</div>
-          <div class="faq-answer">Ja, mit Profi-Werkzeug vor Ort. Festool-Plunge-Säge + Oberfräse + Absaugung. Dickschichtlaminat, Schichtstoff, Massivholz, Quarz — alles passgenau. Kanten werden gegen Wasser abgedichtet.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Aufmaß vor IKEA-Bestellung — brauche ich das?</div>
-          <div class="faq-answer">Empfohlen, wenn Sie nicht sicher sind. 80€ Festpreis, wird bei der anschließenden Montage verrechnet. Verhindert teure Fehlbestellungen.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Und das Umland — Norderstedt, Pinneberg, Ahrensburg?</div>
-          <div class="faq-answer">Ja, wir kommen ins gesamte Hamburger Umland. Anfahrt ab 15€ Pauschale je nach Entfernung.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Was passiert mit dem vielen Karton?</div>
-          <div class="faq-answer">Auf Wunsch 30€ Pauschale — wir falten, sortieren und bringen zum Wertstoffhof. Alternativ Sperrmüllanmeldung bei Stadtreinigung Hamburg (kostenlos, Wartezeit).</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Unterschied zu IKEAs eigener Montage?</div>
-          <div class="faq-answer">IKEA vermittelt Drittanbieter mit Preisen 18-25% des Küchenwertes (500-1500€). Bei uns: Festpreis ab 170€, direkter Ansprechpartner, Same-Day-Service möglich, 5 Jahre Garantie auf alle Arbeiten.</div>
-        </div>
-      </div>
-
-      <h2>Wir sind Ihr IKEA-Monteur — in Hamburg und Umland</h2>
-      <p>IKEA-Lieferung geht überall hin, aber die Montage haben wir. Wir kommen in alle Hamburger Stadtteile — <a href="../stadtteile/altona.html">Altona</a>, <a href="../stadtteile/eimsbuettel.html">Eimsbüttel</a>, <a href="../stadtteile/wandsbek.html">Wandsbek</a>, <a href="../stadtteile/harburg.html">Harburg</a>, <a href="../stadtteile/bergedorf.html">Bergedorf</a>, <a href="../stadtteile/hamburg-mitte.html">Hamburg-Mitte</a>, <a href="../stadtteile/winterhude.html">Winterhude</a>, <a href="../stadtteile/eppendorf.html">Eppendorf</a>, <a href="../stadtteile/barmbek.html">Barmbek</a>, <a href="../stadtteile/ottensen.html">Ottensen</a>, <a href="../stadtteile/blankenese.html">Blankenese</a> — und alle weiteren. Die IKEA-Einrichtungshäuser Schnelsen, Altona und Moorfleet liefern nach überall, wir montieren überall.</p>
-
-      <p><strong>Auch im Umland:</strong> Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Barsbüttel, Halstenbek, Rellingen.</p>
-
-    </div>
-  </section>
-
-  <section class="section section-alt">
-    <div class="container">
-      <h2>Verwandte Leistungen</h2>
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
-        <div class="service-card">
-          <h3><a href="kuechenmontage-hamburg.html">Küchenmontage (alle Marken)</a></h3>
-          <p>Nobilia, Nolte, Häcker, Schüller, Roller, POCO, Möbel Höffner. Das gleiche Profi-Team, alle Hersteller. Ab 299€.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="aufmass-kueche-hamburg.html">Küchen-Aufmaß</a></h3>
-          <p>Vor der Bestellung in den IKEA-Studio kommen wir zu Ihnen und messen präzise. 80€, wird bei Montage verrechnet.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="backofen-anschliessen-hamburg.html">Backofen anschließen</a></h3>
-          <p>Einzeln — falls Sie nur Geräte wechseln ohne komplette Küche. Ab 89€.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></h3>
-          <p>Einbau-Geschirrspüler oder freistehende Maschine. Ab 139€.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <h2>IKEA-Küche in Hamburg montieren — jetzt anfragen!</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Festpreis ab 170€ | Same-Day-Service | 5 Jahre Garantie | Hamburg &amp; Umland</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meine%20IKEA-K%C3%BCche%20in%20Hamburg%20montieren%20lassen." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a>
-      </div>
-    </div>
-  </section>
-
-  
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><h3>Küchen-Montage Hamburg</h3><p class="footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren. Über 500 montierte IKEA-Küchen.</p></div>
-        <div><h3>Leistungen</h3><ul>
-          <li><a href="kuechenmontage-hamburg.html">Küchenmontage</a></li>
-          <li><a href="ikea-kuechenmontage-hamburg.html">IKEA Küchenmontage</a></li>
-          <li><a href="aufmass-kueche-hamburg.html">Aufmaß Küche</a></li>
-          <li><a href="waschmaschine-anschliessen-hamburg.html">Waschmaschine anschließen</a></li>
-          <li><a href="herd-anschliessen-hamburg.html">Herd anschließen</a></li>
-          <li><a href="backofen-anschliessen-hamburg.html">Backofen anschließen</a></li>
-          <li><a href="spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></li>
-          <li><a href="wasserhahn-austauschen-hamburg.html">Wasserhahn austauschen</a></li>
-          <li><a href="spuele-austauschen-hamburg.html">Spüle austauschen</a></li>
-          <li><a href="wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
-        </ul></div>
-        <div><h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128222; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
-        </div>
-        <div><h3>Rechtliches</h3><ul>
-          <li><a href="../impressum.html">Impressum</a></li>
-          <li><a href="../datenschutz.html">Datenschutz</a></li>
-        </ul></div>
-      </div>
-      <div class="footer-trust" style="padding:16px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;line-height:1.6;opacity:.75;">18 Jahre Erfahrung &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a></div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Küchen-Montage Hamburg</div>
-      </div>
-    </div>
-  </footer>
-
-  <div class="floating-cta">
-    <a href="https://wa.me/4915218547875?text=Bitte%20anrufen%20Sie%20mich" class="floating-btn floating-btn-phone" aria-label="Per WhatsApp anrufen" style="background:#2563eb;display:grid;place-items:center;color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg></a>
-    <a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Küchen-Montage Hamburg — Startseite">
+      <span class="logo" aria-hidden="true">K</span>
+      <span class="name">Küchen-Montage Hamburg<small>Festpreis · Hamburg &amp; Umland</small></span>
+    </a>
+    <nav class="primary" aria-label="Hauptnavigation">
+      <a href="/">Startseite</a>
+      <a href="/#leistungen" class="active">Leistungen</a>
+      <a href="/pages/preise.html">Preise</a>
+      <a href="/#stadtteile">Stadtteile</a>
+      <a href="/#bewertungen">Bewertungen</a>
+      <a href="/pages/blog/">Blog</a>
+      <a href="https://wa.me/4915218547875" class="cta" rel="nofollow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5zM12 20.4a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.4 8.4 0 1112 20.4z"/></svg>
+      Per WhatsApp anfragen</a>
+    </nav>
   </div>
-  <script src="../../js/main.js"></script>
+</header>
+
+<main>
+
+<section class="hero" aria-labelledby="page-title">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Startseite</a><span class="sep">›</span>
+      <a href="/#leistungen">Leistungen</a><span class="sep">›</span>
+      <a href="/pages/services/kuechenmontage-hamburg.html">Küchenmontage</a><span class="sep">›</span>
+      <span aria-current="page">IKEA Küchenmontage Hamburg</span>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>Same-Day in ganz Hamburg</span>
+        <h1 class="hero-h" id="page-title">
+          IKEA Küchenmontage<br/>
+          in Hamburg <span class="accent">— ab 170€ Festpreis.</span>
+        </h1>
+        <p class="lede">
+          Ihr IKEA-Küchenmonteur für Hamburg und Umgebung. Über 500 montierte METOD-Küchen, 18 Jahre Erfahrung, transparente Festpreise ab 170€. Wir packen aus, montieren, schneiden die Arbeitsplatte zu, schließen alle Geräte an und nehmen den Verpackungsmüll mit.
+        </p>
+
+        <div class="price-stamp" role="note">
+          <div>
+            <div class="from">Festpreis</div>
+            <div class="num"><sup>ab</sup>170<span class="serif" style="font-size:30px;color:var(--brand);margin:0 0 0 2px">€</span></div>
+          </div>
+          <div class="label">Kompakt-Küche,<br/>inkl. Anfahrt,<br/>Arbeitsplatte</div>
+        </div>
+
+        <div class="hero-meta">
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <strong>1–2 Tage</strong> Montagezeit
+          </span>
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
+            <strong>5 Jahre</strong> Montagegarantie
+          </span>
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+            <strong>METOD-Experte</strong> · 500+ Küchen
+          </span>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meine%20IKEA-K%C3%BCche%20in%20Hamburg%20montieren%20lassen." rel="nofollow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5zM12 20.4a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.4 8.4 0 1112 20.4z"/></svg>
+            <span>WhatsApp Termin anfragen <small>Antwort meist in 30 Min.</small></span>
+          </a>
+          <a class="btn btn-ghost" href="tel:+4915218547875">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0152 185 478 75</span>
+          </a>
+        </div>
+      </div>
+
+      <figure class="hero-media" aria-label="IKEA Küchenmontage in Hamburg">
+        <div class="photo" role="img" aria-label="IKEA Küchenmontage Hamburg — professioneller METOD-Aufbau vom Fachbetrieb" style="background-image:linear-gradient(180deg, rgba(8,18,30,0) 50%, rgba(8,18,30,.55) 100%), url('/foto/ikea-kuechenmontage-hamburg-profi.webp');"></div>
+        <span class="badge"><span class="live"></span>Heute frei: Termin per WhatsApp anfragen</span>
+        <div class="tag">
+          <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;line-height:1.2" aria-label="Google-Bewertungen für PRULOG ansehen">
+            <b>5,0 ★</b>
+            <em>Google</em>
+          </a>
+          <div style="width:1px;height:34px;background:#eee"></div>
+          <a href="#reviews-h" rel="nofollow noopener" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;line-height:1.2" aria-label="CHECK24 Profis Bewertungen ansehen">
+            <b>★</b>
+            <em>CHECK24 Profis · 20</em>
+          </a>
+        </div>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="trust" role="list">
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg><div><b>500+</b><span>IKEA-Küchen montiert</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>1–2 Tage</b><span>typische Montagezeit</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg><div><b>5 Jahre</b><span>Montagegarantie</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M4 4h16v6H4zM4 14h16v6H4z"/></svg><div><b>Festpreis</b><span>inkl. Anfahrt in HH</span></div></div>
+  </div>
+</div>
+
+<section aria-labelledby="scope-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Leistungsumfang</div>
+        <h2 class="h" id="scope-h">Komplette IKEA-Montage <span class="serif">— alles aus einer Hand.</span></h2>
+        <p class="sec-sub">Vom Auspacken der Kartons bis zum Funktionstest aller Geräte. Wir bringen das gesamte Profi-Werkzeug mit — Sie müssen nichts vorbereiten.</p>
+      </div>
+    </div>
+
+    <div class="scope">
+      <div>
+        <h3>Wir sind METOD-Experten — seit 2008</h3>
+        <p class="intro">In 18 Jahren haben wir in Hamburg über 500 IKEA-Küchen montiert. Wir kennen jeden Korpus-Typ, jede Aufhängeschiene, jede Schubladenbox und jedes Scharnier aus dem METOD-System auswendig — und wir wissen, wo die Schraubenlöcher sind, bevor die Verpackung aufgemacht wird.</p>
+        <div class="footnote">
+          <b>Einfach per WhatsApp melden</b> — am besten mit Foto Ihrer IKEA-Bestellliste. Wir antworten meist innerhalb von 30 Minuten, nennen einen Festpreis und finden gemeinsam einen Termin, oft schon für den IKEA-Liefertag.
+        </div>
+      </div>
+      <ul>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Auspacken &amp; Prüfen gegen die IKEA-Lieferliste</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> METOD-Korpusse montieren (Unter-, Hoch-, Oberschrank)</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Aufhängeschiene setzen — Beton, Ständerwand, Porenbeton</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Arbeitsplatte vor Ort zuschneiden (Kochfeld- &amp; Spülen-Ausschnitt)</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Geräte einbauen &amp; anschließen (Herd, Spülmaschine, Kühlschrank)</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Fronten einhängen &amp; UTRUSTA-Scharniere 3-Achsen-justieren</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Sockelleisten, Blenden &amp; Griffe montieren</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Alte Küche Abbau &amp; Entsorgung optional · Müllabfuhr</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="expertise-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">IKEA-Sortiment</div>
+        <h2 class="h" id="expertise-h">Jedes METOD-Teil <span class="serif">— wir kennen es im Schlaf.</span></h2>
+        <p class="sec-sub">Über 500 montierte IKEA-Küchen heißt: Wir kennen jeden Korpus-Typ, jede Front, jedes Scharnier und jede Arbeitsplatte aus dem aktuellen Sortiment — und auch die älteren FAKTUM-Überreste von vor 2014.</p>
+      </div>
+    </div>
+    <ul style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px 32px;list-style:none;padding:0;margin:0;font-size:15px;line-height:1.6;color:var(--mute)">
+      <li><strong style="color:var(--ink,#0C1B2A)">METOD-Korpusse</strong> — Unterschrank 80cm, Hochschrank 100/120/140cm, Oberschrank, Eck- und Beistellkorpus.</li>
+      <li><strong style="color:var(--ink,#0C1B2A)">Fronten</strong> — VOXTORP, BODBYN, KUNGSBACKA, STENSUND, AXSTAD, VEDHAMN, HAVSTORP, LERHYTTAN, HÄGGEBY und alle neueren Serien.</li>
+      <li><strong style="color:var(--ink,#0C1B2A)">Scharniere UTRUSTA</strong> — soft-close, Klappbeschläge für Oberschränke, Bodenverbinder, 3-Achsen-Justage.</li>
+      <li><strong style="color:var(--ink,#0C1B2A)">Auszüge MAXIMERA</strong> — Korbauszüge, Vollauszüge mit Dämpfer, Innenschubladen.</li>
+      <li><strong style="color:var(--ink,#0C1B2A)">Arbeitsplatten</strong> — KARLBY (Dickschicht-Laminat), SÄLJAN (Schichtstoff), HAMMARP (Massivholz), ÄMMERÖ, EKBACKEN, KASKER (Quarz), BARKABODA (Nussbaum).</li>
+      <li><strong style="color:var(--ink,#0C1B2A)">IKEA-Geräte</strong> — WHIRLPOOL-gefertigte Eigenmarken: Backofen MATÄLSKARE/FORMULÄR/TRIVSAM, Kochfeld VÄLBILDAD/TREVLIG, Geschirrspüler MEDELSTOR/DISKAD, Kühl-Gefrier LAGAN/TILLREDA, Dunstabzug BALANSERAD/UNDERVERK.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="prices-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Festpreise</div>
+        <h2 class="h" id="prices-h">Klare Festpreise <span class="serif">— nach IKEA-System.</span></h2>
+        <p class="sec-sub">METOD nach laufendem Meter Küchenzeile, ENHET als Festpreis. Was wir sagen, steht auf der Rechnung. Alle Preise inkl. Anfahrt im Hamburger Stadtgebiet und MwSt.</p>
+      </div>
+    </div>
+
+    <div class="prices">
+      <article class="price" aria-label="ENHET-Küche">
+        <div>
+          <div class="price-from">ab Festpreis</div>
+          <div class="price-num-wrap"><span class="price-num">170</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>ENHET-Küche</h3>
+        <p class="price-desc">IKEA ENHET-System (modular, offen oder mit Türen). Komplette Kleinküche oder Single-Küchenzeile — Festpreis ab 170€.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price featured" aria-label="METOD-Küche pro laufendem Meter">
+        <span class="ribbon">Beliebt</span>
+        <div>
+          <div class="price-from">ab / lfd. Meter</div>
+          <div class="price-num-wrap"><span class="price-num">190</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>METOD-Küche</h3>
+        <p class="price-desc">Pro laufendem Meter Küchenzeile — Korpusse, Fronten, Aufhängeschiene, Sockel & Blenden. Das aktuelle IKEA-Küchensystem, von Profis montiert.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Gerätemontage">
+        <div>
+          <div class="price-from">Zusatz</div>
+          <div class="price-num-wrap"><span class="price-num">+89</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Gerätemontage</h3>
+        <p class="price-desc">+89–149€ je Gerät (Herd, Induktion, Spülmaschine, Kühl-Gefrier, Dunstabzug). Arbeitsplatten-Zuschnitt +49€ je Ausschnitt.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Abbau und Entsorgung">
+        <div>
+          <div class="price-from">Optional</div>
+          <div class="price-num-wrap"><span class="price-num">+170</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Alte Küche abbauen</h3>
+        <p class="price-desc">Demontage der alten Küche + Verpackungsmüll-Mitnahme. Wertstoffhof-Pauschale 30€. Aufmaß vorab 80€ (wird verrechnet).</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+    </div>
+
+    <p style="margin-top:18px;font-size:14px;color:var(--mute,#6a7382);">
+      Sie planen Ihre Küche noch? Nutzen Sie den
+      <a href="https://www.ikea.com/de/de/customer-service/services/kitchen-planning/" target="_blank" rel="nofollow noopener" style="color:var(--brand);text-decoration:underline;text-underline-offset:3px">IKEA Küchenplaner</a>
+      — und wir übernehmen danach die fachgerechte Montage in Hamburg.
+    </p>
+  </div>
+</section>
+
+<section aria-labelledby="steps-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Was wir machen</div>
+        <h2 class="h" id="steps-h">Schritt für Schritt <span class="serif">— von der IKEA-Lieferung bis zur fertigen Küche.</span></h2>
+        <p class="sec-sub">So läuft die Montage bei Ihnen zu Hause ab. Sie sehen jeden Arbeitsschritt — und am Ende testen wir gemeinsam jedes Gerät im Probelauf, bevor wir übergeben.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <div class="n">01</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+        <h3>Auspacken &amp; Prüfen</h3>
+        <p>Wir öffnen alle Kartons und prüfen die Teile gegen die IKEA-Lieferliste. Fehlende oder beschädigte Teile reklamieren wir direkt bei IKEA — das spart Ihnen den Gang ins Einrichtungshaus.</p>
+      </article>
+
+      <article class="step">
+        <div class="n">02</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8h14v13M9 8V4h6v4"/></svg></div>
+        <h3>Korpus-Montage</h3>
+        <p>Alle METOD-Korpusse nach IKEA-Anleitung — aber deutlich schneller, weil wir die Abläufe 500-fach beherrschen. Etwa 10–15 Minuten pro Korpus.</p>
+      </article>
+
+      <article class="step">
+        <div class="n">03</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18M3 12h18M5 4v16M19 4v16"/></svg></div>
+        <h3>Aufhängen &amp; Ausrichten</h3>
+        <p>Oberschränke an die Aufhängeschiene — mit den richtigen Dübeln (Beton, Ständerwand, Porenbeton). Unterschränke auf Wasserwaage ausgerichtet und seitlich verschraubt.</p>
+      </article>
+
+      <article class="step">
+        <div class="n">04</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <h3>Arbeitsplatte zuschneiden</h3>
+        <p>Vor Ort mit Festool-Plunge-Säge und Oberfräse: Ecken, Ausschnitt für Kochfeld, Spüle und Armatur. Bei Eck-Küchen Naht mit Nutfräsung und Verbinder, Kanten gegen Wasser abgedichtet.</p>
+      </article>
+
+      <article class="step">
+        <div class="n">05</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M8 14h2M14 14h2"/></svg></div>
+        <h3>Geräte einbauen &amp; anschließen</h3>
+        <p>Backofen, Kochfeld, Spülmaschine, Kühl-Gefrier, Spüle und Armatur — eingebaut und an Wasser, Strom, ggf. Starkstrom angeschlossen. Inkl. Dichtigkeits- und Funktionsprüfung.</p>
+      </article>
+
+      <article class="step">
+        <div class="n">06</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+        <h3>Fronten, Check &amp; Müllabfuhr</h3>
+        <p>Fronten einhängen, UTRUSTA-Scharniere fein justieren, Griffe bohren, Sockelleisten und Blenden setzen. Geräte-Probelauf, durchwischen — Karton &amp; Styropor auf Wunsch zum Wertstoffhof.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="gallery-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Referenzen</div>
+        <h2 class="h" id="gallery-h">Unsere IKEA-Küchen <span class="serif">in Hamburg.</span></h2>
+        <p class="sec-sub">Eine Auswahl fertig montierter METOD-Küchen aus Hamburg und Umland — vom kompakten Singleküche bis zur U-Form mit Kochinsel. Alle Fotos sind echte Aufträge unseres Teams.</p>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <figure>
+        <img src="/foto/19b63898-b5c5-4335-a2eb-406beabb7dbd-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Moderne dunkelgrüne U-Form IKEA-Küche — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Moderne U-Form Küche in Dunkelgrün</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/8d1ff7b4-3173-4ba3-b947-f8129f0cfb0a-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="IKEA-Küche in Holzoptik mit Kochinsel — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Küche in Holzoptik mit Kochinsel</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/bb88caa6-f344-4858-afce-ff8c927cfa6e-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Graue IKEA METOD-Küche montiert — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Graue METOD-Küche, schlicht &amp; modern</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/2968c91b-eddc-413f-af14-3bdab0dc5f5c-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Arbeitsplatte zuschneiden mit Festool — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Arbeitsplatte vor Ort mit Festool zugeschnitten</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/6a113be4-31fb-414d-9999-938284087a37-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Moderne IKEA-Küche mit Kochinsel montiert — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Moderne Küche mit Kochinsel</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/915c30f1-3ab7-4f18-8fb1-2afecce248c1-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="Dunkelgrüne IKEA U-Form-Küche Nahaufnahme — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Dunkelgrüne U-Form — Detail der Fronten</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/3507aa35-b6ce-4f21-8f07-d4f195b76bc5-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="IKEA L-Form-Küche mit Unterschränken — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>L-Form Küche, Unterschränke ausgerichtet</figcaption>
+      </figure>
+      <figure>
+        <img src="/foto/9dc160bb-6a0b-4b41-aba3-1f18c7b310ba-rm-limit-w-600-h-600-q-80-sm-true.webp" alt="TÜV-zertifiziert montierte IKEA-Küche — IKEA Küchenmontage Hamburg" width="600" height="450" loading="lazy">
+        <figcaption>Fachgerecht montierte METOD-Küche</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="districts-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Einsatzgebiet</div>
+        <h2 class="h" id="districts-h">In ganz Hamburg <span class="serif">&amp; Umgebung verfügbar.</span></h2>
+        <p class="sec-sub">Wir montieren Ihre IKEA-Küche in allen Stadtteilen und Bezirken Hamburgs — die Einrichtungshäuser Schnelsen, Altona und Moorfleet liefern überallhin, wir montieren überall.</p>
+      </div>
+    </div>
+
+    <div class="districts">
+      <article class="district">
+        <h3>Hamburg-Nord <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Winterhude, Eppendorf, Barmbek, Uhlenhorst, Hohenfelde, Dulsberg, Ohlsdorf, Alsterdorf, Fuhlsbüttel, Langenhorn</p>
+      </article>
+      <article class="district">
+        <h3>Altona <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Altona-Altstadt, Ottensen, Bahrenfeld, Sternschanze, Groß Flottbek, Othmarschen, Blankenese, Rissen, Sülldorf, Lurup, Osdorf</p>
+      </article>
+      <article class="district">
+        <h3>Eimsbüttel <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Eimsbüttel-Kern, Rotherbaum, Harvestehude, Hoheluft-West, Lokstedt, Niendorf, Schnelsen, Eidelstedt, Stellingen</p>
+      </article>
+      <article class="district">
+        <h3>Wandsbek <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Wandsbek-Kern, Marienthal, Eilbek, Jenfeld, Tonndorf, Farmsen-Berne, Bramfeld, Rahlstedt, Volksdorf, Sasel, Poppenbüttel</p>
+      </article>
+      <article class="district">
+        <h3>Hamburg-Mitte <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Altstadt, Neustadt, St. Pauli, St. Georg, HafenCity, Hammerbrook, Rothenburgsort, Horn, Billstedt, Wilhelmsburg</p>
+      </article>
+      <article class="district">
+        <h3>Harburg <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Harburg-Kern, Heimfeld, Wilstorf, Eißendorf, Marmstorf, Rönneburg, Neugraben-Fischbek, Kirchwerder</p>
+      </article>
+      <article class="district">
+        <h3>Bergedorf <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Bergedorf-Kern, Lohbrügge, Neuallermöhe, Vier- und Marschlande, Curslack, Altengamme</p>
+      </article>
+      <article class="district umland">
+        <h3>Umland <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#B7261F"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p><b>Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg</b></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="reviews-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Verifizierte Kundenbewertungen</div>
+        <h2 class="h" id="reviews-h">Was Kunden sagen <span class="serif">— echte Rezensionen.</span></h2>
+        <p class="sec-sub">★ 4,7 / 5 — 20 echte Bewertungen verifiziert via <a href="#reviews-h" rel="nofollow noopener" style="color:var(--brand);text-decoration:underline;text-underline-offset:3px">CHECK24 Profis</a> &nbsp;·&nbsp; ★ 5,0 / 5 auf <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="color:var(--brand);text-decoration:underline;text-underline-offset:3px">Google</a></p>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>„Unkompliziert, schnell und sehr professionell; alles super!"</p>
+        <div class="who"><b>Viivi Aurora S.</b> · CHECK24 verifiziert · Dezember 2025</div>
+      </div>
+      <div class="quote">
+        <div class="stars">★★★★★</div>
+        <p>„War richtig gut und unkompliziert. Kontaktiert, kurz erklärt, Preis und Termin vereinbart. Am nächsten Morgen war alles installiert. Top!"</p>
+        <div class="who"><b>Nassar</b> · CHECK24 verifiziert · Februar 2024</div>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--mute)">
+      Alle Bewertungen ansehen:
+      <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="color:var(--brand);font-weight:500">Google &rarr;</a> &nbsp;·&nbsp;
+      <a href="#reviews-h" rel="nofollow noopener" style="color:var(--brand);font-weight:500">CHECK24 Profis &rarr;</a>
+    </p>
+  </div>
+</section>
+
+<section aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Häufige Fragen</div>
+        <h2 class="h" id="faq-h">Antworten <span class="serif">vor dem Termin.</span></h2>
+        <p class="sec-sub">Die häufigsten Fragen rund um die IKEA-Küchenmontage in Hamburg. Etwas anderes auf dem Herzen? Schreiben Sie uns einfach per WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <details class="q">
+        <summary>Was kostet eine IKEA Küchenmontage in Hamburg?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Wir rechnen nach IKEA-System: Eine <b>METOD-Küche ab 190€ pro laufendem Meter</b> Küchenzeile (Korpusse, Fronten, Aufhängung, Sockel & Blenden). Eine <b>ENHET-Küche ab 170€ Festpreis</b>. Anfahrt in Hamburg inklusive. Gerätemontage +89–149€ je Gerät, Arbeitsplatten-Zuschnitt +49€ je Ausschnitt, optionaler Abbau der alten Küche ab 170€.</div>
+      </details>
+      <details class="q">
+        <summary>Wie lange dauert eine IKEA Küchenmontage?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Eine kleine Küche mit 5–8 Korpussen: 1 Arbeitstag (6–8 Stunden). Standard-Küche 8–12 Korpusse: 1–1,5 Tage. Große Küche mit Insel oder U-Form (15+ Korpusse): 2 Tage. Inklusive aller Geräte, Arbeitsplatte und Blenden.</div>
+      </details>
+      <details class="q">
+        <summary>IKEA hat geliefert — kommen Sie direkt zum Aufbau?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja. Das ist eine unserer häufigsten Situationen in Hamburg. Sie bestellen bei IKEA, wählen Lieferung nach Hause, und buchen uns für den Liefertag oder den Tag danach. Wir packen die Kartons aus, prüfen Vollständigkeit anhand der Liste, montieren METOD-Korpusse, hängen sie an die Wand (oder stellen Standkorpus), setzen Geräte ein und schneiden die Arbeitsplatte zu.</div>
+      </details>
+      <details class="q">
+        <summary>Was ist das IKEA METOD-System und kennt sich Ihr Team damit aus?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">METOD ist das aktuelle IKEA Küchensystem (seit 2014, abgelöstes FAKTUM). Es basiert auf standardisierten Korpussen mit fester Höhe (80cm Unterschrank, 100/120/140cm Hochschrank), Schienen-Aufhängung und Klick-Verbindungen. Wir haben bereits über 500 METOD-Küchen in Hamburg montiert — wir kennen alle Fronten (VOXTORP, BODBYN, KUNGSBACKA, STENSUND, AXSTAD, VEDHAMN usw.), alle Innenauszüge (MAXIMERA) und alle Scharnier-Typen (UTRUSTA).</div>
+      </details>
+      <details class="q">
+        <summary>Montieren Sie auch die IKEA-Küchengeräte?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja, wir übernehmen den kompletten Anschluss aller IKEA-Geräte: Herd und Backofen (WHIRLPOOL-Fertigung unter Eigenmarken TILLREDA, LAGAN, MATÄLSKARE, FORMULÄR, TRIVSAM), Induktionskochfeld (VÄLBILDAD, TREVLIG), Dunstabzugshaube (BALANSERAD, UNDERVERK, MATÄLSKARE), Kühl-Gefrierkombination (LAGAN, TILLREDA), Mikrowelle, Geschirrspüler (MEDELSTOR, DISKAD). Alle Anschlüsse — Wasser, Abfluss, Strom, Starkstrom — fachgerecht und dichtigkeitsgeprüft.</div>
+      </details>
+      <details class="q">
+        <summary>Schneiden Sie die Arbeitsplatte zu?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja, wir bringen eigenes Profi-Werkzeug mit (Oberfräse, Festool-Plunge-Säge, Absaugung) und schneiden die IKEA-Arbeitsplatte vor Ort passgenau zu — inkl. Ausschnitt für Kochfeld und Spüle. Dickschichtlaminat (KARLBY, ÄMMERÖ), Massivholz (SÄLJAN, HAMMARP) oder Stein-Imitat (EKBACKEN) — alles kein Problem. Wir dichten Kanten gegen Wasser ab.</div>
+      </details>
+      <details class="q">
+        <summary>Kommt das IKEA-Aufmaß vor der Bestellung?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Wenn Sie möchten, ja. IKEA bietet selbst Aufmaß in deren Studios an (gebührenpflichtig ab ca. 99€), aber wir kommen auch zu Ihnen nach Hause — 80€ Festpreis, wird bei anschließender Montage mit uns verrechnet. Wir messen Wände, Boden, Decke, Anschlüsse, Fenster, Türen und erstellen eine Skizze, die Sie dann bei IKEA in die Küchenplanung einbringen können.</div>
+      </details>
+      <details class="q">
+        <summary>Kommen Sie auch ins Hamburger Umland (Norderstedt, Pinneberg, Ahrensburg)?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja. Wir montieren IKEA-Küchen in Hamburg und dem gesamten Umland: Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Barsbüttel, Halstenbek, Rellingen. Anfahrt je nach Entfernung 15–35€ Aufschlag.</div>
+      </details>
+      <details class="q">
+        <summary>Was passiert mit dem vielen Verpackungsmüll von IKEA?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Eine durchschnittliche METOD-Küche produziert ca. 40–60 kg Karton und Styropor. Wir packen den Karton gefaltet, Styropor in separaten Säcken, und bringen alles bei Bedarf zum Wertstoffhof in Ihrer Nähe (Pauschale 30€). Alternativ kann die Stadtreinigung Hamburg für den Sperrmüll angefordert werden — kostenlos, aber mit Wartezeit.</div>
+      </details>
+      <details class="q">
+        <summary>Was ist der Unterschied zwischen der IKEA-eigenen Montage und Ihrem Service?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">IKEA vermittelt Montage über Drittfirmen (aktuell vor allem TaskRabbit und Partner-Monteure), Festpreis dort ca. 18–25% des Küchenpreises (also 500–1500€ je nach Größe). Bei uns: transparenter Festpreis ab 170€, direkter Ansprechpartner über die gesamte Montage, 5 Jahre Garantie auf alle Arbeiten. Same-Day-Service möglich, keine Wartezeiten auf IKEA-Handwerker.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="related-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Verwandte Leistungen</div>
+        <h2 class="h" id="related-h">Auch das machen wir <span class="serif">— in Hamburg.</span></h2>
+      </div>
+    </div>
+    <div class="related">
+      <a class="rel" href="/pages/services/kuechenmontage-hamburg.html">
+        <h3>Küchenmontage (alle Marken)</h3>
+        <p>Nobilia, Nolte, Häcker, Schüller, POCO &amp; Co. Das gleiche Profi-Team, alle Hersteller. Ab 299€.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="/pages/services/kuechen-abbau-hamburg.html">
+        <h3>Küchen-Abbau &amp; Entsorgung</h3>
+        <p>Alte Küche fachgerecht demontieren und entsorgen — optional vor der IKEA-Montage.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="/pages/services/spuelmaschine-anschliessen-hamburg.html">
+        <h3>Spülmaschine anschließen</h3>
+        <p>Geschirrspüler-Einbau mit Aquastop. Festpreis ab 139€.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="/pages/services/arbeitsplatte-zuschneiden-hamburg.html">
+        <h3>Arbeitsplatte zuschneiden</h3>
+        <p>Passgenauer Zuschnitt mit Festool — Kochfeld- &amp; Spülen-Ausschnitt, Kanten abgedichtet.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="cta-h" id="kontakt">
+  <div class="wrap">
+    <div class="final">
+      <div>
+        <div class="sec-eyebrow" style="color:#F4C770">Termin in Hamburg</div>
+        <h2 id="cta-h">Schreiben Sie uns <span class="serif">— wir antworten in 30 Minuten.</span></h2>
+        <p>Sagen Sie uns kurz, wo Sie wohnen und wie groß Ihre IKEA-Küche ist (Anzahl Korpusse oder ein Foto Ihrer Bestellliste). Wir nennen Ihnen sofort einen Festpreis und freie Zeitfenster — oft passend zum IKEA-Liefertag.</p>
+        <div class="reviews">
+          <span class="stars">★★★★★</span>
+          <span>
+            <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="color:#fff;text-decoration:underline;text-decoration-color:rgba(244,199,112,.5);text-underline-offset:3px"><b>5,0 ★ Google</b></a>
+            ·
+            <a href="#reviews-h" rel="nofollow noopener" style="color:#fff;text-decoration:underline;text-decoration-color:rgba(244,199,112,.5);text-underline-offset:3px"><b>★ CHECK24 Profis</b> · 20</a>
+            · 500+ IKEA-Küchen seit 2008
+          </span>
+        </div>
+      </div>
+      <div class="cta-stack">
+        <a class="btn btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meine%20IKEA-K%C3%BCche%20in%20Hamburg%20montieren%20lassen." style="font-size:16px;padding:18px 26px" rel="nofollow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+          <span>WhatsApp: 0152 185 478 75 <small>Antwort meist in 30 Min.</small></span>
+        </a>
+        <a class="btn btn-ghost" href="tel:+4915218547875" style="font-size:16px;padding:16px 24px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+          Anrufen
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:14px">
+          <span class="logo" aria-hidden="true">K</span>
+          <span class="name" style="color:#fff">Küchen-Montage Hamburg<small>Festpreis · Hamburg &amp; Umland</small></span>
+        </a>
+        <p style="max-width:36ch;margin-top:14px">Montage-Service für Küchen, Herde, Backöfen, Waschmaschinen, Spülmaschinen und Wasseranschlüsse in Hamburg. Seit 2008, mit über 500 montierten IKEA-Küchen.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="/pages/services/kuechenmontage-hamburg.html">Küchenmontage</a></li>
+          <li><a href="/pages/services/ikea-kuechenmontage-hamburg.html">IKEA Küchenmontage</a></li>
+          <li><a href="/pages/services/herd-anschliessen-hamburg.html">Herd anschließen</a></li>
+          <li><a href="/pages/services/spuelmaschine-anschliessen-hamburg.html">Spülmaschine anschließen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stadtteile</h4>
+        <ul>
+          <li><a href="/altona.html">Altona</a></li>
+          <li><a href="/eimsbuettel.html">Eimsbüttel</a></li>
+          <li><a href="/waschmaschine-hamburg-nord.html">Hamburg-Nord</a></li>
+          <li><a href="/harburg.html">Harburg</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/4915218547875">0152 185 478 75</a></li>
+          <li>Mo–Sa, 8:00–20:00</li>
+          <li><a href="/pages/impressum.html">Impressum</a></li>
+          <li><a href="/pages/datenschutz.html">Datenschutz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2008–2026 Küchen-Montage Hamburg · 18 Jahre Erfahrung</span>
+      <span>Festpreis · Hamburg &amp; Umland · 5 Jahre Garantie</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/4915218547875" rel="nofollow" aria-label="Per WhatsApp anfragen">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+  <span class="tx">WhatsApp</span>
+</a>
+
 </body>
 </html>
