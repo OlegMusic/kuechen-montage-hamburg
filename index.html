@@ -208,9 +208,10 @@
       --gold:#F4C770;--gold-2:#C9A24A;
       --blue:#2A6FDB;
     }
+    html{overflow-x:clip}
     body.home2{
       font-family: system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', sans-serif;
-      color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55;margin:0;
+      color:var(--ink);background:var(--paper);font-size:16px;line-height:1.55;margin:0;overflow-x:clip;
       -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
     }
     body.home2 ::selection{background:var(--brand);color:#fff}
@@ -388,7 +389,7 @@
     body.home2 .contact-row .tel-block{margin-left:auto;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
     body.home2 .contact-row .tel-block .label{font-size:12.5px;color:#A8B5C7;text-align:right;line-height:1.3}
     body.home2 .contact-row .tel-block .tel{font-size:24px;font-weight:700;letter-spacing:-.01em;color:#fff;text-decoration:none}
-    body.home2 .contact-row .tel-block .actions{display:flex;gap:10px}
+    body.home2 .contact-row .tel-block .actions{display:flex;gap:10px;flex-wrap:wrap}
     @media (max-width:780px){body.home2 .contact-row .tel-block{margin-left:0;width:100%;justify-content:flex-start}}
 
     /* SERVICES */
@@ -428,7 +429,7 @@
     body.home2 .booklinks-foot a{color:var(--brand);text-decoration:underline;text-underline-offset:3px}
 
     /* PRICE TABLE */
-    body.home2 .ptable-wrap{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 30px -22px rgba(12,27,42,.2)}
+    body.home2 .ptable-wrap{background:#fff;border:1px solid var(--line);border-radius:18px;overflow-x:auto;box-shadow:0 14px 30px -22px rgba(12,27,42,.2)}
     body.home2 .ptable{width:100%;border-collapse:collapse;font-size:14.5px}
     body.home2 .ptable thead{background:var(--ink);color:#fff}
     body.home2 .ptable th{text-align:left;padding:14px 24px;font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase}
