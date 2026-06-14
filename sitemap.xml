@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://kuechen-montage-hamburg.de/</loc><lastmod>2026-04-23</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
 
+  <!-- Wer zahlt? — Mieter/Vermieter-Cluster -->
+  <url><loc>https://kuechen-montage-hamburg.de/kleinreparaturen-mieter-vermieter/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kuechen-montage-hamburg.de/wer-zahlt-dunstabzugshaube-mietwohnung/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kuechen-montage-hamburg.de/wer-zahlt-kuechenspuele-mietwohnung/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kuechen-montage-hamburg.de/wer-zahlt-waschmaschinenanschluss-mietwohnung/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kuechen-montage-hamburg.de/wer-zahlt-geschirrspueler-anschluss-mietwohnung/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kuechen-montage-hamburg.de/wer-zahlt-herd-mietwohnung/</loc><lastmod>2026-06-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Services -->
   <!-- /pages/services/waschmaschine-anschliessen-hamburg.html удалён: дубликат, canonical → /waschmaschine-anschliessen-hamburg/ -->
   <url><loc>https://kuechen-montage-hamburg.de/pages/services/herd-anschliessen-hamburg.html</loc><lastmod>2026-04-11</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
