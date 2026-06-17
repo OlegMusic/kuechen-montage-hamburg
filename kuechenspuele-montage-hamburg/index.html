@@ -139,7 +139,7 @@
       {
         "@type": "Question",
         "name": "Tauschen Sie auch alte Küchenspülen aus?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Ja — das ist eine unserer häufigsten Leistungen. Die alte Spüle wird komplett demontiert (Armatur ab, Siphon ab, Silikon entfernen, Spüle aus Arbeitsplatte heben), eventuell Arbeitsplatten-Ausschnitt angepasst (wenn die neue Spüle andere Maße hat), dann neue Spüle einsetzen, abdichten, Armatur montieren, Siphon anschließen. Alte Spüle können wir auf Wunsch entsorgen (30€ Pauschale zum Wertstoffhof)." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja — das ist eine unserer häufigsten Leistungen. Die alte Spüle wird komplett demontiert (Armatur ab, Siphon ab, Silikon entfernen, Spüle aus Arbeitsplatte heben), eventuell Arbeitsplatten-Ausschnitt angepasst (wenn die neue Spüle andere Maße hat), dann neue Spüle einsetzen, abdichten, Armatur montieren, Siphon anschließen." }
       },
       {
         "@type": "Question",
@@ -175,13 +175,18 @@
         "@type": "Question",
         "name": "Edelstahl, Silgranit oder Keramik-Spuele in Hamburg?",
         "acceptedAnswer": { "@type": "Answer", "text": "Edelstahl ist guenstig und hitzefest, aber kratzempfindlich. Silgranit ist pflegeleicht, hitzefest bis 280 Grad und in vielen Farben erhaeltlich — am beliebtesten in Hamburger Kuechen. Keramik sieht edel aus, bricht aber bei harten Schlaegen. Wir beraten vor Ort zur besten Wahl." }
+      },
+      {
+        "@type": "Question",
+        "name": "Silikon härtet — kann ich die Spüle sofort benutzen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Leicht Wasser nach 2h ok. Für 24h keine schwere Belastung (große Töpfe mit Wasser). Silikon braucht 24-48h für vollständige Aushärtung." }
       }
-    
     ]
   }
   </script>
 
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/leistung-redesign.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -195,295 +200,632 @@
 </head>
 <body>
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="../index.html" class="logo"><div class="logo-icon">K</div>Küchenmontage Hamburg</a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
-        <a href="../index.html">Startseite</a>
-        <a href="../index.html#leistungen">Leistungen</a>
-        <a href="../pages/preise.html">Preise</a>
-        <a href="../index.html#stadtteile">Stadtteile</a>
-        <a href="../index.html#bewertungen">Bewertungen</a>
-        <a href="../pages/blog/index.html">Blog</a>
-        <a href="../pages/kontakt.html">Kontakt</a>
-      <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook auf Facebook besuchen" style="display:inline-flex;width:34px;height:34px;min-width:34px;border-radius:50%;align-items:center;justify-content:center;background:#1877F2;flex:none;margin-left:8px"><svg width="19" height="19" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13.5 21v-7h2.34l.36-2.9H13.5V9.25c0-.84.24-1.41 1.44-1.41h1.53V5.25c-.27-.04-1.18-.12-2.24-.12-2.22 0-3.73 1.35-3.73 3.84v2.13H8.16V14h2.34v7h3z"/></svg></a></nav>
-      </div>
-  </header>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/" aria-label="Küchenmontage Hamburg — Startseite">
+      <span class="logo" aria-hidden="true">K</span>
+      <span class="name">Küchenmontage Hamburg<small>Festpreis · Hamburg &amp; Umland</small></span>
+    </a>
+    <nav class="primary" aria-label="Hauptnavigation">
+      <a href="/">Startseite</a>
+      <a href="/#leistungen" class="active">Leistungen</a>
+      <a href="/pages/preise.html">Preise</a>
+      <a href="/#stadtteile">Stadtteile</a>
+      <a href="/#bewertungen">Bewertungen</a>
+      <a href="/pages/blog/">Blog</a>
+      <a href="https://wa.me/4915218547875" class="cta" rel="nofollow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5zM12 20.4a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.4 8.4 0 1112 20.4z"/></svg>
+      Per WhatsApp anfragen</a>
+    <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook auf Facebook besuchen" style="display:inline-flex;width:34px;height:34px;min-width:34px;border-radius:50%;align-items:center;justify-content:center;background:#1877F2;flex:none;margin-left:8px"><svg width="19" height="19" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13.5 21v-7h2.34l.36-2.9H13.5V9.25c0-.84.24-1.41 1.44-1.41h1.53V5.25c-.27-.04-1.18-.12-2.24-.12-2.22 0-3.73 1.35-3.73 3.84v2.13H8.16V14h2.34v7h3z"/></svg></a></nav>
+  </div>
+</header>
 
-  <main>
-  <section class="service-hero">
-    <div class="container">
-      <div style="position:relative;margin:-16px -16px 24px;border-radius:12px 12px 0 0;overflow:hidden;max-height:400px;">
-        <img src="/foto/kuechenspuele-einbau-hamburg-festpreis.webp" alt="Küchenspüle Einbau in Hamburg — Festpreis Montage ab 149 Euro" title="Küchenspüle Einbau in Hamburg — Festpreis Montage ab 149 Euro" loading="eager" style="width:100%;height:100%;object-fit:cover;display:block;" width="1200" height="400">
+<main>
+
+<section class="hero" aria-labelledby="page-title">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">
+      <a href="/">Startseite</a><span class="sep">›</span>
+      <a href="/#leistungen">Leistungen</a><span class="sep">›</span>
+      <span aria-current="page">Küchenspüle Montage</span>
+    </nav>
+
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow"><span class="dot"></span>Same-Day in ganz Hamburg</span>
+        <h1 class="hero-h" id="page-title">
+          Küchenspüle Montage Hamburg <span class="accent">— ab 149€ Festpreis</span>
+        </h1>
+        <p class="lede"><strong>Zuverlässiger Montage-Service für Ihre Küchenspüle.</strong> Austausch alter Spülen oder Einbau neuer Modelle — Edelstahl, Silgranit, Keramik, Quarz. Mit Arbeitsplatten-Zuschnitt, Silikon-Abdichtung, Siphon- und Armaturanschluss. Same-Day-Service in Hamburg und ganzem Umland. Über 500 montierte Spülen seit 2008.</p>
+
+        <div class="price-stamp" role="note">
+          <div>
+            <div class="from">Festpreis</div>
+            <div class="num"><sup>ab</sup>149<span class="serif" style="font-size:30px;color:var(--brand);margin:0 0 0 2px">€</span></div>
+          </div>
+          <div class="label">inkl. Anfahrt,<br/>Zuschnitt,<br/>Abdichtung</div>
+        </div>
+
+        <div class="hero-meta">
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <strong>1–3 Std.</strong> Dauer
+          </span>
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z"/></svg>
+            <strong>5 Jahre</strong> Garantie auf unsere Arbeit
+          </span>
+          <span class="item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+            <strong>Dichtigkeitsprüfung</strong> inklusive
+          </span>
+        </div>
+
+        <div class="hero-ctas">
+          <a class="btn btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." rel="nofollow">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5zM12 20.4a8.4 8.4 0 01-4.3-1.2l-.3-.2-3.1.8.8-3-.2-.3A8.4 8.4 0 1112 20.4z"/></svg>
+            <span>WhatsApp Termin anfragen <small>Antwort meist in 30 Min.</small></span>
+          </a>
+          <a class="btn btn-ghost" href="tel:+4915218547875">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+            <span>0152 185 478 75</span>
+          </a>
+        </div>
       </div>
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="../index.html" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="../index.html#leistungen" style="color:rgba(255,255,255,0.7)">Leistungen</a> &rsaquo;
-        <span>Küchenspüle Montage</span>
-      </nav>
-      <h1>Küchenspüle Montage Hamburg — ab 149€ Festpreis</h1>
-      <p class="service-hero-sub"><strong>Zuverlässiger Montage-Service für Ihre Küchenspüle.</strong> Austausch alter Spülen oder Einbau neuer Modelle — Edelstahl, Silgranit, Keramik, Quarz. Mit Arbeitsplatten-Zuschnitt, Silikon-Abdichtung, Siphon- und Armaturanschluss. Same-Day-Service in Hamburg und ganzem Umland. Über 500 montierte Spülen seit 2008.</p>
-      <div class="service-hero-meta">
-        <div class="service-hero-price">&#128176; <strong>Ab 149€</strong> Festpreis</div>
-        <div class="service-hero-duration">&#9202; <strong>1-3 Std.</strong> Dauer</div>
-        <div class="service-hero-guarantee">&#128274; <strong>5 Jahre</strong> Garantie</div>
-      </div>
-      <div class="hero-buttons">
-        <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp</a>
+
+      <div class="hero-right">
+      <figure class="hero-media" aria-label="Küchenspüle Montage in Hamburg">
+        <div class="photo" role="img" aria-label="Küchenspüle Einbau in Hamburg — Festpreis Montage ab 149 Euro" style="background-image:linear-gradient(180deg, rgba(8,18,30,0) 50%, rgba(8,18,30,.55) 100%), url('/foto/kuechenspuele-einbau-hamburg-festpreis.webp');"></div>
+        <span class="badge"><span class="live"></span>Heute frei: Termin per WhatsApp anfragen</span>
+        <div class="tag">
+          <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;line-height:1.2" aria-label="Google-Bewertungen für PRULOG ansehen">
+            <b>5,0 <span class="st">★</span></b>
+            <em>Google</em>
+          </a>
+          <div style="width:1px;height:34px;background:#eee"></div>
+          <a href="#bewertungen-snapshot" rel="nofollow noopener" style="text-decoration:none;color:inherit;display:flex;flex-direction:column;line-height:1.2" aria-label="CHECK24 Profis Bewertungen ansehen">
+            <b>8,8 <span class="st">★</span><span class="profi">PROFI</span></b>
+            <em>Großartig · CHECK24 · 20</em>
+          </a>
+        </div>
+      </figure>
+      <a class="hero-gallery-link" href="/pages/galerie.html">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M3 14l4-4 4 4 3-3 4 4"/><circle cx="8.5" cy="8.5" r="1.5"/></svg>
+        Alle Fotos unserer Arbeiten ansehen
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="service-content">
-    <div class="container">
+<div class="wrap">
+  <div class="trust" role="list">
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg><div><b>2000+</b><span>Küchen montiert seit 2008</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>30–90 Min.</b><span>typische Dauer</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg><div><b>5 Jahre</b><span>Garantie auf unsere Arbeit</span></div></div>
+    <div class="t" role="listitem"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E23B33" stroke-width="1.8"><path d="M4 4h16v6H4zM4 14h16v6H4z"/></svg><div><b>Festpreis</b><span>inkl. Anfahrt in HH</span></div></div>
+  </div>
+</div>
 
-      <!-- LEISTUNGSUMFANG-BLOCK -->
-      <div style="margin:32px 0;padding:24px;background:linear-gradient(135deg,#f0f7ff,#e0f2fe);border-radius:12px;border-left:4px solid #2563eb;">
-        <h3 style="margin:0 0 12px;font-size:20px;">📋 Unser Leistungsumfang — Küchenspüle-Montage</h3>
-        <p style="margin:0 0 14px;">Ein zuverlässiger Komplett-Service für Ihre Küchenspüle in Hamburg und Umgebung. Wir arbeiten schnell, sauber und fachgerecht. Im Festpreis ab 149€ enthalten:</p>
-        <ul style="margin:0 0 14px;padding-left:22px;line-height:1.9;">
-          <li>Austausch alter Spüle oder Einbau einer neuen</li>
-          <li>Arbeitsplatten-Ausschnitt mit Festool-Plunge-Säge und Oberfräse</li>
-          <li>Silikon-Abdichtung gegen Wasser (lebenslang dicht bei korrekter Ausführung)</li>
-          <li>Siphon-Anschluss mit Rückstauschutz</li>
-          <li>Armatur-Montage (Einhebelmischer, Hochdruck oder Niederdruck)</li>
-          <li>Dichtigkeitsprüfung aller Anschlüsse</li>
-          <li>Entfernen der alten Spüle und Entsorgung auf Wunsch (+30€)</li>
-          <li>Flexibler Termin — auch Same-Day möglich</li>
-        </ul>
-        <p style="margin:0;"><strong>Einfach per WhatsApp melden — wir freuen uns auf Ihre Nachricht.</strong></p>
+<section aria-labelledby="scope-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Leistungsumfang</div>
+        <h2 class="h" id="scope-h">Unser Leistungsumfang <span class="serif">— Küchenspüle-Montage ab 149€.</span></h2>
+        <p class="sec-sub">Ein zuverlässiger Komplett-Service für Ihre Küchenspüle in Hamburg und Umgebung. Wir arbeiten schnell, sauber und fachgerecht. Im Festpreis ab 149€ enthalten:</p>
       </div>
+    </div>
 
-      <h2>Festpreise — Küchenspüle Montage Hamburg</h2>
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:24px;">
-        <div class="service-card"><h3>Austausch gleich gegen gleich</h3><p><strong>ab 149€</strong><br>Alte raus, neue rein — gleicher Ausschnitt</p></div>
-        <div class="service-card"><h3>Einbauspüle neu</h3><p><strong>ab 179€</strong><br>Ausschnitt in Arbeitsplatte, Silikon-Abdichtung</p></div>
-        <div class="service-card"><h3>Unterbauspüle (flächenbündig)</h3><p><strong>ab 199€</strong><br>Präzise Montage unter Arbeitsplatte — saubere Optik</p></div>
-        <div class="service-card"><h3>Quarz / Granit / Silgranit</h3><p><strong>ab 229€</strong><br>Diamantscheiben-Zuschnitt, härteres Material</p></div>
-        <div class="service-card"><h3>Paketpreis: Spüle + Armatur</h3><p><strong>ab 199€</strong><br>Beides zusammen günstiger (sonst 238€)</p></div>
-        <div class="service-card"><h3>+ Eckventil-Austausch</h3><p><strong>+39€ pro Stück</strong><br>Wenn alte Eckventile schwergängig</p></div>
+    <div class="scope">
+      <div>
+        <h3>Was wir anbringen</h3>
+        <p class="intro">Wir messen vor Ort, prüfen den vorhandenen Ausschnitt und montieren passgenau — Spüle, Siphon und Armatur dicht angeschlossen, lückenlose Übergabe mit Dichtigkeitsprüfung.</p>
+        <div class="footnote">
+          <b>Einfach per WhatsApp melden</b> — am besten mit Fotos der alten und (falls schon gekauft) der neuen Spüle. Wir nennen den Festpreis sofort.
+        </div>
       </div>
-
-      <h2>Welche Küchenspülen montieren wir?</h2>
-
-      <h3>Einbau-Typ</h3>
       <ul>
-        <li><strong>Einbauspüle (Standard)</strong> — in Arbeitsplatte eingelassen, Rand sichtbar auf Oberfläche. 80% aller Küchen.</li>
-        <li><strong>Aufsatzspüle</strong> — auf Arbeitsplatte aufgesetzt, Rand oberhalb der Platte. Selten, meist bei Sonder-Arbeitsplatten.</li>
-        <li><strong>Unterbauspüle (flächenbündig)</strong> — unter der Arbeitsplatte befestigt. Saubere Optik ohne sichtbaren Rand. Premium-Lösung.</li>
-        <li><strong>Flächenbündige Spüle</strong> — Oberkante der Spüle auf gleicher Höhe wie Arbeitsplatte. Zwischen Einbau und Unterbau.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Austausch alter Spüle oder Einbau einer neuen</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Arbeitsplatten-Ausschnitt mit Festool-Plunge-Säge und Oberfräse</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Silikon-Abdichtung gegen Wasser (lebenslang dicht bei korrekter Ausführung)</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Siphon-Anschluss mit Rückstauschutz</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Armatur-Montage (Einhebelmischer, Hochdruck oder Niederdruck)</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Dichtigkeitsprüfung aller Anschlüsse</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Entfernen der alten Spüle</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Flexibler Termin — auch Same-Day möglich</li>
       </ul>
+    </div>
+  </div>
+</section>
 
-      <h3>Material</h3>
+<section aria-labelledby="master-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Ihr fester Ansprechpartner</div>
+        <h2 class="h" id="master-h">Ein konkreter Monteur <span class="serif">— kein Callcenter, kein Subunternehmen.</span></h2>
+        <p class="sec-sub">Bei uns wissen Sie genau, wer kommt: Oleg montiert Ihre Küchenspüle persönlich — direkt erreichbar per WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="master">
+      <img class="m-photo" src="/img/profile/profile.webp" alt="Oleg — Ihr Küchenmonteur in Hamburg" width="132" height="132" loading="lazy">
+      <div>
+        <h3>Oleg</h3>
+        <div class="m-role">Ihr Küchenmonteur in Hamburg · seit 2008</div>
+        <p class="m-sig">„Eine Spüle muss vor allem eines: 100% dicht sein. Ich messe genau, schneide bei Bedarf vor Ort zu, dichte sauber mit Silikon ab und prüfe jeden Anschluss vor der Übergabe. Festpreis vorab, 5 Jahre Garantie."</p>
+        <div class="m-creds">
+          <span class="m-cred"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>18 Jahre Erfahrung</span>
+          <span class="m-cred"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>GARANT-Fachhandelspartner seit 2018</span>
+          <span class="m-cred"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>2000+ Küchen &amp; Montagen</span>
+          <span class="m-cred"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Festpreis · 5 Jahre Garantie</span>
+        </div>
+        <a class="m-cta" href="https://wa.me/4915218547875?text=Hallo%20Oleg%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." rel="nofollow">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+          WhatsApp direkt an Oleg
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="prices-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Festpreise</div>
+        <h2 class="h" id="prices-h">Festpreise — Küchenspüle Montage Hamburg <span class="serif">— klare Pakete.</span></h2>
+        <p class="sec-sub">Alle Preise inkl. Anfahrt im Hamburger Stadtgebiet. Die Spüle als Material besorgen Sie selbst oder wir auf Wunsch.</p>
+      </div>
+    </div>
+
+    <div class="prices">
+      <article class="price featured" aria-label="Austausch gleich gegen gleich">
+        <span class="ribbon">Beliebt</span>
+        <div>
+          <div class="price-from">ab Festpreis</div>
+          <div class="price-num-wrap"><span class="price-num">149</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Austausch gleich gegen gleich</h3>
+        <p class="price-desc">Alte raus, neue rein — gleicher Ausschnitt.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Einbauspüle neu">
+        <div>
+          <div class="price-from">ab</div>
+          <div class="price-num-wrap"><span class="price-num">179</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Einbauspüle neu</h3>
+        <p class="price-desc">Ausschnitt in Arbeitsplatte, Silikon-Abdichtung.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Unterbauspüle flächenbündig">
+        <div>
+          <div class="price-from">ab</div>
+          <div class="price-num-wrap"><span class="price-num">199</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Unterbauspüle (flächenbündig)</h3>
+        <p class="price-desc">Präzise Montage unter Arbeitsplatte — saubere Optik.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Quarz Granit Silgranit">
+        <div>
+          <div class="price-from">ab</div>
+          <div class="price-num-wrap"><span class="price-num">229</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Quarz / Granit / Silgranit</h3>
+        <p class="price-desc">Diamantscheiben-Zuschnitt, härteres Material.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Paketpreis Spüle plus Armatur">
+        <div>
+          <div class="price-from">ab</div>
+          <div class="price-num-wrap"><span class="price-num">199</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>Paketpreis: Spüle + Armatur</h3>
+        <p class="price-desc">Beides zusammen günstiger (sonst 238€).</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+
+      <article class="price" aria-label="Eckventil-Austausch">
+        <div>
+          <div class="price-from">+ Zusatz</div>
+          <div class="price-num-wrap"><span class="price-cur" style="margin-right:2px">+</span><span class="price-num">39</span><span class="price-cur">€</span></div>
+        </div>
+        <h3>+ Eckventil-Austausch</h3>
+        <p class="price-desc">Pro Stück — wenn alte Eckventile schwergängig.</p>
+        <a class="pick" href="#kontakt">Anfragen <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="types-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Typen, Material &amp; Marken</div>
+        <h2 class="h" id="types-h">Welche Küchenspülen montieren wir? <span class="serif">— jeder Typ, jede Marke.</span></h2>
+        <p class="sec-sub">Egal ob Standard-Einbauspüle oder flächenbündige Premium-Lösung, Edelstahl oder Silgranit — wir kennen jeden Einbau und jedes Material.</p>
+      </div>
+    </div>
+
+    <div class="scope">
+      <div>
+        <h3>Einbau-Typ</h3>
+        <p class="intro">Welcher Einbau zu Ihrer Arbeitsplatte passt, klären wir vor Ort. Diese Typen montieren wir am häufigsten:</p>
+      </div>
       <ul>
-        <li><strong>Edelstahl</strong> — klassisch, hygienisch, hitzebeständig. Kratzempfindlich, aber Kratzer patinieren. 80-200€ Spüle.</li>
-        <li><strong>Silgranit / Granitverbund</strong> (Blanco, Schock) — Verbundwerkstoff aus Granit und Acryl. Kratz- und hitzebeständig. Farben von Weiß bis Anthrazit. 150-400€.</li>
-        <li><strong>Keramik</strong> — klassische Optik (Villeroy &amp; Boch, Franke), stoßempfindlich aber langlebig. 250-600€.</li>
-        <li><strong>Quarzstein</strong> (Franke Mythos, Blanco SILGRANIT) — ähnlich Granit-Imitation. 200-500€.</li>
-        <li><strong>Verbundwerkstoff</strong> (Franke Tectonite) — Kunststoff-Mineral-Mix. Leicht, vielfältige Farben. 150-350€.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Einbauspüle (Standard)</strong> — in Arbeitsplatte eingelassen, Rand sichtbar auf Oberfläche. 80% aller Küchen.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Aufsatzspüle</strong> — auf Arbeitsplatte aufgesetzt, Rand oberhalb der Platte. Selten, meist bei Sonder-Arbeitsplatten.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Unterbauspüle (flächenbündig)</strong> — unter der Arbeitsplatte befestigt. Saubere Optik ohne sichtbaren Rand. Premium-Lösung.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Flächenbündige Spüle</strong> — Oberkante der Spüle auf gleicher Höhe wie Arbeitsplatte. Zwischen Einbau und Unterbau.</li>
       </ul>
+    </div>
 
-      <h3>Hersteller &amp; Marken</h3>
-      <p>Wir montieren alle gängigen Marken: <strong>Blanco</strong> (Deutschland-Marktführer), <strong>Franke</strong>, <strong>Schock</strong>, <strong>IKEA</strong> (LÅNGUDDEN, LILLVIKEN, BOHOLMEN), <strong>Naber</strong>, <strong>Villeroy &amp; Boch</strong>, <strong>Teka</strong>, <strong>Kaff</strong>, <strong>Pyramis</strong>. Auch No-Name-Spülen aus Baumärkten (OBI, Bauhaus, Hornbach, Toom) — wir haben Erfahrung mit jeder Qualität.</p>
-
-      <h2>Küchenspüle Montage in allen Hamburger Stadtteilen</h2>
-      <p>Wir kommen in alle Bezirke und Stadtteile Hamburgs — Anfahrt im Festpreis enthalten.</p>
-
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-bottom:24px;">
-        <div class="service-card">
-          <h3>Hamburg-Nord</h3>
-          <p>Winterhude, Eppendorf, Barmbek, Uhlenhorst, Hohenfelde, Dulsberg, Ohlsdorf, Alsterdorf, Fuhlsbüttel, Langenhorn, Groß Borstel, Hoheluft-Ost</p>
-        </div>
-        <div class="service-card">
-          <h3>Altona</h3>
-          <p>Altona-Altstadt, Ottensen, Bahrenfeld, Sternschanze, Groß Flottbek, Othmarschen, Blankenese, Rissen, Sülldorf, Iserbrook, Lurup, Osdorf, Nienstedten</p>
-        </div>
-        <div class="service-card">
-          <h3>Eimsbüttel</h3>
-          <p>Eimsbüttel-Kern, Rotherbaum, Harvestehude, Hoheluft-West, Lokstedt, Niendorf, Schnelsen, Eidelstedt, Stellingen</p>
-        </div>
-        <div class="service-card">
-          <h3>Wandsbek</h3>
-          <p>Wandsbek-Kern, Marienthal, Eilbek, Jenfeld, Tonndorf, Farmsen-Berne, Bramfeld, Rahlstedt, Volksdorf, Sasel, Wellingsbüttel, Poppenbüttel, Hummelsbüttel</p>
-        </div>
-        <div class="service-card">
-          <h3>Hamburg-Mitte</h3>
-          <p>Altstadt, Neustadt, St. Pauli, St. Georg, HafenCity, Hammerbrook, Rothenburgsort, Horn, Billstedt, Wilhelmsburg, Veddel, Finkenwerder</p>
-        </div>
-        <div class="service-card">
-          <h3>Harburg</h3>
-          <p>Harburg-Kern, Heimfeld, Wilstorf, Eißendorf, Marmstorf, Rönneburg, Neugraben-Fischbek, Hausbruch, Neuenfelde, Kirchwerder, Altengamme</p>
-        </div>
-        <div class="service-card">
-          <h3>Bergedorf</h3>
-          <p>Bergedorf-Kern, Lohbrügge, Neuallermöhe, Allermöhe, Billwerder, Vier- und Marschlande (Curslack, Altengamme, Neuengamme, Kirchwerder)</p>
-        </div>
-        <div class="service-card">
-          <h3>Hamburger Umland</h3>
-          <p><strong>Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Halstenbek, Rellingen, Barsbüttel</strong></p>
-        </div>
+    <div class="scope" style="margin-top:24px">
+      <div>
+        <h3>Material</h3>
+        <p class="intro">Jedes Material hat seine Stärken — wir beraten Sie zur besten Wahl für Ihre Küche:</p>
       </div>
+      <ul>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Edelstahl</strong> — klassisch, hygienisch, hitzebeständig. Kratzempfindlich, aber Kratzer patinieren. 80-200€ Spüle.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Silgranit / Granitverbund</strong> (Blanco, Schock) — Verbundwerkstoff aus Granit und Acryl. Kratz- und hitzebeständig. Farben von Weiß bis Anthrazit. 150-400€.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Keramik</strong> — klassische Optik (Villeroy &amp; Boch, Franke), stoßempfindlich aber langlebig. 250-600€.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Quarzstein</strong> (Franke Mythos, Blanco SILGRANIT) — ähnlich Granit-Imitation. 200-500€.</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> <strong>Verbundwerkstoff</strong> (Franke Tectonite) — Kunststoff-Mineral-Mix. Leicht, vielfältige Farben. 150-350€.</li>
+      </ul>
+    </div>
 
-      <h2>Ablauf — wie läuft die Montage ab?</h2>
-
-      <h3>1. WhatsApp-Anfrage und Termin</h3>
-      <p>Sie schreiben uns per WhatsApp Fotos der alten Spüle und — wenn neue schon gekauft — der neuen. Wir bestätigen Preis und Termin. Bei Austausch gleich-gegen-gleich oft Same-Day möglich.</p>
-
-      <h3>2. Vor Ort: Bestandsaufnahme</h3>
-      <p>Wir messen die Arbeitsplatte, prüfen vorhandenen Ausschnitt, Siphon, Eckventile. Sie bekommen finalen Festpreis — keine Überraschungen auf der Rechnung.</p>
-
-      <h3>3. Demontage alter Spüle</h3>
-      <p>Wasser absperren, Armatur ab, Siphon ab, Silikon-Rand mit Cutter lösen, alte Spüle herausheben. Dauer: 20-30 Min. Alte Spüle nehmen wir auf Wunsch mit (Pauschale 30€).</p>
-
-      <h3>4. Ausschnitt anpassen (falls nötig)</h3>
-      <p>Wenn die neue Spüle andere Maße hat: mit Festool-Plunge-Säge und Oberfräse Ausschnitt vergrößern oder Kanten anpassen. Staub wird mit Absaugung aufgefangen — die Küche bleibt sauber.</p>
-
-      <h3>5. Neue Spüle einsetzen und abdichten</h3>
-      <p>Silikon-Raupe auf Arbeitsplatten-Rand, Spüle einsetzen, mit Haltern von unten fixieren. Bei Unterbauspüle: präzise unter Arbeitsplatte positionieren, mit Spezial-Haltern. Überschüssiges Silikon mit Glätter formen und abziehen.</p>
-
-      <h3>6. Armatur und Siphon montieren</h3>
-      <p>Armatur in vorgesehene Öffnung, von unten verschrauben, Flexschläuche an Eckventile. Siphon zusammenbauen, am Spülenabfluss und am Fallrohr anschließen.</p>
-
-      <h3>7. Dichtigkeitsprüfung und Übergabe</h3>
-      <p>Wasser aufdrehen, 5 Min laufen lassen (auch Warmwasser!), unter Spüle mit Taschenlampe auf Tropfen prüfen. Bei 100% Dichtheit übergeben. Hinweis: Silikon vollständig aushärten lassen (24h) bevor schwere Belastung.</p>
-
-      <h2>Häufige Fragen — Küchenspüle Montage Hamburg</h2>
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-question">Was kostet es in Hamburg?</div>
-          <div class="faq-answer">Ab 149€ Festpreis für Austausch gleich-gegen-gleich. Neuer Einbau 179€. Unterbauspüle 199€. Quarz/Granit 229€. Spüle + Armatur als Paket 199€.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Welche Spülen montieren Sie?</div>
-          <div class="faq-answer">Alle Typen und Marken: Einbau, Aufsatz, Unterbau, flächenbündig. Edelstahl, Silgranit, Keramik, Quarz. Marken Blanco, Franke, Schock, IKEA, Villeroy &amp; Boch, Naber, Teka.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Neue Spüle ist größer — geht das?</div>
-          <div class="faq-answer">Ja, wir erweitern Ausschnitt mit Festool-Plunge-Säge + Oberfräse. Aufpreis +49€ für Sonder-Zuschnitt.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Same-Day?</div>
-          <div class="faq-answer">Bei Austausch gleich-gegen-gleich oft ja. Bei neuem Einbau mit Ausschnitt meist 1 Tag Vorlauf.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Fahren Sie ins Umland?</div>
-          <div class="faq-answer">Ja — Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Halstenbek. Aufschlag 15-25€ je Entfernung.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Auch Armatur gleichzeitig wechseln?</div>
-          <div class="faq-answer">Ja, im Paket günstiger — ab 199€ für Spüle + Armatur (statt 238€ einzeln).</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Alte Spüle entsorgen?</div>
-          <div class="faq-answer">Ja, 30€ Pauschale zum Wertstoffhof. Alternativ: Sperrmüll-Anmeldung bei Stadtreinigung Hamburg (kostenlos, 1-2 Wochen Wartezeit).</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Silikon härtet — kann ich die Spüle sofort benutzen?</div>
-          <div class="faq-answer">Leicht Wasser nach 2h ok. Für 24h keine schwere Belastung (große Töpfe mit Wasser). Silikon braucht 24-48h für vollständige Aushärtung.</div>
-        </div>
-      </div>
-
-      <h2>Verwandte Leistungen</h2>
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
-        <div class="service-card">
-          <h3><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen</a></h3>
-          <p>Armatur separat wechseln. Ab 89€ Festpreis.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></h3>
-          <p>Wasserleitung verlegen, Eckventile, Siphon. Ab 149€.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></h3>
-          <p>Oft im Paket mit Spüle-Tausch. Ab 139€.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../pages/ratgeber/kuechenspuele-austauschen-anleitung.html">DIY-Anleitung</a></h3>
-          <p>Falls Sie es selbst machen wollen — Ratgeber mit Schritten.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../pages/ratgeber/eckventile-austauschen-anleitung.html">Eckventil austauschen</a></h3>
-          <p>Oft im gleichen Zuge — alte Eckventile tauschen.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../pages/services/kuechenmontage-hamburg.html">Komplette Küchenmontage</a></h3>
-          <p>Wenn neue Küche mit allem — ab 299€.</p>
+    <div class="scope" style="margin-top:24px">
+      <div>
+        <h3>Hersteller &amp; Marken</h3>
+        <div class="footnote">
+          Wir montieren alle gängigen Marken: <strong>Blanco</strong> (Deutschland-Marktführer), <strong>Franke</strong>, <strong>Schock</strong>, <strong>IKEA</strong> (LÅNGUDDEN, LILLVIKEN, BOHOLMEN), <strong>Naber</strong>, <strong>Villeroy &amp; Boch</strong>, <strong>Teka</strong>, <strong>Kaff</strong>, <strong>Pyramis</strong>. Auch No-Name-Spülen aus Baumärkten (OBI, Bauhaus, Hornbach, Toom) — wir haben Erfahrung mit jeder Qualität.
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="cta-section">
-    <div class="container">
-      <h2>Küchenspüle Montage in Hamburg — jetzt anfragen!</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Festpreis ab 149€ | Alle Stadtteile + Umland | Same-Day | 5 Jahre Garantie</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a>
+<section aria-labelledby="districts-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Einsatzgebiet</div>
+        <h2 class="h" id="districts-h">Küchenspüle Montage in allen Hamburger Stadtteilen <span class="serif">&amp; im Umland.</span></h2>
+        <p class="sec-sub">Wir kommen in alle Bezirke und Stadtteile Hamburgs — Anfahrt im Festpreis enthalten.</p>
       </div>
     </div>
-  </section>
 
-  
-  </main>
-  <!-- Verified CHECK24 reviews — sample with link to source -->
-  <section class="section section-alt" id="bewertungen-snapshot" style="padding:48px 16px;">
-    <div class="container">
-      <h2 class="text-center" style="font-size:24px;margin:0 0 8px;">Verifizierte Kundenbewertungen</h2>
-      <p class="text-center" style="margin:0 0 28px;color:#475569;">★ 8,8 — <strong>Großartig</strong> · 20 echte Bewertungen verifiziert via CHECK24 Profis</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;max-width:900px;margin:0 auto;">
-        <div style="background:white;border:1px solid #e5e7eb;border-radius:12px;padding:20px;">
-          <div style="color:#f59e0b;font-size:18px;margin-bottom:8px;">★★★★★</div>
-          <p style="font-style:italic;color:#1e293b;margin:0 0 12px;line-height:1.55;">„Unkompliziert, schnell und sehr professionell; alles super!"</p>
-          <div style="font-size:13px;color:#64748b;"><strong>Viivi Aurora S.</strong> · CHECK24 verifiziert · Dezember 2025</div>
+    <div class="districts">
+      <article class="district">
+        <h3>Hamburg-Nord <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Winterhude, Eppendorf, Barmbek, Uhlenhorst, Hohenfelde, Dulsberg, Ohlsdorf, Alsterdorf, Fuhlsbüttel, Langenhorn, Groß Borstel, Hoheluft-Ost</p>
+      </article>
+      <article class="district">
+        <h3>Altona <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Altona-Altstadt, Ottensen, Bahrenfeld, Sternschanze, Groß Flottbek, Othmarschen, Blankenese, Rissen, Sülldorf, Iserbrook, Lurup, Osdorf, Nienstedten</p>
+      </article>
+      <article class="district">
+        <h3>Eimsbüttel <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Eimsbüttel-Kern, Rotherbaum, Harvestehude, Hoheluft-West, Lokstedt, Niendorf, Schnelsen, Eidelstedt, Stellingen</p>
+      </article>
+      <article class="district">
+        <h3>Wandsbek <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Wandsbek-Kern, Marienthal, Eilbek, Jenfeld, Tonndorf, Farmsen-Berne, Bramfeld, Rahlstedt, Volksdorf, Sasel, Wellingsbüttel, Poppenbüttel, Hummelsbüttel</p>
+      </article>
+      <article class="district">
+        <h3>Hamburg-Mitte <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Altstadt, Neustadt, St. Pauli, St. Georg, HafenCity, Hammerbrook, Rothenburgsort, Horn, Billstedt, Wilhelmsburg, Veddel, Finkenwerder</p>
+      </article>
+      <article class="district">
+        <h3>Harburg <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Harburg-Kern, Heimfeld, Wilstorf, Eißendorf, Marmstorf, Rönneburg, Neugraben-Fischbek, Hausbruch, Neuenfelde, Kirchwerder, Altengamme</p>
+      </article>
+      <article class="district">
+        <h3>Bergedorf <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p>Bergedorf-Kern, Lohbrügge, Neuallermöhe, Allermöhe, Billwerder, Vier- und Marschlande (Curslack, Altengamme, Neuengamme, Kirchwerder)</p>
+      </article>
+      <article class="district umland">
+        <h3>Hamburger Umland <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="color:#B7261F"><path d="M12 22s8-7 8-13a8 8 0 10-16 0c0 6 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg></h3>
+        <p><b>Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Halstenbek, Rellingen, Barsbüttel</b></p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="guide-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Ablauf</div>
+        <h2 class="h" id="guide-h">Ablauf — wie läuft die Montage ab? <span class="serif">— Schritt für Schritt.</span></h2>
+        <p class="sec-sub">Von der WhatsApp-Anfrage bis zur dichten Übergabe — transparent und ohne Überraschungen auf der Rechnung.</p>
+      </div>
+    </div>
+
+    <div class="steps">
+      <article class="step">
+        <div class="n">01</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>WhatsApp-Anfrage und Termin</h3>
+        <p>Sie schreiben uns per WhatsApp Fotos der alten Spüle und — wenn neue schon gekauft — der neuen. Wir bestätigen Preis und Termin. Bei Austausch gleich-gegen-gleich oft Same-Day möglich.</p>
+      </article>
+      <article class="step">
+        <div class="n">02</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div>
+        <h3>Vor Ort: Bestandsaufnahme</h3>
+        <p>Wir messen die Arbeitsplatte, prüfen vorhandenen Ausschnitt, Siphon, Eckventile. Sie bekommen finalen Festpreis — keine Überraschungen auf der Rechnung.</p>
+      </article>
+      <article class="step">
+        <div class="n">03</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a4 4 0 015.6 5.6L11 21l-7 .7L4.7 14 14.7 6.3z"/></svg></div>
+        <h3>Demontage alter Spüle</h3>
+        <p>Wasser absperren, Armatur ab, Siphon ab, Silikon-Rand mit Cutter lösen, alte Spüle herausheben. Dauer: 20-30 Min.</p>
+      </article>
+      <article class="step">
+        <div class="n">04</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg></div>
+        <h3>Ausschnitt anpassen (falls nötig)</h3>
+        <p>Wenn die neue Spüle andere Maße hat: mit Festool-Plunge-Säge und Oberfräse Ausschnitt vergrößern oder Kanten anpassen. Staub wird mit Absaugung aufgefangen — die Küche bleibt sauber.</p>
+      </article>
+      <article class="step">
+        <div class="n">05</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 14h16M7 14V8a5 5 0 0110 0v6"/><path d="M9 18h6"/></svg></div>
+        <h3>Neue Spüle einsetzen und abdichten</h3>
+        <p>Silikon-Raupe auf Arbeitsplatten-Rand, Spüle einsetzen, mit Haltern von unten fixieren. Bei Unterbauspüle: präzise unter Arbeitsplatte positionieren, mit Spezial-Haltern. Überschüssiges Silikon mit Glätter formen und abziehen.</p>
+      </article>
+      <article class="step">
+        <div class="n">06</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v6M9 5h6M7 22h10l-1-9H8z"/></svg></div>
+        <h3>Armatur und Siphon montieren</h3>
+        <p>Armatur in vorgesehene Öffnung, von unten verschrauben, Flexschläuche an Eckventile. Siphon zusammenbauen, am Spülenabfluss und am Fallrohr anschließen.</p>
+      </article>
+      <article class="step">
+        <div class="n">07</div>
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6L9 17l-5-5"/></svg></div>
+        <h3>Dichtigkeitsprüfung und Übergabe</h3>
+        <p>Wasser aufdrehen, 5 Min laufen lassen (auch Warmwasser!), unter Spüle mit Taschenlampe auf Tropfen prüfen. Bei 100% Dichtheit übergeben. Hinweis: Silikon vollständig aushärten lassen (24h) bevor schwere Belastung.</p>
+      </article>
+    </div>
+
+    <div class="scope" style="margin-top:32px">
+      <div>
+        <div class="footnote">
+          <b>Spüle defekt, undicht oder neue schon gekauft?</b> Oleg montiert Ihre Küchenspüle zum <b>Festpreis ab 149€</b> — inkl. Zuschnitt vor Ort, Silikon-Abdichtung, Siphon- und Armaturanschluss, mit 5 Jahren Garantie.
         </div>
-        <div style="background:white;border:1px solid #e5e7eb;border-radius:12px;padding:20px;">
-          <div style="color:#f59e0b;font-size:18px;margin-bottom:8px;">★★★★★</div>
-          <p style="font-style:italic;color:#1e293b;margin:0 0 12px;line-height:1.55;">„War richtig gut und unkompliziert. Kontaktiert, kurz erklärt, Preis und Termin vereinbart. Am nächsten Morgen war alles installiert. Top!"</p>
-          <div style="font-size:13px;color:#64748b;"><strong>Nassar</strong> · CHECK24 verifiziert · Februar 2024</div>
+        <a class="btn btn-wa" href="https://wa.me/4915218547875?text=Hallo%20Oleg%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." style="margin-top:16px" rel="nofollow">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+          <span>Küchenspüle montieren ab 149€ anfragen <small>Antwort meist in 30 Min.</small></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Häufige Fragen</div>
+        <h2 class="h" id="faq-h">Häufige Fragen — Küchenspüle Montage Hamburg <span class="serif">vor dem Termin.</span></h2>
+        <p class="sec-sub">Die häufigsten Fragen rund um die Küchenspüle-Montage in Hamburg. Etwas anderes? Schreiben Sie uns per WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <details class="q">
+        <summary>Was kostet die Küchenspüle-Montage in Hamburg?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ab 149€ Festpreis inkl. Anfahrt. Im Preis enthalten: Austausch oder Einbau der Spüle, Arbeitsplatten-Ausschnitt mit Oberfräse (bei neuem Einbau), Silikon-Abdichtung, Siphon-Anschluss, Armatur-Montage und Dichtigkeitsprüfung. Einbauspülen standardmäßig 149€, Unterbauspülen mit flächenbündigem Einbau ab 199€, Quarz-/Granit-Spülen (KASKER, EKBACKEN) mit Sonder-Zuschnitt ab 229€. Bei komplettem Set mit neuer Armatur (+89€) Paketpreis ab 199€.</div>
+      </details>
+      <details class="q">
+        <summary>Welche Spülen-Typen montieren Sie?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Alle gängigen: Einbauspüle (Standard, in Arbeitsplatte eingelassen), Aufsatzspüle (auf Arbeitsplatte aufgesetzt), Unterbauspüle (flächenbündig unter die Arbeitsplatte — sieht nahtlos aus), Flächenbündige Spüle (in Arbeitsplatte eingelassen, Oberkante auf gleicher Höhe). Material: Edelstahl (klassisch), Silgranit/Granit (Blanco, Schock), Keramik, Quarzstein, Verbundwerkstoff. Alle Marken: Blanco, Franke, Schock, IKEA (LÅNGUDDEN, LILLVIKEN), Naber, Villeroy &amp; Boch.</div>
+      </details>
+      <details class="q">
+        <summary>Tauschen Sie auch alte Küchenspülen aus?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja — das ist eine unserer häufigsten Leistungen. Die alte Spüle wird komplett demontiert (Armatur ab, Siphon ab, Silikon entfernen, Spüle aus Arbeitsplatte heben), eventuell Arbeitsplatten-Ausschnitt angepasst (wenn die neue Spüle andere Maße hat), dann neue Spüle einsetzen, abdichten, Armatur montieren, Siphon anschließen.</div>
+      </details>
+      <details class="q">
+        <summary>Meine neue Spüle ist größer als die alte — passt der Ausschnitt?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Dann vergrößern wir den Ausschnitt in der Arbeitsplatte. Wir arbeiten mit Festool-Plunge-Säge und Oberfräse — saubere Kanten, passgenau. Wichtig: Arbeitsplatten-Material muss ausreichend dick sein für die neue Spüle (Standard 38-40 mm, bei Quarz 20 mm). Aufpreis für Sonder-Zuschnitt: +49€. Wenn die neue Spüle kleiner ist, kann ein kosmetisches Problem entstehen — dann besprechen wir Lösungen (Spülrand, separate Abdeckung).</div>
+      </details>
+      <details class="q">
+        <summary>Kommen Sie ins Hamburger Umland (Norderstedt, Pinneberg, Ahrensburg)?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja, wir montieren Küchenspülen im gesamten Hamburger Umland: Norderstedt, Pinneberg, Ahrensburg, Reinbek, Wedel, Schenefeld, Quickborn, Buxtehude, Stade, Geesthacht, Henstedt-Ulzburg, Glinde, Halstenbek, Rellingen. Anfahrt innerhalb Hamburgs ist im Festpreis inklusive, im Umland mit kleiner Pauschale (15-25€ je nach Entfernung).</div>
+      </details>
+      <details class="q">
+        <summary>Same-Day-Service für Küchenspüle-Austausch?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja, bei Austausch im vorhandenen Ausschnitt (alte Spüle durch neue gleicher Größe ersetzen) kommen wir oft am selben Tag. Wenn die Arbeitsplatte neu zugeschnitten werden muss (neue Spüle andere Maße), brauchen wir meist 1 Tag Vorlauf — wir kommen mit passendem Werkzeug.</div>
+      </details>
+      <details class="q">
+        <summary>Wie lange dauert die Montage?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Austausch einer Spüle gleicher Größe: 1-1,5 Stunden. Neuer Einbau mit Arbeitsplatten-Ausschnitt: 2-3 Stunden. Unterbauspüle mit flächenbündiger Montage: 3-4 Stunden wegen präziser Arbeit. Inklusive Silikon-Trockenzeit (Gebrauch der Spüle erst nach 24h empfohlen, damit Silikon vollständig aushärtet).</div>
+      </details>
+      <details class="q">
+        <summary>Wechseln Sie auch gleichzeitig die Armatur?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ja, meist im Paket günstiger. Küchenspüle-Montage + neue Armatur: Paketpreis ab 199€ (anstatt 149€ Spüle + 89€ Armatur = 238€ einzeln). Wir kennen alle Armatur-Typen: Einhebelmischer, ausziehbare Brause (Niederdruck/Hochdruck), Sensor-Armatur, 3-Wege-Armatur für Trinkwasser-Filter.</div>
+      </details>
+      <details class="q">
+        <summary>Wie lange dauert der Spuelen-Einbau in Hamburg?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Ein Standard-Spuelen-Einbau in Hamburg dauert 1,5-2,5 Stunden: Demontage der alten Spuele, Ausschnitt pruefen oder erweitern, neue Spuele abdichten und einsetzen, Armatur montieren, Siphon anschliessen, Abdichtung mit Sanitaer-Silikon, Dichtigkeitspruefung. Unterbau-Spuele 3-4 Stunden.</div>
+      </details>
+      <details class="q">
+        <summary>Edelstahl, Silgranit oder Keramik-Spuele in Hamburg?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Edelstahl ist guenstig und hitzefest, aber kratzempfindlich. Silgranit ist pflegeleicht, hitzefest bis 280 Grad und in vielen Farben erhaeltlich — am beliebtesten in Hamburger Kuechen. Keramik sieht edel aus, bricht aber bei harten Schlaegen. Wir beraten vor Ort zur besten Wahl.</div>
+      </details>
+      <details class="q">
+        <summary>Silikon härtet — kann ich die Spüle sofort benutzen?<span class="plus"><svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" fill="none"><path d="M12 5v14M5 12h14"/></svg></span></summary>
+        <div class="a">Leicht Wasser nach 2h ok. Für 24h keine schwere Belastung (große Töpfe mit Wasser). Silikon braucht 24-48h für vollständige Aushärtung.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="related-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Verwandte Leistungen</div>
+        <h2 class="h" id="related-h">Verwandte Leistungen <span class="serif">— in Hamburg.</span></h2>
+      </div>
+    </div>
+    <div class="related">
+      <a class="rel" href="/armatur-austauschen-hamburg/">
+        <h3>Wasserhahn austauschen</h3>
+        <p>Armatur separat wechseln. Ab 89€ Festpreis.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="../pages/services/wasseranschluss-kueche-hamburg.html">
+        <h3>Wasseranschluss Küche</h3>
+        <p>Wasserleitung verlegen, Eckventile, Siphon. Ab 149€.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="/geschirrspueler-anschliessen-hamburg/">
+        <h3>Spülmaschine anschließen</h3>
+        <p>Oft im Paket mit Spüle-Tausch. Ab 139€.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="../pages/ratgeber/kuechenspuele-austauschen-anleitung.html">
+        <h3>DIY-Anleitung</h3>
+        <p>Falls Sie es selbst machen wollen — Ratgeber mit Schritten.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="../pages/ratgeber/eckventile-austauschen-anleitung.html">
+        <h3>Eckventil austauschen</h3>
+        <p>Oft im gleichen Zuge — alte Eckventile tauschen.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="../pages/services/kuechenmontage-hamburg.html">
+        <h3>Komplette Küchenmontage</h3>
+        <p>Wenn neue Küche mit allem — ab 299€.</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="rel" href="/wer-zahlt-kuechenspuele-mietwohnung/">
+        <h3>Mieter oder Vermieter?</h3>
+        <p>Wer zahlt den Spülen-Austausch in der Mietwohnung?</p>
+        <span class="arrow">Mehr <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Verified CHECK24 reviews — sample with link to source -->
+<section aria-labelledby="bewertungen-snapshot-h" id="bewertungen-snapshot">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Bewertungen</div>
+        <h2 class="h" id="bewertungen-snapshot-h">Verifizierte Kundenbewertungen <span class="serif">— ★ 8,8 Großartig.</span></h2>
+        <p class="sec-sub">20 echte Bewertungen verifiziert via CHECK24 Profis · durchschnittlich ★ 8,8 seit 2024.</p>
+      </div>
+    </div>
+    <div class="related">
+      <div class="rel" style="cursor:default">
+        <div style="color:#f59e0b;font-size:18px;margin-bottom:8px;">★★★★★</div>
+        <p style="font-style:italic;line-height:1.55;">„Unkompliziert, schnell und sehr professionell; alles super!"</p>
+        <span class="arrow" style="font-style:normal"><strong>Viivi Aurora S.</strong> · CHECK24 verifiziert · Dezember 2025</span>
+      </div>
+      <div class="rel" style="cursor:default">
+        <div style="color:#f59e0b;font-size:18px;margin-bottom:8px;">★★★★★</div>
+        <p style="font-style:italic;line-height:1.55;">„War richtig gut und unkompliziert. Kontaktiert, kurz erklärt, Preis und Termin vereinbart. Am nächsten Morgen war alles installiert. Top!"</p>
+        <span class="arrow" style="font-style:normal"><strong>Nassar</strong> · CHECK24 verifiziert · Februar 2024</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="cta-h" id="kontakt">
+  <div class="wrap">
+    <div class="final">
+      <div>
+        <div class="sec-eyebrow" style="color:#F4C770">Termin in Hamburg</div>
+        <h2 id="cta-h">Küchenspüle Montage in Hamburg <span class="serif">— jetzt anfragen!</span></h2>
+        <p>Senden Sie uns Fotos Ihrer alten Spüle und — falls schon gekauft — der neuen. Wir nennen Ihnen sofort einen Festpreis ab 149€ und freie Zeitfenster — oft schon für heute oder morgen. Alle Stadtteile + Umland · Same-Day · 5 Jahre Garantie.</p>
+        <div class="reviews">
+          <span class="stars">★★★★★</span>
+          <span>
+            <a href="https://www.google.com/search?q=PRULOG+Rezensionen&amp;tbm=lcl&amp;hl=de-DE&amp;rldimm=12043646492065932596#lkt=LocalPoiReviews" rel="nofollow noopener" style="color:#fff;text-decoration:underline;text-decoration-color:rgba(244,199,112,.5);text-underline-offset:3px"><b>5,0 ★ Google</b></a>
+            ·
+            <a href="#bewertungen-snapshot" rel="nofollow noopener" style="color:#fff;text-decoration:underline;text-decoration-color:rgba(244,199,112,.5);text-underline-offset:3px"><b>★ CHECK24 Profis</b> · 20</a>
+            · 2000+ Küchen seit 2008
+          </span>
         </div>
       </div>
-      <p style="text-align:center;margin:24px 0 0;font-size:14px;color:#64748b;">★ 8,8 — durchschnittliche Bewertung aus 20 Kundenrückmeldungen seit 2024</p>
+      <div class="cta-stack">
+        <a class="btn btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20eine%20K%C3%BCchensp%C3%BCle-Montage%20in%20Hamburg." style="font-size:16px;padding:18px 26px" rel="nofollow">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+          <span>WhatsApp: 0152 185 478 75 <small>Antwort meist in 30 Min.</small></span>
+        </a>
+        <a class="btn btn-ghost" href="tel:+4915218547875" style="font-size:16px;padding:16px 24px">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg>
+          Anrufen
+        </a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><h3>Küchenmontage Hamburg</h3><p class="footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren. Über 500 montierte Küchenspülen.</p></div>
-        <div><h3>Leistungen</h3><ul>
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="/" style="margin-bottom:14px">
+          <span class="logo" aria-hidden="true">K</span>
+          <span class="name" style="color:#fff">Küchenmontage Hamburg<small>Festpreis · Hamburg &amp; Umland</small></span>
+        </a>
+        <p style="max-width:36ch;margin-top:14px">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren. Über 500 montierte Küchenspülen.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
           <li><a href="/armatur-austauschen-hamburg/">Wasserhahn</a></li>
           <li><a href="../pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
           <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine</a></li>
-          <li><a href="../waschmaschine-anschliessen-hamburg/">Waschmaschine</a></li>
           <li><a href="../pages/services/kuechenmontage-hamburg.html">Küchenmontage</a></li>
-        </ul></div>
-        <div><h3>Ratgeber</h3><ul>
+        </ul>
+      </div>
+      <div>
+        <h4>Ratgeber</h4>
+        <ul>
           <li><a href="../pages/ratgeber/eckventile-austauschen-anleitung.html">Eckventil austauschen</a></li>
           <li><a href="../pages/ratgeber/kuechenspuele-austauschen-anleitung.html">Küchenspüle DIY</a></li>
           <li><a href="../pages/ratgeber/spuelmaschine-anschliessen-anleitung.html">Spülmaschine DIY</a></li>
           <li><a href="../pages/ratgeber/waschmaschine-anschliessen-anleitung.html">Waschmaschine DIY</a></li>
-        </ul></div>
-        <div><h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128222; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
-        </div>
+        </ul>
       </div>
-      <div class="footer-trust" style="padding:16px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;line-height:1.6;opacity:.75;">18 Jahre Erfahrung &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a> &middot; <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" style="color:inherit;" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a></div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Küchenmontage Hamburg</div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/4915218547875">0152 185 478 75</a></li>
+          <li>Mo–Fr 8–20 · Sa 9–17 · So 8–20</li>
+          <li><a href="/pages/impressum.html">Impressum</a></li>
+          <li><a href="/pages/datenschutz.html">Datenschutz</a></li>
+          <li><a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a></li>
+        </ul>
       </div>
     </div>
-  </footer>
-
-  <div class="floating-cta">
-    <a href="https://wa.me/4915218547875?text=Bitte%20anrufen%20Sie%20mich" class="floating-btn floating-btn-phone" aria-label="Per WhatsApp anrufen" style="background:#2563eb;display:grid;place-items:center;color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg></a>
-    <a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a>
+    <div class="legal">
+      <span>© 2008–2026 Küchenmontage Hamburg · 18 Jahre Erfahrung</span>
+      <span>Festpreis · Hamburg &amp; Umland · 5 Jahre Garantie</span>
+    </div>
   </div>
-  <script src="../js/main.js"></script>
+</footer>
+
+<a class="fab" href="https://wa.me/4915218547875" rel="nofollow" aria-label="Per WhatsApp anfragen">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg>
+  <span class="tx">WhatsApp</span>
+</a>
+
+<script src="../js/main.js"></script>
 </body>
 </html>

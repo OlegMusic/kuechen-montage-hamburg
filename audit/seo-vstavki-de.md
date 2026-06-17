@@ -314,7 +314,7 @@ sowie die <a href="/kuechenspuele-montage-hamburg/">Küchenspülen-Montage</a>.<
 | 2 | Spülmaschine anschließen Kosten | Was kostet, was wird gebraucht (Aquastop) | `/geschirrspueler-anschliessen-hamburg/` | бренд + partial («Geschirrspüler anschließen») |
 | 3 | Eckventil austauschen | DIY + Risiken, Hanf vs Teflon | `/y-stueck-wasserzulauf-installieren-hamburg/` | «Eckventil & Wasserzulauf» |
 | 4 | Welche Küchenspüle (Edelstahl/Silgranit/Keramik) | Material-Vergleich + Einbau | `/kuechenspuele-montage-hamburg/` | «Küchenspüle montieren lassen» |
-| 5 | Dunstabzugshaube Abluft vs Umluft | Vergleich + Anschluss/Austausch | `/dunstabzugshaube-austauschen-hamburg/` | «Dunstabzugshaube anschließen» |
+| 5 | Dunstabzugshaube Abluft vs Umluft | Vergleich + Anschluss/Austausch | `/pages/services/dunstabzugshaube-austauschen-hamburg.html` | «Dunstabzugshaube anschließen» |
 | 6 | IKEA Küche selbst aufbauen oder montieren lassen? | Entscheidungshilfe, METOD/ENHET | `/` (IKEA-Sektion) | бренд («Küchenmontage Hamburg») |
 | 7 | Herd anschließen Starkstrom 400V | Sicherheit, wann Elektriker Pflicht | `/elektroherd-anschliessen-hamburg/` | partial («Elektroherd anschließen») |
 | 8 | Küchenmontage Kosten Hamburg | Preisübersicht + Rechner | `/` (Kostenrechner) | бренд |
