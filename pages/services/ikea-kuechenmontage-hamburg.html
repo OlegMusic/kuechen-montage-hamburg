@@ -430,6 +430,69 @@
   </div>
 </section>
 
+<section aria-labelledby="videos-h">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <div class="sec-eyebrow">Video</div>
+        <h2 class="h" id="videos-h">So montieren wir <span class="serif">— direkt von der Baustelle.</span></h2>
+        <p class="sec-sub">Zwei echte Aufnahmen: eine 10-Meter-METOD-Küche in 2 Tagen und ein zufriedener Kunde nach der fertigen Küche mit Kochinsel. <strong>Diese Videos sind schon über 10 Jahre alt</strong> — IKEA-Küchen montieren wir in Hamburg eben seit 2008.</p>
+      </div>
+    </div>
+
+    <div class="yt-row">
+      <figure class="yt-embed">
+        <button type="button" class="yt-play" data-yt="IlTMALSA0Q0" onclick="ytLoad(this)" aria-label="Video abspielen: 10 Meter IKEA METOD-Küche in 2 Tagen">
+          <img src="https://i.ytimg.com/vi/IlTMALSA0Q0/hqdefault.jpg" alt="IKEA METOD Küchenmontage Hamburg — 10 Meter in 2 Tagen" loading="lazy" width="480" height="360">
+          <span class="yt-btn" aria-hidden="true">&#9654;</span>
+        </button>
+        <figcaption>10 Meter METOD-Küche in 2 Tagen · <span class="yt-age">vor über 10 Jahren aufgenommen</span></figcaption>
+      </figure>
+      <figure class="yt-embed">
+        <button type="button" class="yt-play" data-yt="yTF4hTCun78" onclick="ytLoad(this)" aria-label="Video abspielen: IKEA Küchenmontage mit Kochinsel, zufriedener Kunde">
+          <img src="https://i.ytimg.com/vi/yTF4hTCun78/hqdefault.jpg" alt="IKEA Küchenmontage mit Kochinsel in Hamburg — zufriedener Kunde" loading="lazy" width="480" height="360">
+          <span class="yt-btn" aria-hidden="true">&#9654;</span>
+        </button>
+        <figcaption>Zufriedener Kunde · Küche mit Kochinsel · <span class="yt-age">vor über 10 Jahren</span></figcaption>
+      </figure>
+    </div>
+    <p class="yt-consent">Mit Klick auf ein Video wird es von YouTube (youtube-nocookie.com) geladen — dabei werden Daten an Google übertragen. Es gelten die <a href="https://policies.google.com/privacy" target="_blank" rel="noopener nofollow">Datenschutzbestimmungen von Google</a>.</p>
+  </div>
+</section>
+
+<style>
+.yt-row{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:760px;margin:0 auto}
+@media(max-width:620px){.yt-row{grid-template-columns:1fr;max-width:380px}}
+.yt-embed{margin:0}
+.yt-embed .yt-play{display:block;position:relative;width:100%;padding:0;border:0;background:#000;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:16/9}
+.yt-embed .yt-play img{width:100%;height:100%;object-fit:cover;display:block;opacity:.9;transition:opacity .2s}
+.yt-embed .yt-play:hover img{opacity:1}
+.yt-embed .yt-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:60px;height:42px;background:#f00;color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+.yt-embed iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:12px;display:block}
+.yt-embed figcaption{font-size:13px;color:var(--mute,#64748b);text-align:center;margin-top:8px}
+.yt-age{color:#94a3b8}
+.yt-consent{font-size:12px;color:#94a3b8;text-align:center;max-width:620px;margin:16px auto 0}
+</style>
+<script>
+function ytLoad(btn){
+  var id=btn.getAttribute('data-yt');
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0';
+  f.title='Küchenmontage Hamburg Video';
+  f.allow='autoplay; encrypted-media; fullscreen; picture-in-picture';
+  f.setAttribute('allowfullscreen','');
+  f.loading='lazy';
+  btn.replaceWith(f);
+}
+</script>
+
+<script type="application/ld+json">
+[
+{"@context":"https://schema.org","@type":"VideoObject","name":"IKEA Küchenmontage Hamburg — 10 Meter METOD-Küche in 2 Tagen","description":"10 laufende Meter IKEA METOD-Küche, in 2 Tagen fachgerecht montiert in Hamburg.","thumbnailUrl":"https://i.ytimg.com/vi/IlTMALSA0Q0/hqdefault.jpg","uploadDate":"2015","contentUrl":"https://www.youtube.com/watch?v=IlTMALSA0Q0","embedUrl":"https://www.youtube-nocookie.com/embed/IlTMALSA0Q0","publisher":{"@type":"Organization","name":"Küchenmontage Hamburg","url":"https://kuechen-montage-hamburg.de/"}},
+{"@context":"https://schema.org","@type":"VideoObject","name":"IKEA Küchenmontage mit Kochinsel in Hamburg","description":"Zufriedener Kunde nach der fertigen IKEA-Küchenmontage mit Kochinsel in Hamburg.","thumbnailUrl":"https://i.ytimg.com/vi/yTF4hTCun78/hqdefault.jpg","uploadDate":"2015","contentUrl":"https://www.youtube.com/watch?v=yTF4hTCun78","embedUrl":"https://www.youtube-nocookie.com/embed/yTF4hTCun78","publisher":{"@type":"Organization","name":"Küchenmontage Hamburg","url":"https://kuechen-montage-hamburg.de/"}}
+]
+</script>
+
 <section aria-labelledby="scope-h">
   <div class="wrap">
     <div class="sec-head">
