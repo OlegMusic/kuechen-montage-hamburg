@@ -52,3 +52,8 @@ backend/cmd/indexnow-submit/indexnow-submit.exe
 
 # local lint tool, not for deploy
 _lint_check.py
+
+# --- Backup-Dateien (Skript-Backups, nicht deployen) ---
+*.bak
+*.bak_*
+*~
