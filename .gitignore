@@ -57,3 +57,6 @@ _lint_check.py
 *.bak
 *.bak_*
 *~
+
+# Claude Code Projekt-Regeln (lokal, nicht veröffentlichen)
+CLAUDE.md

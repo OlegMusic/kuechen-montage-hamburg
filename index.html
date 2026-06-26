@@ -1784,25 +1784,5 @@
   })();
   </script>
 
-  <!-- Live Google rating fetch (Places API New) -->
-  <script>
-  (function() {
-    var KEY = 'AIzaSyBwpq3ykMLB2fa6fPrbwxe5qKHfea_nN1s';
-    var PLACE_ID = 'ChIJjScstGyJsUcRNCX4r6ygI6c';
-    var rEl = document.getElementById('google-rating');
-    var lEl = document.getElementById('google-label');
-    if (!rEl || !lEl) return;
-    fetch('https://places.googleapis.com/v1/places/' + PLACE_ID + '?fields=rating,userRatingCount&key=' + KEY)
-      .then(function(r){ return r.ok ? r.json() : null; })
-      .then(function(d){
-        if (!d || typeof d.rating !== 'number') return;
-        var rating = d.rating.toFixed(1).replace('.', ',');
-        var count = d.userRatingCount || 0;
-        rEl.innerHTML = rating + ' <span class="star">★★★★★</span>';
-        lEl.textContent = 'Google · ' + count + ' Bewertungen';
-      })
-      .catch(function(){ /* keep static fallback */ });
-  })();
-  </script>
 </body>
 </html>
