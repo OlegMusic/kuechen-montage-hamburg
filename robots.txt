@@ -3,5 +3,41 @@ Allow: /
 Disallow: /admin/
 Disallow: /api/
 Disallow: /backend/
+Disallow: /seo-status.json
+
+# AI-Crawler — ausdrücklich erlaubt (wir wollen Sichtbarkeit in KI-Suche/Antworten).
+# Kontext für KI-Agenten: /llms.txt
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
 
 Sitemap: https://kuechen-montage-hamburg.de/sitemap.xml
