@@ -1,0 +1,4507 @@
+{
+  "property": "sc-domain:kuechen-montage-hamburg.de",
+  "total": 118,
+  "results": [
+    {
+      "url": "https://kuechen-montage-hamburg.de/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T08:22:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/kuechenspuele-austauschen-anleitung.html",
+          "http://kuechen-montage-hamburg.de/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Videos",
+            "items": [
+              {
+                "name": "IKEA K\u00fcchenmontage mit Kochinsel in Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/arbeitsplatte-austauschen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuechenumbau-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T17:19:35Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuechenumbau-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuechenumbau-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kleinreparaturen-mieter-vermieter/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T13:33:42Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kleinreparaturen-mieter-vermieter/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kleinreparaturen-mieter-vermieter/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-dunstabzugshaube-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T13:33:42Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-dunstabzugshaube-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-dunstabzugshaube-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-kuechenspuele-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-17T00:17:18Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-waschmaschinenanschluss-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-23T01:18:27Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-waschmaschinenanschluss-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-waschmaschinenanschluss-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-geschirrspueler-anschluss-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-17T00:18:38Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-geschirrspueler-anschluss-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-geschirrspueler-anschluss-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-herd-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T12:47:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/wer-zahlt-kuehlschrank-mietwohnung/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-herd-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-herd-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-sockelleisten-fussleisten-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-28T09:37:41Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-sockelleisten-fussleisten-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-sockelleisten-fussleisten-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-kuehlschrank-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T12:46:35Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-kuehlschrank-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-kuehlschrank-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wer-zahlt-kuechenfronten-mietwohnung/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-17T00:17:18Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-kuechenfronten-mietwohnung/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wer-zahlt-kuechenfronten-mietwohnung/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/ikea-kuechenmontage-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-29T07:41:35Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/services/ikea-kuechenmontage-hamburg.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/ikea-kuechenmontage-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/ikea-kuechenmontage-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              },
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Videos",
+            "items": [
+              {
+                "name": "IKEA K\u00fcchenmontage Hamburg \u2014 10 Meter METOD-K\u00fcche in 2 Tagen",
+                "issues": []
+              },
+              {
+                "name": "IKEA K\u00fcchenmontage mit Kochinsel in Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuechenaufbau-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-27T15:06:44Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuechenaufbau-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuechenaufbau-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/aufmass-kueche-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-25T00:26:13Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/services/herd-anschliessen-hamburg.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/aufmass-kueche-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/aufmass-kueche-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/backofen-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/wasseranschluss-kueche-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-20T09:54:41Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/wasseranschluss-kueche-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/wasseranschluss-kueche-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Product snippets",
+            "items": [
+              {
+                "name": "Wasseranschluss K\u00fcche Hamburg",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "Wasseranschluss K\u00fcche Hamburg",
+                "issues": []
+              },
+              {
+                "name": "Wasseranschluss K\u00fcche Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/kuechen-abbau-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-27T01:52:04Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/kuechen-abbau-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/kuechen-abbau-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              },
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/dunstabzugshaube-austauschen-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-12T14:55:32Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/services/herd-anschliessen-hamburg.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/dunstabzugshaube-austauschen-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/dunstabzugshaube-austauschen-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Product snippets",
+            "items": [
+              {
+                "name": "Dunstabzugshaube austauschen Hamburg",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "Dunstabzugshaube austauschen Hamburg",
+                "issues": []
+              },
+              {
+                "name": "Dunstabzugshaube austauschen Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kueche-fertigstellen-lassen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/kuechenfronten-einstellen-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T02:57:41Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/kuechenfronten-einstellen-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/kuechenfronten-einstellen-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/silikonfugen-kueche-erneuern-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/sockelleisten-passleisten-kueche-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/arbeitsplatte-zuschneiden-hamburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-27T21:14:59Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/services/arbeitsplatte-zuschneiden-hamburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/services/arbeitsplatte-zuschneiden-hamburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/services/video-beratung.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/spuelmaschine-anschliessen-wandsbek.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T19:27:23Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/spuelmaschine-anschliessen-wandsbek.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/spuelmaschine-anschliessen-wandsbek.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschmaschine-hamburg-nord.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-19T23:32:06Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-hamburg-nord.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-hamburg-nord.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wasserhahn-harburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-23T12:25:29Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wasserhahn-harburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wasserhahn-harburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/harburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-20T16:04:18Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/harburg.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/harburg.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/altona.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-14T00:30:50Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/altona.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/altona.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/bergedorf.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T02:23:35Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/stadtteile/bergedorf.html",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/bergedorf.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/bergedorf.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wandsbek.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T14:09:19Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wandsbek.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wandsbek.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuechenmontage-hamburg-mitte.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-19T22:10:19Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuechenmontage-hamburg-mitte.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuechenmontage-hamburg-mitte.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/eimsbuettel.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T02:22:38Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/eimsbuettel.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/eimsbuettel.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/20357.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-22T10:36:20Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/altona.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/20357.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/20357.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/22765.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-20T11:44:45Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/altona.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/22765.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/22765.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-wandsbek.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Page with redirect",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-07T02:58:31Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/spuelmaschine-anschliessen-wandsbek.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wandsbek.html",
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/wasserhahn-eimsbuettel.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-04T08:36:42Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/wasserhahn-eimsbuettel.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/wasserhahn-eimsbuettel.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-altona.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-19T23:48:44Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml",
+          "https://kuechen-montage-hamburg.de/altona.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-altona.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-altona.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-barmbek.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-02T18:48:05Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-barmbek.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-barmbek.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/wasserhahn-mieter-oder-vermieter.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-25T04:55:22Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/wasserhahn-mieter-oder-vermieter.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/wasserhahn-mieter-oder-vermieter.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/kueche-selbst-aufbauen-oder-lassen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-30T00:23:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/kuechenaufbau-hamburg/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kueche-selbst-aufbauen-oder-lassen.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kueche-selbst-aufbauen-oder-lassen.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-24T04:32:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kueche-kaufen-und-aufbauen-lassen.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/preise.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-27T22:53:15Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/preise.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/preise.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/kontakt.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-28T10:50:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/harburg.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/kontakt.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/kontakt.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ueber-uns.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T17:20:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/ueber-uns.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/ueber-uns.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/galerie.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T16:23:57Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/galerie.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/galerie.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-09T22:44:41Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/check24-profis-erfahrungen-nachteile.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-25T03:42:40Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/check24-profis-erfahrungen-nachteile.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/check24-profis-erfahrungen-nachteile.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/myhammer-erfahrungen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T19:33:27Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/myhammer-erfahrungen.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/myhammer-erfahrungen.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/blauarbeit-erfahrungen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-23T08:59:57Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/blauarbeit-erfahrungen.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/blauarbeit-erfahrungen.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/kleinanzeigen-handwerker-risiken.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T05:45:26Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kleinanzeigen-handwerker-risiken.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/kleinanzeigen-handwerker-risiken.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/blog/ikea-aufbauservice-handwerker-erfahrung.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-27T21:45:02Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/blog/ikea-aufbauservice-handwerker-erfahrung.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/blog/ikea-aufbauservice-handwerker-erfahrung.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-30T04:22:31Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ratgeber/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-11T11:20:27Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/abfluss-verstopft-hausmittel.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-12T14:26:08Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/spuelmaschine-anschliessen-anleitung.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ratgeber/eckventile-austauschen-anleitung.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-21T01:47:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/eckventile-austauschen-anleitung.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/eckventile-austauschen-anleitung.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/umkehrosmose-wasserfilter-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuechenspuele-montage-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T05:53:18Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuechenspuele-montage-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuechenspuele-montage-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-25T23:10:53Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/stadtteile/horn.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              },
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/armatur-austauschen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-12T23:34:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/wer-zahlt-geschirrspueler-anschluss-mietwohnung/",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/armatur-austauschen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/armatur-austauschen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/abschlussleiste-arbeitsplatte-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-17T00:11:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/abschlussleiste-arbeitsplatte-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/abschlussleiste-arbeitsplatte-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuehlschrank-austauschen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T07:19:28Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuehlschrank-austauschen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuehlschrank-austauschen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kuechenfronten-austauschen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T07:16:13Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kuechenfronten-austauschen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kuechenfronten-austauschen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/trockner-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-30T17:45:30Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/trockner-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/trockner-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/ceranfeld-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T17:20:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/ceranfeld-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/ceranfeld-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/induktionskochfeld-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T17:20:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/induktionskochfeld-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/induktionskochfeld-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/waschbecken-installieren-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-04T08:45:21Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/waschbecken-installieren-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/waschbecken-installieren-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/spueltischarmatur-einbau-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T10:00:57Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/spueltischarmatur-einbau-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/spueltischarmatur-einbau-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/starkstromdose-installieren-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T16:33:48Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/starkstromdose-installieren-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/starkstromdose-installieren-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/y-stueck-wasserzulauf-installieren-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T00:34:46Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/y-stueck-wasserzulauf-installieren-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/y-stueck-wasserzulauf-installieren-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/power-splitter-installieren-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T20:09:06Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/power-splitter-installieren-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/power-splitter-installieren-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/geschirrspueler-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T00:41:03Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/geschirrspueler-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/geschirrspueler-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/kochfeld-installieren-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-27T23:14:48Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/kochfeld-installieren-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/kochfeld-installieren-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ratgeber/kuechenmontage-kosten.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/ratgeber/abfluss-verstopft-hausmittel.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "Crawled - currently not indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-25T23:04:59Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/ratgeber/waschmaschine-anschliessen-anleitung.html",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/abfluss-verstopft-hausmittel.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/ratgeber/abfluss-verstopft-hausmittel.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/barmbek.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/winterhude.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/eppendorf.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/rahlstedt.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-31T11:41:37Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/rahlstedt.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/rahlstedt.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/bramfeld.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/blankenese.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/ottensen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/st-pauli.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-11T11:46:48Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/st-pauli.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/st-pauli.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/stellingen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/uhlenhorst.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/billstedt.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/jenfeld.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/farmsen.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/neugraben.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-19T20:29:25Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/neugraben.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/neugraben.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/horn.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/wilhelmsburg.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-24T23:45:15Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/spuele-austauschen/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-21T08:19:20Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/spuele-austauschen/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/spuele-austauschen/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/waschmaschine-anschliessen/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T19:15:36Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/waschmaschine-anschliessen/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/waschmaschine-anschliessen/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/armatur-wechseln/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-22T12:35:30Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/armatur-wechseln/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/armatur-wechseln/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/eckventil-austauschen/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-31T06:53:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/waschmaschine-anschliessen-hamburg/",
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/eckventil-austauschen/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/eckventil-austauschen/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/siphon-montieren/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-09T02:29:29Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/siphon-montieren/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/siphon-montieren/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-zuschneiden/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-18T01:42:28Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-zuschneiden/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-zuschneiden/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-oelen/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-09T05:26:00Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-oelen/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-oelen/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-abdichten/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-07T04:06:28Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-abdichten/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/arbeitsplatte-abdichten/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenplanung-tipps/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T00:59:07Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenplanung-tipps/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenplanung-tipps/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenspuelen-arten-material/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-04-24T18:22:29Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenspuelen-arten-material/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/kuechenspuelen-arten-material/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/montage-und-installation/wasser-sparen-kueche/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-19T02:24:23Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/wasser-sparen-kueche/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/montage-und-installation/wasser-sparen-kueche/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/rotherbaum.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T05:08:38Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/rotherbaum.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/rotherbaum.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/niendorf.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T02:16:12Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/niendorf.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/niendorf.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/lokstedt.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-21T06:39:41Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/lokstedt.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/lokstedt.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/volksdorf.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-10T11:42:20Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/volksdorf.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/volksdorf.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/sasel.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-11T14:30:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/sasel.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/sasel.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/lurup.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-11T09:17:27Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/lurup.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/lurup.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/osdorf.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T15:59:51Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/osdorf.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/osdorf.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/marienthal.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T01:32:49Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/marienthal.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/marienthal.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/altona-altstadt.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-13T01:11:22Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/altona-altstadt.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/altona-altstadt.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/stadtteile/hamm.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-14T11:20:29Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/hamm.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/stadtteile/hamm.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/pages/garantie-und-service.html",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-05-02T12:24:23Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/sitemap.xml"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/pages/garantie-und-service.html",
+        "user_canonical": "https://kuechen-montage-hamburg.de/pages/garantie-und-service.html",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/herd-anschliessen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-07-01T08:56:10Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": [
+          "https://kuechen-montage-hamburg.de/pages/services/herd-anschliessen-hamburg.html"
+        ]
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/herd-anschliessen-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/herd-anschliessen-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          },
+          {
+            "type": "Review snippets",
+            "items": [
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              },
+              {
+                "name": "K\u00fcchenmontage Hamburg",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/eckventil-austauschen-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "NEUTRAL",
+        "coverage_state": "URL is unknown to Google",
+        "robots_txt_state": "ROBOTS_TXT_STATE_UNSPECIFIED",
+        "indexing_state": "INDEXING_STATE_UNSPECIFIED",
+        "page_fetch_state": "PAGE_FETCH_STATE_UNSPECIFIED",
+        "last_crawl_time": null,
+        "crawled_as": null,
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": null,
+        "user_canonical": null,
+        "match": null
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": null,
+      "verdict": "NEUTRAL",
+      "error": null
+    },
+    {
+      "url": "https://kuechen-montage-hamburg.de/geschirrspueler-ikea-kueche-hamburg/",
+      "property": "sc-domain:kuechen-montage-hamburg.de",
+      "index_status": {
+        "verdict": "PASS",
+        "coverage_state": "Submitted and indexed",
+        "robots_txt_state": "ALLOWED",
+        "indexing_state": "INDEXING_ALLOWED",
+        "page_fetch_state": "SUCCESSFUL",
+        "last_crawl_time": "2026-06-17T10:50:33Z",
+        "crawled_as": "MOBILE",
+        "referring_urls": []
+      },
+      "crawl_info": null,
+      "canonical": {
+        "google_canonical": "https://kuechen-montage-hamburg.de/geschirrspueler-ikea-kueche-hamburg/",
+        "user_canonical": "https://kuechen-montage-hamburg.de/geschirrspueler-ikea-kueche-hamburg/",
+        "match": true
+      },
+      "mobile_usability": {
+        "verdict": "VERDICT_UNSPECIFIED",
+        "issues": []
+      },
+      "rich_results": {
+        "verdict": "PASS",
+        "detected_items": [
+          {
+            "type": "Breadcrumbs",
+            "items": [
+              {
+                "name": "Unnamed item",
+                "issues": []
+              }
+            ]
+          }
+        ]
+      },
+      "verdict": "PASS",
+      "error": null
+    }
+  ],
+  "summary": {
+    "pass": 88,
+    "fail": 0,
+    "neutral": 30,
+    "error": 0
+  },
+  "error": null
+}
