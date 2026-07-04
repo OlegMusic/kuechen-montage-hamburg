@@ -11,12 +11,28 @@
       "title": "94 ссылки из шаблонов ведут на noindex-legacy /pages/services/ (kuechenmontage, herd) — заменить на / и /herd-anschliessen-hamburg/",
       "priority": "high",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "not_contains", "url": "/pages/blog/myhammer-erfahrungen.html", "needle": "services/kuechenmontage-hamburg.html" },
-        { "type": "not_contains", "url": "/pages/blog/myhammer-erfahrungen.html", "needle": "services/herd-anschliessen-hamburg.html" },
-        { "type": "not_contains", "url": "/pages/preise.html", "needle": "services/kuechenmontage-hamburg.html" },
-        { "type": "not_contains", "url": "/pages/kontakt.html", "needle": "services/kuechenmontage-hamburg.html" }
+        {
+          "type": "not_contains",
+          "url": "/pages/blog/myhammer-erfahrungen.html",
+          "needle": "services/kuechenmontage-hamburg.html"
+        },
+        {
+          "type": "not_contains",
+          "url": "/pages/blog/myhammer-erfahrungen.html",
+          "needle": "services/herd-anschliessen-hamburg.html"
+        },
+        {
+          "type": "not_contains",
+          "url": "/pages/preise.html",
+          "needle": "services/kuechenmontage-hamburg.html"
+        },
+        {
+          "type": "not_contains",
+          "url": "/pages/kontakt.html",
+          "needle": "services/kuechenmontage-hamburg.html"
+        }
       ]
     },
     {
@@ -24,7 +40,7 @@
       "title": "Отправить 22 «URL unknown to Google» в IndexNow (backend/indexnow-submit.exe) + ручной Request Indexing для 4 денежных страниц",
       "priority": "high",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": []
     },
     {
@@ -32,10 +48,18 @@
       "title": "Де-сиротить 6 страниц sitemap (kuechenaufbau, eckventil, 22765, waschmaschine-altona/barmbek, wasserhahn-eimsbuettel) — ссылки с главной/хабов",
       "priority": "high",
       "effort": "med",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "contains", "url": "/", "needle": "kuechenaufbau-hamburg" },
-        { "type": "contains", "url": "/", "needle": "eckventil-austauschen-hamburg" }
+        {
+          "type": "contains",
+          "url": "/",
+          "needle": "kuechenaufbau-hamburg"
+        },
+        {
+          "type": "contains",
+          "url": "/",
+          "needle": "eckventil-austauschen-hamburg"
+        }
       ]
     },
     {
@@ -43,11 +67,23 @@
       "title": "Добавить 3 статьи в листинг блога (kueche-selbst-aufbauen, kueche-kaufen-und-aufbauen, ikea-aufbauservice)",
       "priority": "high",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "contains", "url": "/pages/blog/", "needle": "kueche-selbst-aufbauen-oder-lassen" },
-        { "type": "contains", "url": "/pages/blog/", "needle": "kueche-kaufen-und-aufbauen-lassen" },
-        { "type": "contains", "url": "/pages/blog/", "needle": "ikea-aufbauservice-handwerker-erfahrung" }
+        {
+          "type": "contains",
+          "url": "/pages/blog/",
+          "needle": "kueche-selbst-aufbauen-oder-lassen"
+        },
+        {
+          "type": "contains",
+          "url": "/pages/blog/",
+          "needle": "kueche-kaufen-und-aufbauen-lassen"
+        },
+        {
+          "type": "contains",
+          "url": "/pages/blog/",
+          "needle": "ikea-aufbauservice-handwerker-erfahrung"
+        }
       ]
     },
     {
@@ -55,11 +91,23 @@
       "title": "Главная и harburg.html: ссылки на meta-refresh заглушки → прямые /backofen-anschliessen-hamburg/ и /kueche-fertigstellen-lassen-hamburg/",
       "priority": "med",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "not_contains", "url": "/", "needle": "pages/services/backofen-anschliessen-hamburg.html" },
-        { "type": "not_contains", "url": "/", "needle": "pages/services/kueche-fertigstellen-lassen-hamburg.html" },
-        { "type": "not_contains", "url": "/harburg.html", "needle": "pages/services/backofen-anschliessen-hamburg.html" }
+        {
+          "type": "not_contains",
+          "url": "/",
+          "needle": "pages/services/backofen-anschliessen-hamburg.html"
+        },
+        {
+          "type": "not_contains",
+          "url": "/",
+          "needle": "pages/services/kueche-fertigstellen-lassen-hamburg.html"
+        },
+        {
+          "type": "not_contains",
+          "url": "/harburg.html",
+          "needle": "pages/services/backofen-anschliessen-hamburg.html"
+        }
       ]
     },
     {
@@ -67,9 +115,13 @@
       "title": "Закрыть публичный доступ к /backend/data/*.json (git rm --cached + вынести из Pages-корня) — DSGVO-риск",
       "priority": "med",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "status", "url": "/backend/data/signups.json", "expect": 404 }
+        {
+          "type": "status",
+          "url": "/backend/data/signups.json",
+          "expect": 404
+        }
       ]
     },
     {
@@ -77,10 +129,18 @@
       "title": "Заменить внутренние ссылки href=\"index.html\" → / и pages/blog/index.html → pages/blog/ (101+103 ссылок)",
       "priority": "low",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "not_contains", "url": "/altona.html", "needle": "href=\"index.html\"" },
-        { "type": "not_contains", "url": "/", "needle": "pages/blog/index.html" }
+        {
+          "type": "not_contains",
+          "url": "/altona.html",
+          "needle": "href=\"index.html\""
+        },
+        {
+          "type": "not_contains",
+          "url": "/",
+          "needle": "pages/blog/index.html"
+        }
       ]
     },
     {
@@ -88,9 +148,13 @@
       "title": "CLS-страховка: will-change: transform для .hero::after (css/style.css:214) — 5 stadtteile-страниц",
       "priority": "low",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "contains", "url": "/css/style.css", "needle": "will-change" }
+        {
+          "type": "contains",
+          "url": "/css/style.css",
+          "needle": "will-change"
+        }
       ]
     },
     {
@@ -98,7 +162,7 @@
       "title": "Актуализировать lastmod в sitemap.xml (главная: 2026-04-23 → фактическая дата правки)",
       "priority": "low",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": []
     },
     {
@@ -114,10 +178,18 @@
       "title": "Усилить перелинковку trust-страниц: ueber-uns и garantie-und-service в сайтвайд-футер",
       "priority": "low",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": [
-        { "type": "contains", "url": "/", "needle": "pages/ueber-uns.html" },
-        { "type": "contains", "url": "/", "needle": "pages/garantie-und-service.html" }
+        {
+          "type": "contains",
+          "url": "/",
+          "needle": "pages/ueber-uns.html"
+        },
+        {
+          "type": "contains",
+          "url": "/",
+          "needle": "pages/garantie-und-service.html"
+        }
       ]
     },
     {
@@ -125,7 +197,7 @@
       "title": "Решить судьбу /pages/stadtteile/hamburg-mitte.html: добавить в sitemap или canonical на /kuechenmontage-hamburg-mitte.html",
       "priority": "low",
       "effort": "low",
-      "status": "todo",
+      "status": "done",
       "checks": []
     }
   ]

@@ -212,6 +212,7 @@ h3 {
   pointer-events: none;
 }
 .hero::after {
+  will-change: transform;
   content: ''; position: absolute; top: -30%; right: -15%;
   width: 700px; height: 700px;
   background: radial-gradient(circle, rgba(230,57,70,0.08) 0%, transparent 60%);
