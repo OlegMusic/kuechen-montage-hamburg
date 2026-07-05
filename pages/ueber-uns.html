@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6755NW07BN"></script>
+<!-- Google tag (gtag.js) — deferred: 157 KiB не блокируют LCP/TBT; события копятся в dataLayer до загрузки -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-6755NW07BN');
+  (function(){var d=false;function l(){if(d)return;d=true;
+    var s=document.createElement('script');s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-6755NW07BN';
+    document.head.appendChild(s);}
+    ['scroll','click','touchstart','keydown','pointerdown'].forEach(function(e){
+      window.addEventListener(e,l,{once:true,passive:true});});
+    setTimeout(l,3500);})();
 </script>
 
   <meta charset="UTF-8">
@@ -260,7 +265,7 @@
       <p class="text-center" style="margin:0 0 32px;color:#475569;">Unabhängige Bestätigungen unserer Qualität und Fachkompetenz</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:900px;margin:0 auto;">
         <div style="background:white;border:1px solid #e5e7eb;border-radius:12px;padding:20px;text-align:center;">
-          <img src="../foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner Zertifikat — PRUlog seit 2018" style="max-width:200px;width:100%;height:auto;border-radius:8px;margin-bottom:12px;" loading="lazy">
+          <img src="../foto/garant-fachhandelspartner-450.webp" alt="GARANT Autorisierter Fachhandelspartner Zertifikat — PRUlog seit 2018" style="max-width:200px;width:100%;height:auto;border-radius:8px;margin-bottom:12px;" loading="lazy">
           <h3 style="margin:0 0 6px;font-size:16px;color:#0f172a;">GARANT Fachhandelspartner</h3>
           <p style="margin:0;font-size:13px;color:#64748b;line-height:1.5;">Autorisierter Fachhandelspartner des GARANT Möbel-Verbunds (seit 2018) — geprüfte Beratung, Planung &amp; Montage-Qualität</p>
         </div>

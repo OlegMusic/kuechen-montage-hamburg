@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6755NW07BN"></script>
+<!-- Google tag (gtag.js) — deferred: 157 KiB не блокируют LCP/TBT; события копятся в dataLayer до загрузки -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-6755NW07BN');
+  (function(){var d=false;function l(){if(d)return;d=true;
+    var s=document.createElement('script');s.async=true;
+    s.src='https://www.googletagmanager.com/gtag/js?id=G-6755NW07BN';
+    document.head.appendChild(s);}
+    ['scroll','click','touchstart','keydown','pointerdown'].forEach(function(e){
+      window.addEventListener(e,l,{once:true,passive:true});});
+    setTimeout(l,3500);})();
 </script>
 
   <meta charset="UTF-8">
@@ -20,7 +25,6 @@
   <meta name="author" content="Küchenmontage Hamburg">
   <link rel="canonical" href="https://kuechen-montage-hamburg.de/">
   <link rel="dns-prefetch" href="https://wa.me">
-  <link rel="preconnect" href="https://wa.me" crossorigin>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Küchenmontage Hamburg | Ab 60€ | Same-Day-Service">
@@ -50,7 +54,7 @@
     "alternateName": ["Küchenmontage Hamburg", "PRULOG", "PRUlog Küchenmontage Hamburg"],
     "description": "Professionelle Küchenmontage, Geräteanschluss und Sanitärservice in Hamburg. Waschmaschine, Herd, Spülmaschine anschließen. Wasserhahn und Spüle austauschen.",
     "url": "https://kuechen-montage-hamburg.de",
-    "image": ["https://kuechen-montage-hamburg.de/img/profile/profile.webp", "https://kuechen-montage-hamburg.de/foto/6371-TUeV-NORD-CERT-neu.webp", "https://kuechen-montage-hamburg.de/foto/garant-fachhandelspartner.jpg"],
+    "image": ["https://kuechen-montage-hamburg.de/img/profile/profile.webp", "https://kuechen-montage-hamburg.de/foto/6371-TUeV-NORD-CERT-neu.webp", "https://kuechen-montage-hamburg.de/foto/garant-fachhandelspartner-450.webp"],
     "award": [
       "Autorisierter GARANT-Fachhandelspartner (seit 2018)",
       "TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse"
@@ -172,8 +176,10 @@
   }
   </script>
 
+  <link rel="preload" as="image" href="img/profile/profile.webp" fetchpriority="high">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/leistung-redesign.css">
+  <link rel="stylesheet" href="css/leistung-redesign.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/leistung-redesign.css"></noscript>
 
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -614,7 +620,7 @@
         </div>
         <div class="badges-row">
           <img class="badge-img" width="400" height="248" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD Zertifizierung">
-          <img class="badge-img" width="447" height="600" src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner" title="GARANT Autorisierter Fachhandelspartner">
+          <img class="badge-img" width="160" height="215" src="foto/garant-fachhandelspartner-160.webp" alt="GARANT Autorisierter Fachhandelspartner" title="GARANT Autorisierter Fachhandelspartner">
         </div>
         <div class="stats" role="list">
           <div class="stat" role="listitem"><div class="n">18<sup>+</sup></div><div class="l">Jahre Erfahrung</div></div>
@@ -1040,14 +1046,14 @@
 
         <aside class="cert-card" aria-label="Zertifikat — autorisierter Fachhandelspartner">
           <div class="frame">
-            <img src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — Zertifikat für PRUlog-Küchen, Inh. Oleg Prusincov, seit 2018" width="447" height="600" loading="lazy">
+            <img src="foto/garant-fachhandelspartner-450.webp" alt="GARANT Autorisierter Fachhandelspartner — Zertifikat für PRUlog-Küchen, Inh. Oleg Prusincov, seit 2018" width="450" height="604" loading="lazy">
           </div>
           <div class="lab">
             <div>
               <b>GARANT-Fachhandelspartner</b>
               <small>autorisiert seit 2018 (Rheda-Wiedenbrück)</small>
             </div>
-            <img class="tuv-mini" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" loading="lazy">
+            <img class="tuv-mini" src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" width="400" height="248" loading="lazy">
           </div>
         </aside>
       </div>
@@ -1073,11 +1079,11 @@
         </div>
         <div class="vbadge-row">
           <span class="vbadge">
-            <img src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" loading="lazy">
+            <img src="foto/6371-TUeV-NORD-CERT-neu.webp" alt="TÜV NORD geprüft und zertifiziert für Elektro- und Wasseranschlüsse" width="400" height="248" loading="lazy">
             <span><b>TÜV NORD geprüft</b><small>Zertifiziert für Elektro- &amp; Wasseranschlüsse</small></span>
           </span>
           <span class="vbadge">
-            <img src="foto/garant-fachhandelspartner.jpg" alt="GARANT Autorisierter Fachhandelspartner — PRUlog seit 2018" loading="lazy">
+            <img src="foto/garant-fachhandelspartner-450.webp" alt="GARANT Autorisierter Fachhandelspartner — PRUlog seit 2018" width="450" height="604" loading="lazy">
             <span><b>GARANT-Fachhandelspartner</b><small>Autorisiert seit 2018 (Rheda-Wiedenbrück)</small></span>
           </span>
         </div>
