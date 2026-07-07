@@ -60,3 +60,4 @@ _lint_check.py
 
 # Claude Code Projekt-Regeln (lokal, nicht veröffentlichen)
 CLAUDE.md
+.guardian-task.md

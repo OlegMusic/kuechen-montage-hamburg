@@ -250,8 +250,8 @@
   .scope p.intro{color:var(--mute);font-size:15px}
   .scope ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 24px}
   @media (max-width:680px){ .scope ul{grid-template-columns:1fr} }
-  .scope li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.45}
-  .scope li svg{flex:none;color:var(--brand);margin-top:3px}
+  .scope li{position:relative;padding-left:30px;font-size:15px;line-height:1.5}
+  .scope li svg{position:absolute;left:0;top:3px;color:var(--brand)}
   .scope .footnote{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);font-size:14px;color:var(--mute)}
   .scope .footnote b{color:var(--ink)}
 
