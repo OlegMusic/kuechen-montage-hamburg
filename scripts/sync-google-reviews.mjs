@@ -31,6 +31,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { execSync } from 'child_process';
+import { deriveProductMeta, updateAggregateRatingMarkup } from './review-schema-utils.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(__dirname, '..');
@@ -45,27 +46,8 @@ const FORCE = process.argv.includes('--force');
 const NOGIT = process.argv.includes('--no-git'); // write files but skip commit/push (local review)
 const ROLLOUT = process.argv.includes('--rollout'); // insert markers into all content pages (one-time)
 
-const FALLBACK_IMG = 'https://kuechen-montage-hamburg.de/img/profile/profile.webp';
 // Never put review stars on legal/utility pages.
 const EXCLUDE = /impressum|datenschutz|agb|privacy|404|danke|thank/i;
-
-// Per-page Product meta, derived from the page's own <title>/OG tags.
-function deriveMeta(html) {
-  const og = (p) => {
-    const m = html.match(new RegExp(`<meta[^>]+property=["']og:${p}["'][^>]+content=["']([^"']+)["']`, 'i'))
-      || html.match(new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:${p}["']`, 'i'));
-    return m ? m[1] : '';
-  };
-  const title = og('title') || (html.match(/<title>([^<]+)<\/title>/i) || [])[1] || '';
-  const name = (title.split(/[|–—·]/)[0] || '').trim() || 'Küchenmontage Hamburg';
-  const image = og('image') || FALLBACK_IMG;
-  const description = (og('description') || (html.match(/<meta[^>]+name=["']description["'][^>]+content=["']([^"']+)["']/i) || [])[1] || name).trim();
-  // Entry price from the page's OWN "ab N€" text (min of all), so the Offer is accurate, not invented.
-  const prices = [...html.matchAll(/\bab\s*(\d{2,4})\s*€/gi)].map((m) => Number(m[1])).filter((n) => n >= 20 && n <= 5000);
-  const price = prices.length ? String(Math.min(...prices)) : '';
-  const url = og('url') || (html.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/i) || [])[1] || '';
-  return { name, image, description, price, url };
-}
 
 const log = (m) => console.log(`[reviews-sync] ${m}`);
 const today = () => new Date().toISOString().slice(0, 10);
@@ -115,12 +97,9 @@ function updateNumbers(count, rating) {
   const changed = [];
   for (const file of listHtml(REPO)) {
     const s = fs.readFileSync(file, 'utf8');
-    const o = s
-      .replace(/("reviewCount":\s*")\d+(")/g, `$1${count}$2`)
-      .replace(/("ratingCount":\s*")\d+(")/g, `$1${count}$2`)
-      .replace(/("ratingValue":\s*")[\d.]+(")/g, `$1${dot}$2`)
+    const o = updateAggregateRatingMarkup(s, count, rating)
       .replace(/\b\d+( (?:echte )?Bewertungen bei\b)/g, `${count}$1`)
-      .replace(/\b\d+( Google-Rezensionen)/g, `${count}$1`)
+      .replace(/\b\d+( (?:echte )?Google-Rezensionen)/g, `${count}$1`)
       .replace(/\b\d+( Google-Bewertungen)/g, `${count}$1`)
       .replace(/(<b id="google-rating">)[\d,]+/g, `$1${comma}`)
       .replace(/★ [\d,]+ —/g, `★ ${comma} —`)
@@ -149,7 +128,7 @@ function buildBlock(meta, rating, count, reviews) {
       reviewBody: r.text,
     })),
   };
-  // Offer: accurate entry price taken from the page's own "ab N€" (makes it a full Product).
+  // Offer: explicit per-page product price wins; fallback uses the page's lowest "ab N€" value.
   if (meta.price) {
     ld.offers = {
       '@type': 'Offer',
@@ -238,7 +217,7 @@ async function main() {
     for (const file of listHtml(REPO)) {
       const s = fs.readFileSync(file, 'utf8');
       if (!/GBP-REVIEWS:START/.test(s)) continue;
-      let o = s.replace(/<!-- GBP-REVIEWS:START[\s\S]*?<!-- GBP-REVIEWS:END -->/, buildBlock(deriveMeta(s), g.rating, g.count, g.reviews));
+      let o = s.replace(/<!-- GBP-REVIEWS:START[\s\S]*?<!-- GBP-REVIEWS:END -->/, buildBlock(deriveProductMeta(s), g.rating, g.count, g.reviews));
       o = updateMetaStar(o, g.count, g.rating); // ⭐ 5,0 (N) · in meta description (live count)
       if (o !== s) { if (APPLY) fs.writeFileSync(file, o); blockChanged.push(path.relative(REPO, file)); }
     }
