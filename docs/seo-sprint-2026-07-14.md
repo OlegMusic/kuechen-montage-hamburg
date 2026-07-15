@@ -35,11 +35,6 @@ Source: SEO Monitor snapshot from 14.07.2026 (GSC through 12.07.2026 and stored 
 - Day 14-28: compare fresh DataForSEO SERP positions and competitors using the same Hamburg/de-DE market.
 - Success criterion: `/` remains the only active owner and broad-query positions improve without losses on narrow service pages.
 
-## Remaining infrastructure action
-
-GitHub Pages cannot emit a real HTTP 301 for this static file. Configure a Cloudflare redirect from
-`/pages/services/kuechenmontage-hamburg.html` to `/` when the redirect rules are next updated.
-
 ## Verification completed
 
 - `node --test scripts/review-schema-utils.test.mjs scripts/seo-owner-smoke.test.mjs`: 7/7 passed.
