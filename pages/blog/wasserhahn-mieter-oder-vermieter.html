@@ -18,7 +18,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="only light">
+  <meta name="color-scheme" content="light dark">
   <title>Wasserhahn austauschen: Mieter oder Vermieter zahlt? (2026)</title>
   <meta name="description" content="Wer zahlt den Wasserhahn-Austausch in der Mietwohnung? Mieter, Vermieter, Kleinreparaturklausel — §535, §536 BGB. Ausführlicher Ratgeber mit Beispielen 2026.">
   <meta name="keywords" content="Wasserhahn austauschen Mieter oder Vermieter, Wasserhahn Mietwohnung wer zahlt, Kleinreparaturklausel Wasserhahn, Armatur defekt Vermieter, Mietrecht Wasserhahn 2026, Wasserhahn Kosten Mieter">
@@ -208,6 +208,38 @@
       .wm-hero h1 { font-size:32px; }
       .wm-2col, .wm-prices, .wm-rel { grid-template-columns:1fr; }
       .wm-cta { padding:30px 22px 34px; }
+    }
+    /* Тёмная тема — в духе главной (тёплые тёмные поверхности + красный бренд #E23B33), не auto-инверсия */
+    @media (prefers-color-scheme: dark) {
+      .wm { background:#13161b; color:#c6c9cf; }
+      .wm h2, .wm-card .wm-t, .wm-step h3, .wm-ex .wm-t { color:#eceae5; }
+      .wm-answer, .wm-card, .wm-row, .wm-price, .wm-faq details, .wm-rel a { background:#1c2027; border-color:#2d323b; }
+      .wm-answer { box-shadow:0 12px 32px rgba(0,0,0,.45); }
+      .wm-card p, .wm-row p, .wm-step p, .wm-faq .a { color:#b4b8bf; }
+      .wm-card .wm-p, .wm-eyebrow, .wm-rel .go { color:#ff7a72; }
+      .wm-row .wm-num, .wm-ex .wm-loc { color:#ff8a82; background:#39201e; }
+      .wm-tag { background:#15321f; color:#57d590; }
+      .wm-price .t, .wm-rel .t { color:#eceae5; }
+      .wm-price .v { color:#ff7a72; }
+      .wm-price .v .fx { background:#15321f; color:#57d590; }
+      .wm-price .v .u, .wm-price p, .wm-rel .d { color:#9aa0a9; }
+      .wm-price .go { color:#57d590; }
+      .wm-price:hover, .wm-rel a:hover { border-color:#e23b33; box-shadow:0 10px 28px rgba(0,0,0,.5); }
+      .wm-warn { background:#2d2210; border-color:#4d3a17; }
+      .wm-warn b { color:#e8b46a; }
+      .wm-warn p { color:#d8c49a; }
+      .wm-note { background:#20242c; }
+      .wm-note a { color:#ff8a82; }
+      .wm-step { border-bottom-color:#2d323b; }
+      .wm-step .wm-badge-n { background:#e23b33; }
+      .wm-faq summary { color:#eceae5; }
+      .wm-faq summary:hover { background:#232830; }
+      .wm-faq summary::after { color:#ff8a82; }
+      /* шапка/футер сайта на этой странице — тёмные, бренд-красное лого остаётся */
+      .header { background:#171a20; border-bottom:1px solid #2d323b; }
+      .header .nav a { color:#c6c9cf; }
+      .header .logo { color:#eceae5; }
+      .footer { background:#101318; }
     }
   </style>
 
