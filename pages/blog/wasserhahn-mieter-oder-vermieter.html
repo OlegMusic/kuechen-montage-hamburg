@@ -18,6 +18,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="only light">
   <title>Wasserhahn austauschen: Mieter oder Vermieter zahlt? (2026)</title>
   <meta name="description" content="Wer zahlt den Wasserhahn-Austausch in der Mietwohnung? Mieter, Vermieter, Kleinreparaturklausel — §535, §536 BGB. Ausführlicher Ratgeber mit Beispielen 2026.">
   <meta name="keywords" content="Wasserhahn austauschen Mieter oder Vermieter, Wasserhahn Mietwohnung wer zahlt, Kleinreparaturklausel Wasserhahn, Armatur defekt Vermieter, Mietrecht Wasserhahn 2026, Wasserhahn Kosten Mieter">
@@ -124,6 +125,92 @@
 
   <link rel="stylesheet" href="../../css/style.css">
 
+  <!-- Blog redesign (Claude Design handoff 19.07.2026): scoped .wm-* styles, палитра макета -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    .wm { font-family:'Source Sans 3',sans-serif; color:#1c2733; font-size:18px; line-height:1.65; background:#f6f8fa; }
+    .wm h1, .wm h2, .wm h3, .wm .wm-num, .wm .wm-badge-n { font-family:'Archivo',sans-serif; }
+    .wm-hero { background:linear-gradient(160deg,#0a4d8c 0%,#083a6b 100%); color:#fff; }
+    .wm-hero-in { max-width:800px; margin:0 auto; padding:48px 24px 60px; }
+    .wm-crumbs { font-size:14px; margin-bottom:26px; color:#9fc0de; }
+    .wm-crumbs a { color:#c9dcee; text-decoration:none; }
+    .wm-crumbs a:hover { color:#fff; }
+    .wm-pill { display:inline-flex; align-items:center; gap:10px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); border-radius:99px; padding:6px 16px 6px 8px; margin-bottom:18px; }
+    .wm-pill-n { width:30px; height:30px; border-radius:99px; background:#fff; color:#0a4d8c; display:flex; align-items:center; justify-content:center; font-family:'Archivo',sans-serif; font-weight:800; font-size:15px; }
+    .wm-hero h1 { font-weight:800; font-size:44px; line-height:1.12; letter-spacing:-.02em; margin:0 0 18px; text-wrap:balance; color:#fff; }
+    .wm-hero-sub { font-size:19px; line-height:1.6; color:#d4e3f1; margin:0 0 26px; max-width:640px; }
+    .wm-cta-row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:22px; }
+    .wm-btn-wa { display:inline-block; white-space:nowrap; text-decoration:none; background:#25d366; color:#fff; padding:13px 24px; border-radius:10px; font-weight:700; font-size:16.5px; font-family:'Archivo',sans-serif; box-shadow:0 6px 18px rgba(0,0,0,.25); }
+    .wm-btn-wa:hover { background:#1eb956; color:#fff; }
+    .wm-btn-tel { display:inline-block; white-space:nowrap; text-decoration:none; color:#fff; border:1.5px solid rgba(255,255,255,.45); padding:12px 22px; border-radius:10px; font-weight:700; font-size:16px; }
+    .wm-btn-tel:hover { background:rgba(255,255,255,.1); color:#fff; }
+    .wm-stats { display:flex; flex-wrap:wrap; border-top:1px solid rgba(255,255,255,.2); padding-top:20px; max-width:560px; }
+    .wm-stat { flex:1; min-width:130px; }
+    .wm-stat + .wm-stat { border-left:1px solid rgba(255,255,255,.2); padding-left:22px; }
+    .wm-stat b { display:block; font-family:'Archivo',sans-serif; font-weight:800; font-size:30px; line-height:1.1; }
+    .wm-stat span { font-size:14px; color:#c9dcee; font-weight:600; }
+    .wm-trust { background:#0d3a63; }
+    .wm-trust-in { display:flex; gap:12px 34px; padding:11px 24px; font-family:'Archivo',sans-serif; font-weight:600; font-size:14px; color:#c9dcee; justify-content:center; flex-wrap:wrap; }
+    .wm-wrap { max-width:800px; margin:0 auto; padding:0 24px 56px; }
+    .wm-answer { background:#fff; border:1px solid #dbe6ef; border-radius:14px; padding:26px 30px; box-shadow:0 12px 32px rgba(10,45,80,.10); margin-top:32px; }
+    .wm-tag { display:inline-block; background:#e3f0e6; color:#1d7a3a; font-family:'Archivo',sans-serif; font-weight:700; font-size:13px; letter-spacing:.06em; text-transform:uppercase; padding:4px 12px; border-radius:99px; margin-bottom:10px; }
+    .wm h2 { font-weight:700; font-size:29px; letter-spacing:-.015em; margin:44px 0 16px; color:#12232f; }
+    .wm-eyebrow { font-family:'Archivo',sans-serif; font-weight:700; font-size:14px; letter-spacing:.08em; text-transform:uppercase; color:#0a4d8c; margin:44px 0 6px; }
+    .wm-eyebrow + h2 { margin-top:0; }
+    .wm-2col { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:20px 0 26px; }
+    .wm-card { background:#fff; border:1px solid #dbe6ef; border-radius:12px; padding:22px 24px; }
+    .wm-card .wm-p { font-family:'Archivo',sans-serif; font-weight:800; font-size:22px; color:#0a4d8c; margin-bottom:8px; }
+    .wm-card p { margin:0; font-size:16.5px; color:#374654; }
+    .wm-rows { display:flex; flex-direction:column; gap:12px; margin:0 0 18px; }
+    .wm-row { display:flex; gap:16px; background:#fff; border:1px solid #dbe6ef; border-radius:12px; padding:16px 20px; align-items:flex-start; }
+    .wm-row .wm-num { flex:none; font-weight:800; font-size:17px; color:#0a4d8c; background:#e7eff7; border-radius:8px; padding:6px 12px; white-space:nowrap; }
+    .wm-row p { margin:2px 0 0; font-size:16.5px; }
+    .wm-warn { background:#fdf3e7; border:1px solid #f0d9b8; border-radius:12px; padding:16px 20px; display:flex; gap:12px; align-items:flex-start; }
+    .wm-warn b { flex:none; font-family:'Archivo',sans-serif; font-weight:800; color:#a15c00; font-size:15px; margin-top:2px; }
+    .wm-warn p { margin:0; font-size:16.5px; color:#5c4520; }
+    .wm-prices { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .wm-price { text-decoration:none; color:inherit; background:#fff; border:1.5px solid #dbe6ef; border-radius:14px; padding:24px; display:flex; flex-direction:column; gap:8px; transition:all .15s ease; }
+    .wm-price:hover { border-color:#0a4d8c; box-shadow:0 10px 28px rgba(10,45,80,.14); transform:translateY(-2px); color:inherit; }
+    .wm-price .t { font-family:'Archivo',sans-serif; font-weight:700; font-size:17px; color:#12232f; }
+    .wm-price .v { font-family:'Archivo',sans-serif; font-weight:800; font-size:32px; color:#0a4d8c; }
+    .wm-price .v .fx { font-size:15px; font-weight:700; color:#1d7a3a; background:#e3f0e6; border-radius:99px; padding:3px 10px; vertical-align:middle; }
+    .wm-price .v .u { font-size:16px; font-weight:600; color:#5b6b7a; }
+    .wm-price p { margin:0; font-size:15.5px; color:#5b6b7a; flex:1; }
+    .wm-price .go { font-weight:700; font-size:15.5px; color:#1d7a3a; }
+    .wm-note { background:#eef4fa; border-radius:12px; padding:16px 20px; margin-top:16px; font-size:16.5px; }
+    .wm-ex .wm-loc { font-family:'Archivo',sans-serif; font-weight:800; font-size:13px; color:#0a4d8c; background:#e7eff7; border-radius:99px; padding:3px 12px; }
+    .wm-ex .wm-t { font-family:'Archivo',sans-serif; font-weight:700; font-size:17px; color:#12232f; }
+    .wm-ex-h { display:flex; align-items:center; gap:10px; margin-bottom:8px; flex-wrap:wrap; }
+    .wm-step { display:flex; gap:18px; padding:18px 0; border-bottom:1px solid #e3e9ef; }
+    .wm-step .wm-badge-n { flex:none; width:38px; height:38px; border-radius:99px; background:#0a4d8c; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; }
+    .wm-step h3 { font-weight:700; font-size:17.5px; color:#12232f; margin:0 0 4px; }
+    .wm-step p { margin:0; font-size:16.5px; color:#374654; }
+    .wm-faq { display:flex; flex-direction:column; gap:10px; }
+    .wm-faq details { background:#fff; border:1px solid #dbe6ef; border-radius:12px; overflow:hidden; }
+    .wm-faq summary { list-style:none; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:17px 22px; cursor:pointer; font-weight:700; font-size:17px; color:#12232f; }
+    .wm-faq summary::-webkit-details-marker { display:none; }
+    .wm-faq summary:hover { background:#f4f8fb; }
+    .wm-faq summary::after { content:'▾'; flex:none; color:#0a4d8c; font-size:18px; transition:transform .2s ease; }
+    .wm-faq details[open] summary::after { transform:rotate(180deg); }
+    .wm-faq .a { margin:0; padding:0 22px 18px; font-size:16.5px; color:#374654; }
+    .wm-cta { margin:52px 0 0; background:linear-gradient(160deg,#0a4d8c 0%,#083a6b 100%); border-radius:18px; padding:40px 40px 44px; color:#fff; text-align:center; }
+    .wm-cta h2 { font-weight:800; font-size:30px; letter-spacing:-.02em; margin:0 0 12px; color:#fff; }
+    .wm-cta p { margin:0 auto 24px; font-size:17.5px; color:#d4e3f1; max-width:520px; }
+    .wm-rel { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .wm-rel a { text-decoration:none; background:#fff; border:1.5px solid #dbe6ef; border-radius:12px; padding:20px 22px; display:flex; flex-direction:column; gap:6px; transition:all .15s ease; }
+    .wm-rel a:hover { border-color:#0a4d8c; box-shadow:0 8px 24px rgba(10,45,80,.12); transform:translateY(-2px); }
+    .wm-rel .t { font-family:'Archivo',sans-serif; font-weight:700; font-size:16.5px; color:#12232f; }
+    .wm-rel .d { font-size:14.5px; color:#5b6b7a; }
+    .wm-rel .go { font-weight:700; font-size:14.5px; color:#0a4d8c; margin-top:4px; }
+    @media (max-width:720px) {
+      .wm-hero h1 { font-size:32px; }
+      .wm-2col, .wm-prices, .wm-rel { grid-template-columns:1fr; }
+      .wm-cta { padding:30px 22px 34px; }
+    }
+  </style>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
@@ -154,172 +241,197 @@
       </div>
   </header>
 
-  <main>
-  <!-- ARTICLE HEADER -->
-  <section class="service-hero">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="/pages/blog/" style="color:rgba(255,255,255,0.7)">Blog</a> &rsaquo;
-        <span>Wasserhahn — Mieter oder Vermieter?</span>
+  <main class="wm">
+  <!-- ARTICLE HEADER (Claude Design handoff) -->
+  <div class="wm-hero">
+    <div class="wm-hero-in">
+      <nav class="wm-crumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a> <span style="margin:0 8px;opacity:.6;">›</span>
+        <a href="/pages/blog/">Blog</a> <span style="margin:0 8px;opacity:.6;">›</span>
+        <span style="color:#e8f0f8;">Wasserhahn — Mieter oder Vermieter?</span>
       </nav>
-      <h1>Wasserhahn austauschen: Mieter oder Vermieter zahlt?</h1>
-      <p class="service-hero-sub">Ein defekter Wasserhahn in der Mietwohnung — wer trägt die Kosten für Austausch oder Reparatur? Ausführlicher Ratgeber zur Rechtslage 2026: Kleinreparaturklausel, §535 BGB, §536 BGB, und was Sie konkret tun sollten. Stand: April 2026.</p>
+      <div class="wm-pill"><span class="wm-pill-n">18</span><span style="font-size:14.5px;font-weight:600;color:#e8f0f8;">Über 2.500 Küchen in Hamburg montiert</span></div>
+      <h1>Wasserhahn austauschen: Mieter oder Vermieter <em style="font-style:italic;color:#9fc9f0;">zahlt?</em></h1>
+      <p class="wm-hero-sub">Ein defekter Wasserhahn in der Mietwohnung — wer trägt die Kosten für Austausch oder Reparatur? Ausführlicher Ratgeber zur Rechtslage 2026: Kleinreparaturklausel, §535 BGB, §536 BGB, und was Sie konkret tun sollten. Stand: April 2026.</p>
+      <div class="wm-cta-row">
+        <a class="wm-btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20mein%20Wasserhahn%20ist%20defekt.%20Was%20kostet%20der%20Austausch%3F">Wasserhahn defekt? Festpreis per WhatsApp →</a>
+        <a class="wm-btn-tel" href="tel:+4915218547875">0152 185 478 75</a>
+      </div>
+      <div class="wm-stats">
+        <div class="wm-stat"><b>18+</b><span>Jahre Erfahrung</span></div>
+        <div class="wm-stat"><b>2.500+</b><span>Zufriedene Kunden</span></div>
+        <div class="wm-stat"><b>89€</b><span>Festpreis ab</span></div>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <div class="wm-trust">
+    <div class="wm-trust-in">
+      <span>✦ Festpreise — keine versteckten Kosten</span>
+      <span>✦ Same-Day-Service</span>
+      <span>✦ 18 Jahre Erfahrung</span>
+      <span>✦ 5 Jahre Garantie</span>
+    </div>
+  </div>
 
   <!-- CONTENT -->
-  <section class="service-content">
-    <div class="container" style="max-width:820px;">
+  <div class="wm-wrap">
 
-      <p style="background:#fff8dc;padding:16px;border-radius:8px;border-left:4px solid #e6b800;"><strong>Kurze Antwort:</strong> Grundsätzlich zahlt der <strong>Vermieter</strong> den Austausch eines defekten Wasserhahns (§535 BGB). Ausnahme: eine wirksame Kleinreparaturklausel im Mietvertrag verpflichtet den Mieter bis ca. 75–120€ pro Einzelreparatur. Da der Handwerker-Austausch typisch 150–250€ kostet, zahlt in den meisten Fällen trotzdem der Vermieter.</p>
+      <div class="wm-answer">
+        <span class="wm-tag">Kurze Antwort</span>
+        <p style="margin:0;font-size:18.5px;">Grundsätzlich zahlt der <strong>Vermieter</strong> den Austausch eines defekten Wasserhahns (§535 BGB). Ausnahme: eine wirksame Kleinreparaturklausel im Mietvertrag verpflichtet den Mieter bis ca. 75–120€ pro Einzelreparatur. Da der Handwerker-Austausch typisch 150–250€ kostet, zahlt in den meisten Fällen trotzdem der Vermieter.</p>
+      </div>
 
       <h2>Die Rechtslage: was sagt das BGB?</h2>
-      <p>Der zentrale Paragraph ist <strong>§535 Abs. 1 Satz 2 BGB</strong>: „Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten." Das bedeutet: Reparaturen und Austausch von Bauteilen der Mietsache — dazu gehören fest installierte Armaturen — sind grundsätzlich <strong>Sache des Vermieters</strong>.</p>
-
-      <p>Ergänzend gilt <strong>§536 BGB</strong>: Wenn der Wasserhahn defekt ist und den Gebrauch der Mietsache beeinträchtigt (tropfender Hahn, kein Warmwasser, kein Wasserfluss), liegt ein Mangel vor — der Mieter kann unter Umständen die Miete mindern, wenn der Vermieter nicht rechtzeitig handelt.</p>
+      <div class="wm-2col">
+        <div class="wm-card">
+          <div class="wm-p">§ 535 BGB</div>
+          <p>Der zentrale Paragraph ist <strong>§535 Abs. 1 Satz 2 BGB</strong>: „Der Vermieter hat die Mietsache dem Mieter in einem zum vertragsgemäßen Gebrauch geeigneten Zustand zu überlassen und sie während der Mietzeit in diesem Zustand zu erhalten." Das bedeutet: Reparaturen und Austausch von Bauteilen der Mietsache — dazu gehören fest installierte Armaturen — sind grundsätzlich <strong>Sache des Vermieters</strong>.</p>
+        </div>
+        <div class="wm-card">
+          <div class="wm-p">§ 536 BGB</div>
+          <p>Ergänzend gilt <strong>§536 BGB</strong>: Wenn der Wasserhahn defekt ist und den Gebrauch der Mietsache beeinträchtigt (tropfender Hahn, kein Warmwasser, kein Wasserfluss), liegt ein Mangel vor — der Mieter kann unter Umständen die Miete mindern, wenn der Vermieter nicht rechtzeitig handelt.</p>
+        </div>
+      </div>
 
       <h2>Die Ausnahme: Kleinreparaturklausel</h2>
       <p>Viele Mietverträge enthalten eine sogenannte <strong>Kleinreparaturklausel</strong>, die kleinere Reparaturen an Gegenständen, die dem direkten Zugriff des Mieters unterliegen (Wasserhähne, Lichtschalter, Fenstergriffe, Jalousien, Rollläden, Wasserhahn-Perlatoren), auf den Mieter abwälzen. Damit eine solche Klausel <strong>wirksam</strong> ist, muss sie mehrere Grenzen einhalten:</p>
 
-      <ul>
-        <li><strong>Höchstbetrag pro Einzelreparatur:</strong> aktuell 75–120€ (abhängig von Rechtsprechung des jeweiligen Oberlandesgerichts; BGH VIII ZR 38/90 hat 75€ akzeptiert, aktuelle Urteile akzeptieren auch bis 120€).</li>
-        <li><strong>Jahreshöchstbetrag:</strong> maximal 8% der Jahresnettokaltmiete.</li>
-        <li><strong>Nur an Gegenständen, die dem direkten Mieterzugriff unterliegen</strong> — also Oberflächen-Komponenten, nicht verborgene Leitungen oder die Hauptwasserzuführung.</li>
-      </ul>
+      <div class="wm-rows">
+        <div class="wm-row"><span class="wm-num">75–120&nbsp;€</span><p><strong>Höchstbetrag pro Einzelreparatur:</strong> aktuell 75–120€ (abhängig von Rechtsprechung des jeweiligen Oberlandesgerichts; BGH VIII ZR 38/90 hat 75€ akzeptiert, aktuelle Urteile akzeptieren auch bis 120€).</p></div>
+        <div class="wm-row"><span class="wm-num">max. 8&nbsp;%</span><p><strong>Jahreshöchstbetrag:</strong> maximal 8% der Jahresnettokaltmiete.</p></div>
+        <div class="wm-row"><span class="wm-num">Zugriff</span><p><strong>Nur an Gegenständen, die dem direkten Mieterzugriff unterliegen</strong> — also Oberflächen-Komponenten, nicht verborgene Leitungen oder die Hauptwasserzuführung.</p></div>
+      </div>
 
-      <p><strong>Wichtig:</strong> Klauseln ohne Höchstbetrag oder mit zu hohem Höchstbetrag (z.B. 200€) sind unwirksam — der Mieter zahlt in dem Fall gar nichts, der Vermieter trägt die vollen Kosten.</p>
+      <div class="wm-warn"><b>Wichtig</b><p>Klauseln ohne Höchstbetrag oder mit zu hohem Höchstbetrag (z.B. 200€) sind unwirksam — der Mieter zahlt in dem Fall gar nichts, der Vermieter trägt die vollen Kosten.</p></div>
 
+      <div class="wm-eyebrow">Unsere Preise</div>
       <h2>Was kostet ein Wasserhahn-Austausch in Hamburg wirklich?</h2>
-      <p>Die typischen Kosten für einen Wasserhahn-Austausch durch einen Fachhandwerker in Hamburg 2026:</p>
+      <p>Die typischen Kosten für einen Wasserhahn-Austausch durch einen Fachhandwerker in Hamburg 2026 — transparente Festpreise, <strong>Karte anklicken</strong> und direkt per WhatsApp anfragen:</p>
 
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:20px 0;">
-        <div class="service-card" style="padding:22px 20px;border-top:4px solid var(--primary);">
-          <h3 style="font-size:1.02rem;margin-bottom:6px;">Standard-Armatur Küche/Bad</h3>
-          <div style="font-size:1.7rem;font-weight:800;color:var(--primary);line-height:1.2;">ab 89€</div>
-          <p style="margin:6px 0 14px;">Festpreis bei uns (Arbeit, ohne Armatur selbst)</p>
-          <a class="btn btn-primary" href="/armatur-austauschen-hamburg/" style="margin-top:auto;text-align:center;">Festpreis anfragen</a>
+      <div class="wm-prices">
+        <a class="wm-price" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20eine%20Standard-Armatur%20getauscht.">
+          <span class="t">Wasserhahn austauschen Küche/Bad</span>
+          <span class="v">ab 89&nbsp;€ <span class="fx">Festpreis</span></span>
+          <p>Demontage, Montage, Dichtigkeitsprüfung — Arbeit, ohne Armatur selbst. In 30–60 Min. erledigt.</p>
+          <span class="go">Per WhatsApp anfragen →</span>
+        </a>
+        <a class="wm-price" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20habe%20eine%20Niederdruck-Armatur%20(Boiler%20unter%20der%20Sp%C3%BCle).">
+          <span class="t">Niederdruck-Armatur</span>
+          <span class="v">ab 99&nbsp;€ <span class="fx">Festpreis</span></span>
+          <p>Häufig im Altbau — Durchlauferhitzer oder Boiler unter der Spüle.</p>
+          <span class="go">Per WhatsApp anfragen →</span>
+        </a>
+        <a class="wm-price" href="https://wa.me/4915218547875?text=Hallo%2C%20bitte%20Armatur%20mit%20einkaufen%20%E2%80%94%20welches%20Modell%20empfehlen%20Sie%3F">
+          <span class="t">+ Armatur-Einkauf</span>
+          <span class="v">40–150&nbsp;€</span>
+          <p>Grohe, Hansgrohe, Blanco — wir kaufen auf Wunsch mit ein.</p>
+          <span class="go">Modell abstimmen →</span>
+        </a>
+        <a class="wm-price" href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20Eckventile%20sind%20verkalkt%20%E2%80%94%20bitte%20mit%20tauschen.">
+          <span class="t">Eckventile tauschen</span>
+          <span class="v">+49&nbsp;€ <span class="u">pro Ventil</span></span>
+          <p>Verkalkte Alt-Ventile — gleich beim Armatur-Wechsel mit erneuert (zzgl. Material 15–60€). Details: <span style="color:#0a4d8c;font-weight:700;">Eckventil austauschen Hamburg</span>.</p>
+          <span class="go">Per WhatsApp anfragen →</span>
+        </a>
+      </div>
+      <div class="wm-note">Gesamt für eine normale Mieter-Situation: <strong>130–250€</strong>. Da dieser Betrag bei den meisten Klauseln über der Grenze liegt, zahlt in der Regel der <strong>Vermieter</strong>. Wir stellen die Rechnung auf Wunsch direkt an die Hausverwaltung aus — mehr auf der Seite <a href="/armatur-austauschen-hamburg/">Wasserhahn / Armatur austauschen Hamburg</a> und <a href="/eckventil-austauschen-hamburg/">Eckventil austauschen Hamburg</a>.</div>
+
+      <h2>Beispiele aus der Praxis (Hamburg)</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="wm-card wm-ex">
+          <div class="wm-ex-h"><span class="wm-loc">Altona</span><span class="wm-t">Beispiel 1: Tropfender Einhebelmischer</span></div>
+          <p>Mieter meldet dem Vermieter einen tropfenden Küchen-Wasserhahn. Der Vermieter beauftragt uns, wir tauschen die Armatur für 139€ aus (alte Armatur demontiert, neue Grohe Eurosmart 60€ montiert, Dichtigkeitsprüfung). <strong>Klausel mit 100€ Höchstbetrag:</strong> Austausch liegt über 100€ → <strong style="color:#1d7a3a;">Vermieter zahlt die vollen 139€</strong>, Mieter zahlt nichts.</p>
         </div>
-        <div class="service-card" style="padding:22px 20px;border-top:4px solid var(--primary);">
-          <h3 style="font-size:1.02rem;margin-bottom:6px;">Niederdruck-Armatur</h3>
-          <div style="font-size:1.7rem;font-weight:800;color:var(--primary);line-height:1.2;">ab 99€</div>
-          <p style="margin:6px 0 14px;">häufig in Altbauten, Durchlauferhitzer unter Spüle</p>
-          <a class="btn btn-primary" href="/armatur-austauschen-hamburg/" style="margin-top:auto;text-align:center;">Festpreis anfragen</a>
+        <div class="wm-card wm-ex">
+          <div class="wm-ex-h"><span class="wm-loc">Eimsbüttel</span><span class="wm-t">Beispiel 2: Schwergängiger Wasserhahn</span></div>
+          <p>Mieter meldet einen Wasserhahn, der sich nur noch schwer bewegen lässt. Reparatur: Kartuschentausch ohne neuer Armatur, 49€. <strong>Klausel mit 75€ Höchstbetrag:</strong> 49€ liegt unter der Grenze → <strong style="color:#a15c00;">Mieter zahlt</strong> aus der Klausel. Aber: die Jahresgrenze (8% der Nettokaltmiete) prüfen! Wenn Jahresmiete 9.600€, sind 8% = 768€ — Platz genug.</p>
         </div>
-        <div class="service-card" style="padding:22px 20px;border-top:4px solid var(--primary);">
-          <h3 style="font-size:1.02rem;margin-bottom:6px;">+ Armatur Einkauf</h3>
-          <div style="font-size:1.7rem;font-weight:800;color:var(--primary);line-height:1.2;">40–150€</div>
-          <p style="margin:6px 0 14px;">Grohe, Hansgrohe, Blanco — je nach Modell, wir kaufen auf Wunsch mit ein</p>
-          <a class="btn btn-secondary" href="https://wa.me/4915218547875" style="margin-top:auto;text-align:center;">WhatsApp: Modell abstimmen</a>
-        </div>
-        <div class="service-card" style="padding:22px 20px;border-top:4px solid var(--primary);">
-          <h3 style="font-size:1.02rem;margin-bottom:6px;">Eckventile tauschen</h3>
-          <div style="font-size:1.7rem;font-weight:800;color:var(--primary);line-height:1.2;">+49€ pro Ventil</div>
-          <p style="margin:6px 0 14px;">bei verkalkten/schwergängigen Alt-Ventilen, gleich beim Armatur-Wechsel mit erneuert</p>
-          <a class="btn btn-primary" href="/eckventil-austauschen-hamburg/" style="margin-top:auto;text-align:center;">Eckventil austauschen Hamburg</a>
+        <div class="wm-card wm-ex">
+          <div class="wm-ex-h"><span class="wm-loc">Harburg</span><span class="wm-t">Beispiel 3: Wasserhahn vom Mieter beschädigt</span></div>
+          <p>Mieter zerbricht den Wasserhahn-Hebel beim Küchenumzug. <strong>Selbstverschuldet</strong> → <strong style="color:#a15c00;">Mieter haftet in voller Höhe</strong>, unabhängig von Klausel. Vermieter muss aber nachweisen, dass der Schaden nicht durch normale Abnutzung entstand.</p>
         </div>
       </div>
 
-      <p>Gesamt für eine normale Mieter-Situation: <strong>130–250€</strong>. Da dieser Betrag bei den meisten Klauseln über der Grenze liegt, zahlt in der Regel der <strong>Vermieter</strong>.</p>
-
-      <h2>Beispiele aus der Praxis (Hamburg)</h2>
-
-      <h3>Beispiel 1: Tropfender Einhebelmischer in Altona</h3>
-      <p>Mieter meldet dem Vermieter einen tropfenden Küchen-Wasserhahn. Der Vermieter beauftragt uns, wir tauschen die Armatur für 139€ aus (alte Armatur demontiert, neue Grohe Eurosmart 60€ montiert, Dichtigkeitsprüfung). <strong>Klausel mit 100€ Höchstbetrag:</strong> Austausch liegt über 100€ → Vermieter zahlt die vollen 139€, Mieter zahlt nichts.</p>
-
-      <h3>Beispiel 2: Schwergängiger Wasserhahn in Eimsbüttel</h3>
-      <p>Mieter meldet einen Wasserhahn, der sich nur noch schwer bewegen lässt. Reparatur: Kartuschentausch ohne neuer Armatur, 49€. <strong>Klausel mit 75€ Höchstbetrag:</strong> 49€ liegt unter der Grenze → Mieter zahlt aus der Klausel. Aber: die Jahresgrenze (8% der Nettokaltmiete) prüfen! Wenn Jahresmiete 9.600€, sind 8% = 768€ — Platz genug.</p>
-
-      <h3>Beispiel 3: Wasserhahn vom Mieter beschädigt (Harburg)</h3>
-      <p>Mieter zerbricht den Wasserhahn-Hebel beim Küchenumzug. <strong>Selbstverschuldet</strong> → Mieter haftet in voller Höhe, unabhängig von Klausel. Vermieter muss aber nachweisen, dass der Schaden nicht durch normale Abnutzung entstand.</p>
-
       <h2>Was tun, wenn der Wasserhahn defekt ist? Schritt-für-Schritt</h2>
 
-      <h3>1. Schriftliche Meldung an Vermieter</h3>
-      <p>Sofort melden — E-Mail, WhatsApp an Hausverwaltung, oder bei sehr formalen Vermietern: Einwurf-Einschreiben. Mit Datum, Foto und kurzer Beschreibung. Das ist wichtig als Dokumentation, falls es später Streit gibt.</p>
+      <div class="wm-step"><span class="wm-badge-n">1</span><div><h3>Schriftliche Meldung an Vermieter</h3><p>Sofort melden — E-Mail, WhatsApp an Hausverwaltung, oder bei sehr formalen Vermietern: Einwurf-Einschreiben. Mit Datum, Foto und kurzer Beschreibung. Das ist wichtig als Dokumentation, falls es später Streit gibt.</p></div></div>
+      <div class="wm-step"><span class="wm-badge-n">2</span><div><h3>Angemessene Frist setzen</h3><p>Normalerweise 10–14 Tage für die Beauftragung des Handwerkers. Bei akutem Wasserschaden (stark tropfend, Überlauf) sofort — 24–48 Stunden.</p></div></div>
+      <div class="wm-step"><span class="wm-badge-n">3</span><div><h3>Wenn Vermieter reagiert: Sie haben kein Problem</h3><p>Der Vermieter oder die Hausverwaltung beauftragt einen Handwerker, der die Reparatur durchführt. Mieter muss nichts tun (außer Zugang ermöglichen).</p></div></div>
+      <div class="wm-step"><span class="wm-badge-n">4</span><div><h3>Wenn Vermieter nicht reagiert: Eigeninitiative erlaubt (§536a BGB)</h3><p>Bei Gefahr im Verzug (Wasserverlust, Wasserschaden-Risiko) darf der Mieter selbst einen Handwerker beauftragen. Die Rechnung wird dem Vermieter nachträglich eingereicht, gegen Rückerstattung oder Verrechnung mit der Miete. <strong>Wichtig:</strong> Fristsetzung dokumentieren, Rechnung aufbewahren, Mahnung vor Selbstauftrag senden.</p></div></div>
+      <div class="wm-step"><span class="wm-badge-n">5</span><div><h3>Mietminderung als Druckmittel</h3><p>Wenn der Wasserhahn tagelang tropft und nicht behoben wird, darf der Mieter die Miete um einen kleinen Betrag (5–15% je nach Beeinträchtigung) mindern. Das muss schriftlich angekündigt werden.</p></div></div>
+      <div class="wm-step" style="border-bottom:none;"><span class="wm-badge-n">6</span><div><h3>Mieterverein oder Anwalt bei Streit</h3><p>In Hamburg: <strong>Mieterverein zu Hamburg von 1890 e.V.</strong> — Beitrag ca. 80€/Jahr, dafür kostenlose Rechtsberatung und im Streitfall Unterstützung. Alternativ: <strong>Mietrechtsschutz-Versicherung</strong> oder direkt ein Anwalt für Mietrecht.</p></div></div>
 
-      <h3>2. Angemessene Frist setzen</h3>
-      <p>Normalerweise 10–14 Tage für die Beauftragung des Handwerkers. Bei akutem Wasserschaden (stark tropfend, Überlauf) sofort — 24–48 Stunden.</p>
-
-      <h3>3. Wenn Vermieter reagiert: Sie haben kein Problem</h3>
-      <p>Der Vermieter oder die Hausverwaltung beauftragt einen Handwerker, der die Reparatur durchführt. Mieter muss nichts tun (außer Zugang ermöglichen).</p>
-
-      <h3>4. Wenn Vermieter nicht reagiert: Eigeninitiative erlaubt (§536a BGB)</h3>
-      <p>Bei Gefahr im Verzug (Wasserverlust, Wasserschaden-Risiko) darf der Mieter selbst einen Handwerker beauftragen. Die Rechnung wird dem Vermieter nachträglich eingereicht, gegen Rückerstattung oder Verrechnung mit der Miete. <strong>Wichtig:</strong> Fristsetzung dokumentieren, Rechnung aufbewahren, Mahnung vor Selbstauftrag senden.</p>
-
-      <h3>5. Mietminderung als Druckmittel</h3>
-      <p>Wenn der Wasserhahn tagelang tropft und nicht behoben wird, darf der Mieter die Miete um einen kleinen Betrag (5–15% je nach Beeinträchtigung) mindern. Das muss schriftlich angekündigt werden.</p>
-
-      <h3>6. Mieterverein oder Anwalt bei Streit</h3>
-      <p>In Hamburg: <strong>Mieterverein zu Hamburg von 1890 e.V.</strong> — Beitrag ca. 80€/Jahr, dafür kostenlose Rechtsberatung und im Streitfall Unterstützung. Alternativ: <strong>Mietrechtsschutz-Versicherung</strong> oder direkt ein Anwalt für Mietrecht.</p>
-
+      <div class="wm-eyebrow">Häufige Fragen</div>
       <h2>Häufige Fragen</h2>
 
-      <div class="faq-list">
-        <div class="faq-item">
-          <div class="faq-question">Ich habe einen günstigen Wasserhahn im Baumarkt gekauft und will ihn selbst einbauen. Dürfen Mieter das?</div>
-          <div class="faq-answer">Grundsätzlich ja, aber mit zwei Einschränkungen: (a) Informieren Sie den Vermieter schriftlich vor dem Austausch, (b) Bei Auszug muss der ursprüngliche Zustand wiederhergestellt werden (alte Armatur aufbewahren!). Besser: Vermieter direkt kontaktieren und bitten, den Austausch durch einen Handwerker zu veranlassen — das ist rechtssicherer.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Mein Vermieter will, dass ich den Handwerker suche und vorstrecke. Muss ich das?</div>
-          <div class="faq-answer">Nein — grundsätzlich ist der Vermieter für die Auftragsvergabe verantwortlich (§535 BGB). Nur bei Kleinreparaturen unter der Klausel-Grenze darf er delegieren. Lehnen Sie höflich schriftlich ab und verweisen Sie auf die gesetzliche Pflicht.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Muss ich den Wasserhahn reparieren lassen, bevor ich ausziehe?</div>
-          <div class="faq-answer">Wenn der Schaden durch normale Abnutzung entstand, nein. Der Vermieter muss die Mietsache selbst in Ordnung bringen. Wenn Sie den Schaden selbst verursacht haben, ja.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Mein Mietvertrag sagt „Mieter zahlt alle Reparaturen unter 200€". Ist das zulässig?</div>
-          <div class="faq-answer">Nein. Klauseln mit Höchstbeträgen über 120€ sind nach BGH-Rechtsprechung unwirksam. Die Klausel ist rechtlich nichtig → Sie zahlen gar nichts, der Vermieter trägt alle Reparaturkosten. Lassen Sie das im Zweifel von einem Mieterverein prüfen.</div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question">Zahlt der Vermieter auch für den Austausch wegen Kalk / Altersschwäche?</div>
-          <div class="faq-answer">Ja. Normale Abnutzung über die Jahre — Kalkablagerungen, verschlissene Dichtungen, schwergängige Hebel — ist immer Vermieter-Pflicht. Das gehört zur Erhaltung der Mietsache.</div>
-        </div>
+      <div class="wm-faq">
+        <details>
+          <summary>Ich habe einen günstigen Wasserhahn im Baumarkt gekauft und will ihn selbst einbauen. Dürfen Mieter das?</summary>
+          <p class="a">Grundsätzlich ja, aber mit zwei Einschränkungen: (a) Informieren Sie den Vermieter schriftlich vor dem Austausch, (b) Bei Auszug muss der ursprüngliche Zustand wiederhergestellt werden (alte Armatur aufbewahren!). Besser: Vermieter direkt kontaktieren und bitten, den Austausch durch einen Handwerker zu veranlassen — das ist rechtssicherer.</p>
+        </details>
+        <details>
+          <summary>Mein Vermieter will, dass ich den Handwerker suche und vorstrecke. Muss ich das?</summary>
+          <p class="a">Nein — grundsätzlich ist der Vermieter für die Auftragsvergabe verantwortlich (§535 BGB). Nur bei Kleinreparaturen unter der Klausel-Grenze darf er delegieren. Lehnen Sie höflich schriftlich ab und verweisen Sie auf die gesetzliche Pflicht.</p>
+        </details>
+        <details>
+          <summary>Muss ich den Wasserhahn reparieren lassen, bevor ich ausziehe?</summary>
+          <p class="a">Wenn der Schaden durch normale Abnutzung entstand, nein. Der Vermieter muss die Mietsache selbst in Ordnung bringen. Wenn Sie den Schaden selbst verursacht haben, ja.</p>
+        </details>
+        <details>
+          <summary>Mein Mietvertrag sagt „Mieter zahlt alle Reparaturen unter 200€". Ist das zulässig?</summary>
+          <p class="a">Nein. Klauseln mit Höchstbeträgen über 120€ sind nach BGH-Rechtsprechung unwirksam. Die Klausel ist rechtlich nichtig → Sie zahlen gar nichts, der Vermieter trägt alle Reparaturkosten. Lassen Sie das im Zweifel von einem Mieterverein prüfen.</p>
+        </details>
+        <details>
+          <summary>Zahlt der Vermieter auch für den Austausch wegen Kalk / Altersschwäche?</summary>
+          <p class="a">Ja. Normale Abnutzung über die Jahre — Kalkablagerungen, verschlissene Dichtungen, schwergängige Hebel — ist immer Vermieter-Pflicht. Das gehört zur Erhaltung der Mietsache.</p>
+        </details>
       </div>
 
       <h2>Wir machen den Austausch — auch für Vermieter</h2>
       <p>Als Handwerksbetrieb in Hamburg arbeiten wir regelmäßig für Vermieter und Hausverwaltungen. Wir stellen Rechnungen direkt an die Hausverwaltung (auch mit Formvorgaben wie USt-ID, Kostenträger-Nr.), bieten Same-Day-Service bei gemeldeten Mängeln und geben 5 Jahre Garantie auf alle Armatur-Austausche.</p>
-
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:24px 0;">
-        <div class="service-card">
-          <h3><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen in Hamburg</a></h3>
-          <p>Festpreis ab 89€, Küche oder Bad, Same-Day-Service. Einhebelmischer, Zweigriff, Niederdruck.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../../wasserhahn-harburg.html">Wasserhahn Harburg</a></h3>
-          <p>Speziell für den Bezirk Harburg mit lokalen Besonderheiten in Heimfeld und Neugraben-Fischbek.</p>
-        </div>
-        <div class="service-card">
-          <h3><a href="../services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></h3>
-          <p>Wenn komplett neue Leitungen oder Eckventile fällig sind.</p>
-        </div>
-      </div>
 
       <h2>Zusammenfassung</h2>
       <p>Wer zahlt den Wasserhahn-Austausch in der Mietwohnung? <strong>Grundsätzlich der Vermieter</strong> nach §535 BGB. Die Kleinreparaturklausel kann Mieter bis zu ca. 75–120€ pro Einzelreparatur in die Pflicht nehmen — aber nur, wenn die Klausel korrekt formuliert ist und nur bei Gegenständen, die dem direkten Mieterzugriff unterliegen. Da professionelle Armatur-Austausche typisch 130–250€ kosten, trägt in den meisten Fällen der Vermieter die volle Rechnung.</p>
 
       <p><strong>Unser Tipp:</strong> Bei Defekt immer sofort schriftlich melden, Frist setzen, und wenn der Vermieter nicht reagiert — Mieterverein kontaktieren. Selbst-Auftrag ohne Absprache kann Ärger bringen.</p>
 
+      <div class="wm-cta">
+        <h2>Wasserhahn defekt? Wir kommen schnell!</h2>
+        <p>Festpreis ab 89€, 5 Jahre Garantie, Same-Day in ganz Hamburg. Rechnung auf Wunsch direkt an Vermieter oder Hausverwaltung — ein Foto per WhatsApp genügt.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a class="wm-btn-wa" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20einen%20Wasserhahn-Austausch.">WhatsApp: Foto senden &amp; Festpreis erhalten</a>
+          <a class="wm-btn-tel" style="border-color:rgba(255,255,255,.45);" href="tel:+4915218547875">Anrufen: 0152 185 478 75</a>
+        </div>
+      </div>
+
+      <h2 style="font-size:24px;">Passende Leistungen</h2>
+      <div class="wm-rel" style="padding-bottom:8px;">
+        <a href="/armatur-austauschen-hamburg/">
+          <span class="t">Wasserhahn austauschen in Hamburg</span>
+          <span class="d">Festpreis ab 89€, Küche oder Bad, Same-Day-Service. Einhebelmischer, Zweigriff, Niederdruck.</span>
+          <span class="go">Zur Leistung →</span>
+        </a>
+        <a href="/eckventil-austauschen-hamburg/">
+          <span class="t">Eckventil austauschen Hamburg</span>
+          <span class="d">Festsitzende oder verkalkte Eckventile — beim Armatur-Wechsel nur 49€ Aufpreis pro Ventil.</span>
+          <span class="go">Zur Leistung →</span>
+        </a>
+        <a href="../../wasserhahn-harburg.html">
+          <span class="t">Wasserhahn Harburg</span>
+          <span class="d">Speziell für den Bezirk Harburg mit lokalen Besonderheiten in Heimfeld und Neugraben-Fischbek.</span>
+          <span class="go">Zur Leistung →</span>
+        </a>
+        <a href="../services/wasseranschluss-kueche-hamburg.html">
+          <span class="t">Wasseranschluss Küche</span>
+          <span class="d">Wenn komplett neue Leitungen oder Eckventile fällig sind.</span>
+          <span class="go">Zur Leistung →</span>
+        </a>
+      </div>
+
       <p style="font-size:12px;color:#666;margin-top:32px;border-top:1px solid #ddd;padding-top:12px;"><em>Haftungshinweis: Dieser Artikel ersetzt keine individuelle Rechtsberatung. Bei konkreten Streitigkeiten konsultieren Sie einen Mieterverein oder Anwalt für Mietrecht. Stand: April 2026, BGB-Paragraphen und BGH-Urteile können sich ändern.</em></p>
 
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Wasserhahn defekt? Wir kommen schnell!</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Festpreis ab 89€ | Same-Day-Service | 5 Jahre Garantie | Rechnung auch an Vermieter/Hausverwaltung</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20brauche%20einen%20Wasserhahn-Austausch." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  
+  </div>
   </main>
 
   <footer class="footer">
