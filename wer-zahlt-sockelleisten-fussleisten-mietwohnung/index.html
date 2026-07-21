@@ -64,29 +64,188 @@
       { "@type": "Question", "name": "Wer zahlt defekte Sockelleisten oder Fußleisten in der Mietwohnung?", "acceptedAnswer": { "@type": "Answer", "text": "Bei normalem Verschleiß (gelöste, vergilbte oder spröde Leisten) ist der Vermieter zuständig — Leisten gehören zur Mietsache, die er nach §535 BGB instand halten muss. Hat der Mieter den Schaden selbst verursacht (z. B. abgetreten, beim Möbelrücken beschädigt), zahlt er." } },
       { "@type": "Question", "name": "Fällt der Austausch von Fußleisten unter die Kleinreparaturklausel?", "acceptedAnswer": { "@type": "Answer", "text": "Nur eingeschränkt. Eine wirksame Kleinreparaturklausel verlangt einen Höchstbetrag pro Einzelreparatur (meist 75–120€) und eine Jahresobergrenze. Bleibt die Reparatur darunter und betrifft sie Teile des häufigen Mieterzugriffs, kann der Mieter beteiligt werden. Übersteigt sie die Grenze oder fehlt eine der Voraussetzungen, zahlt der Vermieter." } },
       { "@type": "Question", "name": "Wer zahlt die Sockelblende der Einbauküche?", "acceptedAnswer": { "@type": "Answer", "text": "Gehört die Einbauküche zur mitvermieteten Wohnung, ist die Sockelblende (Sockelleiste der Küche) Teil der Mietsache — bei Verschleiß zahlt der Vermieter. Gehört die Küche dem Mieter, trägt er Reparatur und Austausch selbst." } },
-      { "@type": "Question", "name": "Muss der Mieter Fußleisten beim Auszug erneuern?", "acceptedAnswer": { "@type": "Answer", "text": "Normale Abnutzung muss der Mieter nicht ersetzen — sie ist mit der Miete abgegolten (§538 BGB). Nur selbst verursachte Schäden über die normale Abnutzung hinaus muss er beheben. Das Streichen von Fußleisten kann unter wirksam vereinbarte Schönheitsreparaturen fallen; der komplette Austausch verschlissener Leisten ist dagegen Instandhaltung und Vermietersache." } }
+      { "@type": "Question", "name": "Muss der Mieter Fußleisten beim Auszug erneuern?", "acceptedAnswer": { "@type": "Answer", "text": "Normale Abnutzung muss der Mieter nicht ersetzen — sie ist mit der Miete abgegolten (§538 BGB). Nur selbst verursachte Schäden über die normale Abnutzung hinaus muss er beheben. Das Streichen von Fußleisten kann unter wirksam vereinbarte Schönheitsreparaturen fallen; der komplette Austausch verschlissener Leisten ist dagegen Instandhaltung und Vermietersache." } },
+      { "@type": "Question", "name": "Wer repariert oder tauscht Sockelleisten und Fußleisten in Hamburg mit Rechnung für den Vermieter?", "acceptedAnswer": { "@type": "Answer", "text": "Küchenmontage Hamburg montiert, ergänzt und erneuert Sockel-, Pass- und Fußleisten in ganz Hamburg (ab 59€) — mit ordentlicher Rechnung, die Sie direkt beim Vermieter oder der Hausverwaltung einreichen können. Same-Day-Termin per WhatsApp: 0152 185 478 75." } },
+      { "@type": "Question", "name": "Was kostet die Sockelleisten-Montage in Hamburg?", "acceptedAnswer": { "@type": "Answer", "text": "Die Montage von Sockel- und Passleisten in der Küche kostet bei Küchenmontage Hamburg ab 59€. Bleibt eine Reparatur unter der Kleinreparatur-Grenze (75–120€), kann der Mieter bei wirksamer Klausel beteiligt werden; größere Arbeiten oder Verschleiß ohne wirksame Klausel zahlt der Vermieter voll. Anfrage per WhatsApp: 0152 185 478 75." } }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/redesign-dark.css">
+  <style>
+    /* ---------- страничные стили тёмного редизайна (только .ws-*) ---------- */
+
+    /* Header */
+    .ws-header { position: sticky; top: 0; z-index: 50; background: var(--km-bg); border-bottom: 1px solid var(--km-border); }
+    .ws-header-in { max-width: 1200px; margin: 0 auto; padding: 12px 48px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .ws-logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; font-size: 15px; color: var(--km-text-hi); text-decoration: none; }
+    .ws-logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: var(--km-accent); color: #fff; font-weight: 700; font-size: 16px; }
+    .ws-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 22px; }
+    .ws-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 13.5px; color: var(--km-text-mid); text-decoration: none; }
+    .ws-nav a:hover, .ws-nav a.ws-nav-active { color: var(--km-text-hi); }
+
+    /* Hero */
+    .ws-hero { max-width: var(--km-container); margin: 0 auto; padding: 72px 32px 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; position: relative; }
+    .ws-qr-card { position: absolute; right: 32px; top: 4px; background: #FAF7F2; color: #0C1B2A; border-radius: 18px; padding: 13px; display: flex; gap: 13px; align-items: center; box-shadow: 0 40px 60px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.04); transform: rotate(3deg); max-width: 290px; text-decoration: none; z-index: 3; }
+    .ws-qr-card .ws-qr { width: 78px; height: 78px; border-radius: 10px; background: #fff; display: grid; place-items: center; flex: none; overflow: hidden; padding: 4px; }
+    .ws-qr-card .ws-qr img { width: 100%; height: 100%; object-fit: contain; }
+    .ws-qr-card .ws-qr-tel { font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: #1F8A5B; line-height: 1.1; }
+    .ws-qr-card .ws-qr-lbl { font-size: 14px; color: #1F8A5B; font-weight: 600; margin-top: 6px; display: inline-flex; align-items: flex-start; gap: 6px; line-height: 1.25; }
+    .ws-qr-card .ws-qr-lbl svg { color: #1F8A5B; width: 15px; height: 15px; margin-top: 2px; flex: none; }
+    @media (max-width: 1100px) { .ws-qr-card { display: none; } }
+    .ws-crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12.5px; color: var(--km-text-dim); }
+    .ws-crumbs a { color: var(--km-text-dim); text-decoration: none; }
+    .ws-crumbs a:hover { color: var(--km-text-hi); }
+    .ws-pill { display: inline-block; padding: 6px 14px; border: 1px solid var(--km-border-strong); border-radius: var(--km-radius-pill); font-size: 12.5px; color: var(--km-text-mid); }
+    .ws-h1 { margin: 0; font-size: 44px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; color: var(--km-text-hi); max-width: 18ch; }
+    .ws-h1 em { font-style: italic; color: var(--km-salmon); }
+    .ws-lead { margin: 0; font-size: 16px; line-height: 1.7; color: var(--km-text); max-width: 60ch; }
+    .ws-cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .ws-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 13px 22px; border-radius: var(--km-radius-btn); font-size: 14px; font-weight: 600; text-decoration: none; text-align: center; }
+    .ws-btn-primary { background: var(--km-accent); color: #fff; }
+    .ws-btn-primary:hover { background: var(--km-accent-hover); }
+    .ws-btn-outline { border: 1px solid var(--km-border-strong); color: var(--km-text-hi); }
+    .ws-btn-outline:hover { border-color: var(--km-border-hover); }
+    .ws-stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 8px; }
+    .ws-stat { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--km-border-card); padding-left: 20px; }
+    .ws-stat-v { font-size: 24px; font-weight: 700; color: var(--km-text-hi); }
+    .ws-stat-l { font-size: 12.5px; color: var(--km-text-dim); }
+    .ws-trustbar { background: var(--km-surface-deep); border-top: 1px solid var(--km-border); border-bottom: 1px solid var(--km-border); }
+    .ws-trustbar-in { max-width: var(--km-container); margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 12.5px; color: var(--km-text-dim); }
+
+    /* Main */
+    .ws-main { max-width: var(--km-container); margin: 0 auto; padding: 56px 32px 96px; display: flex; flex-direction: column; gap: 64px; }
+    .ws-main strong { color: var(--km-text-hi); font-weight: 600; }
+    .ws-h2 { margin: 0 0 20px; font-size: 26px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .ws-eyebrow { display: block; margin: 0 0 10px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .ws-card { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); padding: 24px; }
+    .ws-prose p { margin: 0 0 14px; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+    .ws-prose p:last-child { margin-bottom: 0; }
+
+    /* a. Kurze Antwort */
+    .ws-answer-pill { display: inline-block; padding: 5px 12px; border: 1px solid var(--km-salmon-border); border-radius: var(--km-radius-pill); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .ws-answer p { margin: 14px 0 0; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+
+    /* b. Kleinreparaturklausel-лимиты */
+    .ws-limits { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    .ws-limit { display: flex; gap: 16px; align-items: flex-start; padding: 14px 16px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .ws-limit-label { flex: none; min-width: 76px; font-size: 14px; font-weight: 700; color: var(--km-text-hi); }
+    .ws-limit-text { font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .ws-warn { margin-top: 16px; padding: 16px 18px; background: var(--km-warn-bg); border: 1px solid var(--km-warn-border); border-radius: var(--km-radius-card); font-size: 13.5px; line-height: 1.7; color: var(--km-warn-text); }
+    .ws-warn strong { color: var(--km-warn-strong); }
+    .ws-warn ul { margin: 10px 0 0; padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+
+    /* c. Списки */
+    .ws-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.7; color: var(--km-text-body); }
+    .ws-list li::marker { color: var(--km-salmon); }
+
+    /* d. Грид прайс-карточек (стиль образца) */
+    .ws-price-card { display: flex; flex-direction: column; gap: 8px; padding: 22px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .ws-price-card:hover { border-color: var(--km-border-hover); }
+    .ws-price-card h3 { margin: 0; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .ws-price-note { margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
+    .ws-price-intro { margin: 0 0 20px; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
+    .ws-cardlink { margin-top: auto; padding: 12px 0 0; display: inline-flex; align-items: center; min-height: 32px; font-size: 13.5px; font-weight: 600; color: var(--km-salmon); text-decoration: none; }
+    .ws-cardlink:hover { color: var(--km-salmon-hover); }
+    /* stretched-link: карточка кликабельна целиком, без JS */
+    .ws-price-card { position: relative; }
+    .ws-price-card .ws-cardlink::after { content: ""; position: absolute; inset: 0; }
+    .ws-price-card a:not(.ws-cardlink) { position: relative; z-index: 1; }
+    .ws-defects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .ws-defect h3 a { color: var(--km-text-hi); text-decoration: none; }
+    .ws-defect h3 a:hover { color: var(--km-salmon); }
+    @media (max-width: 1000px) { .ws-defects { grid-template-columns: 1fr 1fr; } }
+
+    /* e. Ссылки в прозе / хелп-блоке */
+    .ws-prose a, .ws-help a, .ws-answer a { color: var(--km-salmon); text-decoration: none; }
+    .ws-prose a:hover, .ws-help a:hover, .ws-answer a:hover { color: var(--km-salmon-hover); }
+    .ws-help h2 { margin: 0 0 12px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .ws-help p { margin: 0 0 12px; font-size: 14px; line-height: 1.75; color: var(--km-text-body); }
+    .ws-help p:last-child { margin-bottom: 0; }
+
+    /* f. Schritte */
+    .ws-step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--km-border-faint); }
+    .ws-step:last-child { border-bottom: none; }
+    .ws-step-num { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--km-border-strong); border-radius: 50%; font-size: 13px; font-weight: 600; color: var(--km-text-hi); }
+    .ws-step h3 { margin: 3px 0 6px; font-size: 14.5px; font-weight: 600; color: var(--km-text-hi); }
+    .ws-step p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* g. FAQ */
+    .ws-faq { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .ws-faq + .ws-faq { margin-top: 10px; }
+    .ws-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 14px 18px; font-size: 14.5px; font-weight: 600; line-height: 1.5; color: var(--km-text-hi); }
+    .ws-faq summary::-webkit-details-marker { display: none; }
+    .ws-faq summary::after { content: "▾"; flex: none; color: var(--km-text-dim); transition: transform 0.2s ease; }
+    .ws-faq[open] summary::after { transform: rotate(180deg); }
+    .ws-faq div { padding: 0 18px 16px; font-size: 13.5px; line-height: 1.75; color: var(--km-text-mid); }
+
+    /* j. Финальная CTA */
+    .ws-finalcta { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 48px 32px; text-align: center; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-cta); }
+    .ws-finalcta h2 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .ws-finalcta p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .ws-cta-center { justify-content: center; }
+
+    /* l. Haftungshinweis */
+    .ws-disclaimer { margin: 0; padding-top: 14px; border-top: 1px solid var(--km-border-faint); font-size: 11.5px; line-height: 1.6; color: var(--km-text-faint); }
+
+    /* Footer */
+    .ws-footer { border-top: 1px solid var(--km-border); background: #0A1623; }
+    .ws-footer-brandrow { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+    .ws-footer-logo { width: 34px; height: 34px; border-radius: 8px; background: var(--km-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+    .ws-footer-brand b { display: block; font-size: 14px; color: var(--km-text-hi); }
+    .ws-footer-brand span { font-size: 10.5px; letter-spacing: .08em; color: var(--km-text-faint); text-transform: uppercase; }
+    .ws-footer h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+    .ws-footer-in { max-width: 1080px; margin: 0 auto; padding: 48px 32px 24px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+    .ws-footer h3 { margin: 0 0 12px; font-size: 13.5px; font-weight: 700; color: var(--km-text-hi); }
+    .ws-footer-about { margin: 0; font-size: 12.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .ws-footer ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .ws-footer ul a, .ws-footer-contact a { font-size: 12.5px; color: var(--km-text); text-decoration: none; }
+    .ws-footer ul a:hover, .ws-footer-contact a:hover { color: var(--km-text-hi); }
+    .ws-footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; color: var(--km-text); }
+    .ws-footer-bottom { max-width: 1080px; margin: 0 auto; padding: 18px 32px 28px; border-top: 1px solid var(--km-border-faint); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; font-size: 12px; color: var(--km-text-faint); }
+    .ws-footer-bottom a { color: var(--km-text-faint); text-decoration: none; }
+    .ws-footer-bottom a:hover { color: var(--km-text-hi); }
+
+    /* ---------- мобильная адаптация ---------- */
+    @media (max-width: 720px) {
+      .ws-header-in { padding: 10px 20px; gap: 8px 16px; }
+      .ws-nav { gap: 2px 16px; }
+      .ws-nav a { font-size: 13px; }
+      .ws-nav-sec { display: none; }
+      .ws-hero { padding: 40px 20px 36px; gap: 20px; }
+      .ws-h1 { font-size: 30px; }
+      .ws-cta-row { width: 100%; flex-direction: column; }
+      .ws-cta-row .ws-btn { width: 100%; }
+      .ws-stats { flex-direction: column; gap: 16px; }
+      .ws-trustbar-in { padding: 12px 20px; gap: 4px 18px; }
+      .ws-main { padding: 40px 20px 72px; gap: 48px; }
+      .ws-defects { grid-template-columns: 1fr; }
+      .ws-finalcta { padding: 36px 20px; }
+      .ws-footer-in { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px 16px; }
+      .ws-footer-bottom { padding: 14px 20px 24px; }
+    }
+  </style>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/img/favicon/site.webmanifest">
   <meta name="theme-color" content="#0a4d8c">
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="7brbFTNzw2pFtPorKvADZw" async></script>
 </head>
-<body>
+<body class="km-dark ws">
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">K</div>Küchenmontage Hamburg</a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
+  <!-- HEADER -->
+  <header class="ws-header">
+    <div class="ws-header-in">
+      <a href="/" class="ws-logo"><span class="ws-logo-mark">K</span>Küchenmontage Hamburg</a>
+      <nav class="ws-nav" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
         <a href="/#leistungen">Leistungen</a>
         <a href="/pages/preise.html">Preise</a>
-        <a href="/#stadtteile">Stadtteile</a>
+        <a href="/#stadtteile" class="ws-nav-sec">Stadtteile</a>
+        <a href="/#bewertungen" class="ws-nav-sec">Bewertungen</a>
         <a href="/pages/blog/">Blog</a>
         <a href="/pages/kontakt.html">Kontakt</a>
       </nav>
@@ -94,111 +253,252 @@
   </header>
 
   <main>
-  <section class="service-hero">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="/kleinreparaturen-mieter-vermieter/" style="color:rgba(255,255,255,0.7)">Kleinreparaturen</a> &rsaquo;
-        <span>Sockel- &amp; Fußleisten</span>
+
+    <!-- HERO -->
+    <section class="ws-hero">
+    <a class="ws-qr-card" href="https://wa.me/4915218547875" target="_blank" rel="noopener" aria-label="WhatsApp QR-Code — direkt zu WhatsApp">
+      <div class="ws-qr"><img width="370" height="370" src="/img/whatsapp-qr.webp" alt="WhatsApp QR-Code" loading="lazy"></div>
+      <div>
+        <div class="ws-qr-tel">0152 185 478 75</div>
+        <div class="ws-qr-lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg><span>Bitte per WhatsApp<br>anrufen</span></div>
+      </div>
+    </a>
+      <nav class="ws-crumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a> <span>›</span> <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen</a> <span>›</span> <span>Sockel- &amp; Fußleisten</span>
       </nav>
-      <h1>Sockelleisten &amp; Fußleisten in der Mietwohnung – wer zahlt?</h1>
-      <p class="service-hero-sub">Lose, vergilbte oder beschädigte Sockel- und Fußleisten in der Mietwohnung — Mieter oder Vermieter? Es kommt auf die Ursache an. Rechtslage 2026. Stand: Juni 2026.</p>
-    </div>
-  </section>
-
-  <section class="service-content">
-    <div class="container" style="max-width:820px;">
-      <p style="background:#fff8dc;padding:16px;border-radius:8px;border-left:4px solid #e6b800;"><strong>Kurze Antwort:</strong> Bei <strong>normalem Verschleiß</strong> (Leisten lösen sich, vergilben, werden spröde) zahlt der <strong>Vermieter</strong> — Leisten gehören zur Mietsache (§535 BGB). Hat der <strong>Mieter</strong> den Schaden selbst verursacht, trägt er die Kosten.</p>
-
-      <h2>Die Rechtslage</h2>
-      <p>Sockelleisten und Fußleisten sind fester Bestandteil der Wohnung und damit Teil der <strong>Mietsache</strong>. Nach <strong>§535 BGB</strong> muss der Vermieter die Mietsache in gebrauchsfähigem Zustand erhalten — dazu gehört, verschlissene Leisten instand zu setzen. Normale Abnutzung ist nach <strong>§538 BGB</strong> mit der Miete abgegolten; der Mieter muss sie nicht ersetzen. Anders, wenn der Schaden über die normale Abnutzung hinausgeht und vom Mieter verursacht wurde.</p>
-
-      <h2>Greift die Kleinreparaturklausel?</h2>
-      <p>Teilweise: Eine <strong>wirksame Kleinreparaturklausel</strong> kann den Mieter an kleinen Reparaturen beteiligen — aber nur mit Höchstbetrag pro Einzelreparatur (meist 75–120€) <em>und</em> Jahresobergrenze, und nur für Teile des häufigen Mieterzugriffs. Übersteigt der Leistenaustausch die Grenze oder fehlt eine Voraussetzung, zahlt der Vermieter komplett. Übersicht: <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt?</a></p>
-
-      <h2>Kurz gesagt: Wer zahlt?</h2>
-      <ul>
-        <li><strong>Leisten lösen sich / vergilben (Verschleiß):</strong> Vermieter.</li>
-        <li><strong>Sockelblende der mitvermieteten Einbauküche:</strong> Vermieter (Verschleiß).</li>
-        <li><strong>Mieter hat Leiste selbst beschädigt (Möbelrücken, Tritt):</strong> Mieter.</li>
-        <li><strong>Eigene Küche des Mieters:</strong> Mieter.</li>
-        <li><strong>Wasserschaden durch undichte Abschlussleiste, zu spät gemeldet:</strong> ggf. Mieter (Schadensminderungspflicht).</li>
-      </ul>
-
-      <h2>Was kostet die Montage in Hamburg?</h2>
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:20px 0;">
-        <div class="service-card"><h3>Sockelleisten / Passleisten Küche</h3><p><strong>Preis nach Anfrage</strong> (montieren, ergänzen, erneuern)</p></div>
-        <div class="service-card"><h3>Abschlussleiste Arbeitsplatte</h3><p><strong>Preis nach Anfrage</strong> (Wandabschluss tauschen &amp; abdichten)</p></div>
-        <div class="service-card"><h3>Silikonfugen erneuern</h3><p><strong>nach Anfrage</strong></p></div>
+      <span class="ws-pill">Ratgeber Mietrecht</span>
+      <h1 class="ws-h1">Sockelleisten &amp; Fußleisten in der Mietwohnung – <em>wer zahlt?</em></h1>
+      <p class="ws-lead">Lose, vergilbte oder beschädigte Sockel- und Fußleisten in der Mietwohnung — Mieter oder Vermieter? Es kommt auf die Ursache an. Rechtslage 2026. Stand: Juni 2026.</p>
+      <div class="ws-cta-row">
+        <a class="ws-btn ws-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20Sockel-%2FFu%C3%9Fleisten%20m%C3%BCssen%20erneuert%20werden.">Leisten defekt? Festpreis per WhatsApp →</a>
+        <a class="ws-btn ws-btn-outline" href="tel:+4915218547875">0152 185 478 75</a>
       </div>
-
-      <h2>Schritt-für-Schritt richtig vorgehen</h2>
-      <ol>
-        <li>Ursache klären: normaler Verschleiß oder selbst verursacht?</li>
-        <li>Schaden dokumentieren (Fotos), Mietvertrag auf Kleinreparatur-/Schönheitsreparaturklausel prüfen.</li>
-        <li>Bei Verschleiß: schriftlich beim Vermieter melden und Frist setzen.</li>
-        <li>Bei eigener Küche oder selbst verursacht: Handwerker beauftragen — wir geben transparente Rechnung.</li>
-      </ol>
-
-      <h2>Häufige Fragen</h2>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-question">Wer zahlt defekte Sockel-/Fußleisten in der Mietwohnung?</div><div class="faq-answer">Bei Verschleiß der Vermieter (§535 BGB); selbst verursacht → Mieter.</div></div>
-        <div class="faq-item"><div class="faq-question">Fällt der Austausch unter die Kleinreparaturklausel?</div><div class="faq-answer">Nur bei wirksamer Klausel und unterhalb der Grenze (75–120€). Sonst zahlt der Vermieter.</div></div>
-        <div class="faq-item"><div class="faq-question">Wer zahlt die Sockelblende der Einbauküche?</div><div class="faq-answer">Mitvermietete Küche → Vermieter bei Verschleiß; eigene Küche → Mieter.</div></div>
-        <div class="faq-item"><div class="faq-question">Muss der Mieter beim Auszug Fußleisten erneuern?</div><div class="faq-answer">Normale Abnutzung nein (§538 BGB); nur selbst verursachte Schäden.</div></div>
+      <div class="ws-stats">
+        <div class="ws-stat"><span class="ws-stat-v">18+</span><span class="ws-stat-l">Jahre Erfahrung</span></div>
+        <div class="ws-stat"><span class="ws-stat-v">2.500+</span><span class="ws-stat-l">Zufriedene Kunden</span></div>
+        <div class="ws-stat"><span class="ws-stat-v">59 €</span><span class="ws-stat-l">Festpreis ab</span></div>
       </div>
+    </section>
 
-      <div style="background:#eef4ff;padding:20px;border-radius:10px;border-left:4px solid #2563eb;margin:28px 0;">
-        <h2 style="margin-top:0;">Leisten montieren lassen — Hamburg, mit Rechnung</h2>
-        <p style="margin-bottom:8px;">Wir montieren, ergänzen und erneuern <strong>Sockel-, Pass- und Abschlussleisten</strong> sauber und dichten die Fuge ab — mit <strong>Rechnung auch an Vermieter/Hausverwaltung</strong>. Same-Day möglich.</p>
-        <p style="margin:0;"><a href="/pages/services/sockelleisten-passleisten-kueche-hamburg.html"><strong>→ Sockelleisten montieren in Hamburg</strong></a> &nbsp;·&nbsp; <a href="/abschlussleiste-arbeitsplatte-hamburg/"><strong>→ Abschlussleiste Arbeitsplatte</strong></a></p>
+    <div class="ws-trustbar">
+      <div class="ws-trustbar-in">
+        <span>Festpreise — keine versteckten Kosten</span>
+        <span>Same-Day-Service</span>
+        <span>18 Jahre Erfahrung</span>
+        <span>5 Jahre Garantie</span>
       </div>
-
-      <h2>Weitere „wer zahlt"-Ratgeber</h2>
-      <ul>
-        <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt? (Übersicht)</a></li>
-        <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle – wer zahlt?</a></li>
-        <li><a href="/wer-zahlt-dunstabzugshaube-mietwohnung/">Dunstabzugshaube – wer zahlt?</a></li>
-      </ul>
-
-      <p style="font-size:12px;color:#666;margin-top:32px;border-top:1px solid #ddd;padding-top:12px;"><em>Haftungshinweis: Allgemeine Information, keine Rechtsberatung. Maßgeblich sind Ihr Mietvertrag und der Einzelfall. Bei Streit: Mieterverein oder Anwalt für Mietrecht. Stand: Juni 2026.</em></p>
     </div>
-  </section>
 
-  <section class="cta-section">
-    <div class="container">
-      <h2>Leisten lose oder beschädigt? Wir kommen schnell</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Same-Day in Hamburg | Preis nach Anfrage | Rechnung auch an Vermieter/Hausverwaltung</p>
-      <div class="cta-buttons"><a href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20Sockel-%2FFu%C3%9Fleisten%20m%C3%BCssen%20erneuert%20werden." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a></div>
+    <div class="ws-main">
+
+      <!-- a. Kurze Antwort -->
+      <section class="ws-card ws-answer">
+        <span class="ws-answer-pill">Kurze Antwort</span>
+        <p>Bei <strong>normalem Verschleiß</strong> (Leisten lösen sich, vergilben, werden spröde) zahlt der <strong>Vermieter</strong> — Leisten gehören zur Mietsache (§535 BGB). Hat der <strong>Mieter</strong> den Schaden selbst verursacht, trägt er die Kosten.</p>
+      </section>
+
+      <!-- b. Die Rechtslage -->
+      <section>
+        <h2 class="ws-h2">Die Rechtslage</h2>
+        <div class="ws-card ws-prose">
+          <p>Sockelleisten und Fußleisten sind fester Bestandteil der Wohnung und damit Teil der <strong>Mietsache</strong>. Nach <strong>§535 BGB</strong> muss der Vermieter die Mietsache in gebrauchsfähigem Zustand erhalten — dazu gehört, verschlissene Leisten instand zu setzen. Normale Abnutzung ist nach <strong>§538 BGB</strong> mit der Miete abgegolten; der Mieter muss sie nicht ersetzen. Anders, wenn der Schaden über die normale Abnutzung hinausgeht und vom Mieter verursacht wurde.</p>
+        </div>
+      </section>
+
+      <!-- c. Kleinreparaturklausel -->
+      <section>
+        <h2 class="ws-h2">Greift die Kleinreparaturklausel?</h2>
+        <div class="ws-card ws-prose">
+          <p>Teilweise: Eine <strong>wirksame Kleinreparaturklausel</strong> kann den Mieter an kleinen Reparaturen beteiligen — aber nur mit Höchstbetrag pro Einzelreparatur (meist 75–120€) <em>und</em> Jahresobergrenze, und nur für Teile des häufigen Mieterzugriffs. Übersteigt der Leistenaustausch die Grenze oder fehlt eine Voraussetzung, zahlt der Vermieter komplett. Übersicht: <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt?</a></p>
+        </div>
+      </section>
+
+      <!-- d. Kurz gesagt -->
+      <section>
+        <h2 class="ws-h2">Kurz gesagt: Wer zahlt?</h2>
+        <div class="ws-card">
+          <ul class="ws-list">
+            <li><strong>Leisten lösen sich / vergilben (Verschleiß):</strong> Vermieter.</li>
+            <li><strong>Sockelblende der mitvermieteten Einbauküche:</strong> Vermieter (Verschleiß).</li>
+            <li><strong>Mieter hat Leiste selbst beschädigt (Möbelrücken, Tritt):</strong> Mieter.</li>
+            <li><strong>Eigene Küche des Mieters:</strong> Mieter.</li>
+            <li><strong>Wasserschaden durch undichte Abschlussleiste, zu spät gemeldet:</strong> ggf. Mieter (Schadensminderungspflicht).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- e. Прайс-грид: кликабельные карточки -->
+      <section>
+        <span class="ws-eyebrow">Preise in Hamburg</span>
+        <h2 class="ws-h2">Was kostet die Montage in Hamburg?</h2>
+        <div class="ws-defects">
+          <div class="ws-price-card">
+            <h3>Sockelleisten / Passleisten Küche</h3>
+            <p class="ws-price-note"><strong>ab 59€</strong> (montieren, ergänzen, erneuern)</p>
+            <a class="ws-cardlink" href="/pages/services/sockelleisten-passleisten-kueche-hamburg.html">Sockelleisten ab 59€ →</a>
+          </div>
+          <div class="ws-price-card">
+            <h3>Abschlussleiste Arbeitsplatte</h3>
+            <p class="ws-price-note"><strong>Preis nach Anfrage</strong> (Wandabschluss tauschen &amp; abdichten)</p>
+            <a class="ws-cardlink" href="/abschlussleiste-arbeitsplatte-hamburg/">Festpreis anfragen →</a>
+          </div>
+          <div class="ws-price-card">
+            <h3>Silikonfugen erneuern</h3>
+            <p class="ws-price-note"><strong>ab 59€</strong> Festpreis</p>
+            <a class="ws-cardlink" href="/pages/services/silikonfugen-kueche-erneuern-hamburg.html">Silikonfugen ab 59€ →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- f. Schritt-für-Schritt -->
+      <section>
+        <h2 class="ws-h2">Schritt-für-Schritt richtig vorgehen</h2>
+        <div class="ws-step">
+          <span class="ws-step-num">1</span>
+          <div>
+            <h3>Ursache klären</h3>
+            <p>Normaler Verschleiß oder selbst verursacht?</p>
+          </div>
+        </div>
+        <div class="ws-step">
+          <span class="ws-step-num">2</span>
+          <div>
+            <h3>Schaden dokumentieren</h3>
+            <p>Fotos machen, Mietvertrag auf Kleinreparatur-/Schönheitsreparaturklausel prüfen.</p>
+          </div>
+        </div>
+        <div class="ws-step">
+          <span class="ws-step-num">3</span>
+          <div>
+            <h3>Bei Verschleiß: Vermieter informieren</h3>
+            <p>Schriftlich beim Vermieter melden und Frist setzen.</p>
+          </div>
+        </div>
+        <div class="ws-step">
+          <span class="ws-step-num">4</span>
+          <div>
+            <h3>Eigene Küche oder selbst verursacht</h3>
+            <p>Handwerker beauftragen — wir geben transparente Rechnung.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- g. FAQ (6 вопросов; 2 новых = дословно FAQPage-схема) -->
+      <section>
+        <span class="ws-eyebrow">FAQ</span>
+        <h2 class="ws-h2">Häufige Fragen</h2>
+        <details class="ws-faq">
+          <summary>Wer zahlt defekte Sockel-/Fußleisten in der Mietwohnung?</summary>
+          <div>Bei Verschleiß der Vermieter (§535 BGB); selbst verursacht → Mieter.</div>
+        </details>
+        <details class="ws-faq">
+          <summary>Fällt der Austausch unter die Kleinreparaturklausel?</summary>
+          <div>Nur bei wirksamer Klausel und unterhalb der Grenze (75–120€). Sonst zahlt der Vermieter.</div>
+        </details>
+        <details class="ws-faq">
+          <summary>Wer zahlt die Sockelblende der Einbauküche?</summary>
+          <div>Mitvermietete Küche → Vermieter bei Verschleiß; eigene Küche → Mieter.</div>
+        </details>
+        <details class="ws-faq">
+          <summary>Muss der Mieter beim Auszug Fußleisten erneuern?</summary>
+          <div>Normale Abnutzung nein (§538 BGB); nur selbst verursachte Schäden.</div>
+        </details>
+        <details class="ws-faq">
+          <summary>Wer repariert oder tauscht Sockelleisten und Fußleisten in Hamburg mit Rechnung für den Vermieter?</summary>
+          <div>Küchenmontage Hamburg montiert, ergänzt und erneuert Sockel-, Pass- und Fußleisten in ganz Hamburg (ab 59€) — mit ordentlicher Rechnung, die Sie direkt beim Vermieter oder der Hausverwaltung einreichen können. Same-Day-Termin per WhatsApp: 0152 185 478 75.</div>
+        </details>
+        <details class="ws-faq">
+          <summary>Was kostet die Sockelleisten-Montage in Hamburg?</summary>
+          <div>Die Montage von Sockel- und Passleisten in der Küche kostet bei Küchenmontage Hamburg ab 59€. Bleibt eine Reparatur unter der Kleinreparatur-Grenze (75–120€), kann der Mieter bei wirksamer Klausel beteiligt werden; größere Arbeiten oder Verschleiß ohne wirksame Klausel zahlt der Vermieter voll. Anfrage per WhatsApp: 0152 185 478 75.</div>
+        </details>
+      </section>
+
+      <!-- h. Money-CTA: бренд-пассаж -->
+      <section class="ws-card ws-help">
+        <h2>Leisten montieren lassen — Hamburg, mit Rechnung</h2>
+        <p>Küchenmontage Hamburg montiert, ergänzt und erneuert <strong>Sockel-, Pass- und Abschlussleisten</strong> sauber und dichtet die Fuge ab — mit <strong>Rechnung auch an Vermieter/Hausverwaltung</strong>. Same-Day möglich.</p>
+        <p><a href="/pages/services/sockelleisten-passleisten-kueche-hamburg.html"><strong>→ Sockelleisten montieren in Hamburg</strong></a> &nbsp;·&nbsp; <a href="/abschlussleiste-arbeitsplatte-hamburg/"><strong>→ Abschlussleiste Arbeitsplatte</strong></a></p>
+      </section>
+
+      <!-- i. Weitere Ratgeber -->
+      <section>
+        <h2 class="ws-h2">Weitere „wer zahlt&quot;-Ratgeber</h2>
+        <div class="ws-card ws-prose">
+          <ul class="ws-list">
+            <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt? (Übersicht)</a></li>
+            <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle – wer zahlt?</a></li>
+            <li><a href="/wer-zahlt-dunstabzugshaube-mietwohnung/">Dunstabzugshaube – wer zahlt?</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- j. Финальная CTA -->
+      <section class="ws-finalcta">
+        <h2>Leisten lose oder beschädigt? Wir kommen schnell</h2>
+        <p>Same-Day in Hamburg | Preis nach Anfrage | Rechnung auch an Vermieter/Hausverwaltung</p>
+        <div class="ws-cta-row ws-cta-center">
+          <a class="ws-btn ws-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20Sockel-%2FFu%C3%9Fleisten%20m%C3%BCssen%20erneuert%20werden.">&#128172; WhatsApp anfragen</a>
+          <a class="ws-btn ws-btn-outline" href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+        </div>
+      </section>
+
+      <!-- l. Haftungshinweis -->
+      <p class="ws-disclaimer"><em>Haftungshinweis: Allgemeine Information, keine Rechtsberatung. Maßgeblich sind Ihr Mietvertrag und der Einzelfall. Bei Streit: Mieterverein oder Anwalt für Mietrecht. Stand: Juni 2026.</em></p>
+
     </div>
-  </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><h3>Küchenmontage Hamburg</h3><p class="footer-about">Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren.</p></div>
-        <div><h3>Leistungen</h3><ul>
-          <li><a href="/pages/services/sockelleisten-passleisten-kueche-hamburg.html">Sockelleisten montieren</a></li>
-          <li><a href="/abschlussleiste-arbeitsplatte-hamburg/">Abschlussleiste Arbeitsplatte</a></li>
-          <li><a href="/pages/services/silikonfugen-kueche-erneuern-hamburg.html">Silikonfugen erneuern</a></li>
-        </ul></div>
-        <div><h3>Wer zahlt? — Ratgeber</h3><ul>
-          <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen: wer zahlt?</a></li>
-          <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle: wer zahlt?</a></li>
-          <li><a href="/wer-zahlt-dunstabzugshaube-mietwohnung/">Dunstabzugshaube: wer zahlt?</a></li>
-        </ul></div>
-        <div><h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128222; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
+  <!-- FOOTER -->
+  <footer class="ws-footer">
+    <div class="ws-footer-in">
+      <div>
+        <div class="ws-footer-brandrow"><div class="ws-footer-logo">K</div><div class="ws-footer-brand"><b>Küchenmontage Hamburg</b><span>Festpreis · seit 2008</span></div></div>
+        <p class="ws-footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
+      </div>
+      <div>
+        <h3>Leistungen</h3>
+        <ul>
+          <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+          <li><a href="/pages/garantie-und-service.html">Garantie &amp; Service</a></li>
+          <li><a href="/waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
+          <li><a href="/herd-anschliessen-hamburg/">Herd anschließen</a></li>
+          <li><a href="/backofen-anschliessen-hamburg/">Backofen anschließen</a></li>
+          <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></li>
+          <li><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen</a></li>
+          <li><a href="/kuechenspuele-montage-hamburg/">Spüle austauschen</a></li>
+          <li><a href="/pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
+          <li><a href="/">Küchenmontage</a></li>
+          <li><a href="/kuechenfronten-austauschen-hamburg/">Küchenfronten austauschen</a></li>
+          <li><a href="/geschirrspueler-ikea-kueche-hamburg/">Geschirrspüler in IKEA-Küche</a></li>
+          <li><a href="/kuehlschrank-austauschen-hamburg/">Kühlschrank austauschen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stadtteile</h3>
+        <ul>
+          <li><a href="/altona.html">Altona</a></li>
+          <li><a href="/bergedorf.html">Bergedorf</a></li>
+          <li><a href="/eimsbuettel.html">Eimsbüttel</a></li>
+          <li><a href="/harburg.html">Harburg</a></li>
+          <li><a href="/kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a></li>
+          <li><a href="/wandsbek.html">Wandsbek</a></li>
+          <li><a href="/pages/stadtteile/"><b>Alle Stadtteile →</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="ws-footer-contact">
+          <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+          <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a>
+          <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a>
+          <span>Mo–Fr 8–20 · Sa 9–17 · So 8–20</span>
+          <span><a href="/pages/impressum.html">Impressum</a> · <a href="/pages/datenschutz.html">Datenschutz</a></span>
+          <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a>
         </div>
       </div>
-      <div class="footer-bottom"><div>&copy; 2026 Küchenmontage Hamburg &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a></div></div>
     </div>
+    <div class="ws-footer-bottom"><div>© 2026 Küchenmontage Hamburg · 18 Jahre Erfahrung</div></div>
   </footer>
 
-  <div class="floating-cta"><a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a></div>
-  <script src="/js/main.js"></script>
 </body>
 </html>
