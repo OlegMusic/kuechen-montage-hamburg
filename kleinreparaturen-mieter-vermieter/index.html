@@ -188,6 +188,10 @@
 
     /* d. Грид дефектов (стиль прайс-карточек образца) */
     .wk-price-card { display: flex; flex-direction: column; gap: 8px; padding: 22px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    /* Карточка кликабельна целиком: stretched-link на CTA, ссылки внутри поверх */
+    .wk-price-card { position: relative; }
+    .wk-price-card .wk-cardlink::after { content: ""; position: absolute; inset: 0; }
+    .wk-price-card h3 a { position: relative; z-index: 1; }
     .wk-price-card:hover { border-color: var(--km-border-hover); }
     .wk-price-card h3 { margin: 0; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
     .wk-price-note { margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
