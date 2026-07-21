@@ -63,323 +63,223 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://kuechen-montage-hamburg.de/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://kuechen-montage-hamburg.de/pages/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Kleinanzeigen", "item": "https://kuechen-montage-hamburg.de/pages/blog/kleinanzeigen-handwerker-risiken.html" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Verliert man die Gewährleistung, wenn der Kleinanzeigen-Handwerker ohne Rechnung arbeitet?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ja. Der Bundesgerichtshof hat mit Urteil VII ZR 6/13 entschieden: Ein Werkvertrag mit Schwarzarbeit-Abrede ist von Anfang an nichtig. Der Kunde hat keinerlei Ansprüche auf Nachbesserung, keinen Schadensersatz und kann den Vertrag nicht anfechten — das gilt selbst dann, wenn nur ein Teil „bar ohne Rechnung“ vereinbart wurde." }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Strafen drohen bei Schwarzarbeit über Kleinanzeigen — auch für den Kunden?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Für den Handwerker drohen Geldbußen bis 500.000€, für den Auftraggeber — also den Kunden — bis 50.000€, dazu die Nachzahlung von Steuern und Sozialabgaben. Bei gewerbsmäßiger Schwarzarbeit sind Freiheitsstrafen bis 10 Jahre möglich. Zusätzlich entfallen alle Gewährleistungsansprüche." }
+      },
+      {
+        "@type": "Question",
+        "name": "Woran erkennt man einen unseriösen Handwerker auf Kleinanzeigen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Typische Warnsignale: keine Rechnung oder nur „Quittung“, Barzahlung bevorzugt oder gefordert, keine Gewerbeanmeldung oder Handwerkskammer-Eintrag, unrealistisch niedrige Preise, kein schriftlicher Vertrag, keine Haftpflichtversicherung. Die Verbraucherzentralen warnen zudem vor „fliegenden Handwerkern“ ohne festen Geschäftssitz, die nur per Handynummer erreichbar sind und auf sofortige Barzahlung drängen." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wer ist eine sichere Alternative zu Kleinanzeigen-Handwerkern in Hamburg?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Ein Fachbetrieb mit ordnungsgemäßer Rechnung, Versicherung und Gewährleistung. Küchenmontage Hamburg arbeitet seit 18 Jahren zum vereinbarten Festpreis, mit ordentlicher Rechnung und 5 Jahren Gewährleistung — Anfrage per WhatsApp: 0152 185 478 75. Falls ein Kleinanzeigen-Handwerker Ihre Küche halbfertig hinterlassen hat, stellen wir sie fertig und beheben Mängel." }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/redesign-dark.css">
   <style>
-    /* === BLOG LAYOUT — Magazine style === */
+    /* ---------- страничные стили тёмного редизайна (только .wr-*) ---------- */
 
-    .blog-content h2,
-    .blog-content h3,
-    .blog-content p,
-    .blog-content ul,
-    .blog-content ol,
-    .blog-content blockquote { text-align: left !important; }
+    /* Header */
+    .wr-header { position: sticky; top: 0; z-index: 50; background: var(--km-bg); border-bottom: 1px solid var(--km-border); }
+    .wr-header-in { max-width: 1200px; margin: 0 auto; padding: 12px 48px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .wr-logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; font-size: 15px; color: var(--km-text-hi); text-decoration: none; }
+    .wr-logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: var(--km-accent); color: #fff; font-weight: 700; font-size: 16px; }
+    .wr-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 22px; }
+    .wr-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 13.5px; color: var(--km-text-mid); text-decoration: none; }
+    .wr-nav a:hover, .wr-nav a.wr-nav-active { color: var(--km-text-hi); }
 
-    .header {
-      background: #fff !important;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
-      border-bottom: 1px solid #e0e0e0;
-      position: fixed !important;
-      z-index: 1000 !important;
-    }
-    .footer h4, .footer p, .footer ul, .footer li, .footer a, .footer div { text-align: left !important; font-family: 'Segoe UI', system-ui, sans-serif !important; }
-    .footer ul { list-style: none !important; padding-left: 0 !important; margin: 0 !important; }
-    .footer ul li::before { display: none !important; }
-    .footer ul li { position: static !important; padding-left: 0 !important; }
+    /* Hero */
+    .wr-hero { max-width: var(--km-container); margin: 0 auto; padding: 72px 32px 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; position: relative; }
+    .wr-qr-card { position: absolute; right: 32px; top: 4px; background: #FAF7F2; color: #0C1B2A; border-radius: 18px; padding: 13px; display: flex; gap: 13px; align-items: center; box-shadow: 0 40px 60px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.04); transform: rotate(3deg); max-width: 290px; text-decoration: none; z-index: 3; }
+    .wr-qr-card .wr-qr { width: 78px; height: 78px; border-radius: 10px; background: #fff; display: grid; place-items: center; flex: none; overflow: hidden; padding: 4px; }
+    .wr-qr-card .wr-qr img { width: 100%; height: 100%; object-fit: contain; }
+    .wr-qr-card .wr-qr-tel { font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: #1F8A5B; line-height: 1.1; }
+    .wr-qr-card .wr-qr-lbl { font-size: 14px; color: #1F8A5B; font-weight: 600; margin-top: 6px; display: inline-flex; align-items: flex-start; gap: 6px; line-height: 1.25; }
+    .wr-qr-card .wr-qr-lbl svg { color: #1F8A5B; width: 15px; height: 15px; margin-top: 2px; flex: none; }
+    @media (max-width: 1100px) { .wr-qr-card { display: none; } }
+    .wr-crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12.5px; color: var(--km-text-dim); }
+    .wr-crumbs a { color: var(--km-text-dim); text-decoration: none; }
+    .wr-crumbs a:hover { color: var(--km-text-hi); }
+    .wr-pill { display: inline-block; padding: 6px 14px; border: 1px solid var(--km-border-strong); border-radius: var(--km-radius-pill); font-size: 12.5px; color: var(--km-text-mid); }
+    .wr-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 12.5px; color: var(--km-text-dim); }
+    .wr-h1 { margin: 0; font-size: 40px; line-height: 1.14; font-weight: 700; letter-spacing: -0.02em; color: var(--km-text-hi); max-width: 24ch; }
+    .wr-h1 em { font-style: italic; color: var(--km-salmon); }
+    .wr-lead { margin: 0; font-size: 16px; line-height: 1.7; color: var(--km-text); max-width: 60ch; }
+    .wr-lead strong { color: var(--km-text-hi); font-weight: 600; }
+    .wr-cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .wr-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 13px 22px; border-radius: var(--km-radius-btn); font-size: 14px; font-weight: 600; text-decoration: none; text-align: center; }
+    .wr-btn-primary { background: var(--km-accent); color: #fff; }
+    .wr-btn-primary:hover { background: var(--km-accent-hover); }
+    .wr-btn-outline { border: 1px solid var(--km-border-strong); color: var(--km-text-hi); }
+    .wr-btn-outline:hover { border-color: var(--km-border-hover); }
+    .wr-stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 8px; }
+    .wr-stat { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--km-border-card); padding-left: 20px; }
+    .wr-stat-v { font-size: 24px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-stat-l { font-size: 12.5px; color: var(--km-text-dim); }
+    .wr-trustbar { background: var(--km-surface-deep); border-top: 1px solid var(--km-border); border-bottom: 1px solid var(--km-border); }
+    .wr-trustbar-in { max-width: var(--km-container); margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 12.5px; color: var(--km-text-dim); }
 
-    .blog-hero {
-      padding: 76px 0 24px;
-      background: #f8f9fa;
-      color: #1a1a2e;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    .blog-hero .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
-    .blog-hero h1 {
-      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
-      line-height: 1.2;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: #1a1a2e;
-      margin-bottom: 0;
-    }
-    .blog-breadcrumb {
-      font-size: 0.78rem;
-      color: #999;
-      margin-bottom: 16px;
-    }
-    .blog-breadcrumb a { color: #999; transition: 0.2s; }
-    .blog-breadcrumb a:hover { color: #e63946; }
-    .blog-meta {
-      display: flex; gap: 16px; flex-wrap: wrap;
-      margin-top: 16px;
-      padding-top: 16px;
-      border-top: 1px solid #eee;
-      font-size: 0.8rem;
-      color: #888;
-    }
-    .blog-meta span { display: flex; align-items: center; gap: 4px; }
+    /* Main */
+    .wr-main { max-width: var(--km-container); margin: 0 auto; padding: 56px 32px 96px; display: flex; flex-direction: column; gap: 64px; }
+    .wr-main strong { color: var(--km-text-hi); font-weight: 600; }
+    .wr-h2 { margin: 0 0 20px; font-size: 26px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .wr-h2[id] { scroll-margin-top: 84px; }
+    .wr-eyebrow { display: block; margin: 0 0 10px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .wr-card { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); padding: 24px; }
+    .wr-prose p { margin: 0 0 14px; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+    .wr-prose p:last-child { margin-bottom: 0; }
+    .wr-prose h3 { margin: 22px 0 8px; font-size: 15.5px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-prose em { color: var(--km-text); }
 
-    .blog-content {
-      max-width: 728px;
-      margin: 0 auto;
-      padding: 24px 24px 36px;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 1rem;
-      line-height: 1.65;
-      color: #333;
-    }
-    .blog-content > p:first-of-type {
-      font-size: 1.15rem;
-      line-height: 1.7;
-      color: #1a1a2e;
-    }
-    .blog-content h2 {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      margin: 28px 0 10px;
-      color: #1a1a2e;
-      font-size: 1.35rem;
-      font-weight: 700;
-      letter-spacing: -0.01em;
-      border-bottom: 2px solid #e63946;
-      padding-bottom: 8px;
-      border-left: none;
-      padding-left: 0;
-    }
-    .blog-content h3 {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      margin: 18px 0 6px;
-      color: #1a1a2e;
-      font-size: 1.08rem;
-      font-weight: 700;
-    }
-    .blog-content p { margin-bottom: 10px; }
-    .blog-content a {
-      color: #e63946;
-      text-decoration: underline;
-      text-decoration-color: rgba(230,57,70,0.3);
-      text-underline-offset: 3px;
-      transition: 0.2s;
-    }
-    .blog-content a:hover {
-      color: #c1121f;
-      text-decoration-color: #c1121f;
-    }
-    .blog-content strong { color: #1a1a2e; }
+    /* ---- доп-классы magazine-элементов лонгрида (на токенах --km-*) ---- */
 
-    .blog-content ul, .blog-content ol {
-      margin: 12px 0 20px 0;
-      padding-left: 24px;
-      list-style: none !important;
-    }
-    .blog-content ul > li {
-      position: relative;
-      padding-left: 20px;
-      margin-bottom: 4px;
-      line-height: 1.55;
-    }
-    .blog-content ul > li::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: #e63946;
-    }
-    .blog-content ol { list-style: decimal !important; padding-left: 28px; }
-    .blog-content ol > li { padding-left: 4px; margin-bottom: 4px; line-height: 1.55; }
-    .blog-content ol > li::before { display: none; }
+    /* Оглавление */
+    .wr-toc h3 { margin: 0 0 12px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-text-dim); }
+    .wr-toc ol { margin: 0; padding-left: 20px; }
+    .wr-toc li { margin-bottom: 6px; font-size: 13.5px; line-height: 1.6; color: var(--km-text-mid); }
+    .wr-toc li:last-child { margin-bottom: 0; }
+    .wr-toc a { color: var(--km-text); text-decoration: none; }
+    .wr-toc a:hover { color: var(--km-salmon); }
 
-    .blog-content blockquote {
-      border-left: 3px solid #e63946;
-      background: #fafafa;
-      padding: 14px 20px;
-      margin: 16px 0;
-      border-radius: 0 6px 6px 0;
-      font-style: italic;
-      color: #555;
-      font-size: 1rem;
-    }
-    .blog-content blockquote cite {
-      display: block;
-      margin-top: 10px;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 0.82rem;
-      color: #1a1a2e;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-    }
+    /* Списки в тексте */
+    .wr-prose ul { margin: 12px 0 18px; padding: 0; list-style: none; }
+    .wr-prose ul > li { position: relative; padding-left: 20px; margin-bottom: 6px; font-size: 14px; line-height: 1.7; color: var(--km-text-body); }
+    .wr-prose ul > li::before { content: ""; position: absolute; left: 0; top: 9px; width: 6px; height: 6px; border-radius: 50%; background: var(--km-salmon); }
 
-    .highlight-box {
-      background: #fff;
-      border: 1px solid #fdd;
-      border-left: 4px solid #e63946;
-      border-radius: 6px;
-      padding: 20px 24px;
-      margin: 14px 0;
-    }
-    .highlight-box h3 {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      color: #e63946;
-      margin-top: 0;
-      font-size: 1rem;
-      margin-bottom: 12px;
-    }
-    .fact-box {
-      background: #f7f8fa;
-      border-radius: 6px;
-      padding: 16px 20px;
-      margin: 14px 0;
-      border: 1px solid #e8e8e8;
-      border-left: 4px solid #1d3557;
-    }
-    .fact-box h3 {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      margin-top: 0;
-      color: #1d3557;
-      font-size: 1rem;
-      margin-bottom: 12px;
-    }
+    /* Красный highlight-box исходника → тёмный warn-бокс */
+    .wr-warnbox { margin: 16px 0; padding: 20px 24px; background: var(--km-warn-bg); border: 1px solid var(--km-warn-border); border-radius: var(--km-radius-card); }
+    .wr-warnbox h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; color: var(--km-warn-strong); }
+    .wr-warnbox p, .wr-warnbox li { color: var(--km-warn-text); }
+    .wr-warnbox ul > li::before { background: var(--km-warn-strong); }
+    .wr-warnbox strong, .wr-warnbox p strong, .wr-warnbox li strong { color: var(--km-warn-strong); }
+    .wr-warnbox p:last-child { margin-bottom: 0; }
+    .wr-warnbox ul { margin-bottom: 0; }
 
-    .source-list {
-      background: #f7f8fa;
-      border-radius: 6px;
-      padding: 24px;
-      margin: 40px 0 16px;
-      border: 1px solid #e8e8e8;
-    }
-    .source-list h3 {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      margin-top: 0;
-      font-size: 1rem;
-      color: #1a1a2e;
-      margin-bottom: 12px;
-    }
-    .source-list ol { margin-bottom: 0; padding-left: 20px; }
-    .source-list li {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.8rem;
-      margin-bottom: 6px;
-      line-height: 1.5;
-      color: #666;
-    }
-    .source-list li a { color: #e63946; }
+    /* Синий fact-box исходника → тёмная карточка с лососевой кромкой */
+    .wr-factbox { margin: 16px 0; padding: 20px 24px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-left: 3px solid var(--km-salmon); border-radius: var(--km-radius-card); }
+    .wr-factbox h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-factbox ul { margin-bottom: 0; }
 
-    .blog-cta {
-      background: #1d3557;
-      border-radius: 10px;
-      padding: 36px 32px;
-      text-align: center;
-      color: #fff;
-      margin: 44px 0 16px;
-    }
-    .blog-cta h2 {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      color: #fff !important;
-      border: none !important;
-      padding: 0 !important;
-      margin: 0 0 8px !important;
-      font-size: 1.4rem;
-    }
-    .blog-cta p {
-      color: rgba(255,255,255,0.75);
-      max-width: 440px;
-      margin: 0 auto 20px;
-      font-size: 0.92rem;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-    }
-    .blog-cta .cta-phone-big {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 1.8rem;
-      font-weight: 800;
-      color: #fff;
-      display: block;
-      margin-bottom: 16px;
-      transition: 0.2s;
-      text-decoration: none;
-    }
-    .blog-cta .cta-phone-big:hover { color: #e63946; }
-    .blog-cta .btn { margin: 0 6px 10px; }
+    /* Цитата (BGH) */
+    .wr-quote { margin: 16px 0; padding: 16px 20px; background: var(--km-surface); border-left: 3px solid var(--km-salmon); border-radius: 0 var(--km-radius-card) var(--km-radius-card) 0; font-style: italic; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+    .wr-quote cite { display: block; margin-top: 10px; font-style: normal; font-weight: 600; font-size: 12.5px; color: var(--km-text-hi); }
 
-    .comparison-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 24px 0;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.88rem;
-      border: 1px solid #e0e0e0;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-    .comparison-table th {
-      background: #1d3557;
-      color: #fff;
-      padding: 10px 14px;
-      text-align: left;
-      font-weight: 600;
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    .comparison-table td {
-      padding: 10px 14px;
-      border-bottom: 1px solid #eee;
-      vertical-align: top;
-    }
-    .comparison-table tr:last-child td { border-bottom: none; }
-    .comparison-table tr:nth-child(even) { background: #fafafa; }
+    /* Comparison-таблица: обёртка со скроллом + тёмные стили */
+    .wr-table-wrap { overflow-x: auto; margin: 20px 0; border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); background: var(--km-surface); }
+    .wr-table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 13.5px; }
+    .wr-table th { background: var(--km-surface-deep); color: var(--km-text-hi); padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--km-border-card); }
+    .wr-table td { padding: 10px 14px; border-bottom: 1px solid var(--km-border-faint); vertical-align: top; line-height: 1.6; color: var(--km-text-mid); }
+    .wr-table tr:last-child td { border-bottom: none; }
 
-    .toc {
-      background: #fff;
-      border: 1px solid #e0e0e0;
-      border-radius: 6px;
-      padding: 20px 24px;
-      margin: 0 0 32px;
-    }
-    .toc h3 {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      margin-top: 0;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: #999;
-      margin-bottom: 12px;
-    }
-    .toc ol {
-      margin-bottom: 0;
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.88rem;
-      padding-left: 20px;
-      list-style: decimal !important;
-    }
-    .toc ol > li { padding-left: 4px; }
-    .toc ol > li::before { display: none; }
-    .toc li { margin-bottom: 6px; }
-    .toc a { color: #1a1a2e; text-decoration: none; }
-    .toc a:hover { color: #e63946; }
+    /* Карточки услуг (кликабельны, stretched-link) */
+    .wr-grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .wr-rel-card { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 20px 22px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .wr-rel-card:hover { border-color: var(--km-border-hover); }
+    .wr-rel-card h3 { margin: 0; font-size: 14.5px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-rel-card p { margin: 0; font-size: 13px; line-height: 1.65; color: var(--km-text-mid); }
+    .wr-cardlink { margin-top: auto; padding: 10px 0 0; display: inline-flex; align-items: center; min-height: 32px; font-size: 13.5px; font-weight: 600; color: var(--km-salmon); text-decoration: none; }
+    .wr-cardlink:hover { color: var(--km-salmon-hover); }
+    .wr-rel-card .wr-cardlink::after { content: ""; position: absolute; inset: 0; }
 
-    .blog-disclaimer {
-      font-family: 'Segoe UI', system-ui, sans-serif;
-      font-size: 0.8rem;
-      color: #aaa;
-      border-top: 1px solid #eee;
-      padding-top: 20px;
-      margin-top: 36px;
-    }
+    /* FAQ */
+    .wr-faq { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .wr-faq + .wr-faq { margin-top: 10px; }
+    .wr-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 14px 18px; font-size: 14.5px; font-weight: 600; line-height: 1.5; color: var(--km-text-hi); }
+    .wr-faq summary::-webkit-details-marker { display: none; }
+    .wr-faq summary::after { content: "▾"; flex: none; color: var(--km-text-dim); transition: transform 0.2s ease; }
+    .wr-faq[open] summary::after { transform: rotate(180deg); }
+    .wr-faq div { padding: 0 18px 16px; font-size: 13.5px; line-height: 1.75; color: var(--km-text-mid); }
 
-    @media (max-width: 768px) {
-      .blog-hero { padding: 90px 0 28px; }
-      .blog-hero h1 { font-size: 1.4rem; }
-      .blog-content { padding: 28px 16px; font-size: 0.98rem; }
-      .blog-cta { padding: 28px 20px; }
-      .blog-cta .cta-phone-big { font-size: 1.4rem; }
-      .comparison-table { font-size: 0.78rem; display: block; overflow-x: auto; }
-      .comparison-table th, .comparison-table td { padding: 8px 10px; white-space: nowrap; }
-      .highlight-box, .fact-box { padding: 16px 18px; }
-    }
-    @media (max-width: 480px) {
-      .blog-hero h1 { font-size: 1.2rem; }
-      .blog-content { font-size: 0.95rem; line-height: 1.75; }
-      .blog-content h2 { font-size: 1.15rem; }
+    /* Финальная CTA */
+    .wr-finalcta { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 48px 32px; text-align: center; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-cta); }
+    .wr-finalcta h2 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .wr-finalcta p { margin: 0; max-width: 56ch; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .wr-cta-center { justify-content: center; }
+    .wr-phone-big { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); text-decoration: none; }
+    .wr-phone-big:hover { color: var(--km-salmon); }
+    .wr-cta-small { margin: 14px 0 0; text-align: center; font-size: 12px; line-height: 1.6; color: var(--km-text-faint); }
+    .wr-cta-small a { color: var(--km-text-dim); text-underline-offset: 3px; }
+    .wr-cta-small a:hover { color: var(--km-text-hi); }
+
+    /* Quellen */
+    .wr-sources h3 { margin: 0 0 12px; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-sources ol { margin: 0; padding-left: 20px; }
+    .wr-sources li { margin-bottom: 6px; font-size: 12.5px; line-height: 1.6; color: var(--km-text-dim); }
+    .wr-sources li:last-child { margin-bottom: 0; }
+    .wr-sources li a { color: var(--km-text-mid); text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--km-text-faint); }
+    .wr-sources li a:hover { color: var(--km-salmon); text-decoration-color: var(--km-salmon); }
+
+    /* Haftungshinweis */
+    .wr-disclaimer { margin: 0; padding-top: 14px; border-top: 1px solid var(--km-border-faint); font-size: 11.5px; line-height: 1.6; color: var(--km-text-faint); }
+
+    /* Footer */
+    .wr-footer { border-top: 1px solid var(--km-border); background: #0A1623; }
+    .wr-footer-brandrow { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+    .wr-footer-logo { width: 34px; height: 34px; border-radius: 8px; background: var(--km-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+    .wr-footer-brand b { display: block; font-size: 14px; color: var(--km-text-hi); }
+    .wr-footer-brand span { font-size: 10.5px; letter-spacing: .08em; color: var(--km-text-faint); text-transform: uppercase; }
+    .wr-footer h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+    .wr-footer-in { max-width: 1080px; margin: 0 auto; padding: 48px 32px 24px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+    .wr-footer h3 { margin: 0 0 12px; font-size: 13.5px; font-weight: 700; color: var(--km-text-hi); }
+    .wr-footer-about { margin: 0; font-size: 12.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .wr-footer ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .wr-footer ul a, .wr-footer-contact a { font-size: 12.5px; color: var(--km-text); text-decoration: none; }
+    .wr-footer ul a:hover, .wr-footer-contact a:hover { color: var(--km-text-hi); }
+    .wr-footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; color: var(--km-text); }
+    .wr-footer-bottom { max-width: 1080px; margin: 0 auto; padding: 18px 32px 28px; border-top: 1px solid var(--km-border-faint); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; font-size: 12px; color: var(--km-text-faint); }
+    .wr-footer-bottom a { color: var(--km-text-faint); text-decoration: none; }
+    .wr-footer-bottom a:hover { color: var(--km-text-hi); }
+
+    /* ---------- мобильная адаптация ---------- */
+    @media (max-width: 720px) {
+      .wr-header-in { padding: 10px 20px; gap: 8px 16px; }
+      .wr-nav { gap: 2px 16px; }
+      .wr-nav a { font-size: 13px; }
+      .wr-nav-sec { display: none; }
+      .wr-hero { padding: 40px 20px 36px; gap: 20px; }
+      .wr-h1 { font-size: 28px; }
+      .wr-cta-row { width: 100%; flex-direction: column; }
+      .wr-cta-row .wr-btn { width: 100%; }
+      .wr-stats { flex-direction: column; gap: 16px; }
+      .wr-trustbar-in { padding: 12px 20px; gap: 4px 18px; }
+      .wr-main { padding: 40px 20px 72px; gap: 48px; }
+      .wr-grid3 { grid-template-columns: 1fr; }
+      .wr-finalcta { padding: 36px 20px; }
+      .wr-phone-big { font-size: 20px; }
+      .wr-footer-in { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px 16px; }
+      .wr-footer-bottom { padding: 14px 20px 24px; }
     }
   </style>
 
@@ -394,340 +294,419 @@
   <meta name="theme-color" content="#0a4d8c">
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="7brbFTNzw2pFtPorKvADZw" async></script>
 </head>
-<body>
+<body class="km-dark wr">
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo">
-        <div class="logo-icon">K</div>
-        Küchenmontage Hamburg
-      </a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
+  <header class="wr-header">
+    <div class="wr-header-in">
+      <a href="/" class="wr-logo"><span class="wr-logo-mark">K</span>Küchenmontage Hamburg</a>
+      <nav class="wr-nav" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
-        <a href="../../index.html#leistungen">Leistungen</a>
-        <a href="../preise.html">Preise</a>
-        <a href="../../index.html#bewertungen">Bewertungen</a>
-        <a href="../galerie.html">Galerie</a>
-        <a href="../kontakt.html">Kontakt</a>
-        <a href="/pages/blog/">Blog</a>
-      <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook auf Facebook besuchen" style="display:inline-flex;width:34px;height:34px;min-width:34px;border-radius:50%;align-items:center;justify-content:center;background:#1877F2;flex:none;margin-left:8px"><svg width="19" height="19" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M13.5 21v-7h2.34l.36-2.9H13.5V9.25c0-.84.24-1.41 1.44-1.41h1.53V5.25c-.27-.04-1.18-.12-2.24-.12-2.22 0-3.73 1.35-3.73 3.84v2.13H8.16V14h2.34v7h3z"/></svg></a></nav>
-      </div>
+        <a href="/#leistungen">Leistungen</a>
+        <a href="/pages/preise.html">Preise</a>
+        <a href="/#stadtteile" class="wr-nav-sec">Stadtteile</a>
+        <a href="/#bewertungen" class="wr-nav-sec">Bewertungen</a>
+        <a href="/pages/blog/" class="wr-nav-active">Blog</a>
+        <a href="/pages/kontakt.html">Kontakt</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-  <!-- BLOG HERO -->
-  <section class="blog-hero">
-    <div class="container">
-      <div class="blog-breadcrumb">
-        <a href="/">Startseite</a> / <a href="/pages/blog/">Blog</a> / Kleinanzeigen
+
+    <!-- HERO -->
+    <section class="wr-hero">
+    <a class="wr-qr-card" href="https://wa.me/4915218547875" target="_blank" rel="noopener" aria-label="WhatsApp QR-Code — direkt zu WhatsApp">
+      <div class="wr-qr"><img width="370" height="370" src="/img/whatsapp-qr.webp" alt="WhatsApp QR-Code" loading="lazy"></div>
+      <div>
+        <div class="wr-qr-tel">0152 185 478 75</div>
+        <div class="wr-qr-lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg><span>Bitte per WhatsApp<br>anrufen</span></div>
       </div>
-      <h1>Handwerker &uuml;ber Kleinanzeigen: Schwarzarbeit, Betrug &amp; warum Sie Ihre Garantie verlieren</h1>
-      <div class="blog-meta">
+    </a>
+      <nav class="wr-crumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a> <span>›</span> <a href="/pages/blog/">Blog</a> <span>›</span> <span>Kleinanzeigen</span>
+      </nav>
+      <span class="wr-pill">Über 2.500 Küchen in Hamburg montiert</span>
+      <h1 class="wr-h1">Handwerker &uuml;ber Kleinanzeigen: Schwarzarbeit, Betrug &amp; warum Sie Ihre Garantie <em>verlieren</em></h1>
+      <div class="wr-meta">
         <span>&#128221; Von Küchenmontage Hamburg</span>
         <span>&#128197; 6. April 2026</span>
         <span>&#9201; 11 Min.</span>
       </div>
-    </div>
-  </section>
+      <p class="wr-lead"><strong>Kleinanzeigen (ehemals eBay Kleinanzeigen) ist die beliebteste Plattform f&uuml;r G&uuml;nstig-Angebote &mdash; auch f&uuml;r Handwerkerleistungen.</strong> Der Preis ist oft unschlagbar. Aber was viele Kunden nicht wissen: Wer &uuml;ber Kleinanzeigen einen Handwerker beauftragt, riskiert Schwarzarbeit, Betrug und den Verlust aller Gew&auml;hrleistungsanspr&uuml;che &mdash; best&auml;tigt durch den Bundesgerichtshof.</p>
+      <p class="wr-lead">In diesem Artikel zeige ich die konkreten Risiken, belegt mit BGH-Urteilen, Polizeiwarnungen und Verbraucherzentrale-Meldungen.</p>
+      <div class="wr-cta-row">
+        <a class="wr-btn wr-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20suche%20einen%20gepr%C3%BCften%20Handwerksbetrieb%20f%C3%BCr%20meine%20K%C3%BCche.">Festpreis per WhatsApp anfragen →</a>
+        <a class="wr-btn wr-btn-outline" href="tel:+4915218547875">0152 185 478 75</a>
+      </div>
+      <div class="wr-stats">
+        <div class="wr-stat"><span class="wr-stat-v">18+</span><span class="wr-stat-l">Jahre Erfahrung</span></div>
+        <div class="wr-stat"><span class="wr-stat-v">2.500+</span><span class="wr-stat-l">Zufriedene Kunden</span></div>
+        <div class="wr-stat"><span class="wr-stat-v">5 Jahre</span><span class="wr-stat-l">Garantie</span></div>
+      </div>
+    </section>
 
-  <!-- BLOG CONTENT -->
-  <article class="blog-content">
-
-    <p><strong>Kleinanzeigen (ehemals eBay Kleinanzeigen) ist die beliebteste Plattform f&uuml;r G&uuml;nstig-Angebote &mdash; auch f&uuml;r Handwerkerleistungen.</strong> Der Preis ist oft unschlagbar. Aber was viele Kunden nicht wissen: Wer &uuml;ber Kleinanzeigen einen Handwerker beauftragt, riskiert Schwarzarbeit, Betrug und den Verlust aller Gew&auml;hrleistungsanspr&uuml;che &mdash; best&auml;tigt durch den Bundesgerichtshof.</p>
-
-    <p>In diesem Artikel zeige ich die konkreten Risiken, belegt mit BGH-Urteilen, Polizeiwarnungen und Verbraucherzentrale-Meldungen.</p>
-
-    <!-- TABLE OF CONTENTS -->
-    <nav class="toc">
-      <h3>Inhaltsverzeichnis</h3>
-      <ol>
-        <li><a href="#schwarzarbeit">Schwarzarbeit: 686 Mio &euro; Schaden &amp; Strafen bis 500.000&euro;</a></li>
-        <li><a href="#bgh">BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</a></li>
-        <li><a href="#betrug">Betrugsf&auml;lle: Von Kleinanzeigen in die Zeitung</a></li>
-        <li><a href="#polizei">Polizei &amp; Verbraucherzentrale warnen</a></li>
-        <li><a href="#vergleich">Vergleich: Kleinanzeigen vs. Fachbetrieb</a></li>
-        <li><a href="#fazit">Fazit &amp; Empfehlung</a></li>
-      </ol>
-    </nav>
-
-    <!-- 1. SCHWARZARBEIT -->
-    <h2 id="schwarzarbeit">1. Schwarzarbeit: 686 Mio &euro; Schaden &amp; Strafen bis 500.000&euro;</h2>
-
-    <p>Das gr&ouml;&szlig;te Risiko bei Handwerkern &uuml;ber Kleinanzeigen ist <strong>Schwarzarbeit</strong>. Viele Anbieter auf der Plattform arbeiten ohne Gewerbeanmeldung, ohne Meisterbrief und ohne Rechnung. Laut <a href="https://www.sumup.com/de-de/wachsen/vorschriften/schwarzarbeit-im-handwerk/" target="_blank" rel="nofollow noopener noreferrer">SumUp</a> verursachte Schwarzarbeit im Handwerk allein 2022 einen Schaden von <strong>686 Millionen Euro</strong>.</p>
-
-    <div class="highlight-box">
-      <h3>Strafen bei Schwarzarbeit &mdash; auch f&uuml;r Auftraggeber</h3>
-      <ul>
-        <li><strong>Geldbu&szlig;e bis 500.000&euro;</strong> f&uuml;r den Handwerker</li>
-        <li><strong>Geldbu&szlig;e bis 50.000&euro;</strong> f&uuml;r den Auftraggeber (ja, auch der Kunde!)</li>
-        <li><strong>Freiheitsstrafe bis 10 Jahre</strong> bei gewerbsm&auml;&szlig;iger Schwarzarbeit</li>
-        <li><strong>Nachzahlung von Steuern und Sozialabgaben</strong></li>
-        <li><strong>Verlust aller Gew&auml;hrleistungsanspr&uuml;che</strong> (siehe BGH-Urteil)</li>
-      </ul>
-    </div>
-
-    <p>Laut <a href="https://www.anwalt.de/rechtstipps/anzeige-wegenschwarzarbeit-ueber-ebay-kleinanzeigen-was-tun-206488.html" target="_blank" rel="noopener noreferrer">Anwalt.de</a> h&auml;ufen sich Anzeigen wegen Schwarzarbeit, die &uuml;ber Kleinanzeigen angebahnt wurde. Der typische Fall: Ein Handwerker bietet Leistungen &bdquo;ohne Rechnung&ldquo; an, der Kunde stimmt zu &mdash; und beide machen sich strafbar.</p>
-
-    <div class="fact-box">
-      <h3>Woran Sie Schwarzarbeit erkennen</h3>
-      <ul>
-        <li>Keine Rechnung oder nur &bdquo;Quittung&ldquo;</li>
-        <li>Barzahlung bevorzugt oder gefordert</li>
-        <li>Keine Gewerbeanmeldung oder Handwerkskammer-Eintrag</li>
-        <li>Unrealistisch niedrige Preise</li>
-        <li>Kein schriftlicher Vertrag</li>
-        <li>Keine Haftpflichtversicherung</li>
-      </ul>
-    </div>
-
-    <!-- 2. BGH-URTEIL -->
-    <h2 id="bgh">2. BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</h2>
-
-    <p>Der <strong>Bundesgerichtshof</strong> hat mit seinem Urteil vom 1. August 2013 (Az. <a href="https://www.lto.de/recht/hintergruende/h/bgh-urteil-urteil-vii-zr-6-13-schwarzarbeit-haftung-gewaehrleistung-vertrag-schwarzarbg" target="_blank" rel="noopener noreferrer">VII ZR 6/13</a>) eine klare Linie gezogen:</p>
-
-    <div class="highlight-box">
-      <h3>BGH-Urteil: Was es bedeutet</h3>
-      <ul>
-        <li><strong>Vertrag ist nichtig:</strong> Ein Werkvertrag mit Schwarzarbeit-Abrede ist von Anfang an unwirksam</li>
-        <li><strong>Keine Gew&auml;hrleistung:</strong> Der Kunde hat <strong>keinerlei Anspr&uuml;che auf Nachbesserung</strong></li>
-        <li><strong>Kein Schadensersatz:</strong> Auch bei gravierenden M&auml;ngeln gibt es keinen Rechtsschutz</li>
-        <li><strong>Kein R&uuml;cktritt:</strong> Der Kunde kann den Vertrag nicht anfechten</li>
-        <li><strong>Gilt auch bei Teilschwarzarbeit:</strong> Selbst wenn nur ein Teil &bdquo;bar ohne Rechnung&ldquo; vereinbart wird</li>
-      </ul>
-    </div>
-
-    <p>Laut <a href="https://urteile.news/BGH_VII-ZR-613_Keine-Maengelansprueche-bei-Werkleistungen-in-Schwarzarbeit~N16399" target="_blank" rel="nofollow noopener noreferrer">Urteile.news</a>: <em>&bdquo;Wer Handwerkerleistungen in Schwarzarbeit vereinbart, verliert s&auml;mtliche M&auml;ngelanspr&uuml;che &mdash; auch wenn die Arbeit grob mangelhaft ausgef&uuml;hrt wurde.&ldquo;</em></p>
-
-    <blockquote>
-      &bdquo;Der Vertrag ist nichtig. Der Besteller kann keine M&auml;ngelanspr&uuml;che geltend machen, wenn er mit dem Unternehmer eine Schwarzgeldabrede getroffen hat.&ldquo;
-      <cite>&mdash; Bundesgerichtshof, Urteil VII ZR 6/13</cite>
-    </blockquote>
-
-    <p><strong>Das hei&szlig;t konkret:</strong> Wenn Sie &uuml;ber Kleinanzeigen einen Handwerker buchen, der keine Rechnung ausstellt, und der Handwerker verursacht einen Wasserschaden oder baut Ihre K&uuml;che falsch ein &mdash; Sie haben <strong>null Rechte</strong>. Kein Anspruch auf Nachbesserung, keinen Schadensersatz, nichts.</p>
-
-    <!-- 3. BETRUGSFÄLLE -->
-    <h2 id="betrug">3. Betrugsf&auml;lle: Von Kleinanzeigen in die Zeitung</h2>
-
-    <p>Die Betrugsf&auml;lle bei Handwerkern &uuml;ber Kleinanzeigen sind nicht nur h&auml;ufig, sondern teilweise so dreist, dass sie es in die Medien schaffen.</p>
-
-    <h3>Fall 1: Oliver Karhausen &mdash; systematischer Betrug</h3>
-
-    <p>Im <a href="https://www.auktionshilfe.info/thread/13833-handwerker-betrug-firma-oliver-karhausen-bei-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Auktionshilfe-Forum</a> wird &uuml;ber den Fall Oliver Karhausen berichtet: Ein auf Kleinanzeigen aktiver &bdquo;Handwerker&ldquo;, der systematisch Anzahlungen kassierte und dann entweder verschwand oder grob mangelhafte Arbeit ablieferte. Mehrere Gesch&auml;digte fanden sich im Forum zusammen.</p>
-
-    <h3>Fall 2: &bdquo;Handwerker-Engel&ldquo; Regensburg &mdash; 2.000&euro; f&uuml;r eine T&uuml;r&ouml;ffnung</h3>
-
-    <p>Laut <a href="https://www.regensburg-digital.de/trotz-prozess-wegen-abzocke-mit-handwerker-hotlines-in-regensburg-das-geschaeftsmodell-floriert-munter-weiter/04042025/" target="_blank" rel="nofollow noopener noreferrer">Regensburg Digital</a> verlangten Abzocker &uuml;ber <strong>2.000&euro; f&uuml;r eine einfache T&uuml;r&ouml;ffnung</strong> &mdash; ein Vielfaches des &uuml;blichen Preises. Trotz Gerichtsverfahren floriert das Gesch&auml;ftsmodell weiter. Die T&auml;ter nutzen Plattformen wie Kleinanzeigen und Google-Anzeigen, um Opfer zu finden.</p>
-
-    <p>Auch die <a href="https://www.ing.de/wissen/handwerker-abzocke/" target="_blank" rel="noopener noreferrer">ING</a> warnt vor typischen Betrugsmaschen:</p>
-
-    <ul>
-      <li><strong>Vorauskasse:</strong> Handwerker verlangt Anzahlung und verschwindet</li>
-      <li><strong>Wucher vor Ort:</strong> Preis wird beim Termin vervielfacht</li>
-      <li><strong>Pfusch absichtlich:</strong> Mangelhafte Arbeit, die teure Folgesch&auml;den verursacht</li>
-      <li><strong>Materialdiebstahl:</strong> Handwerker sp&auml;ht W&ouml;hnung aus und kehrt f&uuml;r Einbruch zur&uuml;ck</li>
-    </ul>
-
-    <!-- 4. POLIZEI & VERBRAUCHERZENTRALE -->
-    <h2 id="polizei">4. Polizei &amp; Verbraucherzentrale warnen</h2>
-
-    <p>Die Warnungen kommen nicht nur von Verbraucherforen, sondern von offiziellen Stellen:</p>
-
-    <div class="highlight-box">
-      <h3>Polizei warnt vor &bdquo;falschen Handwerkern&ldquo;</h3>
-      <p>Laut <a href="https://www.wunderweib.de/polizei-warnt-vor-falschen-handwerkern-wie-du-dich-und-deine-familie-schuetzt-107001.html" target="_blank" rel="nofollow noopener noreferrer">Polizeiberichten</a> nutzen Kriminelle gezielt Plattformen wie Kleinanzeigen, um sich als Handwerker auszugeben. Das Ziel: Zugang zur Wohnung, um zu stehlen oder sp&auml;tere Einbr&uuml;che vorzubereiten. Auch das <a href="https://zdf.de/nachrichten/hallo-deutschland/handwerker-diebstahl-100.html" target="_blank" rel="noopener noreferrer">ZDF</a> berichtete &uuml;ber F&auml;lle, in denen &bdquo;Handwerker&ldquo; w&auml;hrend der Arbeit Wertsachen entwendeten.</p>
-    </div>
-
-    <p>Die <a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/kundenrechte/handwerkerportale-checkliste-fuer-die-handwerkersuche-im-netz-31533" target="_blank" rel="noopener noreferrer">Verbraucherzentrale</a> hat eine Checkliste f&uuml;r die Handwerkersuche im Netz ver&ouml;ffentlicht und warnt explizit vor unregulierten Plattformen.</p>
-
-    <p>Die <a href="https://www.verbraucherzentrale.sh/pressemeldungen/vertraege-reklamation/warnung-vor-unsauberen-geschaeften-vorsicht-mit-fliegenden-handwerkern-51892" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Schleswig-Holstein</a> warnt vor <strong>&bdquo;fliegenden Handwerkern&ldquo;</strong> &mdash; Personen ohne festen Gesch&auml;ftssitz, die &uuml;ber Kleinanzeigen und an der Haust&uuml;r ihre Dienste anbieten. Typische Merkmale:</p>
-
-    <ul>
-      <li>Keine feste Adresse, nur Handynummer</li>
-      <li>Dr&auml;ngen auf sofortige Bezahlung, nur Bargeld</li>
-      <li>Keine schriftlichen Angebote oder Vertr&auml;ge</li>
-      <li>Arbeit beginnt sofort, ohne Bedenkzeit</li>
-      <li>Qualifikation nicht nachpr&uuml;fbar</li>
-    </ul>
-
-    <p>Die <a href="https://www.verbraucherzentrale-sachsen-anhalt.de/pressemeldungen/vertraege-reklamation/taeuschende-handwerkerwerbeplattform-fuehrt-zu-scheinfirmen-und-abzocke-98251" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Sachsen-Anhalt</a> warnt zus&auml;tzlich vor Werbeplattformen, die zu <strong>Scheinfirmen und Abzocke</strong> f&uuml;hren. Auch <a href="https://www.klugo.de/blog/handwerker-pfusch" target="_blank" rel="nofollow noopener noreferrer">KLUGO</a> beschreibt die rechtlichen Konsequenzen bei Handwerker-Pfusch.</p>
-
-    <!-- 5. VERGLEICH -->
-    <h2 id="vergleich">5. Vergleich: Kleinanzeigen vs. Fachbetrieb</h2>
-
-    <table class="comparison-table">
-      <thead>
-        <tr>
-          <th>Risikofaktor</th>
-          <th>Kleinanzeigen</th>
-          <th>Fachbetrieb (direkt)</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Gewerbeanmeldung</strong></td>
-          <td>Oft nicht vorhanden</td>
-          <td>Pflicht, nachpr&uuml;fbar</td>
-        </tr>
-        <tr>
-          <td><strong>Meisterbrief / Qualifikation</strong></td>
-          <td>Nicht verifiziert</td>
-          <td>HWK-registriert</td>
-        </tr>
-        <tr>
-          <td><strong>Rechnung</strong></td>
-          <td>H&auml;ufig &bdquo;ohne Rechnung&ldquo;</td>
-          <td>Ordnungsgem&auml;&szlig;e Rechnung</td>
-        </tr>
-        <tr>
-          <td><strong>Gew&auml;hrleistung</strong></td>
-          <td>Keine (bei Schwarzarbeit: BGH)</td>
-          <td>5 Jahre gesetzlich</td>
-        </tr>
-        <tr>
-          <td><strong>Haftpflichtversicherung</strong></td>
-          <td>Meist nicht vorhanden</td>
-          <td>Betriebshaftpflicht</td>
-        </tr>
-        <tr>
-          <td><strong>Schadensersatz bei M&auml;ngeln</strong></td>
-          <td>Kein Rechtsanspruch</td>
-          <td>Voller Rechtsanspruch</td>
-        </tr>
-        <tr>
-          <td><strong>Steuerliche Absetzbarkeit</strong></td>
-          <td>Ohne Rechnung: Nein</td>
-          <td>Ja (Handwerkerleistungen)</td>
-        </tr>
-        <tr>
-          <td><strong>Strafrechtliches Risiko</strong></td>
-          <td>Ja &mdash; auch f&uuml;r den Kunden</td>
-          <td>Keins</td>
-        </tr>
-        <tr>
-          <td><strong>Polizei-Warnung</strong></td>
-          <td>Ja &mdash; falsche Handwerker</td>
-          <td>Nein</td>
-        </tr>
-        <tr>
-          <td><strong>Diebstahl-Risiko</strong></td>
-          <td>Erh&ouml;ht (ZDF-Berichte)</td>
-          <td>Minimal &mdash; etablierter Betrieb</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <p>Der Vergleich von <a href="https://www.meistertipp.de/familie/tipps/vergleich-der-portale-my-hammer-blauarbeit-und-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Meistertipp.de</a> kommt zum selben Schluss: Kleinanzeigen bietet zwar die niedrigsten Preise, aber die h&ouml;chsten Risiken &mdash; sowohl rechtlich als auch qualitativ.</p>
-
-    <!-- 6. FAZIT -->
-    <h2 id="fazit">6. Fazit &amp; Empfehlung</h2>
-
-    <p><strong>Ja, Handwerker &uuml;ber Kleinanzeigen sind oft g&uuml;nstiger.</strong> Aber der niedrige Preis hat seinen Grund &mdash; und oft einen sehr hohen Preis. Wenn keine Rechnung gestellt wird, verlieren Sie:</p>
-
-    <ul>
-      <li>Jegliche <strong>Gew&auml;hrleistungsanspr&uuml;che</strong> (BGH-Urteil)</li>
-      <li>Die M&ouml;glichkeit der <strong>steuerlichen Absetzung</strong> (bis 1.200&euro;/Jahr)</li>
-      <li>Jeden <strong>Versicherungsschutz</strong> bei Sch&auml;den</li>
-      <li>Ihr <strong>Recht auf Nachbesserung</strong></li>
-    </ul>
-
-    <p>Und Sie gewinnen: Ein <strong>strafrechtliches Risiko</strong> mit Bu&szlig;geldern bis 50.000&euro;.</p>
-
-    <p><strong>Meine Empfehlung:</strong> Sparen Sie nicht an der falschen Stelle. Ein Meisterbetrieb mit ordnungsgem&auml;&szlig;er Rechnung, Versicherung und Gew&auml;hrleistung kostet vielleicht 20&ndash;30% mehr &mdash; aber gibt Ihnen Sicherheit, Qualit&auml;t und Rechtsschutz. Das ist keine Ausgabe, sondern eine Investition.</p>
-
-    <p><strong>Schon von einem Handwerker im Stich gelassen?</strong> Falls Ihre K&uuml;che halbfertig dasteht oder Pfusch hinterlassen wurde: Wir <a href="/kueche-fertigstellen-lassen-hamburg/">stellen Ihre K&uuml;che in Hamburg fertig und beheben M&auml;ngel</a> &mdash; als Fachbetrieb mit Festpreis, ordentlicher Rechnung und 5 Jahren Gew&auml;hrleistung.</p>
-
-    <!-- CTA -->
-    <div class="blog-cta">
-      <h2>Wir suchen Gleichgesinnte</h2>
-      <p>Handwerker, Entwickler, Designer, Marketingexperten — gemeinsam bauen wir eine faire Plattform. Ohne versteckte Gebühren. Ohne Abzocke. Für Menschen.</p>
-      <a href="index.html#manifest" style="font-family:Segoe UI,system-ui,sans-serif;font-size:1.3rem;font-weight:800;color:#fff;display:block;margin-bottom:16px;text-decoration:none;transition:0.2s;">Jetzt mitmachen →</a>
-      <div>
-        <a href="index.html#manifest" class="btn btn-primary" style="text-decoration:none;">Manifest unterschreiben</a>
-        <a href="index.html#rechner" class="btn btn-outline" style="border-color:#fff;color:#fff;">Verluste berechnen</a>
+    <div class="wr-trustbar">
+      <div class="wr-trustbar-in">
+        <span>Festpreise — keine versteckten Kosten</span>
+        <span>Same-Day-Service</span>
+        <span>18 Jahre Erfahrung</span>
+        <span>5 Jahre Garantie</span>
       </div>
     </div>
 
-    <!-- QUELLEN -->
-    <div class="source-list">
-      <h3>Quellen &amp; weiterf&uuml;hrende Links</h3>
-      <ol>
-        <li><a href="https://www.auktionshilfe.info/thread/13833-handwerker-betrug-firma-oliver-karhausen-bei-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Auktionshilfe &mdash; Handwerker-Betrug Oliver Karhausen bei Kleinanzeigen</a></li>
-        <li><a href="https://www.regensburg-digital.de/trotz-prozess-wegen-abzocke-mit-handwerker-hotlines-in-regensburg-das-geschaeftsmodell-floriert-munter-weiter/04042025/" target="_blank" rel="nofollow noopener noreferrer">Regensburg Digital &mdash; Abzocke mit Handwerker-Hotlines</a></li>
-        <li><a href="https://www.ing.de/wissen/handwerker-abzocke/" target="_blank" rel="noopener noreferrer">ING &mdash; Handwerker-Abzocke erkennen</a></li>
-        <li><a href="https://www.anwalt.de/rechtstipps/anzeige-wegenschwarzarbeit-ueber-ebay-kleinanzeigen-was-tun-206488.html" target="_blank" rel="noopener noreferrer">Anwalt.de &mdash; Anzeige wegen Schwarzarbeit &uuml;ber Kleinanzeigen</a></li>
-        <li><a href="https://www.sumup.com/de-de/wachsen/vorschriften/schwarzarbeit-im-handwerk/" target="_blank" rel="nofollow noopener noreferrer">SumUp &mdash; Schwarzarbeit im Handwerk (686 Mio &euro; Schaden)</a></li>
-        <li><a href="https://www.meistertipp.de/familie/tipps/vergleich-der-portale-my-hammer-blauarbeit-und-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Meistertipp &mdash; Vergleich: MyHammer, Blauarbeit, Kleinanzeigen</a></li>
-        <li><a href="https://www.lto.de/recht/hintergruende/h/bgh-urteil-urteil-vii-zr-6-13-schwarzarbeit-haftung-gewaehrleistung-vertrag-schwarzarbg" target="_blank" rel="noopener noreferrer">LTO &mdash; BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</a></li>
-        <li><a href="https://urteile.news/BGH_VII-ZR-613_Keine-Maengelansprueche-bei-Werkleistungen-in-Schwarzarbeit~N16399" target="_blank" rel="nofollow noopener noreferrer">Urteile.news &mdash; BGH: Keine M&auml;ngelanspr&uuml;che bei Schwarzarbeit</a></li>
-        <li><a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/kundenrechte/handwerkerportale-checkliste-fuer-die-handwerkersuche-im-netz-31533" target="_blank" rel="noopener noreferrer">Verbraucherzentrale &mdash; Checkliste f&uuml;r Handwerkersuche im Netz</a></li>
-        <li><a href="https://www.verbraucherzentrale.sh/pressemeldungen/vertraege-reklamation/warnung-vor-unsauberen-geschaeften-vorsicht-mit-fliegenden-handwerkern-51892" target="_blank" rel="noopener noreferrer">Verbraucherzentrale SH &mdash; Warnung vor &bdquo;fliegenden Handwerkern&ldquo;</a></li>
-        <li><a href="https://www.verbraucherzentrale-sachsen-anhalt.de/pressemeldungen/vertraege-reklamation/taeuschende-handwerkerwerbeplattform-fuehrt-zu-scheinfirmen-und-abzocke-98251" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Sachsen-Anhalt &mdash; Scheinfirmen und Abzocke</a></li>
-        <li><a href="https://www.klugo.de/blog/handwerker-pfusch" target="_blank" rel="nofollow noopener noreferrer">KLUGO &mdash; Handwerker-Pfusch: Rechtliche Konsequenzen</a></li>
-        <li><a href="https://zdf.de/nachrichten/hallo-deutschland/handwerker-diebstahl-100.html" target="_blank" rel="noopener noreferrer">ZDF &mdash; Handwerker-Diebstahl</a></li>
-        <li><a href="https://www.wunderweib.de/polizei-warnt-vor-falschen-handwerkern-wie-du-dich-und-deine-familie-schuetzt-107001.html" target="_blank" rel="nofollow noopener noreferrer">Polizei warnt vor falschen Handwerkern</a></li>
-      </ol>
+    <div class="wr-main">
+
+      <!-- TABLE OF CONTENTS -->
+      <nav class="wr-card wr-toc">
+        <h3>Inhaltsverzeichnis</h3>
+        <ol>
+          <li><a href="#schwarzarbeit">Schwarzarbeit: 686 Mio &euro; Schaden &amp; Strafen bis 500.000&euro;</a></li>
+          <li><a href="#bgh">BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</a></li>
+          <li><a href="#betrug">Betrugsf&auml;lle: Von Kleinanzeigen in die Zeitung</a></li>
+          <li><a href="#polizei">Polizei &amp; Verbraucherzentrale warnen</a></li>
+          <li><a href="#vergleich">Vergleich: Kleinanzeigen vs. Fachbetrieb</a></li>
+          <li><a href="#fazit">Fazit &amp; Empfehlung</a></li>
+        </ol>
+      </nav>
+
+      <!-- 1. SCHWARZARBEIT -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="schwarzarbeit">1. Schwarzarbeit: 686 Mio &euro; Schaden &amp; Strafen bis 500.000&euro;</h2>
+
+        <p>Das gr&ouml;&szlig;te Risiko bei Handwerkern &uuml;ber Kleinanzeigen ist <strong>Schwarzarbeit</strong>. Viele Anbieter auf der Plattform arbeiten ohne Gewerbeanmeldung, ohne Meisterbrief und ohne Rechnung. Laut <a href="https://www.sumup.com/de-de/wachsen/vorschriften/schwarzarbeit-im-handwerk/" target="_blank" rel="nofollow noopener noreferrer">SumUp</a> verursachte Schwarzarbeit im Handwerk allein 2022 einen Schaden von <strong>686 Millionen Euro</strong>.</p>
+
+        <div class="wr-warnbox">
+          <h3>Strafen bei Schwarzarbeit &mdash; auch f&uuml;r Auftraggeber</h3>
+          <ul>
+            <li><strong>Geldbu&szlig;e bis 500.000&euro;</strong> f&uuml;r den Handwerker</li>
+            <li><strong>Geldbu&szlig;e bis 50.000&euro;</strong> f&uuml;r den Auftraggeber (ja, auch der Kunde!)</li>
+            <li><strong>Freiheitsstrafe bis 10 Jahre</strong> bei gewerbsm&auml;&szlig;iger Schwarzarbeit</li>
+            <li><strong>Nachzahlung von Steuern und Sozialabgaben</strong></li>
+            <li><strong>Verlust aller Gew&auml;hrleistungsanspr&uuml;che</strong> (siehe BGH-Urteil)</li>
+          </ul>
+        </div>
+
+        <p>Laut <a href="https://www.anwalt.de/rechtstipps/anzeige-wegenschwarzarbeit-ueber-ebay-kleinanzeigen-was-tun-206488.html" target="_blank" rel="noopener noreferrer">Anwalt.de</a> h&auml;ufen sich Anzeigen wegen Schwarzarbeit, die &uuml;ber Kleinanzeigen angebahnt wurde. Der typische Fall: Ein Handwerker bietet Leistungen &bdquo;ohne Rechnung&ldquo; an, der Kunde stimmt zu &mdash; und beide machen sich strafbar.</p>
+
+        <div class="wr-factbox">
+          <h3>Woran Sie Schwarzarbeit erkennen</h3>
+          <ul>
+            <li>Keine Rechnung oder nur &bdquo;Quittung&ldquo;</li>
+            <li>Barzahlung bevorzugt oder gefordert</li>
+            <li>Keine Gewerbeanmeldung oder Handwerkskammer-Eintrag</li>
+            <li>Unrealistisch niedrige Preise</li>
+            <li>Kein schriftlicher Vertrag</li>
+            <li>Keine Haftpflichtversicherung</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2. BGH-URTEIL -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="bgh">2. BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</h2>
+
+        <p>Der <strong>Bundesgerichtshof</strong> hat mit seinem Urteil vom 1. August 2013 (Az. <a href="https://www.lto.de/recht/hintergruende/h/bgh-urteil-urteil-vii-zr-6-13-schwarzarbeit-haftung-gewaehrleistung-vertrag-schwarzarbg" target="_blank" rel="noopener noreferrer">VII ZR 6/13</a>) eine klare Linie gezogen:</p>
+
+        <div class="wr-warnbox">
+          <h3>BGH-Urteil: Was es bedeutet</h3>
+          <ul>
+            <li><strong>Vertrag ist nichtig:</strong> Ein Werkvertrag mit Schwarzarbeit-Abrede ist von Anfang an unwirksam</li>
+            <li><strong>Keine Gew&auml;hrleistung:</strong> Der Kunde hat <strong>keinerlei Anspr&uuml;che auf Nachbesserung</strong></li>
+            <li><strong>Kein Schadensersatz:</strong> Auch bei gravierenden M&auml;ngeln gibt es keinen Rechtsschutz</li>
+            <li><strong>Kein R&uuml;cktritt:</strong> Der Kunde kann den Vertrag nicht anfechten</li>
+            <li><strong>Gilt auch bei Teilschwarzarbeit:</strong> Selbst wenn nur ein Teil &bdquo;bar ohne Rechnung&ldquo; vereinbart wird</li>
+          </ul>
+        </div>
+
+        <p>Laut <a href="https://urteile.news/BGH_VII-ZR-613_Keine-Maengelansprueche-bei-Werkleistungen-in-Schwarzarbeit~N16399" target="_blank" rel="nofollow noopener noreferrer">Urteile.news</a>: <em>&bdquo;Wer Handwerkerleistungen in Schwarzarbeit vereinbart, verliert s&auml;mtliche M&auml;ngelanspr&uuml;che &mdash; auch wenn die Arbeit grob mangelhaft ausgef&uuml;hrt wurde.&ldquo;</em></p>
+
+        <blockquote class="wr-quote">
+          &bdquo;Der Vertrag ist nichtig. Der Besteller kann keine M&auml;ngelanspr&uuml;che geltend machen, wenn er mit dem Unternehmer eine Schwarzgeldabrede getroffen hat.&ldquo;
+          <cite>&mdash; Bundesgerichtshof, Urteil VII ZR 6/13</cite>
+        </blockquote>
+
+        <p><strong>Das hei&szlig;t konkret:</strong> Wenn Sie &uuml;ber Kleinanzeigen einen Handwerker buchen, der keine Rechnung ausstellt, und der Handwerker verursacht einen Wasserschaden oder baut Ihre K&uuml;che falsch ein &mdash; Sie haben <strong>null Rechte</strong>. Kein Anspruch auf Nachbesserung, keinen Schadensersatz, nichts.</p>
+      </section>
+
+      <!-- 3. BETRUGSFÄLLE -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="betrug">3. Betrugsf&auml;lle: Von Kleinanzeigen in die Zeitung</h2>
+
+        <p>Die Betrugsf&auml;lle bei Handwerkern &uuml;ber Kleinanzeigen sind nicht nur h&auml;ufig, sondern teilweise so dreist, dass sie es in die Medien schaffen.</p>
+
+        <h3>Fall 1: Oliver Karhausen &mdash; systematischer Betrug</h3>
+
+        <p>Im <a href="https://www.auktionshilfe.info/thread/13833-handwerker-betrug-firma-oliver-karhausen-bei-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Auktionshilfe-Forum</a> wird &uuml;ber den Fall Oliver Karhausen berichtet: Ein auf Kleinanzeigen aktiver &bdquo;Handwerker&ldquo;, der systematisch Anzahlungen kassierte und dann entweder verschwand oder grob mangelhafte Arbeit ablieferte. Mehrere Gesch&auml;digte fanden sich im Forum zusammen.</p>
+
+        <h3>Fall 2: &bdquo;Handwerker-Engel&ldquo; Regensburg &mdash; 2.000&euro; f&uuml;r eine T&uuml;r&ouml;ffnung</h3>
+
+        <p>Laut <a href="https://www.regensburg-digital.de/trotz-prozess-wegen-abzocke-mit-handwerker-hotlines-in-regensburg-das-geschaeftsmodell-floriert-munter-weiter/04042025/" target="_blank" rel="nofollow noopener noreferrer">Regensburg Digital</a> verlangten Abzocker &uuml;ber <strong>2.000&euro; f&uuml;r eine einfache T&uuml;r&ouml;ffnung</strong> &mdash; ein Vielfaches des &uuml;blichen Preises. Trotz Gerichtsverfahren floriert das Gesch&auml;ftsmodell weiter. Die T&auml;ter nutzen Plattformen wie Kleinanzeigen und Google-Anzeigen, um Opfer zu finden.</p>
+
+        <p>Auch die <a href="https://www.ing.de/wissen/handwerker-abzocke/" target="_blank" rel="noopener noreferrer">ING</a> warnt vor typischen Betrugsmaschen:</p>
+
+        <ul>
+          <li><strong>Vorauskasse:</strong> Handwerker verlangt Anzahlung und verschwindet</li>
+          <li><strong>Wucher vor Ort:</strong> Preis wird beim Termin vervielfacht</li>
+          <li><strong>Pfusch absichtlich:</strong> Mangelhafte Arbeit, die teure Folgesch&auml;den verursacht</li>
+          <li><strong>Materialdiebstahl:</strong> Handwerker sp&auml;ht W&ouml;hnung aus und kehrt f&uuml;r Einbruch zur&uuml;ck</li>
+        </ul>
+      </section>
+
+      <!-- 4. POLIZEI & VERBRAUCHERZENTRALE -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="polizei">4. Polizei &amp; Verbraucherzentrale warnen</h2>
+
+        <p>Die Warnungen kommen nicht nur von Verbraucherforen, sondern von offiziellen Stellen:</p>
+
+        <div class="wr-warnbox">
+          <h3>Polizei warnt vor &bdquo;falschen Handwerkern&ldquo;</h3>
+          <p>Laut <a href="https://www.wunderweib.de/polizei-warnt-vor-falschen-handwerkern-wie-du-dich-und-deine-familie-schuetzt-107001.html" target="_blank" rel="nofollow noopener noreferrer">Polizeiberichten</a> nutzen Kriminelle gezielt Plattformen wie Kleinanzeigen, um sich als Handwerker auszugeben. Das Ziel: Zugang zur Wohnung, um zu stehlen oder sp&auml;tere Einbr&uuml;che vorzubereiten. Auch das <a href="https://zdf.de/nachrichten/hallo-deutschland/handwerker-diebstahl-100.html" target="_blank" rel="noopener noreferrer">ZDF</a> berichtete &uuml;ber F&auml;lle, in denen &bdquo;Handwerker&ldquo; w&auml;hrend der Arbeit Wertsachen entwendeten.</p>
+        </div>
+
+        <p>Die <a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/kundenrechte/handwerkerportale-checkliste-fuer-die-handwerkersuche-im-netz-31533" target="_blank" rel="noopener noreferrer">Verbraucherzentrale</a> hat eine Checkliste f&uuml;r die Handwerkersuche im Netz ver&ouml;ffentlicht und warnt explizit vor unregulierten Plattformen.</p>
+
+        <p>Die <a href="https://www.verbraucherzentrale.sh/pressemeldungen/vertraege-reklamation/warnung-vor-unsauberen-geschaeften-vorsicht-mit-fliegenden-handwerkern-51892" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Schleswig-Holstein</a> warnt vor <strong>&bdquo;fliegenden Handwerkern&ldquo;</strong> &mdash; Personen ohne festen Gesch&auml;ftssitz, die &uuml;ber Kleinanzeigen und an der Haust&uuml;r ihre Dienste anbieten. Typische Merkmale:</p>
+
+        <ul>
+          <li>Keine feste Adresse, nur Handynummer</li>
+          <li>Dr&auml;ngen auf sofortige Bezahlung, nur Bargeld</li>
+          <li>Keine schriftlichen Angebote oder Vertr&auml;ge</li>
+          <li>Arbeit beginnt sofort, ohne Bedenkzeit</li>
+          <li>Qualifikation nicht nachpr&uuml;fbar</li>
+        </ul>
+
+        <p>Die <a href="https://www.verbraucherzentrale-sachsen-anhalt.de/pressemeldungen/vertraege-reklamation/taeuschende-handwerkerwerbeplattform-fuehrt-zu-scheinfirmen-und-abzocke-98251" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Sachsen-Anhalt</a> warnt zus&auml;tzlich vor Werbeplattformen, die zu <strong>Scheinfirmen und Abzocke</strong> f&uuml;hren. Auch <a href="https://www.klugo.de/blog/handwerker-pfusch" target="_blank" rel="nofollow noopener noreferrer">KLUGO</a> beschreibt die rechtlichen Konsequenzen bei Handwerker-Pfusch.</p>
+      </section>
+
+      <!-- 5. VERGLEICH -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="vergleich">5. Vergleich: Kleinanzeigen vs. Fachbetrieb</h2>
+
+        <div class="wr-table-wrap">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>Risikofaktor</th>
+                <th>Kleinanzeigen</th>
+                <th>Fachbetrieb (direkt)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gewerbeanmeldung</strong></td>
+                <td>Oft nicht vorhanden</td>
+                <td>Pflicht, nachpr&uuml;fbar</td>
+              </tr>
+              <tr>
+                <td><strong>Meisterbrief / Qualifikation</strong></td>
+                <td>Nicht verifiziert</td>
+                <td>HWK-registriert</td>
+              </tr>
+              <tr>
+                <td><strong>Rechnung</strong></td>
+                <td>H&auml;ufig &bdquo;ohne Rechnung&ldquo;</td>
+                <td>Ordnungsgem&auml;&szlig;e Rechnung</td>
+              </tr>
+              <tr>
+                <td><strong>Gew&auml;hrleistung</strong></td>
+                <td>Keine (bei Schwarzarbeit: BGH)</td>
+                <td>5 Jahre gesetzlich</td>
+              </tr>
+              <tr>
+                <td><strong>Haftpflichtversicherung</strong></td>
+                <td>Meist nicht vorhanden</td>
+                <td>Betriebshaftpflicht</td>
+              </tr>
+              <tr>
+                <td><strong>Schadensersatz bei M&auml;ngeln</strong></td>
+                <td>Kein Rechtsanspruch</td>
+                <td>Voller Rechtsanspruch</td>
+              </tr>
+              <tr>
+                <td><strong>Steuerliche Absetzbarkeit</strong></td>
+                <td>Ohne Rechnung: Nein</td>
+                <td>Ja (Handwerkerleistungen)</td>
+              </tr>
+              <tr>
+                <td><strong>Strafrechtliches Risiko</strong></td>
+                <td>Ja &mdash; auch f&uuml;r den Kunden</td>
+                <td>Keins</td>
+              </tr>
+              <tr>
+                <td><strong>Polizei-Warnung</strong></td>
+                <td>Ja &mdash; falsche Handwerker</td>
+                <td>Nein</td>
+              </tr>
+              <tr>
+                <td><strong>Diebstahl-Risiko</strong></td>
+                <td>Erh&ouml;ht (ZDF-Berichte)</td>
+                <td>Minimal &mdash; etablierter Betrieb</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Der Vergleich von <a href="https://www.meistertipp.de/familie/tipps/vergleich-der-portale-my-hammer-blauarbeit-und-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Meistertipp.de</a> kommt zum selben Schluss: Kleinanzeigen bietet zwar die niedrigsten Preise, aber die h&ouml;chsten Risiken &mdash; sowohl rechtlich als auch qualitativ.</p>
+      </section>
+
+      <!-- 6. FAZIT -->
+      <section class="wr-prose">
+        <h2 class="wr-h2" id="fazit">6. Fazit &amp; Empfehlung</h2>
+
+        <p><strong>Ja, Handwerker &uuml;ber Kleinanzeigen sind oft g&uuml;nstiger.</strong> Aber der niedrige Preis hat seinen Grund &mdash; und oft einen sehr hohen Preis. Wenn keine Rechnung gestellt wird, verlieren Sie:</p>
+
+        <ul>
+          <li>Jegliche <strong>Gew&auml;hrleistungsanspr&uuml;che</strong> (BGH-Urteil)</li>
+          <li>Die M&ouml;glichkeit der <strong>steuerlichen Absetzung</strong> (bis 1.200&euro;/Jahr)</li>
+          <li>Jeden <strong>Versicherungsschutz</strong> bei Sch&auml;den</li>
+          <li>Ihr <strong>Recht auf Nachbesserung</strong></li>
+        </ul>
+
+        <p>Und Sie gewinnen: Ein <strong>strafrechtliches Risiko</strong> mit Bu&szlig;geldern bis 50.000&euro;.</p>
+
+        <p><strong>Meine Empfehlung:</strong> Sparen Sie nicht an der falschen Stelle. Ein Meisterbetrieb mit ordnungsgem&auml;&szlig;er Rechnung, Versicherung und Gew&auml;hrleistung kostet vielleicht 20&ndash;30% mehr &mdash; aber gibt Ihnen Sicherheit, Qualit&auml;t und Rechtsschutz. Das ist keine Ausgabe, sondern eine Investition.</p>
+
+        <p><strong>Schon von einem Handwerker im Stich gelassen?</strong> Falls Ihre K&uuml;che halbfertig dasteht oder Pfusch hinterlassen wurde: Wir <a href="/kueche-fertigstellen-lassen-hamburg/">stellen Ihre K&uuml;che in Hamburg fertig und beheben M&auml;ngel</a> &mdash; als Fachbetrieb mit Festpreis, ordentlicher Rechnung und 5 Jahren Gew&auml;hrleistung.</p>
+      </section>
+
+      <!-- SERVICES -->
+      <section>
+        <span class="wr-eyebrow">Unsere Leistungen</span>
+        <h2 class="wr-h2">Direkt vom Fachbetrieb: unsere Leistungen in Hamburg</h2>
+        <div class="wr-grid3">
+          <div class="wr-rel-card">
+            <h3>Küche fertigstellen lassen</h3>
+            <p><strong>ab 89€ Festpreis</strong><br>Restarbeiten, halbfertige Küchen, Pfusch und Mängel — oft am selben Tag</p>
+            <a class="wr-cardlink" href="/kueche-fertigstellen-lassen-hamburg/">Zur Leistung →</a>
+          </div>
+          <div class="wr-rel-card">
+            <h3>Küchenaufbau</h3>
+            <p><strong>ab 190€ pro laufendem Meter</strong><br>Gebrauchte oder umgezogene Küche aufbauen und an den neuen Raum anpassen</p>
+            <a class="wr-cardlink" href="/kuechenaufbau-hamburg/">Zur Leistung →</a>
+          </div>
+          <div class="wr-rel-card">
+            <h3>IKEA Küchenmontage</h3>
+            <p><strong>ab 170€ Festpreis</strong><br>METOD-Küchen montieren, Arbeitsplatte zuschneiden, Geräte anschließen</p>
+            <a class="wr-cardlink" href="/ikea-kuechenmontage-hamburg/">Zur Leistung →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ (зеркалит FAQPage-схему дословно) -->
+      <section>
+        <span class="wr-eyebrow">FAQ</span>
+        <h2 class="wr-h2">Häufige Fragen</h2>
+        <details class="wr-faq">
+          <summary>Verliert man die Gewährleistung, wenn der Kleinanzeigen-Handwerker ohne Rechnung arbeitet?</summary>
+          <div>Ja. Der Bundesgerichtshof hat mit Urteil VII ZR 6/13 entschieden: Ein Werkvertrag mit Schwarzarbeit-Abrede ist von Anfang an nichtig. Der Kunde hat keinerlei Ansprüche auf Nachbesserung, keinen Schadensersatz und kann den Vertrag nicht anfechten — das gilt selbst dann, wenn nur ein Teil „bar ohne Rechnung“ vereinbart wurde.</div>
+        </details>
+        <details class="wr-faq">
+          <summary>Welche Strafen drohen bei Schwarzarbeit über Kleinanzeigen — auch für den Kunden?</summary>
+          <div>Für den Handwerker drohen Geldbußen bis 500.000€, für den Auftraggeber — also den Kunden — bis 50.000€, dazu die Nachzahlung von Steuern und Sozialabgaben. Bei gewerbsmäßiger Schwarzarbeit sind Freiheitsstrafen bis 10 Jahre möglich. Zusätzlich entfallen alle Gewährleistungsansprüche.</div>
+        </details>
+        <details class="wr-faq">
+          <summary>Woran erkennt man einen unseriösen Handwerker auf Kleinanzeigen?</summary>
+          <div>Typische Warnsignale: keine Rechnung oder nur „Quittung“, Barzahlung bevorzugt oder gefordert, keine Gewerbeanmeldung oder Handwerkskammer-Eintrag, unrealistisch niedrige Preise, kein schriftlicher Vertrag, keine Haftpflichtversicherung. Die Verbraucherzentralen warnen zudem vor „fliegenden Handwerkern“ ohne festen Geschäftssitz, die nur per Handynummer erreichbar sind und auf sofortige Barzahlung drängen.</div>
+        </details>
+        <details class="wr-faq">
+          <summary>Wer ist eine sichere Alternative zu Kleinanzeigen-Handwerkern in Hamburg?</summary>
+          <div>Ein Fachbetrieb mit ordnungsgemäßer Rechnung, Versicherung und Gewährleistung. Küchenmontage Hamburg arbeitet seit 18 Jahren zum vereinbarten Festpreis, mit ordentlicher Rechnung und 5 Jahren Gewährleistung — Anfrage per WhatsApp: 0152 185 478 75. Falls ein Kleinanzeigen-Handwerker Ihre Küche halbfertig hinterlassen hat, stellen wir sie fertig und beheben Mängel.</div>
+        </details>
+      </section>
+
+      <!-- CTA -->
+      <section>
+        <div class="wr-finalcta">
+          <h2>Geprüfter Handwerksbetrieb statt Kleinanzeigen-Risiko</h2>
+          <p>Küchenmontage Hamburg arbeitet seit 18 Jahren als Fachbetrieb — zum vereinbarten Festpreis, mit ordentlicher Rechnung und 5 Jahren Gewährleistung. Kein Schwarzarbeit-Risiko, keine bösen Überraschungen.</p>
+          <a class="wr-phone-big" href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+          <div class="wr-cta-row wr-cta-center">
+            <a class="wr-btn wr-btn-primary" href="/pages/preise.html">Alle Festpreise ansehen</a>
+            <a class="wr-btn wr-btn-outline" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20suche%20einen%20gepr%C3%BCften%20Handwerksbetrieb%20f%C3%BCr%20meine%20K%C3%BCche.">&#128172; WhatsApp anfragen</a>
+          </div>
+        </div>
+        <p class="wr-cta-small">Unsere Initiative für eine faire Handwerker-Plattform: <a href="index.html#manifest">Manifest unterschreiben</a> &middot; <a href="index.html#rechner">Verluste berechnen</a></p>
+      </section>
+
+      <!-- QUELLEN -->
+      <section class="wr-card wr-sources">
+        <h3>Quellen &amp; weiterf&uuml;hrende Links</h3>
+        <ol>
+          <li><a href="https://www.auktionshilfe.info/thread/13833-handwerker-betrug-firma-oliver-karhausen-bei-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Auktionshilfe &mdash; Handwerker-Betrug Oliver Karhausen bei Kleinanzeigen</a></li>
+          <li><a href="https://www.regensburg-digital.de/trotz-prozess-wegen-abzocke-mit-handwerker-hotlines-in-regensburg-das-geschaeftsmodell-floriert-munter-weiter/04042025/" target="_blank" rel="nofollow noopener noreferrer">Regensburg Digital &mdash; Abzocke mit Handwerker-Hotlines</a></li>
+          <li><a href="https://www.ing.de/wissen/handwerker-abzocke/" target="_blank" rel="noopener noreferrer">ING &mdash; Handwerker-Abzocke erkennen</a></li>
+          <li><a href="https://www.anwalt.de/rechtstipps/anzeige-wegenschwarzarbeit-ueber-ebay-kleinanzeigen-was-tun-206488.html" target="_blank" rel="noopener noreferrer">Anwalt.de &mdash; Anzeige wegen Schwarzarbeit &uuml;ber Kleinanzeigen</a></li>
+          <li><a href="https://www.sumup.com/de-de/wachsen/vorschriften/schwarzarbeit-im-handwerk/" target="_blank" rel="nofollow noopener noreferrer">SumUp &mdash; Schwarzarbeit im Handwerk (686 Mio &euro; Schaden)</a></li>
+          <li><a href="https://www.meistertipp.de/familie/tipps/vergleich-der-portale-my-hammer-blauarbeit-und-ebay-kleinanzeigen/" target="_blank" rel="nofollow noopener noreferrer">Meistertipp &mdash; Vergleich: MyHammer, Blauarbeit, Kleinanzeigen</a></li>
+          <li><a href="https://www.lto.de/recht/hintergruende/h/bgh-urteil-urteil-vii-zr-6-13-schwarzarbeit-haftung-gewaehrleistung-vertrag-schwarzarbg" target="_blank" rel="noopener noreferrer">LTO &mdash; BGH-Urteil VII ZR 6/13: Keine Gew&auml;hrleistung bei Schwarzarbeit</a></li>
+          <li><a href="https://urteile.news/BGH_VII-ZR-613_Keine-Maengelansprueche-bei-Werkleistungen-in-Schwarzarbeit~N16399" target="_blank" rel="nofollow noopener noreferrer">Urteile.news &mdash; BGH: Keine M&auml;ngelanspr&uuml;che bei Schwarzarbeit</a></li>
+          <li><a href="https://www.verbraucherzentrale.de/wissen/vertraege-reklamation/kundenrechte/handwerkerportale-checkliste-fuer-die-handwerkersuche-im-netz-31533" target="_blank" rel="noopener noreferrer">Verbraucherzentrale &mdash; Checkliste f&uuml;r Handwerkersuche im Netz</a></li>
+          <li><a href="https://www.verbraucherzentrale.sh/pressemeldungen/vertraege-reklamation/warnung-vor-unsauberen-geschaeften-vorsicht-mit-fliegenden-handwerkern-51892" target="_blank" rel="noopener noreferrer">Verbraucherzentrale SH &mdash; Warnung vor &bdquo;fliegenden Handwerkern&ldquo;</a></li>
+          <li><a href="https://www.verbraucherzentrale-sachsen-anhalt.de/pressemeldungen/vertraege-reklamation/taeuschende-handwerkerwerbeplattform-fuehrt-zu-scheinfirmen-und-abzocke-98251" target="_blank" rel="noopener noreferrer">Verbraucherzentrale Sachsen-Anhalt &mdash; Scheinfirmen und Abzocke</a></li>
+          <li><a href="https://www.klugo.de/blog/handwerker-pfusch" target="_blank" rel="nofollow noopener noreferrer">KLUGO &mdash; Handwerker-Pfusch: Rechtliche Konsequenzen</a></li>
+          <li><a href="https://zdf.de/nachrichten/hallo-deutschland/handwerker-diebstahl-100.html" target="_blank" rel="noopener noreferrer">ZDF &mdash; Handwerker-Diebstahl</a></li>
+          <li><a href="https://www.wunderweib.de/polizei-warnt-vor-falschen-handwerkern-wie-du-dich-und-deine-familie-schuetzt-107001.html" target="_blank" rel="nofollow noopener noreferrer">Polizei warnt vor falschen Handwerkern</a></li>
+        </ol>
+      </section>
+
+      <!-- DISCLAIMER -->
+      <p class="wr-disclaimer">Dieser Artikel basiert auf &ouml;ffentlich zug&auml;nglichen Quellen und dient der Information. Er stellt keine Rechtsberatung dar. Stand: April 2026. Alle Angaben ohne Gew&auml;hr.</p>
+
     </div>
-
-    <div class="blog-disclaimer">
-      <p>Dieser Artikel basiert auf &ouml;ffentlich zug&auml;nglichen Quellen und dient der Information. Er stellt keine Rechtsberatung dar. Stand: April 2026. Alle Angaben ohne Gew&auml;hr.</p>
-    </div>
-
-  </article>
-
-  <!-- FOOTER -->
-  
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>Küchenmontage Hamburg</h3>
-          <p class="footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert.</p>
-        </div>
-        <div>
-          <h3>Leistungen</h3>
-          <ul>
-            <li><a href="/waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
-            <li><a href="/herd-anschliessen-hamburg/">Herd anschließen</a></li>
-            <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></li>
-            <li><a href="/">Küchenmontage</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Blog</h3>
-          <ul>
-            <li><a href="check24-profis-erfahrungen-nachteile.html">CHECK24 Profis Erfahrungen</a></li>
-            <li><a href="myhammer-erfahrungen.html">MyHammer Erfahrungen</a></li>
-            <li><a href="blauarbeit-erfahrungen.html">Blauarbeit.de Erfahrungen</a></li>
-            <li><a href="kleinanzeigen-handwerker-risiken.html"><strong>Kleinanzeigen Risiken</strong></a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128172; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
-          <div class="footer-contact-item">&#128205; Bossardstr. 12, 22309 Hamburg</div>
-        </div>
+  <!-- FOOTER -->
+  <footer class="wr-footer">
+    <div class="wr-footer-in">
+      <div>
+        <div class="wr-footer-brandrow"><div class="wr-footer-logo">K</div><div class="wr-footer-brand"><b>Küchenmontage Hamburg</b><span>Festpreis · seit 2008</span></div></div>
+        <p class="wr-footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
       </div>
-      <div class="footer-trust" style="padding:16px 0;margin-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;line-height:1.6;opacity:.75;">18 Jahre Erfahrung &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a> &middot; <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" style="color:inherit;" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8v8.44C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a></div>
-      <div class="footer-bottom">
-        <div>&copy; 2026 Küchenmontage Hamburg. Alle Rechte vorbehalten.</div>
-        <div class="footer-legal">
-          <a href="../impressum.html">Impressum</a>
-          <a href="../datenschutz.html">Datenschutz</a>
+      <div>
+        <h3>Leistungen</h3>
+        <ul>
+          <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+          <li><a href="/pages/garantie-und-service.html">Garantie &amp; Service</a></li>
+          <li><a href="/waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
+          <li><a href="/herd-anschliessen-hamburg/">Herd anschließen</a></li>
+          <li><a href="/backofen-anschliessen-hamburg/">Backofen anschließen</a></li>
+          <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></li>
+          <li><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen</a></li>
+          <li><a href="/kuechenspuele-montage-hamburg/">Spüle austauschen</a></li>
+          <li><a href="/pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
+          <li><a href="/">Küchenmontage</a></li>
+          <li><a href="/kuechenfronten-austauschen-hamburg/">Küchenfronten austauschen</a></li>
+          <li><a href="/geschirrspueler-ikea-kueche-hamburg/">Geschirrspüler in IKEA-Küche</a></li>
+          <li><a href="/kuehlschrank-austauschen-hamburg/">Kühlschrank austauschen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stadtteile</h3>
+        <ul>
+          <li><a href="/altona.html">Altona</a></li>
+          <li><a href="/bergedorf.html">Bergedorf</a></li>
+          <li><a href="/eimsbuettel.html">Eimsbüttel</a></li>
+          <li><a href="/harburg.html">Harburg</a></li>
+          <li><a href="/kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a></li>
+          <li><a href="/wandsbek.html">Wandsbek</a></li>
+          <li><a href="/pages/stadtteile/"><b>Alle Stadtteile →</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="wr-footer-contact">
+          <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+          <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a>
+          <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a>
+          <span>Mo–Fr 8–20 · Sa 9–17 · So 8–20</span>
+          <span><a href="/pages/impressum.html">Impressum</a> · <a href="/pages/datenschutz.html">Datenschutz</a></span>
+          <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a>
         </div>
       </div>
     </div>
+    <div class="wr-footer-bottom"><div>© 2026 Küchenmontage Hamburg · 18 Jahre Erfahrung</div></div>
   </footer>
 
-  <div class="floating-cta">
-    <a href="https://wa.me/4915218547875?text=Bitte%20anrufen%20Sie%20mich" class="floating-btn floating-btn-phone" aria-label="Per WhatsApp anrufen" style="background:#2563eb;display:grid;place-items:center;color:#fff;"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.96.72 2.86a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.22-1.22a2 2 0 0 1 2.11-.45c.9.35 1.86.59 2.86.72A2 2 0 0 1 22 16.92z"/></svg></a>
-    <a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a>
-  </div>
-
-  <script src="../../js/main.js"></script>
 </body>
 </html>
