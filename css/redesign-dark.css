@@ -87,3 +87,34 @@ body.km-dark p a:not([class]) {
 body.km-dark p a:not([class]):hover {
   text-decoration-color: var(--km-salmon);
 }
+
+/* ==========================================================================
+   СВЕТЛЫЕ КАРТОЧКИ (решение Олега 21.07): белый фон + тёмный текст на navy.
+   Двойные селекторы [$=] и [*= "… "] покрывают и мультиклассовые карточки
+   (class="wk-card wk-prose"). QR-карточка исключена. Трастбар остаётся тёмным.
+   ========================================================================== */
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]):not([class*="-qr-card"]) {
+  background: #FFFFFF;
+  border-color: #E3E1DB;
+  color: #2A3440;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]):not([class*="-qr-card"]):hover {
+  border-color: #C9CDD4;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]):not([class*="-qr-card"]) :is(h2, h3, h4, summary, strong, b, [class*="-limit-label"], [class$="-price"]) {
+  color: #0C1B2A;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]):not([class*="-qr-card"]) :is(p, li, td, th, blockquote, span:not([class*="btn"]):not([class*="pill"]):not([class*="eyebrow"])) {
+  color: #3A4552;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]) a:not([class*="btn"]) {
+  color: #C2362E;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]) [class*="-btn-outline"] {
+  border-color: #0C1B2A;
+  color: #0C1B2A;
+}
+body.km-dark :is([class$="-card"], [class*="-card "], [class$="-faq"], [class*="-faq "], [class$="-finalcta"], [class*="-finalcta "], [class$="-limit"], [class*="-limit "], [class$="-factbox"], [class*="-factbox "], [class$="-quote"], [class*="-quote "], [class$="-table-wrap"], [class*="-table-wrap "]) :is([class*="-answer-pill"], [class*="-eyebrow"]) {
+  color: #C2362E;
+  border-color: rgba(194, 54, 46, .35);
+}
