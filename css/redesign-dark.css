@@ -9,16 +9,16 @@
 
 :root {
   /* Фоны */
-  --km-bg: #101113;            /* фон страницы */
-  --km-surface: #17181b;       /* карточки/секции */
-  --km-surface-deep: #141518;  /* полоса под hero */
+  --km-bg: #0C1B2A;            /* фон страницы */
+  --km-surface: #12202F;       /* карточки/секции */
+  --km-surface-deep: #0F1B28;  /* полоса под hero */
 
   /* Бордеры */
-  --km-border: #232427;        /* крупные разделители (header/footer/полосы) */
-  --km-border-card: #26272b;   /* карточки */
-  --km-border-strong: #34353a; /* кнопки-outline, бейджи, кружки шагов */
-  --km-border-hover: #3a3b40;  /* hover карточек */
-  --km-border-faint: #1e1f22;  /* тонкие разделители (шаги, низ футера) */
+  --km-border: #1E2C3D;        /* крупные разделители (header/footer/полосы) */
+  --km-border-card: #22334A;   /* карточки */
+  --km-border-strong: #2E4258; /* кнопки-outline, бейджи, кружки шагов */
+  --km-border-hover: #3A5270;  /* hover карточек */
+  --km-border-faint: #192636;  /* тонкие разделители (шаги, низ футера) */
 
   /* Текст */
   --km-text-hi: #ffffff;       /* заголовки/акценты */
@@ -56,7 +56,14 @@
 
 body.km-dark {
   margin: 0;
-  background: var(--km-bg);
+  background-color: var(--km-bg);
+  /* фон главной: сетка 64px на navy-градиенте */
+  background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(180deg, #0B1A29 0%, #0C1B2A 100%);
+  background-size: 64px 64px, 64px 64px, 100% 100%;
+  background-attachment: fixed;
+  background-repeat: repeat, repeat, no-repeat;
   color: var(--km-text);
   font-family: var(--km-font);
   -webkit-font-smoothing: antialiased;
