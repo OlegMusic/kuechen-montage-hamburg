@@ -64,29 +64,178 @@
       { "@type": "Question", "name": "Wer zahlt beschädigte oder verschlissene Küchenfronten in der Mietwohnung?", "acceptedAnswer": { "@type": "Answer", "text": "Gehört die Einbauküche zur mitvermieteten Wohnung, sind die Fronten Teil der Mietsache. Bei normalem Verschleiß (abgenutzte, vergilbte oder abgeplatzte Fronten) ist der Vermieter zuständig — er muss die Mietsache nach §535 BGB instand halten. Hat der Mieter den Schaden selbst verursacht (Kratzer, Bruch, Wasserquellung durch Eigenverschulden), zahlt er." } },
       { "@type": "Question", "name": "Ist der Austausch der Fronten Schönheitsreparatur oder Instandhaltung?", "acceptedAnswer": { "@type": "Answer", "text": "Das Streichen oder Auffrischen von Fronten kann unter wirksam vereinbarte Schönheitsreparaturen fallen. Der komplette Austausch verschlissener Fronten ist dagegen Instandhaltung und damit Sache des Vermieters, wenn die Küche zur Mietsache gehört." } },
       { "@type": "Question", "name": "Fällt der Frontentausch unter die Kleinreparaturklausel?", "acceptedAnswer": { "@type": "Answer", "text": "In der Regel nein. Eine wirksame Kleinreparaturklausel verlangt einen Höchstbetrag pro Einzelreparatur (meist 75–120€) und eine Jahresobergrenze. Der Austausch von Küchenfronten übersteigt diese Grenze fast immer — dann zahlt der Vermieter komplett, sofern die Küche Mietsache ist." } },
-      { "@type": "Question", "name": "Muss der Mieter Küchenfronten beim Auszug erneuern?", "acceptedAnswer": { "@type": "Answer", "text": "Normale Abnutzung muss der Mieter nicht ersetzen — sie ist mit der Miete abgegolten (§538 BGB). Nur selbst verursachte Schäden über die normale Abnutzung hinaus muss er beheben. Gehört die Küche dem Mieter selbst, trägt er Reparatur und Austausch ohnehin allein." } }
+      { "@type": "Question", "name": "Muss der Mieter Küchenfronten beim Auszug erneuern?", "acceptedAnswer": { "@type": "Answer", "text": "Normale Abnutzung muss der Mieter nicht ersetzen — sie ist mit der Miete abgegolten (§538 BGB). Nur selbst verursachte Schäden über die normale Abnutzung hinaus muss er beheben. Gehört die Küche dem Mieter selbst, trägt er Reparatur und Austausch ohnehin allein." } },
+      { "@type": "Question", "name": "Wer tauscht die Küchenfronten in Hamburg mit Rechnung für den Vermieter?", "acceptedAnswer": { "@type": "Answer", "text": "Küchenmontage Hamburg tauscht verschlissene oder beschädigte Küchenfronten sauber aus, justiert Scharniere und ersetzt Griffe — mit ordentlicher Rechnung, die Sie direkt beim Vermieter oder der Hausverwaltung einreichen können. Same-Day-Termin per WhatsApp: 0152 185 478 75." } },
+      { "@type": "Question", "name": "Was kostet der Austausch der Küchenfronten in Hamburg?", "acceptedAnswer": { "@type": "Answer", "text": "Der Preis hängt von Anzahl, Material und Maßen der Fronten ab — deshalb nennt Küchenmontage Hamburg den Preis nach Foto per WhatsApp: Senden Sie Fotos Ihrer Küche an 0152 185 478 75, Sie erhalten einen verbindlichen Festpreis vorab. Die Rechnung können Sie direkt beim Vermieter oder der Hausverwaltung einreichen." } }
     ]
   }
   </script>
 
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/redesign-dark.css">
+  <style>
+    /* ---------- страничные стили тёмного редизайна (только .wf-*) ---------- */
+
+    /* Header */
+    .wf-header { position: sticky; top: 0; z-index: 50; background: var(--km-bg); border-bottom: 1px solid var(--km-border); }
+    .wf-header-in { max-width: 1200px; margin: 0 auto; padding: 12px 48px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .wf-logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; font-size: 15px; color: var(--km-text-hi); text-decoration: none; }
+    .wf-logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: var(--km-accent); color: #fff; font-weight: 700; font-size: 16px; }
+    .wf-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 22px; }
+    .wf-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 13.5px; color: var(--km-text-mid); text-decoration: none; }
+    .wf-nav a:hover, .wf-nav a.wf-nav-active { color: var(--km-text-hi); }
+
+    /* Hero */
+    .wf-hero { max-width: var(--km-container); margin: 0 auto; padding: 72px 32px 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; position: relative; }
+    .wf-qr-card { position: absolute; right: 32px; top: 4px; background: #FAF7F2; color: #0C1B2A; border-radius: 18px; padding: 13px; display: flex; gap: 13px; align-items: center; box-shadow: 0 40px 60px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.04); transform: rotate(3deg); max-width: 290px; text-decoration: none; z-index: 3; }
+    .wf-qr-card .wf-qr { width: 78px; height: 78px; border-radius: 10px; background: #fff; display: grid; place-items: center; flex: none; overflow: hidden; padding: 4px; }
+    .wf-qr-card .wf-qr img { width: 100%; height: 100%; object-fit: contain; }
+    .wf-qr-card .wf-qr-tel { font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: #1F8A5B; line-height: 1.1; }
+    .wf-qr-card .wf-qr-lbl { font-size: 14px; color: #1F8A5B; font-weight: 600; margin-top: 6px; display: inline-flex; align-items: flex-start; gap: 6px; line-height: 1.25; }
+    .wf-qr-card .wf-qr-lbl svg { color: #1F8A5B; width: 15px; height: 15px; margin-top: 2px; flex: none; }
+    @media (max-width: 1100px) { .wf-qr-card { display: none; } }
+    .wf-crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12.5px; color: var(--km-text-dim); }
+    .wf-crumbs a { color: var(--km-text-dim); text-decoration: none; }
+    .wf-crumbs a:hover { color: var(--km-text-hi); }
+    .wf-pill { display: inline-block; padding: 6px 14px; border: 1px solid var(--km-border-strong); border-radius: var(--km-radius-pill); font-size: 12.5px; color: var(--km-text-mid); }
+    .wf-h1 { margin: 0; font-size: 44px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; color: var(--km-text-hi); max-width: 18ch; }
+    .wf-h1 em { font-style: italic; color: var(--km-salmon); }
+    .wf-lead { margin: 0; font-size: 16px; line-height: 1.7; color: var(--km-text); max-width: 60ch; }
+    .wf-cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .wf-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 13px 22px; border-radius: var(--km-radius-btn); font-size: 14px; font-weight: 600; text-decoration: none; text-align: center; }
+    .wf-btn-primary { background: var(--km-accent); color: #fff; }
+    .wf-btn-primary:hover { background: var(--km-accent-hover); }
+    .wf-btn-outline { border: 1px solid var(--km-border-strong); color: var(--km-text-hi); }
+    .wf-btn-outline:hover { border-color: var(--km-border-hover); }
+    .wf-stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 8px; }
+    .wf-stat { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--km-border-card); padding-left: 20px; }
+    .wf-stat-v { font-size: 24px; font-weight: 700; color: var(--km-text-hi); }
+    .wf-stat-l { font-size: 12.5px; color: var(--km-text-dim); }
+    .wf-trustbar { background: var(--km-surface-deep); border-top: 1px solid var(--km-border); border-bottom: 1px solid var(--km-border); }
+    .wf-trustbar-in { max-width: var(--km-container); margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 12.5px; color: var(--km-text-dim); }
+
+    /* Main */
+    .wf-main { max-width: var(--km-container); margin: 0 auto; padding: 56px 32px 96px; display: flex; flex-direction: column; gap: 64px; }
+    .wf-main strong { color: var(--km-text-hi); font-weight: 600; }
+    .wf-h2 { margin: 0 0 20px; font-size: 26px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .wf-eyebrow { display: block; margin: 0 0 10px; font-size: 11.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .wf-card { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); padding: 24px; }
+    .wf-prose p { margin: 0 0 14px; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+    .wf-prose p:last-child { margin-bottom: 0; }
+
+    /* a. Kurze Antwort */
+    .wf-answer-pill { display: inline-block; padding: 5px 12px; border: 1px solid var(--km-salmon-border); border-radius: var(--km-radius-pill); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .wf-answer p { margin: 14px 0 0; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+
+    /* c. Списки */
+    .wf-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.7; color: var(--km-text-body); }
+    .wf-list li::marker { color: var(--km-salmon); }
+    .wf-list a { color: var(--km-salmon); text-decoration: none; }
+    .wf-list a:hover { color: var(--km-salmon-hover); }
+
+    /* d. Прайс-грид (стиль прайс-карточек образца); карточка кликабельна ЦЕЛИКОМ — stretched-link без JS */
+    .wf-price-card { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 22px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .wf-price-card:hover { border-color: var(--km-border-hover); }
+    .wf-price-card h3 { margin: 0; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .wf-price-note { margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
+    .wf-price-intro { margin: 0 0 20px; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
+    .wf-cardlink { margin-top: auto; padding: 12px 0 0; display: inline-flex; align-items: center; min-height: 32px; font-size: 13.5px; font-weight: 600; color: var(--km-salmon); text-decoration: none; }
+    .wf-cardlink:hover { color: var(--km-salmon-hover); }
+    .wf-price-card .wf-cardlink::after { content: ""; position: absolute; inset: 0; }
+    .wf-price-card a:not(.wf-cardlink) { position: relative; z-index: 1; }
+    .wf-prices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    @media (max-width: 1000px) { .wf-prices { grid-template-columns: 1fr 1fr; } }
+
+    /* e. Ссылки в прозе / хелп-блоке */
+    .wf-prose a, .wf-help a, .wf-answer a { color: var(--km-salmon); text-decoration: none; }
+    .wf-prose a:hover, .wf-help a:hover, .wf-answer a:hover { color: var(--km-salmon-hover); }
+    .wf-help h2 { margin: 0 0 12px; font-size: 20px; line-height: 1.3; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .wf-help p { margin: 0 0 12px; font-size: 14px; line-height: 1.75; color: var(--km-text-body); }
+    .wf-help p:last-child { margin-bottom: 0; }
+
+    /* f. Schritte */
+    .wf-step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--km-border-faint); }
+    .wf-step:last-child { border-bottom: none; }
+    .wf-step-num { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--km-border-strong); border-radius: 50%; font-size: 13px; font-weight: 600; color: var(--km-text-hi); }
+    .wf-step h3 { margin: 3px 0 6px; font-size: 14.5px; font-weight: 600; color: var(--km-text-hi); }
+    .wf-step p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* g. FAQ */
+    .wf-faq { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .wf-faq + .wf-faq { margin-top: 10px; }
+    .wf-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 14px 18px; font-size: 14.5px; font-weight: 600; line-height: 1.5; color: var(--km-text-hi); }
+    .wf-faq summary::-webkit-details-marker { display: none; }
+    .wf-faq summary::after { content: "▾"; flex: none; color: var(--km-text-dim); transition: transform 0.2s ease; }
+    .wf-faq[open] summary::after { transform: rotate(180deg); }
+    .wf-faq div { padding: 0 18px 16px; font-size: 13.5px; line-height: 1.75; color: var(--km-text-mid); }
+
+    /* j. Финальная CTA */
+    .wf-finalcta { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 48px 32px; text-align: center; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-cta); }
+    .wf-finalcta h2 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .wf-finalcta p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .wf-cta-center { justify-content: center; }
+
+    /* l. Haftungshinweis */
+    .wf-disclaimer { margin: 0; padding-top: 14px; border-top: 1px solid var(--km-border-faint); font-size: 11.5px; line-height: 1.6; color: var(--km-text-faint); }
+
+    /* Footer */
+    .wf-footer { border-top: 1px solid var(--km-border); background: #0A1623; }
+    .wf-footer-brandrow { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+    .wf-footer-logo { width: 34px; height: 34px; border-radius: 8px; background: var(--km-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+    .wf-footer-brand b { display: block; font-size: 14px; color: var(--km-text-hi); }
+    .wf-footer-brand span { font-size: 10.5px; letter-spacing: .08em; color: var(--km-text-faint); text-transform: uppercase; }
+    .wf-footer h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+    .wf-footer-in { max-width: 1080px; margin: 0 auto; padding: 48px 32px 24px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+    .wf-footer h3 { margin: 0 0 12px; font-size: 13.5px; font-weight: 700; color: var(--km-text-hi); }
+    .wf-footer-about { margin: 0; font-size: 12.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .wf-footer ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .wf-footer ul a, .wf-footer-contact a { font-size: 12.5px; color: var(--km-text); text-decoration: none; }
+    .wf-footer ul a:hover, .wf-footer-contact a:hover { color: var(--km-text-hi); }
+    .wf-footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; color: var(--km-text); }
+    .wf-footer-bottom { max-width: 1080px; margin: 0 auto; padding: 18px 32px 28px; border-top: 1px solid var(--km-border-faint); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; font-size: 12px; color: var(--km-text-faint); }
+    .wf-footer-bottom a { color: var(--km-text-faint); text-decoration: none; }
+    .wf-footer-bottom a:hover { color: var(--km-text-hi); }
+
+    /* ---------- мобильная адаптация ---------- */
+    @media (max-width: 720px) {
+      .wf-header-in { padding: 10px 20px; gap: 8px 16px; }
+      .wf-nav { gap: 2px 16px; }
+      .wf-nav a { font-size: 13px; }
+      .wf-nav-sec { display: none; }
+      .wf-hero { padding: 40px 20px 36px; gap: 20px; }
+      .wf-h1 { font-size: 30px; }
+      .wf-cta-row { width: 100%; flex-direction: column; }
+      .wf-cta-row .wf-btn { width: 100%; }
+      .wf-stats { flex-direction: column; gap: 16px; }
+      .wf-trustbar-in { padding: 12px 20px; gap: 4px 18px; }
+      .wf-main { padding: 40px 20px 72px; gap: 48px; }
+      .wf-prices { grid-template-columns: 1fr; }
+      .wf-finalcta { padding: 36px 20px; }
+      .wf-footer-in { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px 16px; }
+      .wf-footer-bottom { padding: 14px 20px 24px; }
+    }
+  </style>
+
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/img/favicon/site.webmanifest">
   <meta name="theme-color" content="#0a4d8c">
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="7brbFTNzw2pFtPorKvADZw" async></script>
 </head>
-<body>
+<body class="km-dark wf">
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">K</div>Küchenmontage Hamburg</a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
+  <!-- HEADER -->
+  <header class="wf-header">
+    <div class="wf-header-in">
+      <a href="/" class="wf-logo"><span class="wf-logo-mark">K</span>Küchenmontage Hamburg</a>
+      <nav class="wf-nav" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
         <a href="/#leistungen">Leistungen</a>
         <a href="/pages/preise.html">Preise</a>
-        <a href="/#stadtteile">Stadtteile</a>
+        <a href="/#stadtteile" class="wf-nav-sec">Stadtteile</a>
+        <a href="/#bewertungen" class="wf-nav-sec">Bewertungen</a>
         <a href="/pages/blog/">Blog</a>
         <a href="/pages/kontakt.html">Kontakt</a>
       </nav>
@@ -94,117 +243,270 @@
   </header>
 
   <main>
-  <section class="service-hero">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="/kleinreparaturen-mieter-vermieter/" style="color:rgba(255,255,255,0.7)">Kleinreparaturen</a> &rsaquo;
-        <span>Küchenfronten</span>
+
+    <!-- HERO -->
+    <section class="wf-hero">
+    <a class="wf-qr-card" href="https://wa.me/4915218547875" target="_blank" rel="noopener" aria-label="WhatsApp QR-Code — direkt zu WhatsApp">
+      <div class="wf-qr"><img width="370" height="370" src="/img/whatsapp-qr.webp" alt="WhatsApp QR-Code" loading="lazy"></div>
+      <div>
+        <div class="wf-qr-tel">0152 185 478 75</div>
+        <div class="wf-qr-lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg><span>Bitte per WhatsApp<br>anrufen</span></div>
+      </div>
+    </a>
+      <nav class="wf-crumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a> <span>›</span> <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen</a> <span>›</span> <span>Küchenfronten</span>
       </nav>
-      <h1>Küchenfronten in der Mietwohnung – wer zahlt?</h1>
-      <p class="service-hero-sub">Abgenutzte, vergilbte oder beschädigte Küchenfronten in der Mietwohnung — Mieter oder Vermieter? Es kommt auf Ursache und Eigentum der Küche an. Rechtslage 2026. Stand: Juni 2026.</p>
-    </div>
-  </section>
-
-  <section class="service-content">
-    <div class="container" style="max-width:820px;">
-      <p style="background:#fff8dc;padding:16px;border-radius:8px;border-left:4px solid #e6b800;"><strong>Kurze Antwort:</strong> Gehört die Einbauküche zur <strong>mitvermieteten Wohnung</strong>, sind die Fronten Mietsache: Bei <strong>normalem Verschleiß</strong> zahlt der <strong>Vermieter</strong> (§535 BGB). Hat der <strong>Mieter</strong> den Schaden selbst verursacht — oder gehört die Küche ihm — trägt er die Kosten.</p>
-
-      <h2>Die Rechtslage</h2>
-      <p>Gehört die Einbauküche zur <strong>mitvermieteten Wohnung</strong>, sind ihre Fronten Teil der <strong>Mietsache</strong>. Nach <strong>§535 BGB</strong> muss der Vermieter die Mietsache in gebrauchsfähigem Zustand erhalten — dazu gehört, verschlissene Fronten (abgenutzt, vergilbt, Furnier gelöst) zu erneuern. Normale Abnutzung ist nach <strong>§538 BGB</strong> mit der Miete abgegolten; der Mieter muss sie nicht ersetzen. Anders, wenn der Schaden über die normale Abnutzung hinausgeht und vom Mieter verursacht wurde (Kratzer, Bruch, Quellung durch eigenes Verschulden). Gehört die <strong>Küche dem Mieter</strong>, trägt er Reparatur und Austausch ohnehin selbst.</p>
-
-      <h2>Schönheitsreparatur oder Instandhaltung?</h2>
-      <p>Wichtig ist die Abgrenzung: Das <strong>Streichen oder Auffrischen</strong> von Fronten kann unter <strong>wirksam vereinbarte Schönheitsreparaturen</strong> fallen — dann kann der Mieter dafür zuständig sein. Der <strong>komplette Austausch</strong> verschlissener Fronten ist dagegen <strong>Instandhaltung</strong> und damit Vermietersache, wenn die Küche zur Mietsache gehört. Eine pauschale Klausel, die den Mieter zum Erneuern abgenutzter Fronten verpflichtet, ist regelmäßig unwirksam.</p>
-
-      <h2>Greift die Kleinreparaturklausel?</h2>
-      <p>In der Regel nein: Eine <strong>wirksame Kleinreparaturklausel</strong> kann den Mieter an kleinen Reparaturen beteiligen — aber nur mit Höchstbetrag pro Einzelreparatur (meist 75–120€) <em>und</em> Jahresobergrenze, und nur für Teile des häufigen Mieterzugriffs. Der Austausch von Küchenfronten übersteigt diese Grenze fast immer; dann zahlt der Vermieter komplett, sofern die Küche Mietsache ist. Übersicht: <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt?</a></p>
-
-      <h2>Kurz gesagt: Wer zahlt?</h2>
-      <ul>
-        <li><strong>Fronten verschlissen / vergilbt (mitvermietete Küche):</strong> Vermieter.</li>
-        <li><strong>Furnier oder Kante gelöst durch Alterung:</strong> Vermieter (Instandhaltung).</li>
-        <li><strong>Mieter hat Front selbst beschädigt (Kratzer, Bruch, Stoß):</strong> Mieter.</li>
-        <li><strong>Wasserquellung durch Eigenverschulden / zu spät gemeldet:</strong> Mieter.</li>
-        <li><strong>Eigene Küche des Mieters:</strong> Mieter.</li>
-        <li><strong>Auffrischen / Streichen bei wirksamer Klausel:</strong> ggf. Mieter (Schönheitsreparatur).</li>
-      </ul>
-
-      <h2>Was kostet das in Hamburg?</h2>
-      <div class="services-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:20px 0;">
-        <div class="service-card"><h3>Fronten austauschen</h3><p><strong>Preis nach Anfrage</strong> (komplette Front-Erneuerung)</p></div>
-        <div class="service-card"><h3>Einzelne Front / Tür</h3><p><strong>nach Anfrage</strong> (Einzeltausch beschädigter Teile)</p></div>
-        <div class="service-card"><h3>Griffe / Scharniere</h3><p><strong>auf Anfrage</strong> (justieren, ersetzen)</p></div>
+      <span class="wf-pill">Ratgeber Mietrecht</span>
+      <h1 class="wf-h1">Küchenfronten in der Mietwohnung – <em>wer zahlt?</em></h1>
+      <p class="wf-lead">Abgenutzte, vergilbte oder beschädigte Küchenfronten in der Mietwohnung — Mieter oder Vermieter? Es kommt auf Ursache und Eigentum der Küche an. Rechtslage 2026. Stand: Juni 2026.</p>
+      <div class="wf-cta-row">
+        <a class="wf-btn wf-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20K%C3%BCchenfronten%20m%C3%BCssen%20ausgetauscht%20werden.">Fronten beschädigt? Festpreis anfragen →</a>
+        <a class="wf-btn wf-btn-outline" href="tel:+4915218547875">0152 185 478 75</a>
       </div>
-
-      <h2>Schritt-für-Schritt richtig vorgehen</h2>
-      <ol>
-        <li>Eigentum klären: Gehört die Küche zur mitvermieteten Wohnung oder Ihnen selbst?</li>
-        <li>Ursache klären: normaler Verschleiß oder selbst verursacht?</li>
-        <li>Schaden dokumentieren (Fotos), Mietvertrag auf Kleinreparatur- und Schönheitsreparaturklausel prüfen.</li>
-        <li>Bei Verschleiß und Mietsache: schriftlich beim Vermieter melden und Frist setzen.</li>
-        <li>Bei eigener Küche oder selbst verursacht: Handwerker beauftragen — wir geben transparente Rechnung.</li>
-      </ol>
-
-      <h2>Häufige Fragen</h2>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-question">Wer zahlt beschädigte oder verschlissene Küchenfronten?</div><div class="faq-answer">Mitvermietete Küche und Verschleiß → Vermieter (§535 BGB); selbst verursacht oder eigene Küche → Mieter.</div></div>
-        <div class="faq-item"><div class="faq-question">Ist der Frontentausch Schönheitsreparatur oder Instandhaltung?</div><div class="faq-answer">Streichen/Auffrischen kann Schönheitsreparatur sein; kompletter Austausch ist Instandhaltung = Vermietersache.</div></div>
-        <div class="faq-item"><div class="faq-question">Fällt der Frontentausch unter die Kleinreparaturklausel?</div><div class="faq-answer">Meist nicht — er übersteigt die Grenze (75–120€). Dann zahlt der Vermieter, wenn die Küche Mietsache ist.</div></div>
-        <div class="faq-item"><div class="faq-question">Muss der Mieter beim Auszug Fronten erneuern?</div><div class="faq-answer">Normale Abnutzung nein (§538 BGB); nur selbst verursachte Schäden.</div></div>
+      <div class="wf-stats">
+        <div class="wf-stat"><span class="wf-stat-v">18+</span><span class="wf-stat-l">Jahre Erfahrung</span></div>
+        <div class="wf-stat"><span class="wf-stat-v">2.500+</span><span class="wf-stat-l">Zufriedene Kunden</span></div>
+        <div class="wf-stat"><span class="wf-stat-v">5 Jahre</span><span class="wf-stat-l">Garantie</span></div>
       </div>
+    </section>
 
-      <div style="background:#eef4ff;padding:20px;border-radius:10px;border-left:4px solid #2563eb;margin:28px 0;">
-        <h2 style="margin-top:0;">Küchenfronten austauschen lassen — Hamburg, mit Rechnung</h2>
-        <p style="margin-bottom:8px;">Wir tauschen <strong>verschlissene oder beschädigte Küchenfronten</strong> sauber aus, justieren Scharniere und ersetzen Griffe — mit <strong>Rechnung auch an Vermieter/Hausverwaltung</strong>. Preis nach Anfrage, Same-Day möglich.</p>
-        <p style="margin:0;"><a href="/kuechenfronten-austauschen-hamburg/"><strong>→ Küchenfronten austauschen in Hamburg</strong></a></p>
+    <div class="wf-trustbar">
+      <div class="wf-trustbar-in">
+        <span>Festpreise — keine versteckten Kosten</span>
+        <span>Same-Day-Service</span>
+        <span>18 Jahre Erfahrung</span>
+        <span>5 Jahre Garantie</span>
       </div>
-
-      <h2>Weitere „wer zahlt"-Ratgeber</h2>
-      <ul>
-        <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt? (Übersicht)</a></li>
-        <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle – wer zahlt?</a></li>
-        <li><a href="/wer-zahlt-herd-mietwohnung/">Herd – wer zahlt?</a></li>
-        <li><a href="/wer-zahlt-sockelleisten-fussleisten-mietwohnung/">Sockel- &amp; Fußleisten – wer zahlt?</a></li>
-      </ul>
-
-      <p style="font-size:12px;color:#666;margin-top:32px;border-top:1px solid #ddd;padding-top:12px;"><em>Haftungshinweis: Allgemeine Information, keine Rechtsberatung. Maßgeblich sind Ihr Mietvertrag und der Einzelfall. Bei Streit: Mieterverein oder Anwalt für Mietrecht. Stand: Juni 2026.</em></p>
     </div>
-  </section>
 
-  <section class="cta-section">
-    <div class="container">
-      <h2>Küchenfronten beschädigt? Wir kommen schnell</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Same-Day in Hamburg | Preis nach Anfrage | Rechnung auch an Vermieter/Hausverwaltung</p>
-      <div class="cta-buttons"><a href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20K%C3%BCchenfronten%20m%C3%BCssen%20ausgetauscht%20werden." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a></div>
+    <div class="wf-main">
+
+      <!-- a. Kurze Antwort -->
+      <section class="wf-card wf-answer">
+        <span class="wf-answer-pill">Kurze Antwort</span>
+        <p>Gehört die Einbauküche zur <strong>mitvermieteten Wohnung</strong>, sind die Fronten Mietsache: Bei <strong>normalem Verschleiß</strong> zahlt der <strong>Vermieter</strong> (§535 BGB). Hat der <strong>Mieter</strong> den Schaden selbst verursacht — oder gehört die Küche ihm — trägt er die Kosten.</p>
+      </section>
+
+      <!-- b. Die Rechtslage -->
+      <section>
+        <h2 class="wf-h2">Die Rechtslage</h2>
+        <div class="wf-card wf-prose">
+          <p>Gehört die Einbauküche zur <strong>mitvermieteten Wohnung</strong>, sind ihre Fronten Teil der <strong>Mietsache</strong>. Nach <strong>§535 BGB</strong> muss der Vermieter die Mietsache in gebrauchsfähigem Zustand erhalten — dazu gehört, verschlissene Fronten (abgenutzt, vergilbt, Furnier gelöst) zu erneuern. Normale Abnutzung ist nach <strong>§538 BGB</strong> mit der Miete abgegolten; der Mieter muss sie nicht ersetzen. Anders, wenn der Schaden über die normale Abnutzung hinausgeht und vom Mieter verursacht wurde (Kratzer, Bruch, Quellung durch eigenes Verschulden). Gehört die <strong>Küche dem Mieter</strong>, trägt er Reparatur und Austausch ohnehin selbst.</p>
+        </div>
+      </section>
+
+      <!-- b2. Schönheitsreparatur oder Instandhaltung? -->
+      <section>
+        <h2 class="wf-h2">Schönheitsreparatur oder Instandhaltung?</h2>
+        <div class="wf-card wf-prose">
+          <p>Wichtig ist die Abgrenzung: Das <strong>Streichen oder Auffrischen</strong> von Fronten kann unter <strong>wirksam vereinbarte Schönheitsreparaturen</strong> fallen — dann kann der Mieter dafür zuständig sein. Der <strong>komplette Austausch</strong> verschlissener Fronten ist dagegen <strong>Instandhaltung</strong> und damit Vermietersache, wenn die Küche zur Mietsache gehört. Eine pauschale Klausel, die den Mieter zum Erneuern abgenutzter Fronten verpflichtet, ist regelmäßig unwirksam.</p>
+        </div>
+      </section>
+
+      <!-- c. Kleinreparaturklausel -->
+      <section>
+        <h2 class="wf-h2">Greift die Kleinreparaturklausel?</h2>
+        <div class="wf-card wf-prose">
+          <p>In der Regel nein: Eine <strong>wirksame Kleinreparaturklausel</strong> kann den Mieter an kleinen Reparaturen beteiligen — aber nur mit Höchstbetrag pro Einzelreparatur (meist 75–120€) <em>und</em> Jahresobergrenze, und nur für Teile des häufigen Mieterzugriffs. Der Austausch von Küchenfronten übersteigt diese Grenze fast immer; dann zahlt der Vermieter komplett, sofern die Küche Mietsache ist. Übersicht: <a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt?</a></p>
+        </div>
+      </section>
+
+      <!-- d. Kurz gesagt -->
+      <section>
+        <h2 class="wf-h2">Kurz gesagt: Wer zahlt?</h2>
+        <div class="wf-card">
+          <ul class="wf-list">
+            <li><strong>Fronten verschlissen / vergilbt (mitvermietete Küche):</strong> Vermieter.</li>
+            <li><strong>Furnier oder Kante gelöst durch Alterung:</strong> Vermieter (Instandhaltung).</li>
+            <li><strong>Mieter hat Front selbst beschädigt (Kratzer, Bruch, Stoß):</strong> Mieter.</li>
+            <li><strong>Wasserquellung durch Eigenverschulden / zu spät gemeldet:</strong> Mieter.</li>
+            <li><strong>Eigene Küche des Mieters:</strong> Mieter.</li>
+            <li><strong>Auffrischen / Streichen bei wirksamer Klausel:</strong> ggf. Mieter (Schönheitsreparatur).</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- e. Прайс-грид с CTA (воронка: ссылки на сервисную страницу; цены на целевой нет — «Festpreis anfragen →») -->
+      <section>
+        <span class="wf-eyebrow">Preise in Hamburg</span>
+        <h2 class="wf-h2">Was kostet das in Hamburg?</h2>
+        <p class="wf-price-intro">Preis nach Anfrage — die Leistungsseite erklärt Details, Ablauf und wie Sie per Foto einen Festpreis erhalten:</p>
+        <div class="wf-prices">
+          <div class="wf-price-card">
+            <h3>Fronten austauschen</h3>
+            <p class="wf-price-note"><strong>Preis nach Anfrage</strong> (komplette Front-Erneuerung)</p>
+            <a class="wf-cardlink" href="/kuechenfronten-austauschen-hamburg/">Festpreis anfragen →</a>
+          </div>
+          <div class="wf-price-card">
+            <h3>Einzelne Front / Tür</h3>
+            <p class="wf-price-note"><strong>nach Anfrage</strong> (Einzeltausch beschädigter Teile)</p>
+            <a class="wf-cardlink" href="/kuechenfronten-austauschen-hamburg/">Festpreis anfragen →</a>
+          </div>
+          <div class="wf-price-card">
+            <h3>Griffe / Scharniere</h3>
+            <p class="wf-price-note"><strong>auf Anfrage</strong> (justieren, ersetzen)</p>
+            <a class="wf-cardlink" href="/kuechenfronten-austauschen-hamburg/">Festpreis anfragen →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- f. Schritt-für-Schritt -->
+      <section>
+        <h2 class="wf-h2">Schritt-für-Schritt richtig vorgehen</h2>
+        <div class="wf-step">
+          <span class="wf-step-num">1</span>
+          <div>
+            <h3>Eigentum klären</h3>
+            <p>Gehört die Küche zur mitvermieteten Wohnung oder Ihnen selbst?</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <span class="wf-step-num">2</span>
+          <div>
+            <h3>Ursache klären</h3>
+            <p>Normaler Verschleiß oder selbst verursacht?</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <span class="wf-step-num">3</span>
+          <div>
+            <h3>Schaden dokumentieren</h3>
+            <p>Fotos machen, Mietvertrag auf Kleinreparatur- und Schönheitsreparaturklausel prüfen.</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <span class="wf-step-num">4</span>
+          <div>
+            <h3>Bei Verschleiß und Mietsache</h3>
+            <p>Schriftlich beim Vermieter melden und Frist setzen.</p>
+          </div>
+        </div>
+        <div class="wf-step">
+          <span class="wf-step-num">5</span>
+          <div>
+            <h3>Bei eigener Küche oder selbst verursacht</h3>
+            <p>Handwerker beauftragen — wir geben transparente Rechnung.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- g. FAQ (6 вопросов = 6 в FAQPage-схеме) -->
+      <section>
+        <span class="wf-eyebrow">FAQ</span>
+        <h2 class="wf-h2">Häufige Fragen</h2>
+        <details class="wf-faq">
+          <summary>Wer zahlt beschädigte oder verschlissene Küchenfronten?</summary>
+          <div>Mitvermietete Küche und Verschleiß → Vermieter (§535 BGB); selbst verursacht oder eigene Küche → Mieter.</div>
+        </details>
+        <details class="wf-faq">
+          <summary>Ist der Frontentausch Schönheitsreparatur oder Instandhaltung?</summary>
+          <div>Streichen/Auffrischen kann Schönheitsreparatur sein; kompletter Austausch ist Instandhaltung = Vermietersache.</div>
+        </details>
+        <details class="wf-faq">
+          <summary>Fällt der Frontentausch unter die Kleinreparaturklausel?</summary>
+          <div>Meist nicht — er übersteigt die Grenze (75–120€). Dann zahlt der Vermieter, wenn die Küche Mietsache ist.</div>
+        </details>
+        <details class="wf-faq">
+          <summary>Muss der Mieter beim Auszug Fronten erneuern?</summary>
+          <div>Normale Abnutzung nein (§538 BGB); nur selbst verursachte Schäden.</div>
+        </details>
+        <details class="wf-faq">
+          <summary>Wer tauscht die Küchenfronten in Hamburg mit Rechnung für den Vermieter?</summary>
+          <div>Küchenmontage Hamburg tauscht verschlissene oder beschädigte Küchenfronten sauber aus, justiert Scharniere und ersetzt Griffe — mit ordentlicher Rechnung, die Sie direkt beim Vermieter oder der Hausverwaltung einreichen können. Same-Day-Termin per WhatsApp: 0152 185 478 75.</div>
+        </details>
+        <details class="wf-faq">
+          <summary>Was kostet der Austausch der Küchenfronten in Hamburg?</summary>
+          <div>Der Preis hängt von Anzahl, Material und Maßen der Fronten ab — deshalb nennt Küchenmontage Hamburg den Preis nach Foto per WhatsApp: Senden Sie Fotos Ihrer Küche an 0152 185 478 75, Sie erhalten einen verbindlichen Festpreis vorab. Die Rechnung können Sie direkt beim Vermieter oder der Hausverwaltung einreichen.</div>
+        </details>
+      </section>
+
+      <!-- h. Money-CTA: Küchenfronten austauschen lassen (бренд-пассаж) -->
+      <section class="wf-card wf-help">
+        <h2>Küchenfronten austauschen lassen — Hamburg, mit Rechnung</h2>
+        <p>Küchenmontage Hamburg tauscht <strong>verschlissene oder beschädigte Küchenfronten</strong> sauber aus, justiert Scharniere und ersetzt Griffe — mit <strong>Rechnung auch an Vermieter/Hausverwaltung</strong>. Preis nach Anfrage, Same-Day möglich.</p>
+        <p><a href="/kuechenfronten-austauschen-hamburg/"><strong>→ Küchenfronten austauschen in Hamburg</strong></a></p>
+      </section>
+
+      <!-- i. Weitere Ratgeber -->
+      <section>
+        <h2 class="wf-h2">Weitere „wer zahlt"-Ratgeber</h2>
+        <div class="wf-card">
+          <ul class="wf-list">
+            <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen – wer zahlt? (Übersicht)</a></li>
+            <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle – wer zahlt?</a></li>
+            <li><a href="/wer-zahlt-herd-mietwohnung/">Herd – wer zahlt?</a></li>
+            <li><a href="/wer-zahlt-sockelleisten-fussleisten-mietwohnung/">Sockel- &amp; Fußleisten – wer zahlt?</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- j. Финальная CTA -->
+      <section class="wf-finalcta">
+        <h2>Küchenfronten beschädigt? Wir kommen schnell</h2>
+        <p>Same-Day in Hamburg | Preis nach Anfrage | Rechnung auch an Vermieter/Hausverwaltung</p>
+        <div class="wf-cta-row wf-cta-center">
+          <a class="wf-btn wf-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20meine%20K%C3%BCchenfronten%20m%C3%BCssen%20ausgetauscht%20werden.">&#128172; Festpreis anfragen →</a>
+          <a class="wf-btn wf-btn-outline" href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+        </div>
+      </section>
+
+      <!-- l. Haftungshinweis -->
+      <p class="wf-disclaimer"><em>Haftungshinweis: Allgemeine Information, keine Rechtsberatung. Maßgeblich sind Ihr Mietvertrag und der Einzelfall. Bei Streit: Mieterverein oder Anwalt für Mietrecht. Stand: Juni 2026.</em></p>
+
     </div>
-  </section>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><h3>Küchenmontage Hamburg</h3><p class="footer-about">Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren.</p></div>
-        <div><h3>Leistungen</h3><ul>
+  <!-- FOOTER -->
+  <footer class="wf-footer">
+    <div class="wf-footer-in">
+      <div>
+        <div class="wf-footer-brandrow"><div class="wf-footer-logo">K</div><div class="wf-footer-brand"><b>Küchenmontage Hamburg</b><span>Festpreis · seit 2008</span></div></div>
+        <p class="wf-footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
+      </div>
+      <div>
+        <h3>Leistungen</h3>
+        <ul>
+          <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+          <li><a href="/pages/garantie-und-service.html">Garantie &amp; Service</a></li>
+          <li><a href="/waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
+          <li><a href="/herd-anschliessen-hamburg/">Herd anschließen</a></li>
+          <li><a href="/backofen-anschliessen-hamburg/">Backofen anschließen</a></li>
+          <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></li>
+          <li><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen</a></li>
+          <li><a href="/kuechenspuele-montage-hamburg/">Spüle austauschen</a></li>
+          <li><a href="/pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
+          <li><a href="/">Küchenmontage</a></li>
           <li><a href="/kuechenfronten-austauschen-hamburg/">Küchenfronten austauschen</a></li>
-          <li><a href="/pages/services/sockelleisten-passleisten-kueche-hamburg.html">Sockelleisten montieren</a></li>
-          <li><a href="/pages/services/silikonfugen-kueche-erneuern-hamburg.html">Silikonfugen erneuern</a></li>
-        </ul></div>
-        <div><h3>Wer zahlt? — Ratgeber</h3><ul>
-          <li><a href="/kleinreparaturen-mieter-vermieter/">Kleinreparaturen: wer zahlt?</a></li>
-          <li><a href="/wer-zahlt-kuechenspuele-mietwohnung/">Küchenspüle: wer zahlt?</a></li>
-          <li><a href="/wer-zahlt-herd-mietwohnung/">Herd: wer zahlt?</a></li>
-        </ul></div>
-        <div><h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128222; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
+          <li><a href="/geschirrspueler-ikea-kueche-hamburg/">Geschirrspüler in IKEA-Küche</a></li>
+          <li><a href="/kuehlschrank-austauschen-hamburg/">Kühlschrank austauschen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Stadtteile</h3>
+        <ul>
+          <li><a href="/altona.html">Altona</a></li>
+          <li><a href="/bergedorf.html">Bergedorf</a></li>
+          <li><a href="/eimsbuettel.html">Eimsbüttel</a></li>
+          <li><a href="/harburg.html">Harburg</a></li>
+          <li><a href="/kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a></li>
+          <li><a href="/wandsbek.html">Wandsbek</a></li>
+          <li><a href="/pages/stadtteile/"><b>Alle Stadtteile →</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="wf-footer-contact">
+          <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+          <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a>
+          <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a>
+          <span>Mo–Fr 8–20 · Sa 9–17 · So 8–20</span>
+          <span><a href="/pages/impressum.html">Impressum</a> · <a href="/pages/datenschutz.html">Datenschutz</a></span>
+          <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a>
         </div>
       </div>
-      <div class="footer-bottom"><div>&copy; 2026 Küchenmontage Hamburg &middot; <a href="/pages/impressum.html" style="color:inherit;">Impressum</a> &middot; <a href="/pages/datenschutz.html" style="color:inherit;">Datenschutz</a></div></div>
     </div>
+    <div class="wf-footer-bottom"><div>© 2026 Küchenmontage Hamburg · 18 Jahre Erfahrung</div></div>
   </footer>
 
-  <div class="floating-cta"><a href="https://wa.me/4915218547875" class="floating-btn floating-btn-whatsapp" aria-label="WhatsApp">&#128172;</a></div>
-  <script src="/js/main.js"></script>
 </body>
 </html>
