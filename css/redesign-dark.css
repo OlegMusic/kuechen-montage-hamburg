@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Küchenmontage Hamburg — Dark Redesign: Design-Tokens (ЧЕРНОВИК)
+   Деплой-путь: /css/redesign-dark.css
+   Здесь ТОЛЬКО токены (custom properties) + минимальная тёмная база,
+   заскоупленная на body.km-dark — файл безопасен, даже если его случайно
+   подключит страница старого дизайна (без класса km-dark ничего не меняет).
+   Страничные классы (.wv-* и будущие) живут в инлайн-<style> каждой страницы.
+   ========================================================================== */
+
+:root {
+  /* Фоны */
+  --km-bg: #101113;            /* фон страницы */
+  --km-surface: #17181b;       /* карточки/секции */
+  --km-surface-deep: #141518;  /* полоса под hero */
+
+  /* Бордеры */
+  --km-border: #232427;        /* крупные разделители (header/footer/полосы) */
+  --km-border-card: #26272b;   /* карточки */
+  --km-border-strong: #34353a; /* кнопки-outline, бейджи, кружки шагов */
+  --km-border-hover: #3a3b40;  /* hover карточек */
+  --km-border-faint: #1e1f22;  /* тонкие разделители (шаги, низ футера) */
+
+  /* Текст */
+  --km-text-hi: #ffffff;       /* заголовки/акценты */
+  --km-text: #b8b9bc;          /* основной */
+  --km-text-body: #c8c9cc;     /* основной (плотные абзацы) */
+  --km-text-mid: #a3a4a8;      /* вторичный */
+  --km-text-dim: #8e8f93;      /* приглушённый */
+  --km-text-faint: #5a5b5e;    /* едва видимый (haftung, копирайт) */
+
+  /* Акценты бренда */
+  --km-accent: #e8453c;        /* красный — primary-кнопки, логотип */
+  --km-accent-hover: #f2554c;
+  --km-salmon: #ff9d94;        /* лососевый — em в H1, eyebrow, ссылки-стрелки */
+  --km-salmon-hover: #ffc4be;
+  --km-salmon-border: #4a2f2c; /* бордер пилюли «Kurze Antwort» */
+
+  /* Warning-блок */
+  --km-warn-bg: #1b1812;
+  --km-warn-border: #3a3220;
+  --km-warn-text: #c8c0a8;
+  --km-warn-strong: #e8dcb8;
+
+  /* Радиусы */
+  --km-radius-card: 12px;
+  --km-radius-cta: 14px;       /* большая финальная CTA-секция */
+  --km-radius-btn: 8px;
+  --km-radius-pill: 99px;
+
+  /* Типографика и сетка */
+  --km-font: 'Instrument Sans', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --km-container: 820px;
+}
+
+/* --- Минимальная база тёмной темы (активна только на body.km-dark) --- */
+
+body.km-dark {
+  margin: 0;
+  background: var(--km-bg);
+  color: var(--km-text);
+  font-family: var(--km-font);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.km-dark *,
+body.km-dark *::before,
+body.km-dark *::after {
+  box-sizing: border-box;
+}
+
+/* Текстовые ссылки внутри абзацев: underline с offset, hover — лососевый */
+body.km-dark p a:not([class]) {
+  color: var(--km-text-hi);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--km-text-faint);
+}
+
+body.km-dark p a:not([class]):hover {
+  text-decoration-color: var(--km-salmon);
+}
