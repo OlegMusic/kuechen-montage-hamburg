@@ -103,7 +103,159 @@
   }
   </script>
 
-  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/redesign-dark.css">
+  <style>
+    /* ---------- страничные стили тёмного редизайна (только .we-*) ---------- */
+
+    /* Header */
+    .we-header { position: sticky; top: 0; z-index: 50; background: var(--km-bg); border-bottom: 1px solid var(--km-border); }
+    .we-header-in { max-width: 1200px; margin: 0 auto; padding: 12px 48px; display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
+    .we-logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; font-weight: 600; font-size: 15px; color: var(--km-text-hi); text-decoration: none; }
+    .we-logo-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 7px; background: var(--km-accent); color: #fff; font-weight: 700; font-size: 16px; }
+    .we-nav { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 22px; }
+    .we-nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 13.5px; color: var(--km-text-mid); text-decoration: none; }
+    .we-nav a:hover, .we-nav a.we-nav-active { color: var(--km-text-hi); }
+
+    /* Hero */
+    .we-hero { max-width: var(--km-container); margin: 0 auto; padding: 72px 32px 56px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; position: relative; }
+    .we-qr-card { position: absolute; right: 32px; top: 4px; background: #FAF7F2; color: #0C1B2A; border-radius: 18px; padding: 13px; display: flex; gap: 13px; align-items: center; box-shadow: 0 40px 60px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(0,0,0,.04); transform: rotate(3deg); max-width: 290px; text-decoration: none; z-index: 3; }
+    .we-qr-card .we-qr { width: 78px; height: 78px; border-radius: 10px; background: #fff; display: grid; place-items: center; flex: none; overflow: hidden; padding: 4px; }
+    .we-qr-card .we-qr img { width: 100%; height: 100%; object-fit: contain; }
+    .we-qr-card .we-qr-tel { font-size: 17px; font-weight: 700; letter-spacing: -.01em; color: #1F8A5B; line-height: 1.1; }
+    .we-qr-card .we-qr-lbl { font-size: 14px; color: #1F8A5B; font-weight: 600; margin-top: 6px; display: inline-flex; align-items: flex-start; gap: 6px; line-height: 1.25; }
+    .we-qr-card .we-qr-lbl svg { color: #1F8A5B; width: 15px; height: 15px; margin-top: 2px; flex: none; }
+    @media (max-width: 1100px) { .we-qr-card { display: none; } }
+    .we-crumbs { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12.5px; color: var(--km-text-dim); }
+    .we-crumbs a { color: var(--km-text-dim); text-decoration: none; }
+    .we-crumbs a:hover { color: var(--km-text-hi); }
+    .we-pill { display: inline-block; padding: 6px 14px; border: 1px solid var(--km-border-strong); border-radius: var(--km-radius-pill); font-size: 12.5px; color: var(--km-text-mid); }
+    .we-h1 { margin: 0; font-size: 42px; line-height: 1.12; font-weight: 700; letter-spacing: -0.02em; color: var(--km-text-hi); max-width: 24ch; }
+    .we-h1 em { font-style: italic; color: var(--km-salmon); }
+    .we-lead { margin: 0; font-size: 16px; line-height: 1.7; color: var(--km-text); max-width: 60ch; }
+    .we-cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+    .we-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 13px 22px; border-radius: var(--km-radius-btn); font-size: 14px; font-weight: 600; text-decoration: none; text-align: center; }
+    .we-btn-primary { background: var(--km-accent); color: #fff; }
+    .we-btn-primary:hover { background: var(--km-accent-hover); }
+    .we-btn-outline { border: 1px solid var(--km-border-strong); color: var(--km-text-hi); }
+    .we-btn-outline:hover { border-color: var(--km-border-hover); }
+    .we-stats { display: flex; flex-wrap: wrap; gap: 32px; margin-top: 8px; }
+    .we-stat { display: flex; flex-direction: column; gap: 4px; border-left: 2px solid var(--km-border-card); padding-left: 20px; }
+    .we-stat-v { font-size: 24px; font-weight: 700; color: var(--km-text-hi); }
+    .we-stat-l { font-size: 12.5px; color: var(--km-text-dim); }
+    .we-trustbar { background: var(--km-surface-deep); border-top: 1px solid var(--km-border); border-bottom: 1px solid var(--km-border); }
+    .we-trustbar-in { max-width: var(--km-container); margin: 0 auto; padding: 14px 32px; display: flex; flex-wrap: wrap; gap: 6px 28px; font-size: 12.5px; color: var(--km-text-dim); }
+
+    /* Main */
+    .we-main { max-width: var(--km-container); margin: 0 auto; padding: 56px 32px 96px; display: flex; flex-direction: column; gap: 64px; }
+    .we-main strong { color: var(--km-text-hi); font-weight: 600; }
+    .we-h2 { margin: 0 0 20px; font-size: 26px; line-height: 1.25; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .we-card { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); padding: 24px; }
+    .we-prose p { margin: 0 0 14px; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+    .we-prose p:last-child { margin-bottom: 0; }
+
+    /* Kurze Antwort */
+    .we-answer-pill { display: inline-block; padding: 5px 12px; border: 1px solid var(--km-salmon-border); border-radius: var(--km-radius-pill); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-salmon); }
+    .we-answer p { margin: 14px 0 0; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+
+    /* Ранний CTA-бокс (воронка): вместо floating-cta — без JS */
+    .we-ctabox { border-left: 3px solid var(--km-accent); }
+    .we-ctabox p { margin: 0 0 16px; font-size: 14.5px; line-height: 1.75; color: var(--km-text-body); }
+
+    /* Фото */
+    .we-figure { margin: 0; }
+    .we-figure img { display: block; width: 100%; height: auto; border-radius: var(--km-radius-card); border: 1px solid var(--km-border-card); }
+    .we-figure figcaption { margin-top: 8px; font-size: 12.5px; color: var(--km-text-dim); }
+
+    /* Nischenmaße */
+    .we-limits { display: flex; flex-direction: column; gap: 10px; margin: 6px 0 18px; }
+    .we-limit { display: flex; gap: 16px; align-items: flex-start; padding: 14px 16px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .we-limit-label { flex: none; min-width: 96px; font-size: 14px; font-weight: 700; color: var(--km-text-hi); }
+    .we-limit-text { font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* Schlepptür vs. Festtür */
+    .we-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 6px 0 18px; }
+    .we-lawcard h3 { margin: 0 0 10px; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .we-lawcard p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* Типичные ошибки */
+    .we-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .we-list li { padding: 14px 16px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* Шаги */
+    .we-step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--km-border-faint); }
+    .we-step:last-child { border-bottom: none; }
+    .we-step-num { flex: none; display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid var(--km-border-strong); border-radius: 50%; font-size: 13px; font-weight: 600; color: var(--km-text-hi); }
+    .we-step h3 { margin: 3px 0 6px; font-size: 14.5px; font-weight: 600; color: var(--km-text-hi); }
+    .we-step p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+
+    /* Passende Leistungen: services-grid, карточки кликабельны целиком (stretched-link) */
+    .we-prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .we-price-card { position: relative; display: flex; flex-direction: column; gap: 8px; padding: 22px; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .we-price-card:hover { border-color: var(--km-border-hover); }
+    .we-price-card h3 { margin: 0; font-size: 15px; font-weight: 700; color: var(--km-text-hi); }
+    .we-price { font-size: 30px; font-weight: 700; color: var(--km-text-hi); }
+    .we-price-tag { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--km-text-dim); }
+    .we-price-note { margin: 0; font-size: 13.5px; line-height: 1.65; color: var(--km-text-mid); }
+    .we-cardlink { margin-top: auto; padding: 12px 0 0; display: inline-flex; align-items: center; min-height: 32px; font-size: 13.5px; font-weight: 600; color: var(--km-salmon); text-decoration: none; }
+    .we-cardlink:hover { color: var(--km-salmon-hover); }
+    .we-price-card .we-cardlink::after { content: ""; position: absolute; inset: 0; }
+    .we-price-card a:not(.we-cardlink) { position: relative; z-index: 1; }
+
+    /* FAQ на <details> — без JS */
+    .we-faq { background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-card); }
+    .we-faq + .we-faq { margin-top: 10px; }
+    .we-faq summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 14px 18px; font-size: 14.5px; font-weight: 600; line-height: 1.5; color: var(--km-text-hi); }
+    .we-faq summary::-webkit-details-marker { display: none; }
+    .we-faq summary::after { content: "▾"; flex: none; color: var(--km-text-dim); transition: transform 0.2s ease; }
+    .we-faq[open] summary::after { transform: rotate(180deg); }
+    .we-faq div { padding: 0 18px 16px; font-size: 13.5px; line-height: 1.75; color: var(--km-text-mid); }
+
+    /* Финальная CTA */
+    .we-finalcta { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 48px 32px; text-align: center; background: var(--km-surface); border: 1px solid var(--km-border-card); border-radius: var(--km-radius-cta); }
+    .we-finalcta h2 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -0.01em; color: var(--km-text-hi); }
+    .we-finalcta p { margin: 0; font-size: 13.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .we-cta-center { justify-content: center; }
+
+    /* Footer */
+    .we-footer { border-top: 1px solid var(--km-border); background: #0A1623; }
+    .we-footer-brandrow { display: flex; align-items: center; gap: 12px; margin: 0 0 10px; }
+    .we-footer-logo { width: 34px; height: 34px; border-radius: 8px; background: var(--km-accent); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 18px; }
+    .we-footer-brand b { display: block; font-size: 14px; color: var(--km-text-hi); }
+    .we-footer-brand span { font-size: 10.5px; letter-spacing: .08em; color: var(--km-text-faint); text-transform: uppercase; }
+    .we-footer h3 { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; }
+    .we-footer-in { max-width: 1080px; margin: 0 auto; padding: 48px 32px 24px; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+    .we-footer h3 { margin: 0 0 12px; font-size: 13.5px; font-weight: 700; color: var(--km-text-hi); }
+    .we-footer-about { margin: 0; font-size: 12.5px; line-height: 1.7; color: var(--km-text-mid); }
+    .we-footer ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .we-footer ul a, .we-footer-contact a { font-size: 12.5px; color: var(--km-text); text-decoration: none; }
+    .we-footer ul a:hover, .we-footer-contact a:hover { color: var(--km-text-hi); }
+    .we-footer-contact { display: flex; flex-direction: column; gap: 8px; font-size: 12.5px; color: var(--km-text); }
+    .we-footer-bottom { max-width: 1080px; margin: 0 auto; padding: 18px 32px 28px; border-top: 1px solid var(--km-border-faint); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 18px; font-size: 12px; color: var(--km-text-faint); }
+    .we-footer-bottom a { color: var(--km-text-faint); text-decoration: none; }
+    .we-footer-bottom a:hover { color: var(--km-text-hi); }
+
+    /* ---------- мобильная адаптация ---------- */
+    @media (max-width: 720px) {
+      .we-header-in { padding: 10px 20px; gap: 8px 16px; }
+      .we-nav { gap: 2px 16px; }
+      .we-nav a { font-size: 13px; }
+      .we-nav-sec { display: none; }
+      .we-hero { padding: 40px 20px 36px; gap: 20px; }
+      .we-h1 { font-size: 30px; }
+      .we-cta-row { width: 100%; flex-direction: column; }
+      .we-cta-row .we-btn { width: 100%; }
+      .we-stats { flex-direction: column; gap: 16px; }
+      .we-trustbar-in { padding: 12px 20px; gap: 4px 18px; }
+      .we-main { padding: 40px 20px 72px; gap: 48px; }
+      .we-grid2, .we-prices { grid-template-columns: 1fr; }
+      .we-finalcta { padding: 36px 20px; }
+      .we-footer-in { grid-template-columns: 1fr; gap: 24px; padding: 36px 20px 16px; }
+      .we-footer-bottom { padding: 14px 20px 24px; }
+    }
+  </style>
 
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
@@ -111,139 +263,314 @@
   <meta name="theme-color" content="#0a4d8c">
   <script src="https://analytics.ahrefs.com/analytics.js" data-key="7brbFTNzw2pFtPorKvADZw" async></script>
 </head>
-<body>
+<body class="km-dark we">
 
-  <header class="header">
-    <div class="header-inner">
-      <a href="/" class="logo"><div class="logo-icon">K</div>Küchenmontage Hamburg</a>
-      <button class="menu-toggle" aria-label="Menü">&#9776;</button>
-      <nav class="nav">
+  <!-- HEADER (из шаблона, без бургер-тогглера и без JS) -->
+  <header class="we-header">
+    <div class="we-header-in">
+      <a href="/" class="we-logo"><span class="we-logo-mark">K</span>Küchenmontage Hamburg</a>
+      <nav class="we-nav" aria-label="Hauptnavigation">
         <a href="/">Startseite</a>
-        <a href="../../index.html#leistungen">Leistungen</a>
-        <a href="../preise.html">Preise</a>
-        <a href="../../index.html#stadtteile">Stadtteile</a>
-        <a href="/pages/blog/">Blog</a>
-        <a href="../kontakt.html">Kontakt</a>
+        <a href="/#leistungen">Leistungen</a>
+        <a href="/pages/preise.html">Preise</a>
+        <a href="/#stadtteile" class="we-nav-sec">Stadtteile</a>
+        <a href="/#bewertungen" class="we-nav-sec">Bewertungen</a>
+        <a href="/pages/blog/" class="we-nav-active">Blog</a>
+        <a href="/pages/kontakt.html">Kontakt</a>
       </nav>
     </div>
   </header>
 
   <main>
-  <section class="service-hero">
-    <div class="container">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="/" style="color:rgba(255,255,255,0.7)">Startseite</a> &rsaquo;
-        <a href="/pages/blog/" style="color:rgba(255,255,255,0.7)">Blog</a> &rsaquo;
-        <span>Einbaukühlschrank tauschen</span>
+
+    <!-- HERO -->
+    <section class="we-hero">
+    <a class="we-qr-card" href="https://wa.me/4915218547875" target="_blank" rel="noopener" aria-label="WhatsApp QR-Code — direkt zu WhatsApp">
+      <div class="we-qr"><img width="370" height="370" src="/img/whatsapp-qr.webp" alt="WhatsApp QR-Code" loading="lazy"></div>
+      <div>
+        <div class="we-qr-tel">0152 185 478 75</div>
+        <div class="we-qr-lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11 11 0 003 18l-1 5 5.2-1.4A11 11 0 1020.5 3.5z"/></svg><span>Bitte per WhatsApp<br>anrufen</span></div>
+      </div>
+    </a>
+      <nav class="we-crumbs" aria-label="Breadcrumb">
+        <a href="/">Startseite</a> <span>›</span> <a href="/pages/blog/">Blog</a> <span>›</span> <span>Einbaukühlschrank tauschen</span>
       </nav>
-      <h1>Einbaukühlschrank tauschen: Warum der neue nicht passt — und wie er es doch tut</h1>
-      <p class="service-hero-sub">Der alte Einbaukühlschrank hat den Geist aufgegeben, der neue steht im Flur — und plötzlich stellen sich Fragen, die im Elektromarkt niemand erwähnt hat: Nischenmaß? Schlepptür? Wohin mit der Möbelfront? Der ehrliche Ratgeber, gültig von Flensburg bis München. Stand: Juli 2026.</p>
-    </div>
-  </section>
+      <span class="we-pill">Über 2.500 Küchen in Hamburg montiert</span>
+      <h1 class="we-h1">Einbaukühlschrank tauschen: Warum der neue nicht passt — <em>und wie er es doch tut</em></h1>
+      <p class="we-lead">Der alte Einbaukühlschrank hat den Geist aufgegeben, der neue steht im Flur — und plötzlich stellen sich Fragen, die im Elektromarkt niemand erwähnt hat: Nischenmaß? Schlepptür? Wohin mit der Möbelfront? Der ehrliche Ratgeber, gültig von Flensburg bis München. Stand: Juli 2026.</p>
+      <div class="we-cta-row">
+        <a class="we-btn we-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meinen%20Einbauk%C3%BChlschrank%20tauschen%20lassen.">Festpreis nach Foto per WhatsApp →</a>
+        <a class="we-btn we-btn-outline" href="tel:+4915218547875">0152 185 478 75</a>
+      </div>
+      <div class="we-stats">
+        <div class="we-stat"><span class="we-stat-v">18+</span><span class="we-stat-l">Jahre Erfahrung</span></div>
+        <div class="we-stat"><span class="we-stat-v">2.500+</span><span class="we-stat-l">Zufriedene Kunden</span></div>
+        <div class="we-stat"><span class="we-stat-v">5 Jahre</span><span class="we-stat-l">Garantie auf die Montage</span></div>
+      </div>
+    </section>
 
-  <section class="service-content">
-    <div class="container" style="max-width:820px;">
-
-      <p style="background:#fff8dc;padding:16px;border-radius:8px;border-left:4px solid #e6b800;"><strong>Kurze Antwort:</strong> Ein Einbaukühlschrank ist kein „Kühlschrank, nur eingebaut" — er lebt in einer genormten Nische (88–178 cm) und trägt die Möbelfront Ihrer Küche. Beim Ersetzen zählen drei Dinge: <strong>Nischenmaß messen</strong> (vor dem Kauf!), <strong>Türtechnik prüfen</strong> (Schlepptür vs. Festtür) und die <strong>Front sauber umbauen</strong>. Wer in Hamburg wohnt: <a href="/kuehlschrank-austauschen-hamburg/">wir tauschen Einbaukühlschränke zum Festpreis</a> — Foto der Nische per WhatsApp genügt.</p>
-
-      <figure style="margin:24px 0;">
-        <img src="/foto/blog/einbaukuehlschrank-nische.jpg" alt="Einbaukühlschrank in Küchennische mit Möbelfront" loading="lazy" style="width:100%;border-radius:12px;" width="880" height="587">
-        <figcaption style="font-size:13px;color:#64748b;margin-top:6px;">Gut getarnt: Der Einbaukühlschrank versteckt sich hinter der Möbelfront. Foto: Pexels</figcaption>
-      </figure>
-
-      <h2>Warum „Einbaukühlschrank ersetzen" ein eigenes Thema ist</h2>
-      <p>Ein freistehender Kühlschrank ist einfach: alter raus, neuer rein, Bier kalt. Ein Einbaugerät dagegen ist Teil Ihrer Küchenmöbel — es sitzt in einer Nische mit Norm-Maß, atmet über Lüftungsquerschnitte, die man nicht zustellen darf, und trägt vorne die Möbelfront, damit die Küche wie eine Küche aussieht und nicht wie eine WG-Ecke. Deshalb scheitert der spontane Samstagskauf im Elektromarkt so zuverlässig: <em>Das Gerät wurde nach Litern ausgesucht, die Nische hat aber Zentimeter.</em></p>
-
-      <h2>Nischenmaße: die Zahl, die vor dem Kauf feststehen muss</h2>
-      <p>Einbaukühlschränke folgen Standard-Nischenhöhen. Messen Sie die <strong>Öffnung im Möbel</strong> — Höhe, Breite (meist 56–57 cm), Tiefe (mind. 55 cm):</p>
-      <ul>
-        <li><strong>88 cm</strong> — Unterbau/kompakt, oft unter der Arbeitsplatte</li>
-        <li><strong>102 cm</strong> — klassisches Kompaktmaß</li>
-        <li><strong>122 / 140 cm</strong> — mittlere Geräte, oft mit Gefrierfach</li>
-        <li><strong>158 / 178 cm</strong> — die großen Kühl-Gefrier-Kombis</li>
-      </ul>
-      <p>Die Erfahrung sagt: Wer „ungefähr 1,20 m" misst, hat ein 122er-Gerät gekauft und eine 118er-Nische zu Hause. Vier Zentimeter klingen nach wenig — bis man versucht, sie mit einem Kühlschrank zu diskutieren. Der Kühlschrank gewinnt immer.</p>
-
-      <h2>Schlepptür vs. Festtür: der Unterschied, der alles bestimmt</h2>
-      <p>Die Möbelfront ist auf eine von zwei Arten mit dem Gerät verbunden:</p>
-      <ul>
-        <li><strong>Schlepptür:</strong> Die Front hängt am Küchenschrank, das Gerät „schleppt" sie über eine Schiene mit. Ältere Küchen (und viele IKEA-Modelle) arbeiten so.</li>
-        <li><strong>Festtür:</strong> Die Front ist direkt an der Gerätetür verschraubt und macht jede Bewegung mit. Der heutige Standard — stabiler, dichter, leiser.</li>
-      </ul>
-      <p>Der Haken: Neue Geräte sind fast immer Festtür. Ersetzt man ein altes Schlepptür-Gerät, muss die Front-Montage umgebaut werden — neue Bohrpunkte, andere Scharnierlogik, exakte Ausrichtung zur Nachbarfront. Machbar, aber genau die Stelle, an der aus „mach ich in einer Stunde" ein langer Abend mit Bohrschablone wird.</p>
-
-      <figure style="margin:24px 0;">
-        <img src="/foto/blog/kuehlschrank-einbau-modern.jpg" alt="Moderne Küche mit integriertem Kühlschrank und durchgehender Frontlinie" loading="lazy" style="width:100%;border-radius:12px;" width="880" height="587">
-        <figcaption style="font-size:13px;color:#64748b;margin-top:6px;">Ziel: eine durchgehende Frontlinie, als wäre nie etwas gewesen. Foto: Pexels</figcaption>
-      </figure>
-
-      <h2>Einbaukühlschrank tauschen: Schritt für Schritt</h2>
-      <ol>
-        <li><strong>Nische messen</strong> — Höhe, Breite, Tiefe, Lüftungswege. Erst dann kaufen.</li>
-        <li><strong>Türtechnik des neuen Geräts prüfen</strong> — Festtür oder Schlepptür, Anschlagseite links/rechts.</li>
-        <li><strong>Altes Gerät abklemmen und ausbauen</strong> — inklusive Front-Demontage.</li>
-        <li><strong>Neues Gerät einsetzen und ausrichten</strong> — wackelfrei, mit korrekten Lüftungsabständen.</li>
-        <li><strong>Möbelfront montieren</strong> — umbauen auf die neue Türtechnik, Scharniere feinjustieren, bis die Frontlinie stimmt.</li>
-        <li><strong>Anschlagwechsel falls nötig</strong> — wenn die Tür künftig zur anderen Seite öffnen soll.</li>
-      </ol>
-
-      <h2>Die typischen Fehler (alle schon live gesehen)</h2>
-      <ul>
-        <li><strong>Gerät nach Litern statt nach Nische gekauft</strong> — der Klassiker, siehe oben.</li>
-        <li><strong>Freistehendes Gerät in die Einbaunische gequetscht</strong> — ohne Lüftungsraum überhitzt der Kompressor; das Gerät verabschiedet sich deutlich vor der Garantie.</li>
-        <li><strong>Front „später" montiert</strong> — später kommt selten. Die Küche schaut Sie monatelang mit einer weißen Gerätetür an.</li>
-        <li><strong>Türanschlag ignoriert</strong> — und dann öffnet der Kühlschrank gegen die Spülmaschine. Jedes. Einzelne. Mal.</li>
-      </ul>
-
-      <h2>Aus der Praxis: die 158er-Nische in Winterhude</h2>
-      <p>Kundin in Winterhude, neues 158er-Gerät, alte Küche mit Schlepptür. Der Elektromarkt hatte beim Kauf versichert, „das passt schon". Es passte — physisch. Nur wollte die Festtür des neuen Geräts nichts von der alten Schleppschiene wissen. Umbau der Front auf Festtür-Montage, zwei neue Bohrpunktreihen, Scharniere eingestellt: 90 Minuten, und die Frontlinie sitzt wieder, als wäre nie etwas gewesen. Moral: „Das passt schon" ist keine Türtechnik.</p>
-
-      <p>In Hamburg und Umgebung übernehmen wir den kompletten Tausch — <a href="/kuehlschrank-austauschen-hamburg/">Einbaukühlschrank austauschen zum Festpreis</a>, inklusive Front-Umbau und Anschlagwechsel. Und falls gleich die ganze Zeile fällig ist: <a href="/kuechen-abbau-hamburg/">Küchenabbau</a> und <a href="/kuechenaufbau-hamburg/">Küchenaufbau</a> kommen aus derselben Hand.</p>
-
-    </div>
-  </section>
-
-  <section class="cta-section">
-    <div class="container">
-      <h2>Einbaukühlschrank tauschen in Hamburg — Festpreis nach Foto</h2>
-      <div class="cta-phone"><a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-      <p>Foto der Nische + Möbelfront senden → Festpreis-Angebot, oft am selben Tag | 5 Jahre Garantie auf die Montage</p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meinen%20Einbauk%C3%BChlschrank%20tauschen%20lassen." class="btn btn-whatsapp btn-lg">&#128172; WhatsApp anfragen</a>
+    <div class="we-trustbar">
+      <div class="we-trustbar-in">
+        <span>Festpreise — keine versteckten Kosten</span>
+        <span>Same-Day-Service</span>
+        <span>18 Jahre Erfahrung</span>
+        <span>5 Jahre Garantie</span>
       </div>
     </div>
-  </section>
 
+    <div class="we-main">
+
+      <!-- a. Kurze Antwort -->
+      <section class="we-card we-answer">
+        <span class="we-answer-pill">Kurze Antwort</span>
+        <p>Ein Einbaukühlschrank ist kein „Kühlschrank, nur eingebaut" — er lebt in einer genormten Nische (88–178 cm) und trägt die Möbelfront Ihrer Küche. Beim Ersetzen zählen drei Dinge: <strong>Nischenmaß messen</strong> (vor dem Kauf!), <strong>Türtechnik prüfen</strong> (Schlepptür vs. Festtür) und die <strong>Front sauber umbauen</strong>. Wer in Hamburg wohnt: <a href="/kuehlschrank-austauschen-hamburg/">wir tauschen Einbaukühlschränke zum Festpreis</a> — Foto der Nische per WhatsApp genügt.</p>
+      </section>
+
+      <!-- b. Ранний CTA-бокс (воронка; Kühlschrank = «nach Anfrage» → без цифры) -->
+      <section class="we-card we-ctabox">
+        <p><strong>Küchenmontage Hamburg</strong> übernimmt den kompletten Tausch Ihres Einbaukühlschranks — inklusive Front-Umbau und Türanschlagwechsel. Festpreis nach Foto per WhatsApp, 5 Jahre Garantie auf die Montage.</p>
+        <div class="we-cta-row">
+          <a class="we-btn we-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meinen%20Einbauk%C3%BChlschrank%20tauschen%20lassen.">Foto senden — Festpreis erhalten</a>
+          <a class="we-btn we-btn-outline" href="/kuehlschrank-austauschen-hamburg/">Einbaukühlschrank austauschen — Details &amp; Ablauf</a>
+        </div>
+      </section>
+
+      <figure class="we-figure">
+        <img src="/foto/blog/einbaukuehlschrank-nische.jpg" alt="Einbaukühlschrank in Küchennische mit Möbelfront" loading="lazy" width="880" height="587">
+        <figcaption>Gut getarnt: Der Einbaukühlschrank versteckt sich hinter der Möbelfront. Foto: Pexels</figcaption>
+      </figure>
+
+      <!-- c. Warum ein eigenes Thema -->
+      <section class="we-prose">
+        <h2 class="we-h2">Warum „Einbaukühlschrank ersetzen" ein eigenes Thema ist</h2>
+        <p>Ein freistehender Kühlschrank ist einfach: alter raus, neuer rein, Bier kalt. Ein Einbaugerät dagegen ist Teil Ihrer Küchenmöbel — es sitzt in einer Nische mit Norm-Maß, atmet über Lüftungsquerschnitte, die man nicht zustellen darf, und trägt vorne die Möbelfront, damit die Küche wie eine Küche aussieht und nicht wie eine WG-Ecke. Deshalb scheitert der spontane Samstagskauf im Elektromarkt so zuverlässig: <em>Das Gerät wurde nach Litern ausgesucht, die Nische hat aber Zentimeter.</em></p>
+      </section>
+
+      <!-- d. Nischenmaße -->
+      <section class="we-prose">
+        <h2 class="we-h2">Nischenmaße: die Zahl, die vor dem Kauf feststehen muss</h2>
+        <p>Einbaukühlschränke folgen Standard-Nischenhöhen. Messen Sie die <strong>Öffnung im Möbel</strong> — Höhe, Breite (meist 56–57 cm), Tiefe (mind. 55 cm):</p>
+        <div class="we-limits">
+          <div class="we-limit">
+            <span class="we-limit-label">88 cm</span>
+            <span class="we-limit-text">Unterbau/kompakt, oft unter der Arbeitsplatte</span>
+          </div>
+          <div class="we-limit">
+            <span class="we-limit-label">102 cm</span>
+            <span class="we-limit-text">klassisches Kompaktmaß</span>
+          </div>
+          <div class="we-limit">
+            <span class="we-limit-label">122 / 140 cm</span>
+            <span class="we-limit-text">mittlere Geräte, oft mit Gefrierfach</span>
+          </div>
+          <div class="we-limit">
+            <span class="we-limit-label">158 / 178 cm</span>
+            <span class="we-limit-text">die großen Kühl-Gefrier-Kombis</span>
+          </div>
+        </div>
+        <p>Die Erfahrung sagt: Wer „ungefähr 1,20 m" misst, hat ein 122er-Gerät gekauft und eine 118er-Nische zu Hause. Vier Zentimeter klingen nach wenig — bis man versucht, sie mit einem Kühlschrank zu diskutieren. Der Kühlschrank gewinnt immer.</p>
+      </section>
+
+      <!-- e. Schlepptür vs. Festtür -->
+      <section class="we-prose">
+        <h2 class="we-h2">Schlepptür vs. Festtür: der Unterschied, der alles bestimmt</h2>
+        <p>Die Möbelfront ist auf eine von zwei Arten mit dem Gerät verbunden:</p>
+        <div class="we-grid2">
+          <div class="we-card we-lawcard">
+            <h3>Schlepptür</h3>
+            <p>Die Front hängt am Küchenschrank, das Gerät „schleppt" sie über eine Schiene mit. Ältere Küchen (und viele IKEA-Modelle) arbeiten so.</p>
+          </div>
+          <div class="we-card we-lawcard">
+            <h3>Festtür</h3>
+            <p>Die Front ist direkt an der Gerätetür verschraubt und macht jede Bewegung mit. Der heutige Standard — stabiler, dichter, leiser.</p>
+          </div>
+        </div>
+        <p>Der Haken: Neue Geräte sind fast immer Festtür. Ersetzt man ein altes Schlepptür-Gerät, muss die Front-Montage umgebaut werden — neue Bohrpunkte, andere Scharnierlogik, exakte Ausrichtung zur Nachbarfront. Machbar, aber genau die Stelle, an der aus „mach ich in einer Stunde" ein langer Abend mit Bohrschablone wird.</p>
+      </section>
+
+      <figure class="we-figure">
+        <img src="/foto/blog/kuehlschrank-einbau-modern.jpg" alt="Moderne Küche mit integriertem Kühlschrank und durchgehender Frontlinie" loading="lazy" width="880" height="587">
+        <figcaption>Ziel: eine durchgehende Frontlinie, als wäre nie etwas gewesen. Foto: Pexels</figcaption>
+      </figure>
+
+      <!-- f. Schritt für Schritt -->
+      <section>
+        <h2 class="we-h2">Einbaukühlschrank tauschen: Schritt für Schritt</h2>
+        <div class="we-step">
+          <span class="we-step-num">1</span>
+          <div>
+            <h3>Nische messen</h3>
+            <p>Höhe, Breite, Tiefe, Lüftungswege. Erst dann kaufen.</p>
+          </div>
+        </div>
+        <div class="we-step">
+          <span class="we-step-num">2</span>
+          <div>
+            <h3>Türtechnik des neuen Geräts prüfen</h3>
+            <p>Festtür oder Schlepptür, Anschlagseite links/rechts.</p>
+          </div>
+        </div>
+        <div class="we-step">
+          <span class="we-step-num">3</span>
+          <div>
+            <h3>Altes Gerät abklemmen und ausbauen</h3>
+            <p>inklusive Front-Demontage.</p>
+          </div>
+        </div>
+        <div class="we-step">
+          <span class="we-step-num">4</span>
+          <div>
+            <h3>Neues Gerät einsetzen und ausrichten</h3>
+            <p>wackelfrei, mit korrekten Lüftungsabständen.</p>
+          </div>
+        </div>
+        <div class="we-step">
+          <span class="we-step-num">5</span>
+          <div>
+            <h3>Möbelfront montieren</h3>
+            <p>umbauen auf die neue Türtechnik, Scharniere feinjustieren, bis die Frontlinie stimmt.</p>
+          </div>
+        </div>
+        <div class="we-step">
+          <span class="we-step-num">6</span>
+          <div>
+            <h3>Anschlagwechsel falls nötig</h3>
+            <p>wenn die Tür künftig zur anderen Seite öffnen soll.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- g. Typische Fehler -->
+      <section>
+        <h2 class="we-h2">Die typischen Fehler (alle schon live gesehen)</h2>
+        <ul class="we-list">
+          <li><strong>Gerät nach Litern statt nach Nische gekauft</strong> — der Klassiker, siehe oben.</li>
+          <li><strong>Freistehendes Gerät in die Einbaunische gequetscht</strong> — ohne Lüftungsraum überhitzt der Kompressor; das Gerät verabschiedet sich deutlich vor der Garantie.</li>
+          <li><strong>Front „später" montiert</strong> — später kommt selten. Die Küche schaut Sie monatelang mit einer weißen Gerätetür an.</li>
+          <li><strong>Türanschlag ignoriert</strong> — und dann öffnet der Kühlschrank gegen die Spülmaschine. Jedes. Einzelne. Mal.</li>
+        </ul>
+      </section>
+
+      <!-- h. Aus der Praxis -->
+      <section class="we-prose">
+        <h2 class="we-h2">Aus der Praxis: die 158er-Nische in Winterhude</h2>
+        <p>Kundin in Winterhude, neues 158er-Gerät, alte Küche mit Schlepptür. Der Elektromarkt hatte beim Kauf versichert, „das passt schon". Es passte — physisch. Nur wollte die Festtür des neuen Geräts nichts von der alten Schleppschiene wissen. Umbau der Front auf Festtür-Montage, zwei neue Bohrpunktreihen, Scharniere eingestellt: 90 Minuten, und die Frontlinie sitzt wieder, als wäre nie etwas gewesen. Moral: „Das passt schon" ist keine Türtechnik.</p>
+        <p>In Hamburg und Umgebung übernehmen wir den kompletten Tausch — <a href="/kuehlschrank-austauschen-hamburg/">Einbaukühlschrank austauschen zum Festpreis</a>, inklusive Front-Umbau und Anschlagwechsel. Und falls gleich die ganze Zeile fällig ist: <a href="/kuechen-abbau-hamburg/">Küchenabbau</a> und <a href="/kuechenaufbau-hamburg/">Küchenaufbau</a> kommen aus derselben Hand.</p>
+      </section>
+
+      <!-- i. Passende Leistungen (воронка: services-grid, 3 карточки, кликабельны целиком) -->
+      <section>
+        <h2 class="we-h2">Passende Leistungen in Hamburg</h2>
+        <div class="we-prices">
+          <div class="we-price-card">
+            <h3>Einbaukühlschrank austauschen</h3>
+            <span class="we-price">nach Foto</span>
+            <span class="we-price-tag">Festpreis per WhatsApp</span>
+            <p class="we-price-note">Altes Gerät raus, neues rein — inklusive Möbeltür-Umbau und Türanschlagwechsel</p>
+            <a class="we-cardlink" href="/kuehlschrank-austauschen-hamburg/">Zur Leistung →</a>
+          </div>
+          <div class="we-price-card">
+            <h3>Küchenabbau</h3>
+            <span class="we-price">ab 170€</span>
+            <span class="we-price-tag">Festpreis</span>
+            <p class="we-price-note">Fachgerechte Demontage, Geräte sicher abklemmen, besenreine Übergabe</p>
+            <a class="we-cardlink" href="/kuechen-abbau-hamburg/">Zur Leistung →</a>
+          </div>
+          <div class="we-price-card">
+            <h3>Küchenaufbau</h3>
+            <span class="we-price">ab 190€</span>
+            <span class="we-price-tag">pro laufendem Meter</span>
+            <p class="we-price-note">Gebrauchte oder umgezogene Küche aufbauen und an den neuen Raum anpassen</p>
+            <a class="we-cardlink" href="/kuechenaufbau-hamburg/">Zur Leistung →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- j. FAQ (видимый блок = FAQPage-схема дословно; <details>, без JS) -->
+      <section>
+        <h2 class="we-h2">Häufige Fragen</h2>
+        <details class="we-faq">
+          <summary>Passt jeder neue Kühlschrank in meine alte Nische?</summary>
+          <div>Nein. Einbaugeräte folgen Standard-Nischenhöhen: 88, 102, 122, 140, 158 und 178 cm. Messen Sie die Nische (Höhe, Breite, Tiefe) VOR dem Kauf — nicht das alte Gerät, sondern die Öffnung im Möbel. Ein 122er-Gerät in einer 102er-Nische bleibt ein 122er-Gerät.</div>
+        </details>
+        <details class="we-faq">
+          <summary>Was ist der Unterschied zwischen Schlepptür und Festtür?</summary>
+          <div>Bei der Schlepptür ist die Möbelfront am Küchenschrank montiert und wird über eine Schiene vom Gerät mitgezogen. Bei der Festtür ist die Front direkt an der Gerätetür verschraubt. Neue Geräte sind meist Festtür — wer ein altes Schlepptür-Gerät ersetzt, braucht oft eine Anpassung der Front-Montage.</div>
+        </details>
+        <details class="we-faq">
+          <summary>Kann ich die alte Möbelfront am neuen Kühlschrank weiterverwenden?</summary>
+          <div>In den meisten Fällen ja — die Front wird vom alten Gerät demontiert und am neuen befestigt bzw. auf die neue Türtechnik umgebaut. Genau dieser Front-Umbau ist der Teil, an dem Selbermacher am häufigsten scheitern: Bohrschablonen, Scharnierseiten und die Ausrichtung zur restlichen Küchenfront.</div>
+        </details>
+        <details class="we-faq">
+          <summary>Was kostet der Einbaukühlschrank-Austausch in Hamburg?</summary>
+          <div>Preis nach Anfrage — er hängt von Türtechnik (Schlepptür/Festtür), Nischengröße und eventuellem Türanschlagwechsel ab. Ein Foto der Nische und der Möbelfront per WhatsApp genügt für ein Festpreis-Angebot, oft am selben Tag.</div>
+        </details>
+      </section>
+
+      <!-- k. Финальная CTA -->
+      <section class="we-finalcta">
+        <h2>Einbaukühlschrank tauschen in Hamburg — Festpreis nach Foto</h2>
+        <p>Foto der Nische + Möbelfront senden → Festpreis-Angebot, oft am selben Tag | 5 Jahre Garantie auf die Montage</p>
+        <div class="we-cta-row we-cta-center">
+          <a class="we-btn we-btn-primary" href="https://wa.me/4915218547875?text=Hallo%2C%20ich%20m%C3%B6chte%20meinen%20Einbauk%C3%BChlschrank%20tauschen%20lassen.">WhatsApp anfragen</a>
+          <a class="we-btn we-btn-outline" href="tel:+4915218547875">0152 185 478 75</a>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><h3>Küchenmontage Hamburg</h3><p class="footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg &amp; Umgebung seit 18 Jahren.</p></div>
-        <div><h3>Leistungen</h3><ul>
+  <!-- FOOTER (из шаблона дословно) -->
+  <footer class="we-footer">
+    <div class="we-footer-in">
+      <div>
+        <div class="we-footer-brandrow"><div class="we-footer-logo">K</div><div class="we-footer-brand"><b>Küchenmontage Hamburg</b><span>Festpreis · seit 2008</span></div></div>
+        <p class="we-footer-about">Ihr zuverlässiger Partner für Küchenmontage und Geräteanschluss in Hamburg. Seit 18 Jahren sorgen wir dafür, dass Ihre Küche perfekt funktioniert. Festpreise, Same-Day-Service, 5 Jahre Garantie.</p>
+      </div>
+      <div>
+        <h3>Leistungen</h3>
+        <ul>
+          <li><a href="/pages/ueber-uns.html">Über uns</a></li>
+          <li><a href="/pages/garantie-und-service.html">Garantie &amp; Service</a></li>
+          <li><a href="/waschmaschine-anschliessen-hamburg/">Waschmaschine anschließen</a></li>
+          <li><a href="/herd-anschliessen-hamburg/">Herd anschließen</a></li>
+          <li><a href="/backofen-anschliessen-hamburg/">Backofen anschließen</a></li>
+          <li><a href="/geschirrspueler-anschliessen-hamburg/">Spülmaschine anschließen</a></li>
+          <li><a href="/armatur-austauschen-hamburg/">Wasserhahn austauschen</a></li>
+          <li><a href="/kuechenspuele-montage-hamburg/">Spüle austauschen</a></li>
+          <li><a href="/pages/services/wasseranschluss-kueche-hamburg.html">Wasseranschluss Küche</a></li>
+          <li><a href="/">Küchenmontage</a></li>
+          <li><a href="/kuechenfronten-austauschen-hamburg/">Küchenfronten austauschen</a></li>
+          <li><a href="/geschirrspueler-ikea-kueche-hamburg/">Geschirrspüler in IKEA-Küche</a></li>
           <li><a href="/kuehlschrank-austauschen-hamburg/">Kühlschrank austauschen</a></li>
-          <li><a href="/kuechen-abbau-hamburg/">Küchenabbau</a></li>
-          <li><a href="/ikea-kuechenmontage-hamburg/">IKEA Küchenmontage</a></li>
-        </ul></div>
-        <div><h3>Ratgeber</h3><ul>
-          <li><a href="/pages/blog/">Blog-Übersicht</a></li>
-          <li><a href="kueche-abbauen-kosten-ablauf.html">Küche abbauen lassen: Kosten &amp; Ablauf</a></li>
-          <li><a href="kueche-selbst-aufbauen-oder-lassen.html">Selbst aufbauen oder lassen?</a></li>
-        </ul></div>
-        <div><h3>Kontakt</h3>
-          <div class="footer-contact-item">&#128222; <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a></div>
-          <div class="footer-contact-item">&#128231; <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a></div>
+        </ul>
+      </div>
+      <div>
+        <h3>Stadtteile</h3>
+        <ul>
+          <li><a href="/altona.html">Altona</a></li>
+          <li><a href="/bergedorf.html">Bergedorf</a></li>
+          <li><a href="/eimsbuettel.html">Eimsbüttel</a></li>
+          <li><a href="/harburg.html">Harburg</a></li>
+          <li><a href="/kuechenmontage-hamburg-mitte.html">Hamburg-Mitte</a></li>
+          <li><a href="/wandsbek.html">Wandsbek</a></li>
+          <li><a href="/pages/stadtteile/"><b>Alle Stadtteile →</b></a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <div class="we-footer-contact">
+          <a href="https://wa.me/4915218547875">WhatsApp: 0152 185 478 75</a>
+          <a href="mailto:info@kuechen-montage-hamburg.de">info@kuechen-montage-hamburg.de</a>
+          <a href="https://share.google/l01Bz5HweVDt4vNry" target="_blank" rel="noopener">Bossardstr. 12, 22309 Hamburg</a>
+          <span>Mo–Fr 8–20 · Sa 9–17 · So 8–20</span>
+          <span><a href="/pages/impressum.html">Impressum</a> · <a href="/pages/datenschutz.html">Datenschutz</a></span>
+          <a href="https://www.facebook.com/kuechenmontage.hamburg.de" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="#1877F2" aria-hidden="true" style="vertical-align:-3px;margin-right:5px"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6.02 4.39 11.01 10.13 11.93v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.08 24 18.09 24 12.07z"/></svg>Facebook</a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Küchenmontage Hamburg · <a href="../impressum.html">Impressum</a> · <a href="../datenschutz.html">Datenschutz</a></p>
-      </div>
     </div>
+    <div class="we-footer-bottom"><div>© 2026 Küchenmontage Hamburg · 18 Jahre Erfahrung</div></div>
   </footer>
 
-  <script>
-    const toggle = document.querySelector('.menu-toggle');
-    if (toggle) toggle.addEventListener('click', () => document.querySelector('.nav').classList.toggle('open'));
-  </script>
 </body>
 </html>
